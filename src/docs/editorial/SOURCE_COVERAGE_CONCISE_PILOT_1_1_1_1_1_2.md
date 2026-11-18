@@ -109,3 +109,8 @@ The source-completeness assessment above still stands. What has changed is **whi
 - **All 24 Stout Companions and the Stout dossier remain unchanged** under this trial. The original 39-chapter structure, other chapter content, semantic component assignments and six revision sections are protected.
 
 This is a pedagogical *delivery* correction. It does not remove original-source distinctions, replace Moran's position, change the language profile or authorize a mass rollout. Source Depth is not a second required chapter: intellectual essentials stay visible. Technical release requires the same exact-anchor, keyboard/touch, RTL, mobile, print and offline verification.
+
+
+### Context-first Moran pilot — secondary-account verification (18 November 2026)
+
+The later contextual Companion and Source Depth pilot passed the **complete source/structure and Chromium mobile, RTL, printed PDF, pagination and offline PWA regression suite** using the authorized secondary account's genuine fork: [fork Actions run 44367909907](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44367909907). Three generated edition files were returned through [upstream PR #13](https://github.com/MohdUjjain/11-hikam/pull/13). Their Git blob SHA values, and all canonical authoring sources, were confirmed equal across the fork and the original editorial branch. The public deployment requires a separate Pages check after upstream merge.
