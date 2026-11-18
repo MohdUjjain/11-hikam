@@ -67,45 +67,49 @@ def check(browser, url, width):
         assert page.locator('#hikamCompanionPopup').is_visible()
         page.keyboard.press('Escape')
         assert page.locator('#hikamCompanionPopup').is_hidden()
-    # Context-first Moran explains the current passage; Stout's prior plain
-    # Companions keep working unchanged while the new approach is piloted.
+    # Local paragraph-level disclosures for both authors.
+    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24)]:
+        callouts = page.locator('#' + chapter + ' .chapter-body .hikam-source-depth-inline')
+        assert callouts.count() >= 1
+        assert callouts.locator('.hikam-source-depth-item').count() == number
+        assert callouts.first.get_attribute('open') is None
+        assert callouts.first.evaluate("(e) => e.previousElementSibling.tagName") == 'P'
+        callouts.first.locator('summary').click()
+        assert callouts.first.get_attribute('open') is not None
+        assert callouts.first.locator('.hikam-source-depth-item p').first.is_visible()
+        callouts.first.locator('summary').click()
+        assert callouts.first.get_attribute('open') is None
     timeline = page.locator('#ch1-1-1 .chapter-body .historical-timeline')
-    assert timeline.count() == 1
     assert timeline.locator('.historical-timeline-event').count() == 4
-    depth = page.locator('#hikam-source-depth-ch1-1-1')
-    assert depth.count() == 1
-    assert depth.get_attribute('open') is None
-    assert depth.locator('.hikam-source-depth-item').count() == 10
     cue = page.locator('[data-companion-id="h111-russell-idealism"]')
     cue.scroll_into_view_if_needed()
+    assert cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'dotted'
+    color = cue.evaluate("(e) => getComputedStyle(e).textDecorationColor")
+    other_color = page.locator('[data-companion-id="h112-parfit-identity"]').evaluate(
+        "(e) => getComputedStyle(e).textDecorationColor")
+    assert color != other_color
     cue.focus()
     page.keyboard.press('Enter')
     popup = page.locator('#hikamCompanionPopup')
-    assert popup.is_visible()
+    assert popup.get_attribute('role') == 'region'
     assert popup.locator('.hikam-companion-simple').is_visible()
     assert popup.locator('.hikam-companion-why').is_visible()
     assert popup.locator('.hikam-companion-remember').is_visible()
-    assert 'simpler parts' in popup.inner_text()
-    assert popup.locator('.hikam-companion-explanation').is_hidden()
-    assert 'McTaggart' not in popup.inner_text(), 'Source-depth information leaked into contextual popup'
-    page.keyboard.press('Escape')
+    assert popup.locator('.hikam-companion-close').is_visible()
+    assert cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'solid'
+    popup.locator('.hikam-companion-close').click()
+    assert popup.is_hidden()
+    assert cue.evaluate("(e) => getComputedStyle(e).textDecorationStyle") == 'dotted'
     cue = page.locator('[data-companion-id="h112-parfit-identity"]')
     cue.scroll_into_view_if_needed()
     cue.focus()
     page.keyboard.press('Enter')
-    assert popup.locator('.hikam-companion-explanation').is_visible()
-    assert popup.locator('.hikam-companion-simple').is_hidden()
+    assert popup.locator('.hikam-companion-simple').is_visible()
+    page.keyboard.press('ArrowDown')
+    assert popup.locator('.hikam-companion-close').evaluate(
+        "(e) => document.activeElement === e")
     page.keyboard.press('Escape')
-    depth.locator('summary').first.click()
-    assert depth.get_attribute('open') is not None
-    first_detail = depth.locator('.hikam-source-depth-item').first
-    first_detail.locator('summary').click()
-    assert first_detail.get_attribute('open') is not None
-    assert first_detail.locator('p').first.is_visible()
-    assert 'Moran' in first_detail.locator('.hikam-source-depth-citation').inner_text()
-    first_detail.locator('summary').click()
-    depth.locator('summary').first.click()
-    assert depth.get_attribute('open') is None
+    assert popup.is_hidden()
 
     # Simulate a RTL chapter at one cue without editing authorial content.
     cue = page.locator('[data-companion-id="h112-harrod-rule"]')
@@ -128,7 +132,8 @@ def check(browser, url, width):
     page.evaluate("window.__runPagination(['ch1-1-1'])")
     assert page.locator('#ch1-1-1 .js-print-page').count() > 0
     assert page.locator('#ch1-1-1 .js-print-page .historical-timeline-event').count() == 4
-    assert page.locator('#ch1-1-1 .js-print-page .hikam-source-depth').count() == 0
+    assert page.locator('#ch1-1-1 .js-print-page .hikam-source-depth-inline').count() == 0
+    assert page.locator('#ch1-1-2 .js-print-page .hikam-source-depth-inline').count() == 0
     assert page.locator('#ch1-1-1 .js-print-page .hikam-companion-trigger').count() == 0
     assert not errors, errors
     ctx.close()
@@ -147,13 +152,13 @@ with site() as no_js_url, sync_playwright() as no_js_pw:
         context = no_js_browser.new_context(java_script_enabled=False, viewport={'width':390,'height':820})
         page = context.new_page()
         page.goto(no_js_url, wait_until='domcontentloaded')
-        disclosure = page.locator('#hikam-source-depth-ch1-1-1')
-        assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
-        disclosure.locator('summary').first.click()
-        item = disclosure.locator('.hikam-source-depth-item').first
-        item.locator('summary').click()
-        assert item.locator('p').first.is_visible()
+        for chapter in ('ch1-1-1', 'ch1-1-2'):
+            disclosure = page.locator('#'+chapter+' .hikam-source-depth-inline').first
+            assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
+            disclosure.locator('summary').click()
+            assert disclosure.get_attribute('open') is not None
+            assert disclosure.locator('.hikam-source-depth-item p').first.is_visible()
         context.close()
     finally:
         no_js_browser.close()
-print(f'PASS: {EXPECTED_COUNT} source cues; contextual/source-depth layers, timeline, keyboard, RTL, print and no-JS disclosure')
+print(f'PASS: {EXPECTED_COUNT} contextual cues; native paragraph Source Depth, accessible focus, RTL and print integrity')

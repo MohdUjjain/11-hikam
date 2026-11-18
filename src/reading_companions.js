@@ -1,7 +1,7 @@
 /* 11AM Hikam — source-grounded Reading Companions.
  * Exact-match inline cues in main prose teach the immediate context first.
- * Optional additional original-source details live in a separate native
- * disclosure after the chapter body. Print clones unwrap these inline cues.
+ * Further original-source details use adjacent native disclosures in the
+ * reading HTML. Print clones omit that optional material and unwrap cues.
  * Data is embedded in the canonical single-file publication for offline use.
  */
 (function () {
@@ -19,15 +19,18 @@
   var failed = [];
   var current = null;
   var pinned = false;
+  var restoringTriggerFocus = false;
   var popup = document.createElement('div');
   popup.id = 'hikamCompanionPopup';
   popup.className = 'hikam-companion-popup';
-  popup.setAttribute('role', 'tooltip');
+  popup.setAttribute('role', 'region');
+  popup.setAttribute('aria-labelledby', 'hikamCompanionPopupTitle');
   popup.hidden = true;
   var kind = document.createElement('span');
   kind.className = 'hikam-companion-kind';
   var heading = document.createElement('strong');
   heading.className = 'hikam-companion-title';
+  heading.id = 'hikamCompanionPopupTitle';
   var detail = document.createElement('span');
   detail.className = 'hikam-companion-explanation';
   // Context-first Companions clarify the nearby idea; the source-depth appendix
@@ -47,8 +50,14 @@
   var simpleField = contextField('In simple words', 'hikam-companion-simple');
   var whyField = contextField('Why this appears here', 'hikam-companion-why');
   var rememberField = contextField('Remember', 'hikam-companion-remember');
+  var closeButton = document.createElement('button');
+  closeButton.type = 'button';
+  closeButton.className = 'hikam-companion-close';
+  closeButton.setAttribute('aria-label', 'Close reading companion');
+  closeButton.textContent = '×';
+  closeButton.hidden = true;
   popup.append(kind, heading, detail,
-    simpleField.container, whyField.container, rememberField.container);
+    simpleField.container, whyField.container, rememberField.container, closeButton);
   root.appendChild(popup);
   var selector = '.hikam-companion-trigger';
 
@@ -56,12 +65,22 @@
   function targetFor(node) {
     return node && node.closest ? node.closest(selector) : null;
   }
-  function dismiss() {
-    if (current) {
-      current.setAttribute('aria-expanded', 'false');
-      current.removeAttribute('aria-describedby');
+  function dismiss(restoreFocus) {
+    var previous = current;
+    if (previous) {
+      previous.setAttribute('aria-expanded', 'false');
+      previous.removeAttribute('aria-describedby');
     }
     current = null; pinned = false; popup.hidden = true;
+    popup.dataset.pinned = 'false';
+    closeButton.hidden = true;
+    if (restoreFocus && previous && previous.isConnected) {
+      // Suppress only the synthetic focusin caused by closing the popup.
+      // Otherwise our accessible focus-to-explain behavior would re-open it.
+      restoringTriggerFocus = true;
+      previous.focus();
+      restoringTriggerFocus = false;
+    }
   }
   function place() {
     if (!current || popup.hidden) return;
@@ -85,6 +104,8 @@
     if (!item) return;
     if (current && current !== button) dismiss();
     current = button; pinned = !!keepOpen;
+    popup.dataset.pinned = pinned ? 'true' : 'false';
+    closeButton.hidden = !pinned;
     kind.textContent = item.kind;
     heading.textContent = item.title;
     var isContextual = !!(item.simple && item.why_here && item.remember);
@@ -132,7 +153,7 @@
     var body = chapter.querySelector('.chapter-body');
     if (!body) return false;
     var paragraphs = Array.from(body.querySelectorAll('p')).filter(function (p) {
-      return !p.closest('.box, .analogy, .checkpoint, .tbl-wrap, .hierarchy, .concept-rel, .golden-quote, .end-block') &&
+      return !p.closest('.box, .analogy, .checkpoint, .tbl-wrap, .hierarchy, .concept-rel, .golden-quote, .end-block, .hikam-source-depth-inline') &&
         normalized(p.textContent).includes(normalized(item.passage));
     });
     if (paragraphs.length !== 1) return false;
@@ -159,10 +180,15 @@
       event.preventDefault();
       button.click();
     } else if (event.key === 'Escape' && current) {
-      dismiss();
+      event.preventDefault();
+      dismiss(true);
+    } else if (button && event.key === 'ArrowDown' && current === button && pinned) {
+      event.preventDefault();
+      closeButton.focus();
     }
   }
   function install() {
+    closeButton.addEventListener('click', function () { dismiss(true); });
     var seen = new Set();
     dataset.companions.forEach(function (item) {
       if (!item || seen.has(item.id) || !attach(item)) {
@@ -190,6 +216,7 @@
       if (targetFor(event.target) === current) dismiss();
     });
     document.addEventListener('focusin', function (event) {
+      if (restoringTriggerFocus) return;
       var button = targetFor(event.target);
       if (button) show(button, false);
     });

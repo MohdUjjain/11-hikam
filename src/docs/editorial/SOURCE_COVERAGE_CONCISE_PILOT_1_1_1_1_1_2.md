@@ -97,6 +97,14 @@ This is an **editorial traceability register**, not a claim that every supportin
 **Release verification:** `python src/build.py` rebuilt the published files. `python src/build.py --check` and all repository verification jobs, including source-anchor checks, full-book structure, Reading Companion browser interaction, RTL, printing, offline/PWA installation and migrations, passed in GitHub Actions run [44272376723](https://github.com/MohdUjjain/11-hikam/actions/runs/44272376723). Both six-part revision blocks and five examination-question categories are retained. The chapter frontmatter, all subsequent chapters, unrelated styling and reader architecture are unchanged. The temporary editorial build workflow was removed.
 
 
+## Later 19 November refinement — accessible contextual companions and local source details
+
+Both existing chapters are preserved, including all six original revision sections. **Ten Moran and twenty-four Stout Companion entries** now use the simple contextual triple (meaning, why here, remember). Their original fuller source explanations have been retained with their printed-page references in **closed native Source Depth callouts directly after the corresponding main-body paragraphs**; multiple source records for a single paragraph share one disclosure. This restores proximity without reintroducing extra facts into the contextual popup.
+
+The user-authorized change affects delivery and accessibility, not source theses, original quotations, or unrelated chapters. Chapter pigments now determine dotted resting cues; open/hover changes to solid; keyboard focus, dismiss and touch scrolling have been refined. The print compositor removes these HTML-only optional callouts before measurement, while ordinary source text and the timeline continue to print. The visible 1,500–2,000-word target continues to exclude optional closed source detail and revision blocks.
+
+Verification must include all 34 unique anchors, source detail/card counts, source citations, contextual text, no-JS disclosure, no-print source depth, chapter-color cues, screen-reader state, mobile/RTL/pagination, and complete offline PWA checks. Fork-hosted CI remains the designated validation route when primary Actions quota is constrained.
+
 ## Later comprehension pilot — Moran 1.1.1 (18 November 2026)
 
 The source-completeness assessment above still stands. What has changed is **which optional layer delivers what**. The reader reported that opening a Companion to understand the current concept instead introduced new names and unrelated historical details. See the binding [Context-First Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md).
@@ -114,3 +122,12 @@ This is a pedagogical *delivery* correction. It does not remove original-source 
 ### Context-first Moran pilot — secondary-account verification (18 November 2026)
 
 The later contextual Companion and Source Depth pilot passed the **complete source/structure and Chromium mobile, RTL, printed PDF, pagination and offline PWA regression suite** using the authorized secondary account's genuine fork: [fork Actions run 44367909907](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44367909907). Three generated edition files were returned through [upstream PR #13](https://github.com/MohdUjjain/11-hikam/pull/13). Their Git blob SHA values, and all canonical authoring sources, were confirmed equal across the fork and the original editorial branch. The public deployment requires a separate Pages check after upstream merge.
+
+
+### 19 November contextual-accessibility pilot — verified secondary-account run
+
+The full two-dossier implementation passed [fork Actions run 44375169683](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44375169683) (tested head `bad36bb6448170a52629d381c50cc84b9e0fed48`). Canonical build, exact 34 source anchors, original source-detail and page-reference recovery, unchanged 39-chapter structure and revisions, keyboard/RTL/mobile, literature-style pigment/dotted-to-solid cue states, explicit popup close and focus recovery, native no-JS Source Depth, full-text search integrity, A4 print/PDF exclusion and offline-PWA regressions all passed.
+
+Additional attention: an initial [test failure](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44374653349) exposed the popup reopening when restored keyboard focus fired the focus-in helper. The controller now explicitly suppresses only that restoration event; the corrected behavior passed in the final run. The print composer removes optional source details **before** pagination measurement, and the full-text search index does not surface collapsed supplementary text as an apparently visible search result.
+
+Only the canonical source edition and associated tests/docs were changed; the original source PDFs were not added. The temporary fork-only test workflow was removed afterward. Verified generated assets are to be transferred with this same source tree to the original repository before merging and releasing.

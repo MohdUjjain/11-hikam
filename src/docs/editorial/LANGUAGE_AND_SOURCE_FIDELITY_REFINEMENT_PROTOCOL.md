@@ -8,6 +8,14 @@
 
 > This protocol governs the present **editorial revision programme**, not a redesign, new-chapter template, philosophical critique, or authorization to modify the entire repository. It supplements — and does not supersede — the repository's [Design System](../design/DESIGN_SYSTEM.md), [Pagination System](../pagination/PAGINATION_SYSTEM.md), [source authoring instructions](../../README.md), and root [README](../../../README.md). Always inspect the current repository before editing; paths, counts, and conventions may change.
 
+## 19 November — local source details and inclusive reading controls
+
+The latest implementation preserves source completeness while protecting the reader's concentration: Reading Companions explain **what the immediate phrase means and why it matters**; additional original-source discussions are accessible in short, closed, paragraph-adjacent Source Depth callouts. This applies to the 1.1.1 and 1.1.2 pilots, not automatically to unrelated dossiers. All 34 records retain their printed-page references. Such disclosures are screen-only and omitted before print page measurement. They must not house any indispensable premise.
+
+Accessibility is mandatory: chapter-colored dotted underline becomes solid when opened, screen-reader semantics describe the expanded state, focus is visible and restored after keyboard dismissal, touch/mobile content remains scrollable, and native disclosure remains usable without JS. Conceptual continuity, technical accuracy, source point of view, Arabic/English language standards and all established study aids—including six revision sections—remain authoritative.
+
+See the current [Context-First Companion and Source Depth rules](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md).
+
 ## Context-first comprehension amendment — adopted later on 18 November 2026
 
 The concise word ranges, strict source fidelity, both languages' writing standards, all existing study aids and six-part revision blocks continue unchanged. **Simplifying individual sentences is not enough:** the reader must be able to trace one intellectual question through many names, changing methods, disagreements and historical circumstances.

@@ -12,6 +12,8 @@ The first [Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md) rec
 
 Read both editorial standards alongside [the design system](../design/DESIGN_SYSTEM.md) and [the pagination system](../pagination/PAGINATION_SYSTEM.md).
 
+**Latest clarification:** The [19 November accessibility and inline Source Depth amendment](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) applies to **both** Moran 1.1.1 and Stout 1.1.2. It keeps source expansions closed immediately after relevant paragraphs, never in the concept-explanation popup; preserves source pages and all established study aids; and makes the chapter-hued dotted-to-solid cues and keyboard/no-JS behavior testable.
+
 ## Existing revision history
 
 The other files in this folder preserve previous chapter-level editorial, reconstruction, and source-fidelity work, including 3.4-series dossiers. They remain historical records rather than replacements for the standing protocol.

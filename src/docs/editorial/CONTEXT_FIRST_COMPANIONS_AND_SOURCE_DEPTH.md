@@ -1,7 +1,7 @@
 # Context-First Reading Companions and Optional Source Depth
 
 **Project:** Takhassus Hikam · **Decision:** 18 November 2026  
-**Pilot:** Dossier 1.1.1 — Dermot Moran, *Towards an Assessment of Twentieth-Century Philosophy*  
+**Pilot:** Dossiers 1.1.1 (Dermot Moran) and 1.1.2 (Rowland Stout); no unrelated chapter.  
 **Status:** Implemented and fully verified on the secondary-account fork through [Actions run 44367909907](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44367909907); the exact built edition was returned to the upstream editorial branch via [PR #13](https://github.com/MohdUjjain/11-hikam/pull/13). Publication remains a separate release check.  
 **Also read:** [Language and Source-Fidelity Refinement Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md), [Concise Dossiers and Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md), and [Design System](../design/DESIGN_SYSTEM.md).
 
@@ -43,18 +43,20 @@ These three labels are not a mandatory textual quota. One direct explanation may
 
 **Example — Russell:** the old trigger explained Russell's intellectual genealogy through Bradley, McTaggart and Hylton. The new trigger says what Russell's analysis means and why Moran introduces it as an early analytic method. The genealogy is retained in optional Source Depth, not deleted.
 
-## 4. Source Depth: a separate intentionally chosen mode
+## 4. Source Depth: adjacent, collapsed and printable only by explicit future design
 
-For the Moran pilot, additional details formerly located in ten Companions are transferred **without loss** into the independent Source Depth disclosure **after** the chapter's main body and **before** its navigation/revision block.
+**Updated 19 November 2026 — governing location rule:** Source Depth is not a distant second article at the end of the chapter. Place the **native collapsed callout immediately after the relevant ordinary prose paragraph** so the reader may consult the original reading's additional example, named debate, historical qualification or source evidence *at the point where it becomes relevant*. It is never part of the inline Companion popup.
 
-- One visibly distinct **closed outer native `<details>`** control announces optional original-source detail. Nothing opens automatically while reading.
-- Inside are ten individually closed `<details>` cards with informative source-specific titles, original short explanations and Moran's printed page references.
-- They may be read selectively after the chapter, not as popups interrupting sentences. The depth section works with keyboard and without JavaScript.
-- The source items are **outside `.chapter-body`**, preserving visible-word accounting, original source text search/paragraph anchors and the established print-compositor's main-body selection.
-- The source-depth appendix is screen-only and is **not printed** by the existing chapter-body print compositor. This is acceptable only where the unique content is supplementary; no indispensable premise may exist solely here. A future printable research appendix requires a separately tested opt-in design.
-- No new hidden online fetch, public PDF upload, new note-specific JS library, layout overhaul or forced reading path is introduced.
+- Use `<details class="hikam-source-depth-inline">` with a native `<summary>` identifying **SOURCE DEPTH**, a brief grounded title and a signal that the material is optional.
+- Show no expanded information until the student chooses to open that summary. All callouts start closed. They work with keyboard, touch, screen readers and **without JavaScript**. Multiple details attached to the same paragraph belong inside one callout with separately titled internal source records, rather than repeated consecutive disclosure controls.
+- Each record has the exact originating author and **printed source-page number(s)**; distinguish paraphrase from quotation, preserve the source's level of certainty, and never manufacture references.
+- The ten original additional Moran explanations and the twenty-four original additional Stout explanations are **preserved as source records**. Their **34 inline Companions** instead answer *What does this mean?* and *Why is it here?*, with a short recall line. The two modes must never duplicate each other's instructional job.
+- The supplemental detail is inside the **HTML `.chapter-body`** solely to keep it beside its source paragraph. It remains **outside the 1,500–2,000 immediately visible word count**. Do not confuse its closed textual DOM presence with visible study-aid prose.
+- Source Depth is **screen-only**: CSS hides it in regular printing, and the canonical JS page compositor explicitly removes `.hikam-source-depth-inline` from its private clones **before measuring**. Otherwise hidden callout text can accidentally affect pagination, source indexing or A4 output. Keep the on-screen original intact.
+- No essential premise, decisive objection, argument or conclusion may exist solely inside optional Source Depth. The visible prose and existing study aids must still explain the author fully, and the independent six-part revision system must remain sound.
+- Not every paragraph needs a callout, and not every future Companion needs a Source Depth counterpart. Select additions by genuine source value rather than quotas or visual decoration.
 
-In later readings, **not every Companion requires a Source Depth counterpart**; selection follows the primary source and the student's actual confusion.
+**Accessibility and underline convention (studied against 11-literature):** the inline Companion cue inherits its chapter pigment, has a **dotted underline while closed**, and becomes a **solid underline on hover or while expanded**. Keyboard `focus-visible` must have an additional visible outline. The popup's controlled expanded state and labelled content must work with keyboard, Escape, touch scrolling, RTL and a close action that restores focus. A closed native Source Depth uses the browser's semantic `summary/details` controls and must not be a screen-reader-invisible hover-only element.
 
 ## 5. Moran pilot source-to-layer traceability
 
@@ -81,17 +83,17 @@ This is placed within the **existing concept-relationship** format and supplemen
 
 An actual historical succession belongs in the new **`.historical-timeline`** structural component: dates run along a visible chronological line, with a small source-faithful event description. A timeline must not be used for conceptual ranking, and a table should remain a table where side-by-side comparison is the true pedagogical function. The four-period Moran table (1900s; 1914–1918; 1930s–1940s; after 1945) is the pilot. Timeline typography and chapter hue follow the existing design system.
 
-## 7. Implementation and release checks
+## 7. Implementation and release gates — both dossiers, 19 November
 
-**Files:** `src/chapters/subtopic-1-1.html` (only 1.1.1), `src/reading_companions.json` (only Moran's ten entries), `src/reading_companions.js` (backward-compatible structured rendering), `src/philosophy_notes.css` (scoped additions), relevant editorial/design docs and regression tests. Build only through `src/build.py`.
+**Scope:** `src/chapters/subtopic-1-1.html` (1.1.1 and 1.1.2 only); `src/reading_companions.json` (34 context-first records); existing controller, style and print compositor; affected source/browser/print tests; editorial and design documentation. No unrelated academic chapter or component role may be rewritten. Generate the publication only through `src/build.py`.
 
-Validate:
-1. All ten Moran contextual cues still anchor uniquely in existing prose; all 24 Stout Companions retain their earlier behavior and text.
-2. The same ten source-detail explanations and printed references are in Source Depth, and it is closed by default, keyboard accessible and works without JavaScript.
-3. Popup shows short labelled contextual fields; Stout's plain popup fallback remains intact; Escape, touch, focus and RTL work.
-4. Timeline order/text, 39 chapters, unchanged title/author/frontmatter, all six revision-block sections, search and reading-progress controls remain sound.
-5. No source detail is silently deleted and none of the optional material is required to follow the essential argument.
-6. Print clones contain neither popup controls nor optional Source Depth; timeline prints coherently; offline PWA embeds the same version atomically.
-7. Rebuild, run source-anchor/manifest and all repository structural tests, plus real Chromium mobile/desktop, PDF pagination and offline-update checks.
+Acceptance checks:
 
-**Follow-on scope:** assess the actual reading experience of 1.1.1 before extending this contextual rewrite or Source Depth treatment to 1.1.2 and the other 37 dossiers. No automatic rollout or artificial Companion count.
+1. All 34 contextual cues still attach uniquely to normal, visible prose. The source-depth text itself cannot become a Companion anchor.
+2. Exactly ten Moran source records and twenty-four Stout source records retain their original explanations and printed references, immediately below the corresponding paragraph and inside closed native disclosures (grouped when several refer to one paragraph).
+3. Each Companion shows **In simple words**, **Why this appears here**, and **Remember**, without adding a new intellectual branch. Different chapter pigments, dotted/rest versus solid/open behavior, focus outline, semantic expanded state, close/restore-focus behavior and touch-safe popup scrolling are tested.
+4. `Source Depth` works with JavaScript disabled, remains optional, and never appears in generated print pages or print measurements. Main prose, memory aids, existing study-aid types and six revision sections remain intelligible without it.
+5. All 39 chapters, navigational links, search, reading progress, RTL, mobile screen widths, browser accessibility and offline PWA continue to function. Check real Chromium print/PDF pagination and no accidental cutoffs.
+6. Rebuild and run the repository's complete canonical tests on the **second-account CI fork**, compare generated blob hashes with the authoritative review branch, and only then merge the verified edition into original `main`.
+
+**Follow-on scope:** both 1.1.1 and 1.1.2 are now the controlled local-disclosure pilot. Do not mechanically extend it to the remaining 37 dossiers before reviewing accessibility and student comprehension. No artificial Companion quotas.

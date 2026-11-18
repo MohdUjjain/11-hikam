@@ -35,6 +35,8 @@ More details: [src/README.md](src/README.md), [documentation index](src/docs/REA
 
 **GitHub Actions quota workaround:** [Secondary-account CI fork and verified upstream release protocol](src/docs/hosting/SECONDARY_FORK_CI_AND_RELEASE.md) — staged in the current editorial review branch; the original repository remains the publication authority.
 
+**Current bilingual editorial delivery rules:** [Accessible context-first Companions and paragraph-adjacent Source Depth](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md), applied to Moran 1.1.1 and Stout 1.1.2. Existing study aids, revision blocks and source fidelity are preserved; optional Source Depth does not print.
+
 **Latest comprehension pilot:** [Context-First Companions, Source Depth and timelines](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) — applied to Moran 1.1.1, with existing aids and source fidelity unchanged.
 
 **Standing editorial refinement instructions:** [Language, Source Fidelity & Study-Aid Protocol](src/docs/editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) and [Concise Dossiers & Reading Companions](src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md) — read both before any reading-by-reading editorial pass. The adopted density targets are approximately 650–850 words of main prose + 850–1,150 words of teaching aids per dossier, chosen according to the original source (1,500–2,000 total visible words), excluding frontmatter and revision; Companions are separately audited, and the Arabic/English language rules remain unchanged.

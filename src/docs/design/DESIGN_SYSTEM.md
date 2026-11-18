@@ -533,6 +533,14 @@ and never auto-navigates. Technical rules, privacy, and QA are documented in
 The reconstructed dossiers were checked in actual Chromium at 390px and 1366px, including the independent dark end-block, and through the JavaScript A4 paginator. All five used the established hue and component treatments with no horizontal overflow. The targeted print test detected a separate existing selected-print issue: the print CSS hid the paginator's off-screen measurement probe during `beforeprint`, causing drastic PDF truncation. The probe is now exempt from the selected-body visibility rule while it exists. See `PAGINATION_SYSTEM.md` for the verified root cause and measurements. The new browser regression also requires the actual exported PDF to contain all six dark revision sections, not just their presence in the on-screen DOM.
 
 
+## 19 November 2026 — Companion a11y state and paragraph-level Source Depth
+
+**Supersedes the former detached Source Depth placement**, not the design system itself. Author compact native `<details class="hikam-source-depth-inline">` immediately after relevant ordinary main-body `<p>` elements, grouping multiple source references that attach to the same paragraph. Closed summary shows a subtle chapter-tinted SOURCE DEPTH label and descriptive title; expanding reveals the original source-specific discussion with page citation. The material lives in HTML `.chapter-body` but is excluded from visible word counts, CSS print and `philosophy_notes.js`'s private paginator clone **before measurement**. It is not a `.box`, hierarchy or replacement for any existing component.
+
+The `.hikam-companion-trigger` uses the chapter `--hue` in its underline, **dotted at rest and solid on hover/open** (following the observed Literature cue). Open state must be reflected with `aria-expanded`/`aria-controls`; popup contents have a named region, a keyboard/touch dismiss control, scrollable content when pinned, a visible `:focus-visible` outline and Escape restoring focus. The inline text itself is unchanged, and generated print clones must unwrap it to plain text. Arabic/RTL inherits existing font and direction rules.
+
+Source Depth is intentionally optional and no-JavaScript accessible. Do not index its contents as though they were ordinary visible paragraphs, or let popup anchors attach inside it. Do not introduce new visual-semantic colours or force this pattern into chapters without a source-specific reason.
+
 ## Context-first Companion, optional Source Depth and historical timeline — 18 November 2026
 
 This small addition follows the [context-first editorial pilot](../editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md). It does **not** repurpose any of the established six semantic box classes or remove comparison tables, hierarchy diagrams, concept maps, quotations, memory aids or revision elements.

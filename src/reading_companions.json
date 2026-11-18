@@ -30,8 +30,8 @@
       "chapter": "ch1-1-2",
       "passage": "Singer extends moral consideration to sentient animals, while Parfit asks us to consider",
       "text": "future generations",
-      "kind": "Argument connection",
-      "title": "Why Parfit also questions our future selves",
+      "kind": "Contextual explanation",
+      "title": "Why do future generations matter here?",
       "explanation": "Stout connects Parfit's concern for people not yet born with his view of personal identity. Our future selves, on this account, may be psychologically connected to us without being strictly the same person. That makes concern for future interests a wider question than simply protecting one's present self.",
       "source": {
         "author": "Rowland Stout",
@@ -40,15 +40,19 @@
           874
         ]
       },
-      "added_value": "Explains the personal-identity argument behind the future-generation discussion, which is absent from the short main-body account."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "Stout is asking whether our moral choices should count people who have not yet been born.",
+      "why_here": "This extends the discussion of consequences beyond people alive today.",
+      "remember": "The future can matter morally.",
+      "sourceDepthId": "source-depth-h112-parfit-identity"
     },
     {
       "id": "h112-harrod-rule",
       "chapter": "ch1-1-2",
       "passage": "Hare distinguishes ordinary rule-following from critical calculation; rule-utilitarianism combines a generalization principle with a utilitarian way of selecting rules, though critics question whether it collapses into act-utilitarianism.",
       "text": "generalization principle",
-      "kind": "Argument bridge",
-      "title": "What is borrowed from Kant?",
+      "kind": "Contextual explanation",
+      "title": "Why are rules mentioned in utilitarianism?",
       "explanation": "Stout explains that Harrod combines two ideas: a Kantian-style reason to follow general rules, and a utilitarian method for deciding which rules would have the best consequences. Utility helps select the rules, but does not by itself explain why we must always act by rules.",
       "source": {
         "author": "Rowland Stout",
@@ -57,7 +61,11 @@
           876
         ]
       },
-      "added_value": "Identifies the independent Kantian source of the rule-obligation premise, rather than repeating the existing definition of rule-utilitarianism."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "A rule-utilitarian asks which rules generally produce the best results, not only which single act does.",
+      "why_here": "Stout is examining whether good outcomes alone can explain why we should keep rules.",
+      "remember": "Rules and single acts are different questions.",
+      "sourceDepthId": "source-depth-h112-harrod-rule"
     },
     {
       "id": "h111-naturalism-critique",
@@ -173,8 +181,8 @@
       "chapter": "ch1-1-2",
       "passage": "He proposed testing and revising moral principles through reflection and practice.",
       "text": "testing and revising moral principles",
-      "kind": "Source clarification",
-      "title": "Dewey's weaker and stronger claims about constructing value",
+      "kind": "Contextual explanation",
+      "title": "What does revising a moral principle mean?",
       "explanation": "Stout distinguishes a weaker view, where describing and working through a situation shapes which moral questions arise, from a stronger view, where rational experimentation actually makes the outcome good. He is cautious about attributing this stronger anti-realist claim to Dewey himself.",
       "source": {
         "author": "Rowland Stout",
@@ -184,15 +192,19 @@
           856
         ]
       },
-      "added_value": "Preserves Stout's explicit source qualification about Dewey rather than presenting constructivism as categorical."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "Dewey treats moral decisions as things we can think through, test in experience and improve.",
+      "why_here": "Stout is showing an approach that begins with human experience rather than a fixed dictionary definition of good.",
+      "remember": "Reflection can revise moral judgment.",
+      "sourceDepthId": "source-depth-h112-dewey-construction"
     },
     {
       "id": "h112-ideal-observer",
       "chapter": "ch1-1-2",
       "passage": "Stout examines more reductive accounts, including Perry's treatment of value as an object of interest, as well as ideal-observer theories, relativism, and later Cornell realism.",
       "text": "ideal-observer theories",
-      "kind": "Source clarification",
-      "title": "What the ideal observer is meant to explain",
+      "kind": "Contextual explanation",
+      "title": "Why imagine an ideal observer?",
       "explanation": "Roderick Firth proposed interpreting an ethical judgment through how a fully informed, disinterested, consistent observer would respond. Stout uses Moore's challenge to ask why that observer's reaction should settle what I ought to do. Brandt developed a related but differently qualified account.",
       "source": {
         "author": "Rowland Stout",
@@ -202,15 +214,19 @@
           858
         ]
       },
-      "added_value": "Gives the specific mechanism and criticism of an approach otherwise only named."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "The theory asks how someone fully informed and fair-minded would judge an action.",
+      "why_here": "Stout is reviewing attempts to explain moral judgment through human responses to situations.",
+      "remember": "The observer is a proposed test, not an actual judge.",
+      "sourceDepthId": "source-depth-h112-ideal-observer"
     },
     {
       "id": "h112-geach",
       "chapter": "ch1-1-2",
       "passage": "Peter Geach also asks how a moral statement can keep its meaning inside an “if … then” argument.",
       "text": "“if … then” argument",
-      "kind": "Source clarification",
-      "title": "The problem of moral words inside logic",
+      "kind": "Contextual explanation",
+      "title": "Why does an if–then sentence matter?",
       "explanation": "Calling stealing wrong may seem like expressing disapproval. But in the statement 'If stealing is wrong, then …,' the speaker is not straightforwardly disapproving of stealing. Geach asks how the expression can still play the same logical role in an argument; Blackburn tried to answer through commitments between attitudes.",
       "source": {
         "author": "Rowland Stout",
@@ -219,15 +235,19 @@
           862
         ]
       },
-      "added_value": "Explains the embedded-statement problem and source response without duplicating the main text."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "We can use the words 'stealing is wrong' inside an argument without ourselves directly condemning stealing.",
+      "why_here": "Stout uses this difficulty to test theories that treat moral language mainly as expressing feelings.",
+      "remember": "Moral sentences also work inside reasoning.",
+      "sourceDepthId": "source-depth-h112-geach"
     },
     {
       "id": "h112-mackie-queerness",
       "chapter": "ch1-1-2",
       "passage": "John Mackie's error theory argues that ordinary moral judgments claim an objective authority that the world does not provide.",
       "text": "error theory",
-      "kind": "Source clarification",
-      "title": "Why Mackie called objective values 'queer'",
+      "kind": "Contextual explanation",
+      "title": "What is an error theory?",
       "explanation": "Stout describes two parts of Mackie's challenge. Objective values would be unusual things in the world, and knowing them would require an equally unusual way of detecting them. Mackie therefore held that ordinary moral judgments claim more objectivity than exists and are, strictly speaking, false.",
       "source": {
         "author": "Rowland Stout",
@@ -236,15 +256,19 @@
           863
         ]
       },
-      "added_value": "Restores the separate metaphysical and epistemological reasoning behind Mackie's conclusion."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "Mackie thinks ordinary moral judgments claim an objective rightness or wrongness that he says does not exist.",
+      "why_here": "Stout moves from what moral words do to whether the values they describe are real.",
+      "remember": "An error theory says the claim to objective value fails.",
+      "sourceDepthId": "source-depth-h112-mackie-queerness"
     },
     {
       "id": "h112-sidgwick-phases",
       "chapter": "ch1-1-2",
       "passage": "Sidgwick and Moore appealed to fundamental intuitive principles.",
       "text": "fundamental intuitive principles",
-      "kind": "Source clarification",
-      "title": "Sidgwick's stages of intuitionism",
+      "kind": "Contextual explanation",
+      "title": "Why begin with intuitive principles?",
       "explanation": "Stout reports Sidgwick's movement from judgments about particular cases, to intuitive rules, to deeper philosophical principles that cannot themselves be derived from still deeper rules. Stout then asks why these final principles should escape further justification and finds Sidgwick's preference for maximizing good open to challenge.",
       "source": {
         "author": "Rowland Stout",
@@ -254,15 +278,19 @@
           865
         ]
       },
-      "added_value": "Adds the sequence and Stout's challenge, not just a generic description of intuition."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "Some moral arguments stop at basic principles that are not proved through still more basic rules.",
+      "why_here": "Stout is asking where justification finally comes from when we judge right and wrong.",
+      "remember": "Basic principles still need to be understood.",
+      "sourceDepthId": "source-depth-h112-sidgwick-phases"
     },
     {
       "id": "h112-ross-duties",
       "chapter": "ch1-1-2",
       "passage": "These duties can conflict, leaving particular decisions less than certain.",
       "text": "duties can conflict",
-      "kind": "Source clarification",
-      "title": "Why Ross does not offer a simple checklist",
+      "kind": "Contextual explanation",
+      "title": "How can duties conflict?",
       "explanation": "Ross named duties such as fidelity, reparation, gratitude, justice, beneficence, self-improvement, and avoiding harm. Their weight can differ by case, and consequences may be uncertain. Stout emphasizes that recognizing each duty intuitively does not mean that its final priority in a difficult situation is equally obvious.",
       "source": {
         "author": "Rowland Stout",
@@ -272,15 +300,19 @@
           866
         ]
       },
-      "added_value": "Gives the full source list and the distinction between identifying duties and judging an all-things-considered action."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "You might have a reason to keep a promise and another reason to prevent harm; a real choice may involve both.",
+      "why_here": "Stout uses Ross to explain why moral judgment cannot always follow one absolute rule.",
+      "remember": "Several duties may matter at once.",
+      "sourceDepthId": "source-depth-h112-ross-duties"
     },
     {
       "id": "h112-prisoners",
       "chapter": "ch1-1-2",
       "passage": "The Prisoners' Dilemma shows why self-interest alone can undermine cooperative rules.",
       "text": "Prisoners' Dilemma",
-      "kind": "Source clarification",
-      "title": "Why individual advantage can defeat collective advantage",
+      "kind": "Contextual explanation",
+      "title": "Why can cooperation fail?",
       "explanation": "Stout's problem is that everyone may be better off under shared rules, yet an individual can gain by breaking a rule while others obey it. If each person reasons that way, the system collapses. Gauthier responds by trying to build commitment into rational agency rather than treating every case as a fresh calculation.",
       "source": {
         "author": "Rowland Stout",
@@ -289,15 +321,19 @@
           877
         ]
       },
-      "added_value": "Shows the inferential step and Gauthier's response not included in the short note."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "If everyone breaks a useful rule to gain a personal advantage, everyone may end up worse off.",
+      "why_here": "Stout uses the dilemma to ask why rational people should stay committed to shared rules.",
+      "remember": "Immediate gain may harm shared interests.",
+      "sourceDepthId": "source-depth-h112-prisoners"
     },
     {
       "id": "h112-rawls-agreement",
       "chapter": "ch1-1-2",
       "passage": "Scanlon, Rawls, and Habermas developed approaches grounded in agreements that reasonable people could accept.",
       "text": "Scanlon, Rawls, and Habermas",
-      "kind": "Source clarification",
-      "title": "Three different forms of justified agreement",
+      "kind": "Contextual explanation",
+      "title": "Why do agreements enter moral philosophy?",
       "explanation": "Stout distinguishes Scanlon's question about rules no one could reasonably reject, Rawls's imagined agreement behind a veil of ignorance about one's place in society, and Habermas's inclusive discussion in which participants respect each other's viewpoints. All use agreement, but not in the same way.",
       "source": {
         "author": "Rowland Stout",
@@ -306,7 +342,11 @@
           878
         ]
       },
-      "added_value": "Restores differences between three theories presently grouped in one sentence."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "These philosophers ask which rules people could accept when they consider one another fairly.",
+      "why_here": "Stout is comparing another way to justify principles, beyond calculating benefits alone.",
+      "remember": "Agreement is a way to test justifiable rules.",
+      "sourceDepthId": "source-depth-h112-rawls-agreement"
     },
     {
       "id": "h111-frege-politics",
@@ -400,8 +440,8 @@
       "chapter": "ch1-1-2",
       "passage": "Stout examines more reductive accounts, including Perry's treatment of value as an object of interest, as well as ideal-observer theories, relativism, and later Cornell realism.",
       "text": "Perry's treatment of value",
-      "kind": "Source clarification",
-      "title": "Being valued is not automatically being valuable",
+      "kind": "Contextual explanation",
+      "title": "What does it mean to value something?",
       "explanation": "Westermarck linked wrongness to a person's or community's inclination to disapprove. Perry linked an object's value to someone's taking an interest in it. Stout applies Moore's question to both: does disapproval establish wrongness, or does interest establish goodness? He also notes that Perry later appealed to harmony among interests when discussing overall value.",
       "source": {
         "author": "Rowland Stout",
@@ -410,15 +450,19 @@
           857
         ]
       },
-      "added_value": "Distinguishes Westermarck and Perry and illustrates the open question applied to each."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "Having an interest in something is different from showing that it really is good.",
+      "why_here": "This returns to Moore's point that identifying things we value is not yet defining goodness.",
+      "remember": "Being valued and being good are not identical claims.",
+      "sourceDepthId": "source-depth-h112-westermarck-perry"
     },
     {
       "id": "h112-brandt-harman",
       "chapter": "ch1-1-2",
       "passage": "Stout examines more reductive accounts, including Perry's treatment of value as an object of interest, as well as ideal-observer theories, relativism, and later Cornell realism.",
       "text": "relativism",
-      "kind": "Source clarification",
-      "title": "Does a framework make an act right?",
+      "kind": "Contextual explanation",
+      "title": "Why is relativism included here?",
       "explanation": "Brandt connects ethical language to attitudes endorsed after informed, intelligent reflection. Harman interprets moral claims in relation to a community's framework of conventions and attitudes. Stout asks why an informed judge's endorsement, or acceptance within one's own framework, should settle whether an act is really right or wrong. That question remains open for the agent.",
       "source": {
         "author": "Rowland Stout",
@@ -428,15 +472,19 @@
           859
         ]
       },
-      "added_value": "Recovers distinct analyses by Brandt and Harman and Stout's common criticism."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "Relativism connects moral judgments with a person's or community's standards.",
+      "why_here": "Stout asks whether someone's approval or shared conventions can settle what is right.",
+      "remember": "A standard and its justification are distinct.",
+      "sourceDepthId": "source-depth-h112-brandt-harman"
     },
     {
       "id": "h112-cornell-cluster",
       "chapter": "ch1-1-2",
       "passage": "The Cornell realists answer that moral properties may be natural, causally important features of reality.",
       "text": "Cornell realists",
-      "kind": "Source clarification",
-      "title": "How the Cornell realists identify moral properties",
+      "kind": "Contextual explanation",
+      "title": "What are the Cornell realists claiming?",
       "explanation": "Boyd described moral properties as clusters of mutually supporting natural properties, rather than definitions based on one feature. Sturgeon argued that someone's badness or goodness might help explain judgments and actions. Stout asks how the natural cluster connected with a moral term can be shown to coincide with what a person would reach through rational moral reflection.",
       "source": {
         "author": "Rowland Stout",
@@ -446,15 +494,19 @@
           860
         ]
       },
-      "added_value": "Preserves Boyd's cluster and Sturgeon's explanatory criterion and remaining challenge."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "They suggest that moral properties can be real features of the natural world.",
+      "why_here": "Stout sets this against theories that deny objective moral facts and asks how such properties could be recognized.",
+      "remember": "Realists treat moral truth as about reality.",
+      "sourceDepthId": "source-depth-h112-cornell-cluster"
     },
     {
       "id": "h112-ross-medicine",
       "chapter": "ch1-1-2",
       "passage": "W. D. Ross instead identified several prima facie duties, such as fidelity, gratitude, justice, and avoiding harm.",
       "text": "prima facie duties",
-      "kind": "Source clarification",
-      "title": "Why plural duties mattered in medical ethics",
+      "kind": "Contextual explanation",
+      "title": "What is a prima facie duty?",
       "explanation": "Stout connects Ross's approach to Beauchamp and Childress's four principles of medical ethics: autonomy, non-maleficence, beneficence and justice. They are distinct considerations that can guide decisions even when no single universal rule determines the answer. This is Stout's example of intuitionism's continuing practical influence.",
       "source": {
         "author": "Rowland Stout",
@@ -463,15 +515,19 @@
           866
         ]
       },
-      "added_value": "Adds the source's important application of plural duties."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "It is a genuine reason to act that matters unless other duties in the situation outweigh it.",
+      "why_here": "Ross helps Stout explain the need to weigh more than one moral consideration.",
+      "remember": "A duty may count without deciding the whole case.",
+      "sourceDepthId": "source-depth-h112-ross-medicine"
     },
     {
       "id": "h112-continental-sensibility",
       "chapter": "ch1-1-2",
       "passage": "Stout connects this approach with feminist care ethics, virtue theory, and Continental discussions of our responsibility to others.",
       "text": "Continental discussions of our responsibility to others",
-      "kind": "Source clarification",
-      "title": "Buber, Levinas and Scheler on sensitivity",
+      "kind": "Contextual explanation",
+      "title": "What is responsibility to others here?",
       "explanation": "Stout connects Murdoch's attentive moral perception with Buber's 'I–Thou' relation, where another person is not treated merely as an object. For Buber, responding to a particular person also bears on one's relation to God. Levinas develops an ethics of encountering the Other, while Scheler argues that emotional experience can disclose values. These are related approaches, not one identical theory.",
       "source": {
         "author": "Rowland Stout",
@@ -481,15 +537,19 @@
           869
         ]
       },
-      "added_value": "Explains three Continental versions of a related idea."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "The idea is that another person's situation may call for an attentive moral response.",
+      "why_here": "Stout connects ethical judgment with how we notice and relate to other people.",
+      "remember": "Moral attention includes the person before us.",
+      "sourceDepthId": "source-depth-h112-continental-sensibility"
     },
     {
       "id": "h112-existential-ambiguity",
       "chapter": "ch1-1-2",
       "passage": "Stout also traces an alternative: Charles Taylor sees self-definition as open to reasoned revision, while existentialists understand radical choice as a deeper source of freedom.",
       "text": "existentialists understand radical choice",
-      "kind": "Source clarification",
-      "title": "What Beauvoir means by the ambiguity of freedom",
+      "kind": "Contextual explanation",
+      "title": "What is radical choice?",
       "explanation": "Stout contrasts Taylor's rationally revisable self-definition with existentialist radical choice, where value arises from a free decision rather than guiding it from outside. Simone de Beauvoir valued freedom but observed a tension: choosing freely gives a situation meaning, while that settled meaning also limits future freedom. She called this tension ambiguity.",
       "source": {
         "author": "Rowland Stout",
@@ -499,15 +559,19 @@
           873
         ]
       },
-      "added_value": "Preserves Beauvoir's specific account of ambiguity."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "The existentialist approach stresses a person's freedom in choosing and giving meaning to actions.",
+      "why_here": "Stout contrasts this with views in which prior reasons guide our choices.",
+      "remember": "The source of value is part of the disagreement.",
+      "sourceDepthId": "source-depth-h112-existential-ambiguity"
     },
     {
       "id": "h112-preference-ramsey",
       "chapter": "ch1-1-2",
       "passage": "Stout traces a shift from pleasure toward preference satisfaction, which influenced decision theory and public policy.",
       "text": "preference satisfaction",
-      "kind": "Source clarification",
-      "title": "Ramsey's measurements and Stout's challenge",
+      "kind": "Contextual explanation",
+      "title": "Why do preferences matter to utilitarianism?",
       "explanation": "Ramsey showed how choices between outcomes could measure preferences and bets could estimate degrees of belief. This helped rational choice and later welfare calculations. Stout nevertheless questions treating preference-satisfaction as the whole of rationality: the fact that people choose what they want does not establish that whatever they want is what they ought to choose.",
       "source": {
         "author": "Rowland Stout",
@@ -517,15 +581,19 @@
           874
         ]
       },
-      "added_value": "Connects the method to policy and the source's stated criticism."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "An approach based on preferences asks whether people's wishes are fulfilled, rather than measuring pleasure alone.",
+      "why_here": "Stout follows the change in what counts as a good consequence.",
+      "remember": "Welfare can be described in more than one way.",
+      "sourceDepthId": "source-depth-h112-preference-ramsey"
     },
     {
       "id": "h112-agent-causation",
       "chapter": "ch1-1-2",
       "passage": "Further disagreement concerned whether responsibility requires originating our own causes or having been able to do otherwise.",
       "text": "originating our own causes",
-      "kind": "Source clarification",
-      "title": "Why some philosophers defended agent causation",
+      "kind": "Contextual explanation",
+      "title": "What does originating a cause mean?",
       "explanation": "Stout reports Taylor's worry that describing mental events as causes leaves out the agent's own role in acting. Chisholm claimed free will requires some events to be caused by an agent rather than by prior events. Other philosophers judged this metaphysically costly, while compatibilists argued that determinism need not remove freedom or responsibility.",
       "source": {
         "author": "Rowland Stout",
@@ -535,15 +603,19 @@
           871
         ]
       },
-      "added_value": "Explains the causal-origination requirement and competing responses."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "It asks whether the person is truly the origin of an action, not just one event among earlier causes.",
+      "why_here": "Stout is comparing different ideas of freedom and responsibility.",
+      "remember": "Explaining a cause is not yet settling responsibility.",
+      "sourceDepthId": "source-depth-h112-agent-causation"
     },
     {
       "id": "h112-singer-sentience",
       "chapter": "ch1-1-2",
       "passage": "Singer extends moral consideration to sentient animals, while Parfit asks us to consider future generations.",
       "text": "Singer extends moral consideration",
-      "kind": "Source clarification",
-      "title": "Who counts according to Singer?",
+      "kind": "Contextual explanation",
+      "title": "What does sentient mean in this argument?",
       "explanation": "Stout reports Singer's claim that all and only sentient beings count in overall-happiness calculations. On that principle, if a newborn has less capacity to feel pain than a cow, Singer gives more weight to the cow's well-being in that comparison. Stout also records Singer's qualification that other factors complicate the judgment in practice.",
       "source": {
         "author": "Rowland Stout",
@@ -552,15 +624,19 @@
           874
         ]
       },
-      "added_value": "Preserves the exact criterion and its qualification."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "A sentient being can have experiences such as pain or pleasure.",
+      "why_here": "Stout explains how Singer decides whose interests count when judging overall welfare.",
+      "remember": "The criterion is sentience, not species.",
+      "sourceDepthId": "source-depth-h112-singer-sentience"
     },
     {
       "id": "h112-rule-collapse",
       "chapter": "ch1-1-2",
       "passage": "rule-utilitarianism combines a generalization principle with a utilitarian way of selecting rules, though critics question whether it collapses into act-utilitarianism.",
       "text": "collapses into act-utilitarianism",
-      "kind": "Source clarification",
-      "title": "Why Smart and Lyons disagreed about rules",
+      "kind": "Contextual explanation",
+      "title": "Why might rule-utilitarianism collapse?",
       "explanation": "Smart argued that the universally best rule might itself be 'always maximize utility in each case', making rule-utilitarianism collapse into act-utilitarianism. Lyons answered that some formulations escape this collapse, though they may be less plausible on other grounds. Stout presents this as a problem for justifying rules when immediate consequences point the other way.",
       "source": {
         "author": "Rowland Stout",
@@ -570,15 +646,19 @@
           877
         ]
       },
-      "added_value": "Preserves the source objection and qualified response."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "If the best rule is simply 'choose the best result every time', the theory no longer differs much from judging each act separately.",
+      "why_here": "Stout is testing whether rule-utilitarianism can truly justify following general rules.",
+      "remember": "A rule theory needs a real role for rules.",
+      "sourceDepthId": "source-depth-h112-rule-collapse"
     },
     {
       "id": "h112-moore-meaning",
       "chapter": "ch1-1-2",
       "passage": "His open question argument asks: even if something gives pleasure, can we still meaningfully ask whether it is good?",
       "text": "open question argument",
-      "kind": "Methodological qualification",
-      "title": "Why an open question must be tested carefully",
+      "kind": "Contextual explanation",
+      "title": "Why is Moore's question still open?",
       "explanation": "Stout warns that knowing how to use a word does not always mean that its meaning is perfectly clear to us. A question may look open even when it concerns meaning itself. Moore's test must therefore be applied carefully rather than treating every question that sounds discussable as proof that a definition fails.",
       "source": {
         "author": "Rowland Stout",
@@ -587,15 +667,19 @@
           854
         ]
       },
-      "added_value": "Preserves the explicit methodological caution that the existing examination question asks students to explain."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "Even if something brings pleasure, someone can still ask whether that makes it good.",
+      "why_here": "Stout begins by separating the meaning of 'good' from descriptions of things called good.",
+      "remember": "Examples of good things are not definitions of good.",
+      "sourceDepthId": "source-depth-h112-moore-meaning"
     },
     {
       "id": "h112-nozick-experience",
       "chapter": "ch1-1-2",
       "passage": "Nozick's experience-machine example questions whether pleasant experience is all we value.",
       "text": "experience-machine example",
-      "kind": "Source example",
-      "title": "What happens in Nozick's experience machine?",
+      "kind": "Contextual explanation",
+      "title": "What is Nozick's machine meant to test?",
       "explanation": "Imagine a machine that could give you every feeling of having achieved what matters to you. You could feel that you had written a great book without actually writing it. If you would refuse the machine, Nozick takes that to suggest that real achievements matter to you, not only the pleasant experience of having them.",
       "source": {
         "author": "Rowland Stout",
@@ -604,15 +688,19 @@
           873
         ]
       },
-      "added_value": "Provides the decisive details of Nozick's supplied example, which the main note names but does not narrate."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "It asks whether feeling happy about achievements is enough when the achievements never really happen.",
+      "why_here": "Stout is examining whether pleasure alone captures everything we value.",
+      "remember": "Pleasant experience and actual achievement differ.",
+      "sourceDepthId": "source-depth-h112-nozick-experience"
     },
     {
       "id": "h112-baier-gewirth",
       "chapter": "ch1-1-2",
       "passage": "Others tried to justify moral rules through self-interest, commitment, or rights.",
       "text": "self-interest, commitment, or rights",
-      "kind": "Source comparison",
-      "title": "Three attempts to connect rationality and moral commitment",
+      "kind": "Contextual explanation",
+      "title": "Why move from self-interest to moral rules?",
       "explanation": "Baier argued that moral reasons take account of others and override immediate self-interest, while still grounding their priority partly in self-interest; Toulmin appealed instead to harmony among interests. Gauthier argued that rational agency includes commitment, which can sustain cooperation despite a temptation to cheat. Gewirth argued that claiming rights for oneself while refusing others' comparable rights is irrational.",
       "source": {
         "author": "Rowland Stout",
@@ -621,15 +709,19 @@
           877
         ]
       },
-      "added_value": "Distinguishes four named proposals left hidden by the main note's grouping of self-interest, commitment and rights."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "Following a common rule can benefit everyone even when breaking it seems useful to one person.",
+      "why_here": "Stout is asking how rational action can include a commitment to other people's interests.",
+      "remember": "Shared rules need reasons to keep them.",
+      "sourceDepthId": "source-depth-h112-baier-gewirth"
     },
     {
       "id": "h112-foot-thick",
       "chapter": "ch1-1-2",
       "passage": "Moral perception joins reason and appropriately developed emotion.",
       "text": "Moral perception",
-      "kind": "Source example",
-      "title": "Foot's example: the word 'rude'",
+      "kind": "Contextual explanation",
+      "title": "What is a thick moral concept?",
       "explanation": "Stout reports Philippa Foot's example of the word 'rude'. A person's behavior may meet familiar criteria for being rude, while the word also expresses disapproval. Someone unwilling to make that evaluation may have to decline to use the term itself. This is why a morally thick word cannot be treated as a purely neutral description.",
       "source": {
         "author": "Rowland Stout",
@@ -638,7 +730,11 @@
           868
         ]
       },
-      "added_value": "Adds Foot's concrete source example of descriptive and evaluative meaning beyond the nearby definition of thick terms."
+      "added_value": "Clarifies the current concept and its role in Stout's argument; the original additional source discussion is preserved in a nearby optional Source Depth callout.",
+      "simple": "A word like 'rude' both describes someone's conduct and evaluates it.",
+      "why_here": "Stout uses this to show that moral understanding may combine attention to facts with an assessment of them.",
+      "remember": "Description and evaluation can come together.",
+      "sourceDepthId": "source-depth-h112-foot-thick"
     }
   ]
 }

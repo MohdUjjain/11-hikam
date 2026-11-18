@@ -2491,3 +2491,122 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
   .hikam-source-depth {display:none!important;}
   .historical-timeline {break-inside:avoid;}
 }
+
+
+/* 2026-11-19 | Contextual Companions + locally anchored Source Depth.
+   Keep chapter-pigment underlines, visual focus and native disclosure. */
+@media screen {
+  section.chapter .chapter-body .hikam-companion-trigger {
+    color:inherit;
+    text-decoration-line:underline;
+    text-decoration-style:dotted;
+    text-decoration-color:hsl(var(--hue,208) 50% 36%);
+    text-decoration-thickness:1.5px;
+    text-underline-offset:.18em;
+    -webkit-tap-highlight-color:transparent;
+  }
+  section.chapter .chapter-body .hikam-companion-trigger:hover,
+  section.chapter .chapter-body .hikam-companion-trigger[aria-expanded="true"] {
+    color:hsl(var(--hue,208) 57% 27%);
+    text-decoration-style:solid;
+    text-decoration-thickness:2px;
+    text-decoration-color:currentColor;
+    background:transparent;
+  }
+  section.chapter .chapter-body .hikam-companion-trigger:focus-visible {
+    color:hsl(var(--hue,208) 57% 27%);
+    text-decoration-style:solid;
+    outline:3px solid hsl(var(--hue,208) 45% 35%);
+    outline-offset:3px;
+  }
+  .hikam-companion-popup[data-pinned="true"] {
+    pointer-events:auto;
+    overscroll-behavior:contain;
+    touch-action:pan-y;
+  }
+  .hikam-companion-close {
+    position:absolute;top:7px;right:7px;min-width:35px;min-height:35px;
+    display:flex;align-items:center;justify-content:center;
+    border:1px solid #bca886;border-radius:5px;background:#fffaf0;
+    color:#22324e;cursor:pointer;font:700 20px/1 var(--font-sans);
+  }
+  .hikam-companion-close[hidden]{display:none!important;}
+  .hikam-companion-close:focus-visible{outline:3px solid #674822;outline-offset:2px;}
+  .hikam-companion-popup[data-pinned="true"] .hikam-companion-title {
+    padding-inline-end:35px;
+  }
+}
+/* These source-verified records are available immediately after the prose they
+   qualify. They are fully absent from both CSS printing and JS print clones. */
+.chapter-body .hikam-source-depth-inline {
+  margin:2px 0 20px;
+  border:1px solid hsl(var(--hue,208) 24% 71%);
+  border-inline-start:3px solid hsl(var(--hue,208) 45% 42%);
+  border-radius:7px;
+  background:var(--white-card);
+  color:var(--ink);
+}
+.chapter-body .hikam-source-depth-inline > summary {
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:5px 10px;
+  padding:10px 13px;cursor:pointer;
+  list-style-position:inside;font:600 13px/1.5 var(--font-sans);
+}
+.chapter-body .hikam-source-depth-inline > summary::marker {
+  color:hsl(var(--hue,208) 52% 30%);
+}
+.chapter-body .hikam-source-depth-inline > summary::after {
+  content:"+";
+  margin-inline-start:auto;
+  color:hsl(var(--hue,208) 52% 30%);
+  font:700 18px/1 var(--font-sans);
+}
+.chapter-body .hikam-source-depth-inline[open] > summary::after {content:"−";}
+.chapter-body .hikam-source-depth-inline > summary:focus-visible {
+  outline:3px solid hsl(var(--hue,208) 50% 35%);
+  outline-offset:3px;border-radius:4px;
+}
+.hikam-source-depth-mini {
+  font:700 10px/1.5 var(--font-sans);
+  letter-spacing:.07em;color:hsl(var(--hue,208) 50% 28%);
+}
+.hikam-source-depth-label {flex:1 1 170px;font-weight:600;}
+.hikam-source-depth-hint {
+  font:400 11.5px/1.5 var(--font-sans);color:var(--ink-soft);
+}
+.hikam-source-depth-inline[open] {background:#F8F4EC;}
+.hikam-source-depth-inline-content {
+  padding:1px 15px 15px;border-top:1px solid var(--paper-line);
+}
+.hikam-source-depth-inline-content .hikam-source-depth-item {
+  border-bottom:1px solid var(--paper-line);
+  padding:10px 0;
+}
+.hikam-source-depth-inline-content .hikam-source-depth-item:last-child {border-bottom:0;}
+.hikam-source-depth-inline-content .hikam-source-depth-item h4 {
+  margin:4px 0 8px;font:700 14px/1.5 var(--font-sans);
+  color:var(--ink);
+}
+.hikam-source-depth-inline-content .hikam-source-depth-item p {
+  margin:0 0 10px;font-size:14px;line-height:1.65;
+}
+.hikam-source-depth-inline-content .hikam-source-depth-citation {
+  font-size:12px!important;color:var(--ink-soft);font-style:italic;
+}
+.chapter[dir="rtl"] .hikam-source-depth-inline,
+.chapter.rtl .hikam-source-depth-inline {direction:rtl;text-align:start;}
+.chapter[lang="ar"] .hikam-source-depth-inline > summary,
+.chapter[lang="ar"] .hikam-source-depth-inline-content {
+  font-family:var(--font-arabic);font-size:18px;
+}
+@media (max-width:480px){
+  .chapter-body .hikam-source-depth-inline > summary {padding:12px 10px;}
+  .hikam-source-depth-inline-content {padding-inline:11px;}
+}
+@media (forced-colors:active) {
+  .chapter-body .hikam-source-depth-inline,
+  .chapter-body .hikam-companion-trigger {forced-color-adjust:auto;}
+  .chapter-body .hikam-companion-trigger:focus-visible {outline:3px solid Highlight;}
+}
+@media print {
+  .hikam-source-depth-inline {display:none!important;}
+}

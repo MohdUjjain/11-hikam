@@ -17,6 +17,14 @@
 
 See [Context-First Reading Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) for the binding pilot rules, source-detail register, UI semantics and acceptance checks. Do not automatically apply Moran's implementation to Stout or unrelated chapters.
 
+## 19 November 2026 — accessibility and local Source Depth placement
+
+**Latest rule:** apply context-first Companions to both revised dossiers 1.1.1 and 1.1.2. Retain the 34 more detailed source explanations separately as intentionally closed, **paragraph-adjacent** `details.hikam-source-depth-inline` callouts, grouped where several relate to one paragraph. The reader reaches the optional details where they matter; there is no detached appendix and no additional topic forced into a popup. Their source citations remain intact; the indispensable argument stays visible.
+
+Borrow Literature's chapter-pigment visual behavior: dotted underline in the ordinary state, a solid underline on hover/open, visible keyboard focus, expanded-state semantics, touch scrolling and Escape/close focus recovery. Native Source Depth must function with scripts disabled and must be excluded both by print CSS **and by removal from private print-pagination clones**. It is HTML-only optional source expansion, not a new or preferred study-aid type. The original 1,500–2,000-word visible allocation and Arabic/English language-fidelity protocols are unchanged.
+
+This amendment supersedes earlier descriptions of a single end-of-chapter Source Depth appendix or plain-text Stout popups. See [the binding context-first protocol](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) and the source-coverage register.
+
 ## Adopted source-proportionate range — updated November 18, 2026
 
 **This is the latest instruction and supersedes the former single ~1,500-word planning average wherever it conflicts.** The immediately visible dossier body should ordinarily contain **approximately 1,500–2,000 words**, in a source-dependent ratio: **650–850 words of main prose** and **850–1,150 words of instructional study aids**. For a shorter or less intricate primary reading, plan near **650 + 850 = 1,500**. For a longer, denser or more argumentatively complex reading, plan progressively up to **850 + 1,150 = 2,000**. Select the position within this range by the **actual article's length and intellectual complexity**, not by a desire to fill pages. This is a **normal operating range**, not permission to delete indispensable source content to satisfy a ceiling.
