@@ -1,6 +1,6 @@
 # Secondary-account fork: CI verification and safe return to Hikam
 
-**Status:** Operational plan, 18 November 2026. The fork must first be created in the GitHub UI; no second-account Hikam Actions run has yet been verified.  
+**Status:** Implemented and validated on 18 November 2026: fork CI passed in [run 44367909907](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44367909907), and generated assets were transferred as [upstream PR #13](https://github.com/MohdUjjain/11-hikam/pull/13), merging into the Moran editorial branch (commit `acd72217ebf6945abb1c0a6d844b84f6e97bdb7e`). This record also governs future fork runs.  
 **Upstream and sole public publication:** [`MohdUjjain/11-hikam`](https://github.com/MohdUjjain/11-hikam) (GitHub Pages remains here)  
 **Proposed CI fork owner:** [`Mohd-Ujjain`](https://github.com/Mohd-Ujjain)  
 **Precedent actually examined:** [`Mohd-Ujjain/nehj-majhud`](https://github.com/Mohd-Ujjain/nehj-majhud), a genuine private fork of `MohdUjjain/nehj-majhud`, running successful Actions jobs in the fork on 18 November 2026.  
@@ -51,3 +51,13 @@ The first fork workflow must be reproducible, not merely a green status on unrel
 ## Hold points
 
 The flow cannot proceed beyond setup until the second-account fork is created and GitHub Actions enabled there. **No run or deploy is successful merely because this document exists.** Once the fork is visible through the second GitHub connection, create and run its actual workflow, verify the candidate, transfer the generated files, and only then merge the upstream PR.
+
+
+## First successful pilot — verified result, 18 November 2026
+
+- Source branch on fork: `editorial/contextual-companions-source-depth-moran`.
+- Complete secondary-account build, source checks, full Chromium/RTL/PDF/print/PWA suite: [successful run 44367909907](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44367909907).
+- Temporary fork-only workflow removed after verification; no fork workflow was copied upstream.
+- Generated outputs transferred through [PR #13](https://github.com/MohdUjjain/11-hikam/pull/13) into the **original editorial branch**, not directly into original `main`.
+- Exact Git blob SHA match verified in both repositories for `index.html`, `src/philosophy_study_notes.html`, `service-worker.js`, the canonical chapter, Companion manifest/reader JS, and CSS.
+- This demonstrates that fork-hosted testing works. Published deployment is a **separate** gate and should be recorded only after independently verified.
