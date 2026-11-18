@@ -2,7 +2,7 @@
 
 **Project:** Takhassus Hikam · **Decision:** 18 November 2026  
 **Pilot:** Dossier 1.1.1 — Dermot Moran, *Towards an Assessment of Twentieth-Century Philosophy*  
-**Status:** Implemented in a controlled review branch; release requires canonical build, source-anchor and browser/print/offline checks.  
+**Status:** Implemented and fully verified on the secondary-account fork through [Actions run 44367909907](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44367909907); the exact built edition was returned to the upstream editorial branch via [PR #13](https://github.com/MohdUjjain/11-hikam/pull/13). Publication remains a separate release check.  
 **Also read:** [Language and Source-Fidelity Refinement Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md), [Concise Dossiers and Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md), and [Design System](../design/DESIGN_SYSTEM.md).
 
 ## 1. The problem this decision corrects
