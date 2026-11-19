@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Pilot: nonredundant, source-grounded point-of-reading clarifications. No chapter prose is replaced.",
+  "description": "Source-grounded contextual explanations for Moran 1.1.1, Stout 1.1.2 and Papineau 1.1.3; further source detail remains in optional paragraph-adjacent Source Depth.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -735,6 +735,264 @@
       "why_here": "Stout uses this to show that moral understanding may combine attention to facts with an assessment of them.",
       "remember": "Description and evaluation can come together.",
       "sourceDepthId": "source-depth-h112-foot-thick"
+    },
+    {
+      "id": "h113-induction",
+      "chapter": "ch1-1-3",
+      "passage": "Scientists observe heated sodium glowing orange and expect it always to do so. Induction moves from finite observations to a universal claim. But past cases cannot logically guarantee future ones.",
+      "text": "finite observations",
+      "kind": "Contextual explanation",
+      "title": "Why is the number of observations a problem?",
+      "explanation": "The scientist saw only some cases, but the law claims to cover every case. Papineau first asks why those unobserved cases should follow the same rule. Limited evidence, unlimited claim.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          286,
+          287
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "The scientist saw only some cases, but the law claims to cover every case.",
+      "why_here": "Papineau first asks why those unobserved cases should follow the same rule.",
+      "remember": "Limited evidence, unlimited claim."
+    },
+    {
+      "id": "h113-popper-test",
+      "chapter": "ch1-1-3",
+      "passage": "Karl Popper rejects induction as science’s foundation. Scientists propose conjectures, predict and test. One contrary case refutes a universal claim; a theory can survive a test without being proved.",
+      "text": "a theory can survive a test",
+      "kind": "Contextual explanation",
+      "title": "What does surviving a test mean?",
+      "explanation": "The prediction succeeded, so this test did not disprove the theory. Popper treats it as an undefeated conjecture, not a proven truth. Survival is not proof.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          287,
+          288
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "The prediction succeeded, so this test did not disprove the theory.",
+      "why_here": "Popper treats it as an undefeated conjecture, not a proven truth.",
+      "remember": "Survival is not proof.",
+      "sourceDepthId": "source-depth-h113-popper"
+    },
+    {
+      "id": "h113-bayesian-update",
+      "chapter": "ch1-1-3",
+      "passage": "Bayesians express belief on a scale from zero to one. Bayesian updating increases confidence when surprising evidence fits a hypothesis. Light bending supported relativity more than ordinary tides, which Newtonian theory also predicts.",
+      "text": "Bayesian updating",
+      "kind": "Contextual explanation",
+      "title": "How does evidence change belief?",
+      "explanation": "You become more or less confident in a hypothesis when new evidence appears. Papineau introduces degrees of belief to explain positive support for theories. Update confidence as evidence arrives.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          291,
+          292
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "You become more or less confident in a hypothesis when new evidence appears.",
+      "why_here": "Papineau introduces degrees of belief to explain positive support for theories.",
+      "remember": "Update confidence as evidence arrives.",
+      "sourceDepthId": "source-depth-h113-bayes"
+    },
+    {
+      "id": "h113-convergence",
+      "chapter": "ch1-1-3",
+      "passage": "Different starting beliefs can converge with enough evidence, but the convergence argument does not explain why a person expecting nature to change tomorrow is irrational.",
+      "text": "convergence argument",
+      "kind": "Contextual explanation",
+      "title": "Why do starting beliefs matter?",
+      "explanation": "Two scientists can begin with different expectations; the same evidence may not settle their disagreement. Papineau asks why some initial expectations count as rational and others do not. The prior needs justification too.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          292
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "Two scientists can begin with different expectations; the same evidence may not settle their disagreement.",
+      "why_here": "Papineau asks why some initial expectations count as rational and others do not.",
+      "remember": "The prior needs justification too.",
+      "sourceDepthId": "source-depth-h113-bayes"
+    },
+    {
+      "id": "h113-observability",
+      "chapter": "ch1-1-3",
+      "passage": "The observability problem differs from induction: can evidence justify belief in unseen entities, such as electrons? Realists say indirect evidence can; instrumentalists use theories as calculating tools without accepting their truth.",
+      "text": "observability problem",
+      "kind": "Contextual explanation",
+      "title": "How is this different from induction?",
+      "explanation": "Induction reaches beyond observed cases; unobservability concerns entities beyond direct sensation. Papineau now asks if indirect evidence can justify beliefs about invisible things. Unseen entity is not the same as untested case.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          294
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "Induction reaches beyond observed cases; unobservability concerns entities beyond direct sensation.",
+      "why_here": "Papineau now asks if indirect evidence can justify beliefs about invisible things.",
+      "remember": "Unseen entity is not the same as untested case.",
+      "sourceDepthId": "source-depth-h113-realism"
+    },
+    {
+      "id": "h113-hanson",
+      "chapter": "ch1-1-3",
+      "passage": "Norwood Hanson notes that two astronomers interpret sunrise differently; a physicist sees a particle pair where others see marks. Kuhn and Feyerabend argue that rival theories can lack a shared standard, or be incommensurable.",
+      "text": "interpret sunrise differently",
+      "kind": "Contextual explanation",
+      "title": "How can the same sunrise be seen differently?",
+      "explanation": "Our beliefs shape how we understand the sight in front of us. Hanson’s example introduces disagreement about theory-independent observation. Seeing includes interpretation.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          295,
+          296
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "Our beliefs shape how we understand the sight in front of us.",
+      "why_here": "Hanson’s example introduces disagreement about theory-independent observation.",
+      "remember": "Seeing includes interpretation."
+    },
+    {
+      "id": "h113-utd-support",
+      "chapter": "ch1-1-3",
+      "passage": "For Papineau, consistent with the evidence does not mean equally supported by it. One theory may fit the data yet be less plausible than another. This challenges Popper’s demarcation criterion.",
+      "text": "consistent with the evidence",
+      "kind": "Contextual explanation",
+      "title": "Why is fitting evidence not enough?",
+      "explanation": "A theory may avoid contradicting observations yet still be less plausible than another. Papineau uses this difference to answer underdetermination and Popper. Fits is not best supported.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          298,
+          299
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "A theory may avoid contradicting observations yet still be less plausible than another.",
+      "why_here": "Papineau uses this difference to answer underdetermination and Popper.",
+      "remember": "Fits is not best supported.",
+      "sourceDepthId": "source-depth-h113-utd"
+    },
+    {
+      "id": "h113-naturalism",
+      "chapter": "ch1-1-3",
+      "passage": "Naturalized epistemology studies science through history, psychology and sociology. A hypothetical prescription says: if you want goal Y, use method X when evidence shows X achieves Y.",
+      "text": "hypothetical prescription",
+      "kind": "Contextual explanation",
+      "title": "How does studying science tell us what to do?",
+      "explanation": "Pick a goal first; then investigate which practices achieve it. This lets a naturalist recommend methods without deriving an ought from a bare is. If goal Y, choose effective method X.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          302,
+          303
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "Pick a goal first; then investigate which practices achieve it.",
+      "why_here": "This lets a naturalist recommend methods without deriving an ought from a bare is.",
+      "remember": "If goal Y, choose effective method X.",
+      "sourceDepthId": "source-depth-h113-naturalism"
+    },
+    {
+      "id": "h113-causal-direction",
+      "chapter": "ch1-1-3",
+      "passage": "Defining causal direction by earlier and later becomes circular if time’s order is explained by causes. David Lewis instead uses an event’s multiple future traces, such as fingerprints and recordings.",
+      "text": "causal direction",
+      "kind": "Contextual explanation",
+      "title": "Why not define causes as earlier events?",
+      "explanation": "If time’s direction is explained through causes, that definition goes in circles. Papineau therefore examines traces and probabilistic relations. Earlier does not automatically mean cause.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          306,
+          307
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "If time’s direction is explained through causes, that definition goes in circles.",
+      "why_here": "Papineau therefore examines traces and probabilistic relations.",
+      "remember": "Earlier does not automatically mean cause."
+    },
+    {
+      "id": "h113-screening",
+      "chapter": "ch1-1-3",
+      "passage": "Smoking raises cancer risk without making cancer inevitable. A falling barometer and rain are correlated but share falling air pressure as a cause. This common cause can screen off their association.",
+      "text": "screen off",
+      "kind": "Contextual explanation",
+      "title": "What gets screened off?",
+      "explanation": "Once the shared cause is known, the first effect offers no further clue about the second. Papineau uses the barometer and rain to test a probabilistic account of causes. Common cause explains shared effects.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          307,
+          308
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "Once the shared cause is known, the first effect offers no further clue about the second.",
+      "why_here": "Papineau uses the barometer and rain to test a probabilistic account of causes.",
+      "remember": "Common cause explains shared effects.",
+      "sourceDepthId": "source-depth-h113-screening"
+    },
+    {
+      "id": "h113-single-case",
+      "chapter": "ch1-1-3",
+      "passage": "Subjective probability measures belief; objective probability describes chance in nature. Frequency theories use repeated outcomes but struggle with single-case probabilities and hypothetical infinite sequences. Propensity theories take chance as a physical disposition.",
+      "text": "single-case probabilities",
+      "kind": "Contextual explanation",
+      "title": "Why is a single toss difficult for frequency theory?",
+      "explanation": "One coin toss belongs to different possible groups with different observed rates. Papineau asks how any one group can define the objective chance of that toss. One case; many reference classes.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          308,
+          309
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "One coin toss belongs to different possible groups with different observed rates.",
+      "why_here": "Papineau asks how any one group can define the objective chance of that toss.",
+      "remember": "One case; many reference classes."
+    },
+    {
+      "id": "h113-reduction",
+      "chapter": "ch1-1-3",
+      "passage": "Historical reduction fails as a universal account because newer theories sometimes replace older ones. Metaphysical reduction asks whether everything is physical. Papineau distinguishes this possibility from reducing every special-science law to physics.",
+      "text": "Metaphysical reduction",
+      "kind": "Contextual explanation",
+      "title": "What does this kind of reduction ask?",
+      "explanation": "It asks if higher-level events are ultimately physical, not whether new theories preserve old ones. Papineau distinguishes this from the history of scientific theory change. Physical event need not have one type-law.",
+      "source": {
+        "author": "David Papineau",
+        "work": "Philosophy of Science",
+        "printedPages": [
+          312,
+          313
+        ]
+      },
+      "added_value": "Directly clarifies the immediate argument in Papineau's current paragraph, without opening an unrelated discussion.",
+      "simple": "It asks if higher-level events are ultimately physical, not whether new theories preserve old ones.",
+      "why_here": "Papineau distinguishes this from the history of scientific theory change.",
+      "remember": "Physical event need not have one type-law.",
+      "sourceDepthId": "source-depth-h113-reduction"
     }
   ]
 }

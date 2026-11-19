@@ -33,6 +33,8 @@ jobs:
         run: python src/tests/verify_3_4_house_style.py
       - name: Verify Dossiers 33–34 against source-fidelity corrections
         run: python src/tests/verify_editorial_fidelity.py
+      - name: Verify Papineau source coverage, quotations, word distribution and six-part revision
+        run: python src/tests/verify_papineau_source_fidelity.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls

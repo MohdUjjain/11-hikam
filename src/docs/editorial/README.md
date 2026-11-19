@@ -10,7 +10,7 @@
 
 **[Approved 19 November 2026 implementation standard](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth)** applies for all future readings: source-first local explanations, optional paragraph-adjacent Source Depth, accessible rotating-hue dotted-to-solid cues, no-JS/search/print safety, and contextual rich evidence only when genuinely useful. The permanent design-token/360° hue regression and the manually invoked second-account fork verification are required release checks.
 
-**[Reading 1.1.3 — Papineau: source-coverage preparation](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md)** records the Blackwell primary reading, the three supplied supporting texts, the existing canonical chapter baseline, unresolved source gaps and the next implementation gates. This is a preparation register, **not** a completed revision or approval of the chapter.
+**[Reading 1.1.3 — Papineau: completed source-coverage resolution](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md#v-completed-source-coverage-resolution--final-113-edition-19-november)** preserves the original baseline diagnosis and documents its 16 resolved source units, verified 821/1,137 word allocation, 12 immediate Companions, nine optional Source Depth records, six-part revision and full fork QA.
 
 The first [Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md) records source-grounded additions to 1.1.1 and 1.1.2, the unchanged main text, and the offline/print/browser preservation checks.
 

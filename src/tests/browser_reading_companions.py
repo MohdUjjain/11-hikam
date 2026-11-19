@@ -67,8 +67,8 @@ def check(browser, url, width):
         assert page.locator('#hikamCompanionPopup').is_visible()
         page.keyboard.press('Escape')
         assert page.locator('#hikamCompanionPopup').is_hidden()
-    # Local paragraph-level disclosures for both authors.
-    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24)]:
+    # Local paragraph-level disclosures for all three source authors.
+    for chapter, number in [('ch1-1-1', 10), ('ch1-1-2', 24), ('ch1-1-3', 9)]:
         callouts = page.locator('#' + chapter + ' .chapter-body .hikam-source-depth-inline')
         assert callouts.count() >= 1
         assert callouts.locator('.hikam-source-depth-item').count() == number
@@ -87,7 +87,9 @@ def check(browser, url, width):
     color = cue.evaluate("(e) => getComputedStyle(e).textDecorationColor")
     other_color = page.locator('[data-companion-id="h112-parfit-identity"]').evaluate(
         "(e) => getComputedStyle(e).textDecorationColor")
-    assert color != other_color
+    papineau_color = page.locator('[data-companion-id="h113-induction"]').evaluate(
+        "(e) => getComputedStyle(e).textDecorationColor")
+    assert color != other_color and color != papineau_color and other_color != papineau_color
     cue.focus()
     page.keyboard.press('Enter')
     popup = page.locator('#hikamCompanionPopup')
@@ -134,6 +136,12 @@ def check(browser, url, width):
     assert page.locator('#ch1-1-1 .js-print-page .historical-timeline-event').count() == 4
     assert page.locator('#ch1-1-1 .js-print-page .hikam-source-depth-inline').count() == 0
     assert page.locator('#ch1-1-2 .js-print-page .hikam-source-depth-inline').count() == 0
+    # The Papineau chapter keeps the twelve cue words in the original source
+    # but removes all cue controls and its nine optional depth items in print.
+    page.evaluate("window.__runPagination(['ch1-1-3'])")
+    assert page.locator('#ch1-1-3 .js-print-page').count() > 0
+    assert page.locator('#ch1-1-3 .js-print-page .hikam-source-depth-inline').count() == 0
+    assert page.locator('#ch1-1-3 .js-print-page .hikam-companion-trigger').count() == 0
     assert page.locator('#ch1-1-1 .js-print-page .hikam-companion-trigger').count() == 0
     assert not errors, errors
     ctx.close()
@@ -152,7 +160,7 @@ with site() as no_js_url, sync_playwright() as no_js_pw:
         context = no_js_browser.new_context(java_script_enabled=False, viewport={'width':390,'height':820})
         page = context.new_page()
         page.goto(no_js_url, wait_until='domcontentloaded')
-        for chapter in ('ch1-1-1', 'ch1-1-2'):
+        for chapter in ('ch1-1-1', 'ch1-1-2', 'ch1-1-3'):
             disclosure = page.locator('#'+chapter+' .hikam-source-depth-inline').first
             assert disclosure.count() == 1 and disclosure.get_attribute('open') is None
             disclosure.locator('summary').click()

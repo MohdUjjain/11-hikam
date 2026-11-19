@@ -1,6 +1,6 @@
 # Dossier 1.1.3 — Primary-source preparation and provisional source-coverage register
 
-**Prepared:** 19 November 2026 · **Status:** SOURCE-REVIEW BASELINE ONLY; **not** a completed edited chapter, final source-coverage approval, Companion manifest, or published release.
+**Prepared:** 19 November 2026 · **Latest status:** Source-to-dossier comparison **resolved and implemented**; final complete fork QA passed on 19 November ([run 44535855779](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44535855779)). This document retains the *pre-revision* diagnostic matrix below; the **completed resolution register in §V** supersedes those baseline statuses. Primary-repository publication remains a distinct release gate.
 
 **Authoritative primary reading:** David Papineau, “Philosophy of Science,” chapter 9 in Nicholas Bunnin and E. P. Tsui-James (eds.), *The Blackwell Companion to Philosophy*, 2nd ed. (Blackwell, 2003), **printed pp. 286–314**; the supplied scan has 30 PDF pages, including references (pp. 314–315). This is the intellectual and citation authority for all content.
 
@@ -49,7 +49,8 @@ In particular, Papineau consistently argues that **logical consistency with data
 7. **Study-aid structure is protected.** Maintain and polish the current definitions, comparisons, quotation treatment, conceptual relations, hierarchy, analogies, checkpoints, high-yield, tips, memory aids and five categories of exam questions. Do not elevate EL10 or Companion counts above them.
 8. **No chapter material should be moved into Source Depth until its essential place in the visible argument has been established.** For a dense original, use the source-dependent top of the ordinary **1,500–2,000 immediately visible word** band if justified, without converting the notes into a second article.
 
-## IV. Editorial implementation handoff — not yet carried out
+## IV. Original implementation plan (historical; now executed)
+
 
 1. Verify primary passages/quoted fragments page by page; settle every **Partial/Missing** line above, preserving named views, examples, qualifications and Papineau's specific conclusions.
 2. Author a connected **~650–850-word main argument** and **~850–1,150 words of existing aids**, scaled to Papineau's long and conceptually dense chapter, leaving the essential progression visible.
@@ -60,3 +61,54 @@ In particular, Papineau consistently argues that **logical consistency with data
 7. Record final source-coverage dispositions, actual word pools, accepted/rejected Companion count, Source Depth citations, and testing evidence. Do **not** mark this preparation document “completed” until the actual reader and revision have been checked.
 
 **Document-change scope today:** editorial instructions and preparation register only; **no** 1.1.3 HTML, reader CSS/JS, source PDF, research synthesis, generated book or PWA file is changed by this preparation note.
+
+
+## V. Completed source-coverage resolution — final 1.1.3 edition, 19 November
+
+The prior “Partial/Missing” entries in §II record the **old dossier's deficiencies**. The final editorial edition in `src/chapters/subtopic-1-1.html#ch1-1-3` resolves each source unit below. All original scholastic arguments are directly teachable in the visible notes or existing study aids; Source Depth is an optional extra source clarification, **never the only place to learn the decisive argument**.
+
+| Papineau's original unit | Final immediately visible home | Optional source detail | Resolution |
+| --- | --- | --- | --- |
+| Opening epistemology/metaphysics division, p. 286 | Frontmatter, original-author credit, exact opening quote, central concept | — | **Covered** |
+| **1.1** Induction, pp. 286–287 | §I.1, deduction/induction analogy, checkpoint | — | **Covered** |
+| **1.2** Falsificationism, pp. 287–288 | §I.2, Popper's demarcation definition, exact quote | — | **Covered** |
+| **1.3** Failings of falsificationism, pp. 289–290 | §I.2 positive-knowledge mistake card and tenth-floor case | Conjecture-to-established-theory examples, pp. 289–290 | **Covered** |
+| **1.4** Bayesianism, pp. 290–293 | §I.3 formula definition, Dutch Book analogy, prior/convergence explanation and comparison table | Theorem versus separate updating rule, pp. 291–293 | **Covered** |
+| **1.5** Instrumentalism versus realism, pp. 294–295 | §II.4 with unification, explanation, novel prediction and Cartwright's response | Semantic versus contemporary instrumentalism, pp. 294–295 | **Covered** |
+| **1.6** Theory and observation, pp. 295–297 | §II.5 Hanson, Kuhn/Feyerabend, source Müller–Lyer illustration, pointer-reading response and the two-sided objection | — | **Covered** |
+| **1.7** Underdetermination, pp. 297–300 | §II.6 two different constructions, consistency/support distinction and Popperian demarcation consequence | Mercury example and differing conditions for each argument, pp. 297–300 | **Covered** |
+| **1.8** Pessimistic meta-induction, pp. 300–301 | §II.7 evidence-sensitive stability and high-yield qualification | — | **Covered** |
+| **1.9** Naturalized epistemology, pp. 302–303 | §II.8 is/ought, conditional research goals and circularity | Why naturalized defenders consider empirical vindication possible, pp. 302–303 | **Covered** |
+| **2.1** Causation and covering laws, pp. 303–305 | §III.9 the three objections: accident, flagpole asymmetry and probabilistic causes | Hempel's D–N/I–S examples, pp. 303–305 | **Covered** |
+| **2.2** Laws versus accidents, pp. 305–306 | §III.10 Ramsey–Lewis, Armstrong, Papineau's objection, exact Ramsey quote and hierarchy | — | **Covered** |
+| **2.3** Direction of causation, pp. 306–307 | §III.11 temporal circularity, Lewis's multiple traces, Reichenbach's probabilistic contrast | — | **Covered** |
+| **2.4** Probabilistic causation, pp. 307–308 | §III.12 probability raising, barometer/rain and screening-off aid | Two conditional independence relations and remaining limits, pp. 307–308 | **Covered** |
+| **2.5** Probability and quantum interpretation, pp. 308–311 | §IV.13 subjective/frequency/propensity table, common statistical-inference limitation, measurement problem | Original cat setup, hidden variables, many worlds, pp. 310–311 | **Covered** |
+| **2.6** Teleology, pp. 311–312 | §IV.14 functional benefits, Hempel's earlier view and causal evolutionary history | — | **Covered** |
+| **2.7** Theoretical reduction, pp. 312–313 | §IV.15 historical/metaphysical distinction, physical effects and token-versus-type argument | Domain-specific history and Fodor's treatment, pp. 312–313 | **Covered** |
+
+### Exact editorial measurements (verified in CI)
+
+| Layer | Words / count | Accepted treatment |
+| --- | ---: | --- |
+| Immediate main prose and headings | **821 words** | Within adopted 650–850 planning band |
+| Existing semantic teaching aids | **1,137 words** | Within adopted 850–1,150 band |
+| **Immediately visible teaching text** | **1,958 words** | Within source-proportionate 1,500–2,000 band |
+| Optional paragraph-adjacent Source Depth | **697 words across 9 records** | Separate, closed, HTML-only, absent from print and normal search |
+| Context-first Reading Companions | **12 unique, source-page-anchored cues** | Local comprehension; no new unrelated arguments |
+| End-of-reading revision | **All six named sections and all five exam categories** | Preserved, synchronized and excluded from visible word budget |
+
+### Resolved fidelity and accessibility decisions
+
+- The original author is now explicitly credited as **David Papineau**, with the printed book and edition. The chapter title and canonical `#ch1-1-3` remain unchanged; `--hue:248` continues its exact position in the 39-chapter 360° rotation.
+- Three golden quotations were checked against the user-supplied source: the epistemology/metaphysics opening (p. 286); Papineau's concise formulation of deductive refutation (p. 288); and Ramsey's “consequences of those propositions…” as quoted by Papineau (p. 306). The misleading unsupported “No Miracles Argument” as Papineau's named device was not carried forward.
+- The original 16 subsection units remain recognizable in source order, but the learner follows **one problem at a time**, not an unconnected inventory of names. The omitted naturalized-epistemology, causal-direction and probabilistic-causation arguments are now visible.
+- The previous revision “Key Table” was merely an instruction to consult body tables. It is now an independent comparison. All source-aligned definitions, five examination question categories and all six revision headings remain accessible.
+- The contextual cues are **chapter-colored and dotted when closed**, solid when active, with keyboard focus/Enter/Space/Escape and touch handling. The nine optional Source Depth disclosures follow the relevant ordinary paragraph, retain exact printed references, remain independently operable with JavaScript disabled, and do not enter ordinary search or A4 print pagination.
+- The user-provided three teaching syntheses were consulted as comparison aids only. They and the original 30-page PDF remain **outside** the public GitHub repository. Any new learning illustration is distinguishable from Papineau's examples.
+
+### Verified handoff, without premature publication claims
+
+The final complete second-account fork run [44535855779](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44535855779) passed canonical build/check, 46 total Companion cues (retaining the original Moran/Stout 34), **39-chapter 360° design-token checks** at 390px and 1366px, all three revision comparison-table contrasts, full keyboard/RTL/no-JS accessibility, 1.1.3 Companion/Source Depth print exclusion, real A4 PDF checks, search, reading-position continuity, and offline PWA update/recovery. The generated `index.html`, `src/philosophy_study_notes.html` and `service-worker.js` were committed only to that fork editorial branch after tests passed. Final primary-repository merge, SHA comparison and Pages verification are the remaining independent release steps.
+
+**Preservation boundary:** Only Dossier 1.1.3 was rewritten; 1.1.1 and 1.1.2, the other 36 canonical dossiers, their source contents and the shared visual/interaction design were not edited. Test coverage and editorial documentation expanded only where necessary.
