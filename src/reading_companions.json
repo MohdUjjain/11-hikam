@@ -1,7 +1,7 @@
 {
   "version": 1,
   "editorialPolicy": "src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md",
-  "description": "Source-grounded contextual explanations for Moran 1.1.1, Stout 1.1.2 and Papineau 1.1.3; further source detail remains in optional paragraph-adjacent Source Depth.",
+  "description": "Source-grounded context-first explanations for Moran 1.1.1, Stout 1.1.2, Papineau 1.1.3 and Gutting 1.1.4; further original-source material is separately optional in local Source Depth.",
   "companions": [
     {
       "id": "h111-russell-idealism",
@@ -993,6 +993,260 @@
       "why_here": "Papineau distinguishes this from the history of scientific theory change.",
       "remember": "Physical event need not have one type-law.",
       "sourceDepthId": "source-depth-h113-reduction"
+    },
+    {
+      "id": "h114-intentionality",
+      "chapter": "ch1-1-4",
+      "passage": "For Sartre, intentionality means consciousness is directed toward something, as Husserl taught. It stores no objects or ideas and is neither a physical substance nor a soul. Imagined objects are not literally inside the mind.",
+      "text": "Imagined objects are not literally inside the mind.",
+      "kind": "Contextual explanation",
+      "title": "Why is consciousness not a container?",
+      "explanation": "Consciousness refers to an object; it does not hold a little copy of that object inside itself. Gutting begins Sartre's argument here because the difference between awareness and a thing makes his account of freedom possible. Directedness is not storage.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          860,
+          861
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "Consciousness refers to an object; it does not hold a little copy of that object inside itself.",
+      "why_here": "Gutting begins Sartre's argument here because the difference between awareness and a thing makes his account of freedom possible.",
+      "remember": "Directedness is not storage."
+    },
+    {
+      "id": "h114-self",
+      "chapter": "ch1-1-4",
+      "passage": "Consciousness knows itself without becoming another object: being-for-itself. Objects have being-in-itself: solid existence without self-awareness. Even the psychological self—habits, traits and beliefs—is an object of consciousness, not something stored inside it.",
+      "text": "Even the psychological self",
+      "kind": "Contextual explanation",
+      "title": "Why is my personality an object of awareness?",
+      "explanation": "Sartre says I can notice and describe my habits, beliefs and character, just as I notice other things. So the self I describe is not identical to the transparent act of being conscious. My identity is something consciousness observes.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          861
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "Sartre says I can notice and describe my habits, beliefs and character, just as I notice other things.",
+      "why_here": "So the self I describe is not identical to the transparent act of being conscious.",
+      "remember": "My identity is something consciousness observes.",
+      "sourceDepthId": "source-depth-h114-self"
+    },
+    {
+      "id": "h114-nihilation",
+      "chapter": "ch1-1-4",
+      "passage": "Looking for Pierre in a café, I notice every person as “not-Pierre.” I directly experience his absence rather than merely forming a later verbal judgment. Sartre calls the introduction of negation into perception nihilation. The resulting nothingness comes from consciousness withdrawing from, not destroying, what exists.",
+      "text": "I directly experience his absence",
+      "kind": "Contextual explanation",
+      "title": "Why can an absence be experienced?",
+      "explanation": "When searching for Pierre, you notice the café specifically as a place where Pierre is missing. Gutting uses this everyday experience to show what Sartre means by consciousness introducing negation without destroying anything. Expectation makes absence noticeable.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          861,
+          862
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "When searching for Pierre, you notice the café specifically as a place where Pierre is missing.",
+      "why_here": "Gutting uses this everyday experience to show what Sartre means by consciousness introducing negation without destroying anything.",
+      "remember": "Expectation makes absence noticeable."
+    },
+    {
+      "id": "h114-freedom",
+      "chapter": "ch1-1-4",
+      "passage": "For Sartre, freedom determines the meaning of events, not the events themselves. I cannot stop a flood by deciding otherwise, but I determine what that event means for my life. A mountain becomes an obstacle only after I choose to climb it; its height is not created by my decision.",
+      "text": "I cannot stop a flood by deciding otherwise",
+      "kind": "Contextual explanation",
+      "title": "How can freedom be absolute if events constrain me?",
+      "explanation": "Sartre is not promising control over floods or other physical causes. Freedom concerns the meaning I give those events. This prevents us from confusing his radical freedom with unlimited physical power. Meaning can be chosen; events cannot always be chosen.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          862,
+          863
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "Sartre is not promising control over floods or other physical causes. Freedom concerns the meaning I give those events.",
+      "why_here": "This prevents us from confusing his radical freedom with unlimited physical power.",
+      "remember": "Meaning can be chosen; events cannot always be chosen.",
+      "sourceDepthId": "source-depth-h114-ethics"
+    },
+    {
+      "id": "h114-centrifugal",
+      "chapter": "ch1-1-4",
+      "passage": "Structuralism replaced Sartre's subject-centered approach with structures beyond awareness. Poststructuralism retained its methods but rejected the promise of final truth. Gutting calls Foucault centrifugal: he leaves timeless definitions for histories showing other possible ways of living.",
+      "text": "he leaves timeless definitions for histories",
+      "kind": "Contextual explanation",
+      "title": "What does centrifugal mean here?",
+      "explanation": "Foucault moves outward from traditional philosophical questions into the history of institutions and categories. Gutting contrasts that movement with Derrida's return inward to reading philosophical texts closely. Foucault: outward into historical cases.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          864
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "Foucault moves outward from traditional philosophical questions into the history of institutions and categories.",
+      "why_here": "Gutting contrasts that movement with Derrida's return inward to reading philosophical texts closely.",
+      "remember": "Foucault: outward into historical cases."
+    },
+    {
+      "id": "h114-episteme",
+      "chapter": "ch1-1-4",
+      "passage": "Foucault's archaeology looks underneath an author's intentions for historically specific rules governing what can be said. An episteme is this “epistemic unconscious.” Like grammar or logic, it governs discourse, but it also explains why some grammatically possible statements were not accepted in a particular era.",
+      "text": "Like grammar or logic",
+      "kind": "Contextual explanation",
+      "title": "What is hidden about an episteme?",
+      "explanation": "People can follow the rules of a discourse without being able to state those rules explicitly. Gutting introduces archaeology to uncover conditions of knowledge that ordinary accounts of an author's intentions miss. The rules shape what can be said.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          865,
+          866
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "People can follow the rules of a discourse without being able to state those rules explicitly.",
+      "why_here": "Gutting introduces archaeology to uncover conditions of knowledge that ordinary accounts of an author's intentions miss.",
+      "remember": "The rules shape what can be said.",
+      "sourceDepthId": "source-depth-h114-archaeology"
+    },
+    {
+      "id": "h114-power",
+      "chapter": "ch1-1-4",
+      "passage": "Foucault's genealogy studies the relation between systems of knowledge and social practices controlling bodies. He rejects the view that neutral knowledge simply develops first and is later applied as power. But he also does not identify knowledge with mere domination: knowledge can be objective and may even threaten the power that helped produce it.",
+      "text": "knowledge can be objective and may even threaten the power that helped produce it",
+      "kind": "Contextual explanation",
+      "title": "Can knowledge be true if it develops with power?",
+      "explanation": "Yes, in Gutting's account Foucault distinguishes a knowledge claim's possible truth from the practices that helped it arise. This matters because the historical link does not turn knowledge into mere propaganda or control. Linked is not identical.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          866,
+          867
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "Yes, in Gutting's account Foucault distinguishes a knowledge claim's possible truth from the practices that helped it arise.",
+      "why_here": "This matters because the historical link does not turn knowledge into mere propaganda or control.",
+      "remember": "Linked is not identical.",
+      "sourceDepthId": "source-depth-h114-power"
+    },
+    {
+      "id": "h114-selfscrutiny",
+      "chapter": "ch1-1-4",
+      "passage": "In The History of Sexuality, control also works through self-scrutiny: people evaluate their desires using scientific norms they have absorbed. Foucault's final studies of Greek and Roman ethics then explore other ways of forming a self, exposing the historical limits once mistaken for necessities.",
+      "text": "people evaluate their desires using scientific norms",
+      "kind": "Contextual explanation",
+      "title": "How can I supervise myself without a guard watching?",
+      "explanation": "A person learns social and scientific categories, then measures their own behavior and desires against them. Foucault uses sexuality to show that discipline can work through self-examination, not only external observation. The watcher can be internalized.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          867,
+          868
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "A person learns social and scientific categories, then measures their own behavior and desires against them.",
+      "why_here": "Foucault uses sexuality to show that discipline can work through self-examination, not only external observation.",
+      "remember": "The watcher can be internalized.",
+      "sourceDepthId": "source-depth-h114-sexuality"
+    },
+    {
+      "id": "h114-logocentrism",
+      "chapter": "ch1-1-4",
+      "passage": "Western philosophy seeks perfectly present truth: logocentrism. Gutting organizes this thinking into three principles—his labels, not Derrida's stated formula:",
+      "text": "Western philosophy seeks perfectly present truth",
+      "kind": "Contextual explanation",
+      "title": "What does pure presence mean here?",
+      "explanation": "It is the hope of grasping a completely clear meaning or reality without anything mediating or altering it. Gutting introduces this ideal so we can understand what Derrida's close reading challenges. Pure presence means perfect self-identity of meaning.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          868,
+          869
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "It is the hope of grasping a completely clear meaning or reality without anything mediating or altering it.",
+      "why_here": "Gutting introduces this ideal so we can understand what Derrida's close reading challenges.",
+      "remember": "Pure presence means perfect self-identity of meaning."
+    },
+    {
+      "id": "h114-deconstruction",
+      "chapter": "ch1-1-4",
+      "passage": "Deconstruction reads a text to show how its preferred term depends on the term it excludes. Plato, for example, describes thought as “writing in the soul” while privileging speech over writing. The text's own language unsettles the claimed opposition; Derrida does not simply replace it with the reverse hierarchy.",
+      "text": "The text's own language unsettles the claimed opposition",
+      "kind": "Contextual explanation",
+      "title": "How does a text undermine its own claim?",
+      "explanation": "A text may insist that speech is primary, then explain speech using the supposedly secondary idea of writing. This shows how the text depends on what it excludes, the central move in Gutting's account of deconstruction. Read for a tension inside the text.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          869
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "A text may insist that speech is primary, then explain speech using the supposedly secondary idea of writing.",
+      "why_here": "This shows how the text depends on what it excludes, the central move in Gutting's account of deconstruction.",
+      "remember": "Read for a tension inside the text."
+    },
+    {
+      "id": "h114-differance",
+      "chapter": "ch1-1-4",
+      "passage": "Derrida's term différance combines “to differ” with “to defer.” Actual phenomena do not fit conceptual oppositions perfectly; every attempt to make a final distinction can be postponed through another distinction. Différance names this continuing movement without becoming a higher concept that solves it.",
+      "text": "every attempt to make a final distinction can be postponed",
+      "kind": "Contextual explanation",
+      "title": "What is being deferred?",
+      "explanation": "A sharp division fails, so the thinker replaces it with another division; that one can also fail. Gutting uses this chain to explain why Derrida's différance is an ongoing process rather than a final solution. The boundary moves instead of closing.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          870
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "A sharp division fails, so the thinker replaces it with another division; that one can also fail.",
+      "why_here": "Gutting uses this chain to explain why Derrida's différance is an ongoing process rather than a final solution.",
+      "remember": "The boundary moves instead of closing.",
+      "sourceDepthId": "source-depth-h114-differance"
+    },
+    {
+      "id": "h114-justice",
+      "chapter": "ch1-1-4",
+      "passage": "Later Derrida asks how rules can guide a just decision in a unique case. No legal system, even one claimed to be universal or divine, settles every application. But justice is not a private intuition outside law. Deconstruction exposes a law's limits so that a decision can be made—and justified through a new, rational formulation of law.",
+      "text": "justice is not a private intuition outside law",
+      "kind": "Contextual explanation",
+      "title": "Why can Derrida not simply ignore the law?",
+      "explanation": "Because there is no privileged insight that tells us what justice requires without relying on concepts and rules. The decision must challenge an inadequate rule but then justify a more adequate rational rule. Beyond this law is not beyond all reason.",
+      "source": {
+        "author": "Gary Gutting",
+        "work": "Sartre, Foucault and Derrida",
+        "printedPages": [
+          871
+        ]
+      },
+      "added_value": "Clarifies the immediate question in Gutting's currently visible argument without introducing a separate philosophical branch.",
+      "simple": "Because there is no privileged insight that tells us what justice requires without relying on concepts and rules.",
+      "why_here": "The decision must challenge an inadequate rule but then justify a more adequate rational rule.",
+      "remember": "Beyond this law is not beyond all reason.",
+      "sourceDepthId": "source-depth-h114-justice"
     }
   ]
 }

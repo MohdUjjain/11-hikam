@@ -10,6 +10,8 @@
 
 **[Approved 19 November 2026 implementation standard](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth)** applies for all future readings: source-first local explanations, optional paragraph-adjacent Source Depth, accessible rotating-hue dotted-to-solid cues, no-JS/search/print safety, and contextual rich evidence only when genuinely useful. The permanent design-token/360° hue regression and the manually invoked second-account fork verification are required release checks.
 
+**[Reading 1.1.4 — Gary Gutting: completed source-coverage and comprehension audit](READING_1_1_4_GUTTING_SOURCE_COVERAGE.md)** tracks the 18 source units of Sartre, Foucault and Derrida, original attribution, qualified claims, preserved study aids, full six-part revision, actual 824/1,017 visible words and all 12 contextual cues plus nine optional depth records. The complete secondary-account QA passed before upstream release.
+
 **[Reading 1.1.3 — Papineau: completed source-coverage resolution](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md#v-completed-source-coverage-resolution--final-113-edition-19-november)** preserves the original baseline diagnosis and documents its 16 resolved source units, verified 821/1,137 word allocation, 12 immediate Companions, nine optional Source Depth records, six-part revision and full fork QA.
 
 The first [Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md) records source-grounded additions to 1.1.1 and 1.1.2, the unchanged main text, and the offline/print/browser preservation checks.

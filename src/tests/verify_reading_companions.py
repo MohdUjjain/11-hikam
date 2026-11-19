@@ -44,7 +44,7 @@ for item in manifest['companions']:
     seen.add(ident)
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
-    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau'), ident
+    assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting'), ident
     assert 20 <= len(item['explanation'].split()) <= 110, f'Explanation out of pilot range: {ident}'
     assert item['added_value'].strip(), ident
     start = chapters.find(f'<section class="chapter" id="{item["chapter"]}"')
@@ -68,8 +68,9 @@ assert len(seen) == len(manifest['companions']), f'Missing manifest entries: {le
 moran = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-1']
 stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
-assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12
-assert len(seen) == 46
+gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
+assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
+assert len(seen) == 58
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
@@ -118,6 +119,28 @@ for item in papineau:
 for block in blocks:
     assert 'David Papineau' in block.group(0)
     assert body[:block.start()].rstrip().endswith('</p>'), 'Depth is not paragraph-adjacent'
+    assert 'hikam-source-depth-citation' in block.group(0)
+# Gutting 1.1.4: 12 context-first explanations, nine independent local
+# source-depth records, author's exact attribution, correct hue and citations.
+begin = chapters.index('<section class="chapter" id="ch1-1-4"')
+after = chapters.find('<section class="chapter" id="', begin + 15)
+html = chapters[begin:after if after >= 0 else len(chapters)]
+body = html[html.index('<div class="chapter-body">'):html.index('<nav class="chapter-endnav"')]
+blocks = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
+assert len(blocks) == 9, f'Gutting source disclosures {len(blocks)} != 9'
+assert body.count('class="hikam-source-depth-item"') == 9
+assert all(' open' not in block.group(0).split('>', 1)[0] for block in blocks)
+assert 'Original author: <strong>Gary Gutting</strong>' in html
+assert 'style="--hue:268;"' in html
+for item in gutting:
+    assert all(item.get(k) for k in ('simple', 'why_here', 'remember')), item['id']
+    assert item['source']['author'] == 'Gary Gutting'
+    assert all(860 <= pg <= 871 for pg in item['source']['printedPages']), item['id']
+    if item.get('sourceDepthId'):
+        assert body.count('id="' + item['sourceDepthId'] + '"') == 1, item['id']
+for block in blocks:
+    assert 'Gary Gutting' in block.group(0)
+    assert body[:block.start()].rstrip().endswith('</p>'), 'Gutting depth is not paragraph-adjacent'
     assert 'hikam-source-depth-citation' in block.group(0)
 assert 'hikam-companion-context-field' in reader
 assert 'item.simple && item.why_here && item.remember' in reader

@@ -35,6 +35,8 @@ jobs:
         run: python src/tests/verify_editorial_fidelity.py
       - name: Verify Papineau source coverage, quotations, word distribution and six-part revision
         run: python src/tests/verify_papineau_source_fidelity.py
+      - name: Verify Gutting 1.1.4 source, original quotations, concise density and six-part revision
+        run: python src/tests/verify_gutting_source_fidelity.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls
