@@ -47,6 +47,22 @@ generic template. Two rules that protect that:
 
 Each has a `-bg` (tint) and `-bd` (border) variant, e.g. `--c-def-bg`, `--c-def-bd`.
 
+## Cross-component contrast and 360° hue contract — verified November 19, 2026
+
+**This is the existing design, not a new palette.** All **39 chapters** follow their assigned 20° step through the full HSL circle, beginning at `--hue:208` for 1.1.1:
+
+```
+chapter hue = (208 + 20 × (chapter position - 1)) modulo 360
+```
+
+The sequence reaches 348° at 2.1.3, wraps to 8° at 2.1.4, and repeats after 18 chapters. A second wrap occurs between 3.2.2 (348°) and 3.2.3 (8°). No hue is reset at a topic boundary. The 18 chapter accent colors should continue to be applied through the existing `hsl(var(--hue) ...)` rules for **structural chrome** (banner, stamp, table header, timeline, revision heading and other structural markers). The six fixed **semantic** callout colors never rotate.
+
+**Foreground must follow its surface**, even across parent/child component boundaries. A dark chapter banner or dark `.end-block` uses the existing light ink/cream foreground; a light `table.comparison` always uses the existing `--white-card` surface and `--ink` foreground, even when the table is nested inside `.end-block`. The chapter source's bold author name must **inherit the source line's light foreground**, not the global prose `strong` rule. Similarly, emphasis in dark revision prose should inherit its local readable color. Table paragraphs and cells must not inherit revision cream on light paper. These rules belong in the shared stylesheet and apply across all 39 chapters; never patch isolated cells, authors or chapters using arbitrary colors.
+
+The regression `src/tests/browser_design_tokens.py` checks actual Chromium computed styles at 390px and 1366px: exact 39-chapter hue order and 18-stop wrap, six consistent semantic-box surfaces, existing Fraunces/Source Serif 4/IBM Plex Sans font stacks, author-credit visibility and WCAG AA 4.5:1 foreground contrast in every revision comparison-table cell. Fix a failed **component pairing** at its source rather than adding compensating late CSS overrides.
+
+**First verification:** [Secondary-account GitHub Actions run 44524655246](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44524655246) passed the complete canonical build, source/structure tests, Chromium computed-style audit at 390px and 1366px, Reader/RTL, real PDF pagination and offline/PWA regressions. The computed-style audit confirmed **39 chapters**, **18 unique rotational hues**, **two existing revision comparison tables** (Moran and Stout), **two authored source-credit emphasis instances**, and the six fixed semantic backgrounds. The missing table/author contrast was caused by CSS foreground inheritance, not by a missing or reset hue sequence. No source text or semantic callout type was revised.
+
 ## Typography
 
 | Token | Stack | Use |

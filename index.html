@@ -372,6 +372,9 @@ a.toc-topic-title:hover{color:var(--gold-deep); border-bottom-color:var(--gold-d
 .toc-back:hover{background:rgba(255,255,255,.18); color:#fff; border-color:rgba(255,255,255,.6);}
 .chapter-title{font-family:var(--font-display); font-weight:700; font-size:38px; line-height:1.12; margin:12px 0 8px; color:#fff; max-width:640px;}
 .chapter-source{font-family:var(--font-sans); font-size:12.5px; color:#B9C2D9; font-style:italic;}
+/* The author's name is emphasised within a DARK banner. Do not inherit the
+   global strong{color:var(--ink)} intended for light chapter prose. */
+.chapter-source strong{color:inherit;}
 .chapter-stamp{
   position:absolute; right:56px; top:38px; width:104px; height:104px; border-radius:50%;
   border:1.5px dashed hsla(var(--hue),70%,75%,.7); outline:1px solid hsla(var(--hue),70%,75%,.4); outline-offset:4px;
@@ -442,7 +445,11 @@ strong{color:var(--ink); font-weight:700;}
 
 /* ---------- Tables ---------- */
 .tbl-wrap{margin:22px 0; overflow-x:auto; border:1px solid var(--paper-line); border-radius:var(--radius-md); box-shadow:var(--shadow-soft);}
-table.comparison{width:100%; border-collapse:collapse; font-size:14.5px; background:var(--white-card);}
+/* A comparison table is always a LIGHT paper card, including when placed
+   inside the navy revision block. Pair the existing paper surface with ink
+   explicitly; inherited revision-body parchment is unreadable on paper. */
+table.comparison{width:100%; border-collapse:collapse; font-size:14.5px; background:var(--white-card); color:var(--ink);}
+table.comparison p{color:inherit;}
 table.comparison caption{
   caption-side:top; text-align:center; font-family:var(--font-sans); font-size:11.5px; font-weight:700;
   letter-spacing:.10em; text-transform:uppercase; color:hsl(var(--hue) 55% 28%);
@@ -519,6 +526,9 @@ hr.rule{border:none; border-top:1px solid var(--paper-line); margin:38px 0;}
 .end-block h2.endh{font-family:var(--font-display); font-size:26px; color:#fff; border-bottom:2px solid hsl(var(--hue) 60% 60%); padding-bottom:10px; margin:0 0 16px;}
 .end-block h2.endh:not(:first-child){margin-top:44px;}
 .end-block p{color:#D7DCEA; font-size:15px;}
+/* Within the dark revision surface, emphatic text must inherit the light
+   foreground; light comparison tables above set their own ink foreground. */
+.end-block strong{color:inherit;}
 .end-block .ekick{font-family:var(--font-sans); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:hsl(var(--hue) 60% 68%);}
 
 .revision-sheet{background:hsl(var(--hue) 32% 19%); border:1px solid hsl(var(--hue) 30% 32%); padding:22px 24px; margin-top:16px; border-radius:var(--radius-md);}

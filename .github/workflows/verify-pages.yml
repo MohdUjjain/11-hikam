@@ -77,6 +77,8 @@ jobs:
         run: python src/tests/browser_quality.py
       - name: Test Reading Companion interaction, RTL, accessibility and print cloning
         run: python src/tests/browser_reading_companions.py
+      - name: Verify chapter-color wheel, semantic colors, typography and contrast
+        run: python src/tests/browser_design_tokens.py
       - name: Inspect reconstructed 3.4 dossiers with Chromium and a real A4 PDF
         run: python src/tests/browser_3_4_house_style.py
       - name: Batch 2 permalink and altered-edition checkpoint browser coverage
