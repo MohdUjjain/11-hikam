@@ -6,7 +6,11 @@
 
 **[Concise Dossiers and Source-Grounded Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md)** records the adopted source-proportionate 650–850-word main prose / 850–1,150-word study-aid range, the research-based Reading Companion standard, source-coverage accounting, unchanged language rules and the requirements for a controlled pilot. Read it together with the standing protocol before editing chapters.
 
-**[Context-First Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md)** is the latest governing amendment for inline explanation. The 1.1.1 pilot makes Companions clarify the immediate concept rather than deliver extra source facts, moves further source particulars into a separate optional disclosure, strengthens the conceptual thread and uses a true historical timeline. It supersedes earlier advice that every Companion must supply new factual information.
+**[Context-First Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md)** is the latest governing amendment for inline explanation. The completed 1.1.1/1.1.2 pilot makes Companions clarify the immediate concept rather than deliver extra source facts, moves further source particulars into a separate optional disclosure, strengthens the conceptual thread and uses a true historical timeline. It supersedes earlier advice that every Companion must supply new factual information.
+
+**[Approved 19 November 2026 implementation standard](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth)** applies for all future readings: source-first local explanations, optional paragraph-adjacent Source Depth, accessible rotating-hue dotted-to-solid cues, no-JS/search/print safety, and contextual rich evidence only when genuinely useful. The permanent design-token/360° hue regression and the manually invoked second-account fork verification are required release checks.
+
+**[Reading 1.1.3 — Papineau: source-coverage preparation](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md)** records the Blackwell primary reading, the three supplied supporting texts, the existing canonical chapter baseline, unresolved source gaps and the next implementation gates. This is a preparation register, **not** a completed revision or approval of the chapter.
 
 The first [Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md) records source-grounded additions to 1.1.1 and 1.1.2, the unchanged main text, and the offline/print/browser preservation checks.
 

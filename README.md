@@ -37,11 +37,13 @@ More details: [src/README.md](src/README.md), [documentation index](src/docs/REA
 
 **Current bilingual editorial delivery rules:** [Accessible context-first Companions and paragraph-adjacent Source Depth](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md), applied to Moran 1.1.1 and Stout 1.1.2. Existing study aids, revision blocks and source fidelity are preserved; optional Source Depth does not print.
 
-**Latest comprehension pilot:** [Context-First Companions, Source Depth and timelines](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) — applied to Moran 1.1.1, with existing aids and source fidelity unchanged.
+**Approved comprehension method:** [Context-First Companions, paragraph-adjacent Source Depth, accessible chapter-hue dotted/solid cues and real timelines](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth) — published for both Moran 1.1.1 and Stout 1.1.2; all original study aids and source fidelity remain binding.
+
+**Next editorial preparation:** [Dossier 1.1.3 — David Papineau, *Philosophy of Science*: primary-source coverage register](src/docs/editorial/READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md). The supplied original reading and three separate teaching syntheses are not published in this repository; chapter 1.1.3 is not yet source-coverage approved.
 
 **Standing editorial refinement instructions:** [Language, Source Fidelity & Study-Aid Protocol](src/docs/editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) and [Concise Dossiers & Reading Companions](src/docs/editorial/CONCISE_DOSSIER_AND_READING_COMPANIONS.md) — read both before any reading-by-reading editorial pass. The adopted density targets are approximately 650–850 words of main prose + 850–1,150 words of teaching aids per dossier, chosen according to the original source (1,500–2,000 total visible words), excluding frontmatter and revision; Companions are separately audited, and the Arabic/English language rules remain unchanged.
 
-**Reading Companion pilot:** Three source-verified contextual explanations are available at existing phrases in Dossiers 1.1.1 and 1.1.2, using an offline-embedded manifest and a screen-only controller. This pilot does **not** shorten the existing chapters. See [the pilot source audit](src/docs/editorial/READING_COMPANIONS_PILOT_1_1_1_1_1_2.md); the controller and source records live at `src/reading_companions.js` and `src/reading_companions.json`.
+**Published Reading Companion implementation:** 34 source-grounded context-first cues (ten in 1.1.1 and twenty-four in 1.1.2), with separately closed paragraph-adjacent Source Depth and source references; the reader is offline-embedded. [Binding teaching/interaction method](src/docs/editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) · [historical pilot audit](src/docs/editorial/READING_COMPANIONS_PILOT_1_1_1_1_1_2.md). The current [design-system regression](src/tests/browser_design_tokens.py) is required alongside source and publication checks.
 
 ## Build and verify
 

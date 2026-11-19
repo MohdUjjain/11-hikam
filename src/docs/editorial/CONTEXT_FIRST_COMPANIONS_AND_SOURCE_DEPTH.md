@@ -2,7 +2,7 @@
 
 **Project:** Takhassus Hikam · **Decision:** 18 November 2026  
 **Pilot:** Dossiers 1.1.1 (Dermot Moran) and 1.1.2 (Rowland Stout); no unrelated chapter.  
-**Status:** Implemented and fully verified on the secondary-account fork through [Actions run 44367909907](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44367909907); the exact built edition was returned to the upstream editorial branch via [PR #13](https://github.com/MohdUjjain/11-hikam/pull/13). Publication remains a separate release check.  
+**Status:** Both 1.1.1 and 1.1.2 are implemented and published on authoritative `main`; final [fork verification 44375169683](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44375169683), [upstream verification 44376223971](https://github.com/MohdUjjain/11-hikam/actions/runs/44376223971), and [Pages deployment 44376223150](https://github.com/MohdUjjain/11-hikam/actions/runs/44376223150) succeeded. Subsequent shared contrast corrections were verified and published at `dafd2f38`.  
 **Also read:** [Language and Source-Fidelity Refinement Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md), [Concise Dossiers and Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md), and [Design System](../design/DESIGN_SYSTEM.md).
 
 ## 1. The problem this decision corrects
@@ -97,3 +97,39 @@ Acceptance checks:
 6. Rebuild and run the repository's complete canonical tests on the **second-account CI fork**, compare generated blob hashes with the authoritative review branch, and only then merge the verified edition into original `main`.
 
 **Follow-on scope:** both 1.1.1 and 1.1.2 are now the controlled local-disclosure pilot. Do not mechanically extend it to the remaining 37 dossiers before reviewing accessibility and student comprehension. No artificial Companion quotas.
+
+## 8. Binding future-reading protocol — accessibility, contextual richness, and Source Depth
+
+**Adopted 19 November 2026 for subsequent dossiers, beginning with the 1.1.3 preparation.** This consolidates the reader's approval of the two-chapter pilot. It does not authorize copying its exact number of cues or length to new chapters, nor does it replace the source-coverage audit.
+
+### The Companion teaches the current passage
+
+- Begin with the **reader's local confusion**: define this claim/term in easy language, explain **why it appears here**, and optionally offer one precise **Remember** line. These three roles are available within the existing popup; do not require three repetitive blocks where one explanation suffices.
+- **Helpful explanatory restatement is allowed.** The old rule that every Companion must introduce a previously absent fact no longer applies. Reject redundant *teaching work*, not simpler wording that genuinely resolves a difficulty.
+- Avoid launching a named theory, source-specific exception, historical detour or unrelated philosophical dispute in the popup. Source-based further detail belongs in Source Depth. Neither container may alter the author's claim, add ChatGPT's independent qualifications or conceal a necessary argumentative premise.
+
+### Source Depth is local, optional and accessible
+
+- Attach one normally closed native `<details class="hikam-source-depth-inline">` **immediately after the relevant visible prose paragraph**; group several source records concerning the same paragraph within that single disclosure, with each record clearly titled and accurately cited to the original edition/page.
+- This is **not** a chapter-end appendix, automatically opened modal, new essential explanatory layer or a substitute for main notes. It is for substantial additional source context which would otherwise interrupt the reader's concentration. Preserve full citations and distinguish the primary author's claim from any sourced quotation or secondary interpretation.
+- A native disclosure must remain usable by keyboard, touch and screen reader with **JavaScript disabled**. Its summary must announce a meaningful title and the optional nature of the additional information, rather than a label with no context.
+- Source Depth is present in the interactive HTML but hidden in print and removed from print-compositor clones **before pagination measurement**. It must not create search hits that navigate into collapsed or invisible text. Verify that the main printed notes and full six-part revision system still teach the indispensable argument without it.
+
+### Use Literature's cue behavior within Hikam's existing design tokens
+
+- The exact inline phrase remains normal text with a subtle **chapter-hue dotted underline at rest**. On hover or while open, the underline becomes **solid**, using the same rotating `--hue`, not a new accent or a hardcoded identical color for every chapter.
+- A clear `:focus-visible` outline supplements the underline for keyboard users. Check click, Enter/Space activation, Escape, outside dismissal, accessible name and expanded-state semantics, focus return to the originating phrase **without reopening**, touch positioning, scrollable expanded content, and mobile/RTL Arabic typography.
+- The cue must wrap across lines without changing the text, quotation, reading position, anchor or print copy. Every trigger must match a uniquely identified existing prose occurrence; never let a generated hint attach to a quotation, a revision element or a hidden disclosure by accident.
+- Treat **color contrast and the 360° system as release gates**: use the established navy/parchment/gold foreground-surface pairings, Fraunces/Source Serif 4/IBM Plex Sans/Amiri type tokens and six immutable semantic box colors. The automated `src/tests/browser_design_tokens.py` checks all 39 chapters and should remain mandatory alongside source, accessibility, print/PDF and offline/PWA tests.
+
+### Rich presentations, without a new information burden
+
+- Literature's richer original-language evidence, faithfully reconstructed figures and source tables are **conditional precedents**, not a request to turn every Companion into a large card. Hikam may use a purposeful existing structure (short comparison, formula breakdown, evidence excerpt, tiny annotated diagram) **only if it directly resolves the local difficulty**, is source-faithful, accessible by text/keyboard, and respects the existing design system.
+- Put extended original-source evidence and illustrations in optional **Source Depth** when they do not belong in the immediate clarification. Label reconstructions and new teaching analogies explicitly; never pass them off as quotations, diagrams or empirical evidence from the source. Record original edition/page and any limits.
+- Do not create a new box taxonomy or prioritize EL10 over other aids; real chronological succession uses the established `.historical-timeline`, while simultaneous distinctions remain tables or other existing comparative formats.
+
+### Required editorial and deployment handoff
+
+For each next reading: (1) reopen the primary source and author/title; (2) compare the complete source section by section against the canonical chapter and all six revision areas; (3) preserve the core author's argument visibly within the 650–850 prose / 850–1,150 study-aid planning bands when the source allows; (4) assign only justified local conceptual clarification to Companions and optional further source material to Source Depth; (5) register exact anchors/pages and verify no essential claims are hidden; (6) run source-integrity, design-token, keyboard/mobile/RTL, search, no-JavaScript, actual A4 print, and offline-PWA checks; (7) use the **manually dispatched `.github/workflows/hikam-fork-verify.yml` on the second-account fork** to validate an explicit branch and, where appropriate, commit its generated outputs **only to the fork**; (8) transfer verified identical Git blobs through an upstream review branch, then confirm publication on the primary repository. The fork workflow must never be represented as authorizing an automatic change to the original.
+
+**1.1.3 transition:** Papineau's *Philosophy of Science* has its own source-to-dossier register. Reuse these standards, not the Moran/Stout text, source records, cue count or paragraph positions. The existing 1.1.3 chapter is not yet approved as source-complete merely because the two prior chapters are.
