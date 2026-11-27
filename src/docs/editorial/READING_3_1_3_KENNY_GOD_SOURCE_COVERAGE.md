@@ -63,3 +63,24 @@ The full available 26-page assigned Kenny extract was compared in sequence with 
 **Current editable edition:** source fragment `src/chapters/subtopic-3-1.html` (only the 3.1.3 section), `src/reading_companions.json` (3.1.3 records only), this audit and the new chapter regression. The fragment retains ten contextual Companions, seven paragraph-adjacent native closed Source Depth records, the six original revision headings and all five examination categories. The previous complete version is saved as `src/archive/pre-redevelopment-2026-11-21/dossier-3.1.3-before-2026-11-27-refinement.html` with immutable blob `783ef089b31252a077dd5257fae81d7501ec8a61`.
 
 **Publication controls:** precise word totals and final release status must be recorded from the canonical verification output, not inferred from the DOM alone. The fork branch must be rebuilt and subjected to all upstream source, design, browser/keyboard, print/PDF, offline/PWA and archive regressions before a verified blob-for-blob transfer to original `main`. This source register alone does not authorize publication.
+
+## 27 November 2026 — teaching-aid architecture review after source-led publication
+
+The second authorizing pass addresses a **verified pedagogical design regression**: all five main-body tables used an identical two-column `Point / What Kenny’s account distinguishes` structure even where no genuine comparison was being made. The two-column revision table also obscured the three logical levels it purported to distinguish. The prior 3.1.3 edition from published commit `da224a9` was preserved in full as `dossier-3.1.3-before-2026-11-27-pedagogical-rework.html` (Git blob `a43c12574a1843c9a74f9fa57765a342e6ccedc6`) before this pass; the earlier source-led archive remains immutable.
+
+**Reassignment by source-driven learning operation:**
+
+| Position | Prior aid | Revised operation | Source-governed reason |
+| --- | --- | --- | --- |
+| §I, Hegel and his heirs | Repetitive thinker table | Relational concept map | Makes Hegel → Feuerbach → Marx and Hegel → Kierkegaard contrasting responses visible (pp. 291–293) |
+| §II, Abraham | Descriptor table | Three-axis, side-by-side table with accessible row headers, plus misconception check | Compares public tragic-hero justification with Kierkegaard's private faith and preserves Kenny's unresolved command/delusion objection (pp. 293, 295–297) |
+| §III, Mill | High-yield distinction | Retained | Inference about God and benefit of religion remain deliberately separate (pp. 297–299) |
+| §IV, Darwin | Four-item descriptor table | Hierarchy of explanation scope, plus misconception check | Separates descent within living populations, communal language, first life, the universe's beginning, and ultimate vs immediate intelligent design (pp. 299, 301–305) |
+| §V, Newman | Second high-yield box | Examination-method tip | Presents the two logically distinct objections and Newman's reply without conflating his separate argument from conscience (pp. 305–308) |
+| §VI, Nietzsche, James, Freud | Serial philosopher descriptors | Three-axis matrix across thinkers with scoped row/column headers | Distinguishes central question, critical move, and inferential limitation, rather than merely placing three prose summaries in cells (pp. 309–315) |
+| §VII, Plantinga | Four-figure descriptor table | Four-step modal argument hierarchy and a differentiated Frege/Ayer/Plantinga memory aid | Keeps maximal excellence, maximal greatness, possibility premise and conditional conclusion separate (pp. 315–318) |
+| Six-part revision | Two-column question juxtaposition | Three-column level/question/invalid-inference comparison | Makes the diagnostic distinction usable during examination revision |
+
+The main prose and all ten context-first Companion passage anchors are unchanged; all seven paragraph-adjacent native Source Depth disclosures retain their location and citations. The fixed chapter hue, semantic box meanings, navigation, and six-part revision architecture are unchanged. The redesign is deliberately limited to 3.1.3: component mix follows these specific source problems, and is **not** proposed as a compulsory per-chapter quota. Printed pp. 294 and 300 remain missing and are never reconstructed.
+
+**Release requirement:** full fork build, chapter regression including both pinned archives and comparison semantics, every current upstream source and browser test, exact tested generated blobs, original review checks, and independently confirmed Pages publication. The verified result and URL should be appended after those events, not presumed.

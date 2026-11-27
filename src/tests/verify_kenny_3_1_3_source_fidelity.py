@@ -35,6 +35,18 @@ assert archive.count(b'<h2 class="endh">') == 6
 assert archive.endswith(b'</section>\n')
 assert b'Kierkegaard also gives <strong>three reasons</strong>' not in archive
 
+
+# Second, independent preservation point: the published source-refined edition
+# as it existed before this pedagogical pass, including every existing aid.
+prior_aid_archive = (SRC / "archive/pre-redevelopment-2026-11-21/dossier-3.1.3-before-2026-11-27-pedagogical-rework.html").read_bytes()
+aid_blob = hashlib.sha1(b"blob " + str(len(prior_aid_archive)).encode() + b"\0" + prior_aid_archive).hexdigest()
+assert aid_blob == "a43c12574a1843c9a74f9fa57765a342e6ccedc6", aid_blob
+assert prior_aid_archive.startswith(b'<section class="chapter" id="ch3-1-3"')
+assert prior_aid_archive.endswith(b"</section>")
+assert prior_aid_archive.count(b'<h2 class="endh">') == 6
+assert prior_aid_archive.count(b'<table class="comparison">') == 6  # five main-body + one revision
+assert b"What Kenny" in prior_aid_archive
+
 body = chapter.split('<div class="chapter-body">', 1)[1].split('<nav class="chapter-endnav"', 1)[0]
 depth = list(re.finditer(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', body))
 assert len(depth) == 7
@@ -45,6 +57,35 @@ for d in depth:
     assert " open" not in d.group().split(">", 1)[0]
     assert "Anthony Kenny" in d.group()
 visible = re.sub(r'<details class="hikam-source-depth-inline"[\s\S]*?</details>', "", body)
+# Source-dependent teaching operations, not an arbitrary chapter template.
+assert visible.count('<table class="comparison">') == 2
+assert visible.count('<div class="hierarchy">') == 2
+assert visible.count('<div class="concept-rel">') == 1
+assert visible.count('<div class="box mistake">') == 2
+assert visible.count('<div class="box memory">') == 1
+assert visible.count('<div class="box tip">') == 1
+assert all(phrase in visible for phrase in (
+    "How Hegel’s account draws opposing responses",
+    "Two standpoints on a sacrifice",
+    "Levels of explanation — what selection presupposes",
+    "Three different examinations of religious belief",
+    "Plantinga’s modal inference — locate the indispensable premise",
+    "Common Mistake — Private Conviction Is Not a Public Criterion",
+    "Examination Method — Separate Two Objections",
+    "Memory Aid — Three Questions, Three Tests",
+))
+assert "What Kenny’s account distinguishes" not in visible
+assert "Four questions not to collapse into one" not in visible
+main_tables = re.findall(r'<table class="comparison">[\s\S]*?</table>', visible)
+for table in main_tables:
+    assert "<caption>" in table
+    assert table.count('scope="col"') >= 3
+    assert table.count('scope="row"') >= 3
+assert '<h2 class="endh">Key Table</h2>' in chapter
+endblock = chapter.split('<div class="end-block">', 1)[1]
+assert 'Questions at distinct levels' in endblock
+assert endblock.count('scope="row"') == 3
+
 
 required = (
     "Hegel", "Feuerbach", "Marx", "Kierkegaard", "three reasons",
@@ -84,7 +125,7 @@ wc.feed(visible)
 counts = wc.words
 assert 650 <= counts["prose"] <= 950, counts
 assert 850 <= counts["aids"] <= 1150, counts
-assert 1500 <= sum(counts.values()) <= 2100, counts
+assert 1500 <= sum(counts.values()) <= 2000, counts
 
 manifest = json.loads((SRC / "reading_companions.json").read_text(encoding="utf-8"))
 companions = [c for c in manifest["companions"] if c["chapter"] == "ch3-1-3"]
@@ -106,4 +147,4 @@ ledger = [int(x) for x in re.findall(r"^\| (\d+) \|", audit, re.M)]
 assert ledger == list(range(1, 27)), ledger
 assert "**Absent from the supplied PDF.**" in audit
 assert "783ef089b31252a077dd5257fae81d7501ec8a61" in audit
-print("PASS: Kenny 3.1.3 source distinctions, 26-page ledger, pinned archive, 10 companions, 7 depth callouts, revisions, visible words:", counts)
+print("PASS: Kenny 3.1.3 source, both pinned editions, diverse source-led aids, semantic comparisons, 10 companions, 7 local depth records and six revisions:", counts)

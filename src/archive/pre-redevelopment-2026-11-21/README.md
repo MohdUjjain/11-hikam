@@ -186,3 +186,11 @@ Before the **second source-faithful redevelopment**, the complete more recent AI
 - **Integrity test:** `python src/tests/verify_kenny_3_1_3_source_fidelity.py` checks that the complete historical snapshot keeps the pinned Git blob SHA and all original revision sections. The older original 3.1.3 archive, and all snapshots of other dossiers, remain unchanged.
 
 This record is an archival artifact, not a build input or an alternate published chapter. It must never be edited in response to later corrections to the live 3.1.3 reading.
+
+## Dossier 3.1.3 — published 27 November source-led edition before the study-aid pass
+
+- **Second complete, read-only preservation point:** [`dossier-3.1.3-before-2026-11-27-pedagogical-rework.html`](dossier-3.1.3-before-2026-11-27-pedagogical-rework.html).
+- **Exact original repository baseline:** `MohdUjjain/11-hikam` `main` at `da224a918d7e3457d054a8f418ef534e2ca71efe` (verified merged PR #55). Archived in its entirety on the new isolated testing branch **before** changing any live chapter material.
+- **Pinned historical Git blob SHA:** `a43c12574a1843c9a74f9fa57765a342e6ccedc6`, verified by `src/tests/verify_kenny_3_1_3_source_fidelity.py`.
+- **What it contains:** 3.1.3 frontmatter, Kenny's visible argument, the five originally repetitive main-body tables, source-depth callouts, all existing study aids and the full six-section revision/exam apparatus.
+- **Purpose:** preserve this intermediate published edition separately from the still earlier pre-refinement Kenny archive. Never use it as a reader build input or modify it to track later teaching changes. The source PDF and three Total Recall guides remain private editorial references.
