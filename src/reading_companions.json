@@ -5457,8 +5457,8 @@
     {
       "id": "h313-abraham",
       "chapter": "ch3-1-3",
-      "passage": "The suspension of the ethical means that a higher end can override a universal duty in the case of faith. It does not make Abraham’s act ethically admirable by ordinary standards or provide a public test for distinguishing faith from a delusion. Kierkegaard sets passionate commitment against historical approximation and detached inquiry. Abraham trusts the promise of posterity even as he raises the knife. Kenny notes that few Christians accept infinite improbability and that some atheist existentialists found the account of choice attractive.",
-      "text": "a higher end can override a universal duty",
+      "passage": "Kierkegaard calls Abraham’s act a teleological suspension of the ethical: the private relation to God claims priority over a universal duty. This is not an ordinary ethical justification. Kenny stresses the unanswered question of how to distinguish a divine command from a delusion. Kierkegaard also gives three reasons why objective history cannot ground faith: historical research yields probability rather than certainty; research never finally ends, so commitment would be postponed; and detached inquiry cannot supply faith’s passionate inwardness. Abraham trusts the promise of descendants even as he raises the knife. Kenny notes that few Christians accept infinite improbability, while some atheist existentialists were attracted to this account of individual choice.",
+      "text": "three reasons",
       "kind": "Contextual explanation",
       "title": "Why can Abraham not explain himself?",
       "explanation": "A tragic hero can offer a reason the community recognises. Abraham cannot justify his decision that way; Kierkegaard makes it depend on his relation to God. Without shared grounds, faith does not become a public exception anyone can verify.",
@@ -5501,7 +5501,7 @@
     {
       "id": "h313-darwin",
       "chapter": "ch3-1-3",
-      "passage": "Kenny distinguishes Darwin’s opposition to special creation from a denial of creation altogether. Darwin allows that life could begin in created forms and develop through secondary causes. Kenny notes that non-literal Genesis is not a modern invention, but that evolution complicates an account in which human disobedience introduced death into nature.",
+      "passage": "Kenny distinguishes Darwin’s opposition to special creation from a denial of creation itself. Darwin allows descent from created forms through secondary causes; he does not claim to explain life’s first origin. Kenny says evolution conflicts with a literal Genesis chronology and, more deeply, with an account in which human sin first brought death into nature.",
       "text": "opposition to special creation",
       "kind": "Contextual explanation",
       "title": "What does the distinction protect?",
@@ -5518,6 +5518,28 @@
       "simple": "Darwin rejects a separate creative act for each species. Kenny points out that this does not rule out a creator working through the laws and processes by which lineages change.",
       "why_here": "One explanation need not displace every other level of explanation.",
       "remember": "Separate creation from special creation."
+    },
+    {
+      "id": "h313-universe",
+      "chapter": "ch3-1-3",
+      "passage": "Kenny then separates selection among breeding populations from the origins of language, life and the universe. Language is a rule-governed communal practice, not merely a feature possessed by one isolated individual. Kenny rejects the question ‘Why is there something rather than nothing?’ as incoherent. Instead, if the universe had a beginning, he asks why it came into existence. Even a cause beyond the universe would not by itself identify the God of a monotheistic religion.",
+      "text": "why it came into existence",
+      "kind": "Contextual explanation",
+      "title": "Which question about the universe?",
+      "explanation": "Kenny does not ask why a state of complete nothingness failed to obtain. He asks whether a universe that began needs an explanation of that beginning, distinct from an account of its subsequent development.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          303,
+          304,
+          305
+        ]
+      },
+      "added_value": "Clarifies Kenny’s exact distinction between the incoherent nothing-question and an explanation of a beginning.",
+      "simple": "The question is why a universe began, not why there is not ‘nothing’.",
+      "why_here": "Kenny is separating origins from what natural selection or cosmology explains after entities already exist.",
+      "remember": "Beginning is the issue here."
     },
     {
       "id": "h313-frege",
@@ -5541,9 +5563,52 @@
       "remember": "Existence asks whether the concept has instances."
     },
     {
+      "id": "h313-newman-conscience",
+      "chapter": "ch3-1-3",
+      "passage": "Newman appeals to the emotional colouring of conscience, not to bare moral judgement, as pointing to a personal judge. Kenny allows the feelings but challenges the inference to their cause. Gottlob Frege approaches from a different direction: existence and uniqueness concern whether a concept has instances, not features included in its definition. Kenny does not treat that analysis as closing every possible ontological argument.",
+      "text": "emotional colouring of conscience",
+      "kind": "Contextual explanation",
+      "title": "What part of conscience matters?",
+      "explanation": "Newman points to the personal feelings that accompany doing right or wrong, such as shame, remorse or relief. Kenny distinguishes these feelings from the judgement that an act is right or wrong, and asks whether feelings can establish that a divine judge caused them.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          307,
+          308
+        ]
+      },
+      "added_value": "Separates Newman’s emotional argument from moral judgement itself at the local point of mention.",
+      "simple": "Newman means the feelings attached to a moral judgement, not merely the judgement itself.",
+      "why_here": "Kenny then asks whether those feelings justify inferring a heavenly Judge.",
+      "remember": "Feelings are the proposed clue."
+    },
+    {
+      "id": "h313-james-pragmatism",
+      "chapter": "ch3-1-3",
+      "passage": "Nietzsche announces that belief in the Christian God has become incredible. He argues that keeping Christian morality while rejecting God breaks apart the system that gave its commands authority. William James takes Nietzsche’s attack on saintliness seriously, but gives saintliness a qualified defence: its value depends partly on the circumstances in which it is practised. James holds that varied, private mystical experiences cannot establish a truth binding on everyone. His pragmatist test asks what difference a divine attribute makes to conduct; moral attributes matter to hope and action in ways that purely metaphysical attributes may not.",
+      "text": "His pragmatist test",
+      "kind": "Contextual explanation",
+      "title": "What is James testing?",
+      "explanation": "James asks what practical difference a belief would make to a person's action, fear or hope. On that test, divine justice and mercy may matter in daily life, while some abstract metaphysical attributes do not change conduct.",
+      "source": {
+        "author": "Anthony Kenny",
+        "work": "God, Chapter 12 of Philosophy in the Modern World (Oxford University Press)",
+        "printedPages": [
+          310,
+          311,
+          312
+        ]
+      },
+      "added_value": "Explains the local meaning of James’s pragmatist criterion without introducing unrelated philosophy.",
+      "simple": "He asks what difference an attribute of God actually makes to how one lives.",
+      "why_here": "This explains why he treats moral and metaphysical attributes differently.",
+      "remember": "Test by practical consequences."
+    },
+    {
       "id": "h313-illusion",
       "chapter": "ch3-1-3",
-      "passage": "James distinguishes petitionary prayer from inward communion and a God of general laws from the particular concerns of an individual. Sigmund Freud, by contrast, calls religion a wish-shaped illusion, which is not for that reason necessarily false. He moves from helplessness and the protective father to an account of religion as collective neurosis. Kenny separates this psychological proposal from Freud’s speculative prehistoric narrative, which Kenny criticises.",
+      "passage": "James distinguishes prayers requesting particular outcomes from inward communion with the divine; he contrasts science’s general laws with religion’s personal concerns. Kenny finds his positive conception of God imprecise. Freud, by contrast, calls religion a wish-shaped illusion: belief is determined by wishes rather than evidence, but need not be false. Freud traces the wish for protection to childhood dependence on a father. Kenny distinguishes that psychological proposal from Freud’s speculative tale of a murdered primal father, which he sharply criticises.",
       "text": "wish-shaped illusion",
       "kind": "Contextual explanation",
       "title": "Does Freud mean false?",

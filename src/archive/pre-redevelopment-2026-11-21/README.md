@@ -175,3 +175,14 @@ The archive is never included in the reader or regenerated as a publication asse
 The original pre-redevelopment 3.1.2 archive, `dossier-3.1.2.html`, remains unchanged and independently pinned as `c645f9a706db47be51f153ec910df8e327dcd3f6`.
 
 Before the **second source-faithful redevelopment**, the complete more recent AI-authored 3.1.2 live section was separately archived as [`dossier-3.1.2-before-2026-11-27-redo.html`](dossier-3.1.2-before-2026-11-27-redo.html) at authoritative `main` commit `06f0f1d326e64d30979ed72fb618ab2c8d6dc8ae`. **Pinned historical Git blob: `3b7b5759a48f78e36f713feb992f014de762624e`.** It preserves the full original-section HTML, author attribution, notes and study aids, navigation, six-part revision and five question classes. Both archives are read-only, omitted from live publication/search/PWA/print, and verified independently. The current source-led edition restores Keith E. Yandell's explicitly argued criticisms, including his rejection of the doctrine-denying form of Religious Pluralism and the importance of knowing arguments rather than merely descriptions.
+
+## Dossier 3.1.3 — Anthony Kenny, “God,” before focused 27 November redevelopment
+
+**Source baseline:** the authoritative original `MohdUjjain/11-hikam` `main` at commit `65c27159525ca6410cf57cf1fd46766709752783`. The complete immediately preceding edition was committed as a separate archive file on the secondary fork **before** its canonical chapter was modified.
+
+- **Preserved original:** [`dossier-3.1.3-before-2026-11-27-refinement.html`](dossier-3.1.3-before-2026-11-27-refinement.html), containing the unchanged complete 3.1.3 frontmatter, all prose and teaching aids, inline Source Depth, chapter navigation, six revision sections and five examination categories.
+- **Pinned immutable Git blob SHA:** `783ef089b31252a077dd5257fae81d7501ec8a61`.
+- **Source:** supplied 26-page PDF extract of Anthony Kenny, “God,” in *Philosophy in the Modern World*, printed pp. 291–318 **with printed pages 294 and 300 absent**. Three separate Total Recall guides are secondary editorial references. No source PDF or guides are included in the repository.
+- **Integrity test:** `python src/tests/verify_kenny_3_1_3_source_fidelity.py` checks that the complete historical snapshot keeps the pinned Git blob SHA and all original revision sections. The older original 3.1.3 archive, and all snapshots of other dossiers, remain unchanged.
+
+This record is an archival artifact, not a build input or an alternate published chapter. It must never be edited in response to later corrections to the live 3.1.3 reading.

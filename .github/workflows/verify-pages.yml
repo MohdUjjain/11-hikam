@@ -69,6 +69,8 @@ jobs:
         run: python src/tests/verify_philosophy_religion_3_1_1_kellenberger.py
       - name: Verify 3.1.2 Yandell excerpt, editorial layers and attribution
         run: python src/tests/verify_philosophy_religion_3_1_2_yandell.py
+      - name: Verify 3.1.3 Kenny source, distinctions, companion anchors and pinned archive
+        run: python src/tests/verify_kenny_3_1_3_source_fidelity.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls
