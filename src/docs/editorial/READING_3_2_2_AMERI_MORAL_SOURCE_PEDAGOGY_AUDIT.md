@@ -54,9 +54,9 @@ Earlier concept, three-stage argument overview, important author quote, analogy,
 | Former aid/function | Current teaching decision | Source-led rationale |
 | --- | --- | --- |
 | Three-wording/three-step opening proof and later five-step sequence | Retain both as **different source-authored formulations**, label their stages at equal level instead of invented parent-child inheritance | Original pp. 221–225 provide both versions; the separate Kantian justice route is not the modern argument |
-| Opening central concept | Retain exactly one, **49 body words** | States objective value, grounding and the recurring epistemic/ontological boundary |
+| Opening central concept | Retain exactly one, **48 body words** | States objective value, grounding and the recurring epistemic/ontological boundary |
 | File/Word/PDF process described as a high-yield note | Retire the non-pedagogical wrapper; retain assigned p. 262 boundary explicitly in the main §5 explanation and source audit | A file-scope announcement is not a source-grounded high-yield intellectual point |
-| Two-formulation memory | **27 complete body words** | A true retrieval relation, not a disguised synopsis or examination drill |
+| Two-formulation memory | **29 complete body words** | A true retrieval relation, not a disguised synopsis or examination drill |
 | Subjective/objective/absolute warning | **27 body words** | Corrects a concrete conceptual misreading while retaining Sorley's distinct claim |
 | Ontology/epistemology card | **Two distinct definitions, 11 and 12 words** | The previous card contained a longer explanation and procedural example in a definition wrapper; these remain sufficiently taught in §4 prose |
 | Comparison tables | **Four distinct main tables:** source framing of the two worldview expectations; objective vs absolute values; three objections and the places they confuse; consequentialism vs duty ethics in the welfare discussion | Same axes for each table; count all header and body cells, normally ≤10 and hard maximum 20; prose teaches context/attribution rather than duplicating the table row-by-row |
