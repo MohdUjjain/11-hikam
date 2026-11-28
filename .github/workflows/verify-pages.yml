@@ -71,6 +71,10 @@ jobs:
         run: python src/tests/verify_philosophy_religion_3_1_2_yandell.py
       - name: Verify 3.1.3 Kenny source, distinctions, companion anchors and pinned archive
         run: python src/tests/verify_kenny_3_1_3_source_fidelity.py
+      - name: Verify both Arabic 3.1.4 and 3.1.5 authored density, attribution, RTL and Companions
+        run: python src/tests/verify_philosophy_religion_3_1_4_3_1_5_arabic.py
+      - name: Verify Ajami 3.1.4 exact published archive and diverse source-led Arabic teaching aids
+        run: python src/tests/verify_ajami_3_1_4_pedagogical_aids.py
       - name: Validate book structure and chapter navigation
         run: python src/tests/validate_structure.py
       - name: Validate accessible contents and print controls
@@ -119,6 +123,8 @@ jobs:
         run: python src/tests/browser_design_tokens.py
       - name: Verify Kenny 3.1.3 real mobile table layout and A4 pedagogy
         run: python src/tests/browser_kenny_3_1_3_aids.py
+      - name: Verify Ajami 3.1.4 RTL semantic comparisons, mobile layout and real A4 PDF
+        run: python src/tests/browser_ajami_3_1_4_aids.py
       - name: Inspect reconstructed 3.4 dossiers with Chromium and a real A4 PDF
         run: python src/tests/browser_3_4_house_style.py
       - name: Batch 2 permalink and altered-edition checkpoint browser coverage

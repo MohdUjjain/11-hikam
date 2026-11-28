@@ -194,3 +194,13 @@ This record is an archival artifact, not a build input or an alternate published
 - **Pinned historical Git blob SHA:** `a43c12574a1843c9a74f9fa57765a342e6ccedc6`, verified by `src/tests/verify_kenny_3_1_3_source_fidelity.py`.
 - **What it contains:** 3.1.3 frontmatter, Kenny's visible argument, the five originally repetitive main-body tables, source-depth callouts, all existing study aids and the full six-section revision/exam apparatus.
 - **Purpose:** preserve this intermediate published edition separately from the still earlier pre-refinement Kenny archive. Never use it as a reader build input or modify it to track later teaching changes. The source PDF and three Total Recall guides remain private editorial references.
+
+## Dossier 3.1.4 — published Arabic Ajami edition before the study-aid rework (28 November 2026)
+
+- **Preserved full original for this pass:** [`dossier-3.1.4-before-2026-11-28-pedagogical-rework.html`](dossier-3.1.4-before-2026-11-28-pedagogical-rework.html).
+- **Authoritative baseline:** `MohdUjjain/11-hikam` `main` commit `e07126b0d898c625ada9481d5eca0917dae77970`. This section was archived in its entirety **before** any edits, preserving author credit, complete Arabic prose, five generic main-body tables, all study aids and five local Source Depth records, navigation, all six revision sections and five examination categories.
+- **Immutable Git blob:** `ce82a1403643f4d17443377eb57400eed5404fc1` (verified by `src/tests/verify_ajami_3_1_4_pedagogical_aids.py`).
+- **Earlier historical original:** `dossier-3.1.4.html`, Git blob `8b34ad53f1a01e4b87618a5a9f3b4fe8f962bf5b`, remains independent and unchanged.
+- **Primary reading:** Samer Tawfiq Ajami, `نظريات حول نشوء الدين: دراسة تحليلية نقدية`, `مجلة العقيدة` 28, pp. 19–46; private original Word and matching PDF, with three separate Total Recall guides. The source documents are not added to the public repo.
+
+This is a read-only historical artifact, not an alternate chapter included in the build or a template for other readings. Never rewrite either archived edition in order to match a newer published dossier.
