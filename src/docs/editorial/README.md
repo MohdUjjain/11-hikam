@@ -39,3 +39,5 @@ The other files in this folder preserve dated chapter-level editorial, reconstru
 - **[The first Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md)** records the original Moran/Stout implementation and its checks. The subsequent context-first amendment governs local explanation; neither pilot record overrides the newer aid-role policy.
 
 Archived chapter snapshots remain immutable historical material outside the live reader. Their inclusion of retired components does not authorize editing the archive or reinstating those components in the current policy.
+
+- [3.2.5 study-aid refinement audit](READING_3_2_5_STUDY_AID_REFINEMENT_AUDIT.md): application of the corpus roles and limits, current source verification, measured changes and scoped release evidence.

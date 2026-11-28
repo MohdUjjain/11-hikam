@@ -4,7 +4,7 @@
 
 **Scope:** Every existing and future Arabic/English dossier, within the user-authorized task.
 
-**Status:** Current editorial and interaction requirements. This documentation pass does not change any chapter, Companion manifest, controller, stylesheet, print engine or published reader.
+**Status:** Current editorial and interaction requirements. Implementation follows the latest user-authorized scope; colour, exact Arabic typography and ordinary-prose bullet/highlighting work remain deferred.
 
 > **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 >
@@ -30,7 +30,7 @@ Main prose and appropriate visible aids must teach the source author's necessary
 
 Use the skip test for each proposed optional passage: **If the reader skips this material, can they still understand the author’s argument accurately, including its necessary boundaries and qualifications?** If not, establish the necessary material visibly before deciding whether an additional optional explanation is useful. Do not claim compliance because an essential statement could be recovered from an archive, an external source link or a future print appendix.
 
-Keep three decisions separate: the component's **role**, the material's **essential/useful/supplementary priority**, and its **provenance**. A quotation or source-authored analogy may be indispensable; a definition does not become merely optional because a popup could hold it. Priority is about the reader's route through the supplied argument, not truth, endorsement or examination likelihood.
+Keep three decisions separate: the component's **role**, the material's **essential/useful/supplementary priority**, and its **provenance**. A quotation or source-authored analogy may be indispensable; a definition does not become merely optional because a popup could hold it. Priority is about the reader's route through the supplied argument, not truth, endorsement or examination likelihood. The user defines this as a framework for preparing the notes, without an additional visual system, badge, colour or priority label.
 
 The retained programme guidance is approximately **650–850 prose words plus 850–1,150 visible study-aid words**, source-proportionate and excluding frontmatter, Companions, Source Depth and revision. These bands do not permit hiding necessary content. Apply the current individual-unit rules from the canonical role protocol without creating new quotas for either optional layer.
 
@@ -110,13 +110,13 @@ Use richer presentation only when its structure answers a concrete learning need
 
 A chronology belongs in the existing timeline; parallel distinctions belong in a comparison; nested categories require genuine parent–child relations; an argument's sequential steps do not automatically form a decimal hierarchy. A relationship map needs concise concepts and explicit relations rather than a general paragraph placed between nodes. Apply the canonical cell, role and provenance rules wherever those structures are used.
 
-Source-based evidence and extended illustrations usually belong in visible teaching when essential, or in Source Depth when safely deferrable. Label reconstructions and authorized teaching devices accurately, rather than presenting them as original diagrams, quotations or empirical evidence. No visual device may invent a premise, causal relationship, ranking, date or conclusion. The proposed general explanatory callout remains pending and cannot be introduced through an optional-layer exception.
+Source-based evidence and extended illustrations usually belong in visible teaching when essential, or in Source Depth when safely deferrable. Label reconstructions and authorized teaching devices accurately, rather than presenting them as original diagrams, quotations or empirical evidence. No visual device may invent a premise, causal relationship, ranking, date or conclusion. The user has resolved the proposed general explanatory callout by incorporating compact source-grounded explanatory support into the expanded memory-aid family, under its 30-word maximum. No separate callout, schema or optional-layer exception is created. A conceptual anchor can explain an existing distinction without a forced mnemonic; it cannot add a claim or conceal necessary extended reasoning.
 
 ## 8. Binding future-reading protocol — accessibility, contextual richness, and Source Depth
 
 > **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-The following are ongoing interaction and preservation requirements, not a claim that this documentation pass has repaired or retested the reader. Apply them during the later authorized implementation with verification proportionate to the changed surfaces. Preserve the established design tokens and reader architecture; proposed palette, priority-marker and typography choices remain separate from editorial permission.
+The following are ongoing interaction and preservation requirements, not a claim that documenting them repairs or retests the reader. Apply them during authorized implementation with verification proportionate to the changed surfaces. Preserve the established design tokens and reader architecture. Palette/icon work and exact Arabic typography remain deferred; learning priorities require no added visual markers.
 
 ### 8.1 Companion cues and reading continuity
 
@@ -126,7 +126,7 @@ The following are ongoing interaction and preservation requirements, not a claim
 - Preserve accessible name and controlled expanded-state semantics. Check the applicable click/tap and Enter/Space opening behavior, Escape and explicit close, outside dismissal, touch scrolling and viewport positioning.
 - Closing must return focus appropriately without immediately reopening the popup. Do not create a hash change, navigation jump, stacked lesson flow, saved-position reset or accidental revision-visibility change.
 - Multiword cues must wrap normally. Preserve Arabic direction, local font context, source punctuation, quotations, original copying/search text and the exact anchor.
-- Richer content still needs understandable text and keyboard access. Color and icons alone must not carry ownership, learning priority or the aid's meaning.
+- Richer content still needs understandable text and keyboard access. Color and icons alone must not carry ownership or the aid's meaning. Learning priority guides preparation without a new visual treatment.
 
 ### 8.2 Native Source Depth and deliberate access
 
@@ -155,9 +155,9 @@ Apply the standing language protocol and actual supplied Arabic profile/samples 
 
 Keep Arabic confidence calibrated to the source. Do not insert cautious verbs, generalization warnings, consensus claims or qualifications because they sound academically restrained. Preserve the boundaries among the source author's judgment, quotation, hypothesis and reported evidence. English and Arabic are not literal templates for each other.
 
-Assess readability at the actual child element, not only the parent style. The documented Arabic Source Depth size override, compact timeline typography, lost selective emphasis and RTL spacing discrepancies are existing audit findings, not chosen replacement settings. A later design pass must consider line-height, paragraph/block separation, wrapping, apparent font size, focus and mobile access together. Do not apply a global font or spacing change during this documentation pass.
+Assess readability at the actual child element, not only the parent style. The documented Arabic Source Depth size override, compact timeline typography, lost selective emphasis and RTL spacing discrepancies are existing audit findings, not chosen replacement settings. A later design pass must consider line-height, paragraph/block separation, wrapping, apparent font size, focus and mobile access together. The exact Arabic typography decision is deferred; the user's stated aim is the smallest meaningful change. Do not infer a font or spacing change from a content pass.
 
-Short labels may remain visually compact where readable; opened source explanations must still be comfortable to study. Essential/useful/supplementary is a content-role distinction, not permission to make further reading illegible. Keep any source limitation attached clearly enough that a simplified explanation retains the same force as the original.
+Short labels may remain visually compact where readable; opened source explanations must still be comfortable to study. Essential/useful/supplementary is a preparation-priority distinction, separate from component role, and does not permit making further reading illegible. Keep any source limitation attached clearly enough that a simplified explanation retains the same force as the original.
 
 ## 10. Per-candidate acceptance and later chapter verification
 
@@ -188,7 +188,7 @@ Before an authorized chapter replacement, preserve its exact full predecessor in
 
 Follow the current [secondary-fork and upstream release procedure](../hosting/SECONDARY_FORK_CI_AND_RELEASE.md) within the latest user authorization and targeted-verification instruction. Verify the actual candidate and generated-file identity, distinguish fork success from upstream transfer/merge, and verify Pages publication independently. Do not infer a successful deployment from a workflow dispatch or bypass an approval/access-control rejection. Report automatically triggered or infrastructure-blocked checks without presenting them as passed or using an obsolete full-suite gate to restart routine whole-book testing.
 
-No private full original, recall guide or personal writing sample is authorized for public upload merely because it was used to prepare an editorial record. No code, styles, tests, build outputs or reader content are changed by this documentation consolidation.
+No private full original, recall guide or personal writing sample is authorized for public upload merely because it was used to prepare an editorial record. A documentation-only consolidation does not itself change code, styles, tests, build outputs or reader content; any implementation requires its own user-authorized scope.
 
 ## 12. Historical pilot evidence — not current policy or quotas
 

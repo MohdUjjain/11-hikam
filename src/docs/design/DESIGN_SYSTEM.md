@@ -6,7 +6,7 @@
 
 This document describes the existing visual system and the acceptance requirements for later authorized work. For pagination and printing architecture, read [PAGINATION_SYSTEM.md](../pagination/PAGINATION_SYSTEM.md). For current component functions, word limits, source ownership and reading priorities, read the [Study Aid Roles and Reading Design Protocol](../editorial/STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md), together with the [Language and Source Fidelity Protocol](../editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md). The [Audit and Migration Plan](../editorial/STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md) separates observed evidence from pending work.
 
-**28 November 2026 — documentation-only authorization:** the latest accepted role rules supersede conflicting older component descriptions. They do not authorize reader/CSS/content implementation, new colours, final icon assignments, a new explanatory callout family, or full-prose bullet conversion. Keep the existing tokens and architecture. Measured typography below is a baseline, not a selected replacement specification. Dated changelog entries preserve implementation evidence; they are not current permissions to add retired tips/checkpoints or embed EL10 in other roles.
+**28 November 2026 — policy and follow-up scope:** the latest accepted role rules supersede conflicting older component descriptions. The subsequent user request authorizes a focused 3.2.5 pass and places concise explanatory support within the expanded memory-aid role; no separate explanatory family or priority visual system is required. Colour/icon finalization, exact Arabic typography and the ordinary-prose bullet/highlighting pass remain deferred. Keep the existing tokens and architecture. Measured typography is a baseline, not a selected replacement specification. Dated changelog entries preserve implementation evidence; they are not current permissions to add retired tips/checkpoints or embed EL10 in other roles.
 
 The source controls the author's intellectual position, certainty, evidence, qualifications, quotations and conclusions. Design, simplification and reading-priority decisions must preserve them. Essential reasoning remains in the visible main path and ordinary print; optional controls or a proposed future appendix cannot be its only home.
 
@@ -55,7 +55,7 @@ These are the **existing** colours and observed icons, not a newly approved fina
 | `.box.concept` | C (🟩) | `#256B45` green | The dossier's single opening central concept/thesis. |
 | `.box.tip` | ! (🟨) | `#96540E` amber | **Legacy examination-tip role, retired from the main body.** Token retained as implementation history; no automatic reassignment. |
 | `.box.mistake` | ✕ (🟥) | `#8C2E2E` red | A concrete source-based misunderstanding and its correction. |
-| `.box.memory` | ♥ (🟪) | `#5A3A78` purple | A retrieval operation, not an alternative container for an explanatory EL10 analogy. |
+| `.box.memory` | ♥ (🟪) | `#5A3A78` purple | Retrieval or compact source-grounded explanatory support; compiler-added explanatory analogies retain the dedicated EL10 role. |
 | `.box.highyield` | ★ (gold) | `#7E5C0C` | A source-grounded point or relationship especially useful to grasp or remember; not a prediction about examiners. |
 
 Each has a `-bg` tint and `-bd` border variant, such as `--c-def-bg` and `--c-def-bd`. Shared uses of a token elsewhere do not revive a retired component. The 29-dossier audit found 13 icon omissions among 207 boxes, concentrated in 3.2.1–3.2.5; later correction must follow the eventual agreed icon treatment. This documentation pass selects no replacement icon set or palette.
@@ -97,7 +97,7 @@ The 39 chapter hues in that historical baseline were retained when the first two
 | `--font-arabic` | Amiri | Arabic prose and display text, with explicit component exceptions below |
 | `--font-arabic-sans` | Noto Sans Arabic | Actively used by the explicit RTL exception list for labels, table headers, citations and other selected components |
 
-The global `.ar` / `[lang="ar"]` rule supplies the Arabic font, RTL direction and bidi isolation. Preserve that semantic markup. It does **not** guarantee correct typography for every descendant: an explicit component `font` or `font-family` rule can override an inherited Arabic value. The existing RTL exception list actively uses Noto Sans Arabic; inspect actual computed descendants before diagnosing font, size or joining problems. This documentation pass chooses no new typography values or replacement font policy.
+The global `.ar` / `[lang="ar"]` rule supplies the Arabic font, RTL direction and bidi isolation. Preserve that semantic markup. It does **not** guarantee correct typography for every descendant: an explicit component `font` or `font-family` rule can override an inherited Arabic value. The existing RTL exception list actively uses Noto Sans Arabic; inspect actual computed descendants before diagnosing font, size or joining problems. The user has deferred the exact Arabic typography decision, aiming at the smallest meaningful change later. No replacement values or font policy are selected here.
 
 ## Elevation system (added in the "SaaS" pass)
 
@@ -142,7 +142,7 @@ Role is established by intellectual function and source ownership, not by HTML c
 | Definition | `.box.definition` | Definitions only: **≤20 words and ≤2 sentences per definition; ≤2 definitions per box; ≤40 words for the whole box**. No transfer of unused words between entries. |
 | High-yield | `.box.highyield` | Source-grounded importance or a valuable relationship; **≤40 words** for the complete body. |
 | Common mistake | `.box.mistake` | Correct a source-based confusion; **≤35 words** for the complete body; no independent adjudication of the author. |
-| Memory | `.box.memory` | A meaningful retrieval cue or operation; **≤30 words** for the complete body. |
+| Memory | `.box.memory` | A retrieval cue or compact source-grounded explanatory anchor supporting understanding and recall; **≤30 words** for the complete body. |
 | Source quotation | `.golden-quote` with `<cite>` | Verbatim quotation with context, actual ownership and reference; no new word cap. |
 | Section objective | `.section-objective` | The genuine question answered by the section, after its heading; included in the visible aid budget. No new universal word cap. |
 | Hierarchy / sequence | `.hierarchy` and its nodes | Decimal levels for parent–child relations; ordinary numbering for actual steps; peers share a level. Do not infer intellectual rank from CSS indentation. |
@@ -158,15 +158,15 @@ Role is established by intellectual function and source ownership, not by HTML c
 
 Individual definitions, memory devices and table cells retain their limits in revision or optional layers. Entire revision collections do not acquire a 20-, 30- or 40-word aggregate cap; a definition callout still has at most two definitions. A necessary long source quotation belongs intact outside a bounded cell or memory unit, rather than bypassing its limit.
 
-### Memory, analogy provenance and pending categories
+### Memory, analogy provenance and deferred design
 
 **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-Memory can use mnemonics, acronyms, memorable phrases, visual associations, memory palaces, conceptual anchors, comparison tricks, pattern recognition and “remember this because” connections. A suitable short source quotation is allowed with its attribution and the same 30-word memory-body cap. Its retrieval operation must be identifiable, its cues must agree with its label, and its content must remain source faithful. Compiler-created cues do not become source quotations or evidence.
+Memory can use mnemonics, acronyms, memorable phrases, visual associations, memory palaces, conceptual anchors, comparison tricks, pattern recognition and “remember this because” connections. A suitable short source quotation is allowed with its attribution and the same 30-word memory-body cap. The expanded role also includes compact source-grounded explanation through a conceptual anchor or clarifying distinction; no forced mnemonic is required. Its explanatory/recall purpose must be identifiable, its content must agree with its label, and all of it shares the 30-word cap. Compiler-created cues do not become source quotations or evidence.
 
 A compiler-created **explanatory analogy** belongs in the dedicated EL10 role even when memorable. A source author's own or cited analogy belongs to source content with its actual ownership. Check the supplied original before assigning provenance; an old class, missing quotation marks or a familiar image proves neither origin. Keep unresolved cases explicit. A direct explanation, classification or summary does not acquire an unlimited allowance by being source-derived or labelled “simple explanation.”
 
-The general-purpose explanatory callout remains a **proposal**, not an approved family. Final colour/icon assignments and the full-prose bullet conversion remain deferred. The optional page-based central-concept formula is only a planning proposal within 40–75 words; no source-page number or calibration silently becomes a required length. Reading priorities describe the learner's route, not whether an author's claims are true or acceptable.
+The user has closed the separate general-purpose-callout proposal by placing that concise explanatory function within the expanded memory family. Essential/useful/supplementary is a framework for preparing and placing the notes and requires no added badge, icon, colour or reader-facing priority label. Final colour/icon assignments, exact Arabic typography and the ordinary-prose bullet/highlighting pass remain deferred. The optional page-based central-concept formula remains a planning proposal within 40–75 words; no source-page number or calibration silently becomes a required length. Reading priorities do not judge whether an author's claims are true or acceptable.
 
 ## Numbering & content conventions
 
@@ -317,7 +317,7 @@ These are acceptance requirements for **later authorized implementation**, not C
 
 Among ordinary Arabic main-body paragraphs, excluding aids, optional layers and revision, **55 of 68 paragraphs in the earlier six Arabic dossiers** contained inline bold; **0 of 78 in the later seven, 3.1.4–3.2.5**, did. Average paragraph lengths were similar. This identifies a loss of selective visual emphasis, not a rule that every paragraph needs bold or that later prose must be cut.
 
-Use restrained emphasis for a meaningful technical term, contrast, condition or argumentative pivot. Include any negation or qualification needed to avoid changing the highlighted claim. Keep attribution legible. Avoid entire bold paragraphs, dense repeated labels or mechanically bolding a fixed number of words. Preserve comfortable separation between genuinely distinct paragraphs. Review multi-paragraph aid spacing as actually rendered; do not remove useful paragraph breaks to imitate a compact box. Wholesale conversion of ordinary prose into bullet points is deferred.
+The ordinary-prose pass for improved highlighting and complete-sentence bullets remains deferred. When authorized, use restrained emphasis for a meaningful technical term, contrast, condition or argumentative pivot, including any necessary negation, qualification and attribution. Avoid entire bold paragraphs, dense repeated labels or mechanically bolding a fixed number of words. Preserve comfortable separation between distinct paragraphs. In authorized aid work, review existing multi-paragraph spacing as actually rendered rather than removing useful breaks to imitate a compact box; roadmap lead-ins and suitable emphasis within aids remain part of their own functions.
 
 ### Measured typography and descendant overrides
 
@@ -334,7 +334,7 @@ The following recorded screen values are **baselines, not replacement targets**.
 | Timeline descriptions | 14.5px | 22.475px (1.55) |
 | Source Depth item paragraphs | 14px | 23.1px (1.65) |
 
-Inspect the font, size, line height, wrapping and spacing on the text-bearing child itself. In current CSS, the Arabic Source Depth content parent declares **18px**, while the more specific item paragraph declares **14px/1.65**. Its item heading also has a direct **14px sans font shorthand**. A correct parent declaration cannot certify readable or correctly selected Arabic descendants. These are concrete cascade issues to resolve and verify later; no replacement sizes are approved here.
+Inspect the font, size, line height, wrapping and spacing on the text-bearing child itself. In current CSS, the Arabic Source Depth content parent declares **18px**, while the more specific item paragraph declares **14px/1.65**. Its item heading also has a direct **14px sans font shorthand**. A correct parent declaration cannot certify readable or correctly selected Arabic descendants. These are concrete cascade issues to resolve and verify after the explicitly deferred typography decision. The user's aim is the smallest meaningful change; no replacement sizes are approved here.
 
 Check all content-bearing text and labels affected by a future change, including timeline titles, citations, captions and relationship labels. The audit recorded an Arabic timeline title using the Latin sans stack, as well as retained letter spacing on some Arabic captions, citations and relation badges. Preserve Arabic font coverage and joining. Do not assume that a Latin label's tracking or small-cap treatment transfers appropriately to Arabic.
 

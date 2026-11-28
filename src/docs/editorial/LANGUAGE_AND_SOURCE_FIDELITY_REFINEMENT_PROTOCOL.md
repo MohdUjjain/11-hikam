@@ -6,13 +6,13 @@
 
 **Adopted:** 18 November 2026; reconciled with the accepted decisions of 28 November 2026
 
-**Status:** Standing source and language instructions; the present authorization is documentation only
+**Status:** Standing source and language instructions; implementation follows the latest user-authorized dossier and phase
 
 **Scope:** Existing and future bilingual Arabic/English dossiers in `MohdUjjain/11-hikam`
 
 **Governing rule:** **Make the source easier to understand, not smaller, different, or less complete. The source controls the intellectual content; the user controls the authorized work.**
 
-This protocol governs source-faithful academic study notes. It does not authorize independent philosophical critique, unrelated chapter rewrites, a replacement design system, or implementation merely because a new rule has been documented. The current documentation pass changes no reader content, CSS, JavaScript, component markup, colours, icons or deployment.
+This protocol governs source-faithful academic study notes. It does not authorize independent philosophical critique, unrelated chapter rewrites, a replacement design system, or implementation merely because a new rule has been documented. Documentation adoption alone does not implement a reader change. The user's later 28 November request authorizes a focused 3.2.5 pass while deferring colour, exact Arabic typography and ordinary-prose bullet/highlighting work.
 
 Read the [Study Aid Roles and Reading Design Protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md) for the current role definitions and accepted limits, and the [Audit and Migration Plan](STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md) for measured evidence and deferred work. These accepted decisions supersede conflicting older component, word-limit, EL10 and verification instructions. The [Design System](../design/DESIGN_SYSTEM.md), [Pagination System](../pagination/PAGINATION_SYSTEM.md), [source authoring instructions](../../README.md) and root [README](../../../README.md) continue to govern their respective architecture. Inspect the live repository before implementation; dated counts and verification reports are historical evidence, not current inventories.
 
@@ -24,7 +24,7 @@ All permissions to simplify, prioritize, condense, reorganize, label, illustrate
 
 The later accepted rules are binding: one opening central concept; definitions restricted to definitions; the selected 30-word memory maximum; dedicated compiler-added EL10 analogies; a distinct source-analogy role; removal of main-body examination tips and checkpoints; cell limits for all tables; and meaningful roadmap previews. Section 5 records the limits together. Existing instances require a later authorized, source-guided migration; documenting the rules does not certify that the corpus already satisfies them.
 
-The proposed general-purpose explanatory callout remains **unapproved**. Do not invent its name, icon, colour, cap or approved status, or use it as an escape from another role's limit. Conversion of all ordinary prose into bullets remains deferred. Final colour and icon assignments remain pending; use the established tokens when later authorized work requires them.
+**28 November follow-up:** no separate general-purpose explanatory callout is introduced. Concise source-grounded explanatory support falls within the expanded memory-aid role, retaining its 30-word complete-body maximum. Conceptual anchors and clarifying distinctions may help understanding and recall without a forced mnemonic. The dedicated EL10 boundary remains intact. The ordinary-prose bullet/highlighting pass and final colour/icon work remain deferred. Arabic typography is also deferred for an explicit later decision, aiming at the smallest meaningful change.
 
 ## Reading layers, source coverage and operating budgets
 
@@ -36,7 +36,7 @@ Reading Companions resolve a local difficulty through *In simple words*, *Why th
 
 The planning range remains approximately **650–850 words of main explanatory prose** plus **850–1,150 words of visible main study aids, including section objectives**, or approximately **1,500–2,000 words** together. Exclude chapter frontmatter, roadmaps, optional Companions, optional Source Depth and all six revision sections from these two pools. This is source-proportionate planning guidance, not permission to add filler, delete essential material or evade a component's accepted limit. Record source-critical exceptions and resolve placement by intellectual function.
 
-**Essential / useful / supplementary are reading priorities**, not judgments of source truth, acceptability, endorsement or examination probability. They describe what a learner needs for the current reading route. No component is inherently assigned one priority, and supplementary status does not make source details expendable.
+**Essential / useful / supplementary are reading priorities**, not judgments of source truth, acceptability, endorsement or examination probability. They form the framework for preparing and placing the notes according to the learner's current reading needs. The user requires no added priority colours, icons, badges or reader-facing labels. No component is inherently assigned one priority, and supplementary status does not make source details expendable.
 
 ## Historical adoption record — 18–19 November 2026
 
@@ -116,7 +116,7 @@ Treat the dossier as an accurate teaching presentation of **what the source auth
 
 **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-The following is the workflow for a separately authorized reading pass. The current documentation-only pass does not start any of these content edits. Preserve the original intellectual method; a second pass repairs execution and coverage rather than inventing a new methodology.
+The following is the workflow for an authorized reading pass. Apply only the phases within the latest user-requested scope; documentation adoption by itself does not start these content edits. Preserve the original intellectual method; a second pass repairs execution and coverage rather than inventing a new methodology.
 
 ### Phase 0 — Preparation and source anchoring (per reading)
 
@@ -198,7 +198,7 @@ The voice's useful governing traits are documentary primacy, evidence-led develo
 
 Readable Arabic includes visual access as well as sentence quality. Inspect the actual rendered text, including nested paragraphs and labels, rather than assuming an Arabic parent class fixes every descendant. The [Design System's Arabic acceptance requirements](../design/DESIGN_SYSTEM.md#arabic-readability-and-presentation-acceptance) record the measured font, spacing, emphasis, RTL and table-cascade issues without selecting new typography values.
 
-The audited ordinary main prose through 3.2.5 had inline bold in **55 of 68 earlier Arabic paragraphs** and **0 of 78 later paragraphs**. Their similar average lengths do not establish that the later text should be shortened. This is evidence of lost selective emphasis, not a quota requiring bold in every paragraph. When later authorized, emphasize a meaningful term, distinction, condition or argumentative pivot; keep its negation, qualification and attribution intact. Do not bold whole paragraphs or convert the entire prose into bullet points as part of this documentation decision.
+The audited ordinary main prose through 3.2.5 had inline bold in **55 of 68 earlier Arabic paragraphs** and **0 of 78 later paragraphs**. Their similar average lengths do not establish that the later text should be shortened. This is evidence of lost selective emphasis, not a quota requiring bold in every paragraph. The ordinary-prose pass for improved highlighting and complete-sentence bullets remains deferred. When that pass is authorized, emphasize a meaningful term, distinction, condition or argumentative pivot, retaining its negation, qualification and attribution. Do not bold whole paragraphs. The accepted roadmap lead-ins and emphasis within revised aids remain part of their own functions.
 
 Check comfortable multiline reading, Arabic font coverage and joining, appropriate line height, space between distinct paragraphs, clear label/body separation, correctly isolated mixed-direction references, logical RTL indents and intact card outlines. Source Depth deserves the same reading care as the main text even though it is optional; its child typography must be inspected directly. Definitions, table cells and roadmap previews must satisfy their accepted functions and limits without losing their source meaning.
 
@@ -229,7 +229,7 @@ The [current role protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md) cont
 | Definition | Definitions only: **at most 20 words and two sentences per definition**, **at most two definitions per box**, **at most 40 words for the whole box**. Unused words in one entry cannot increase another entry's allowance. |
 | High-yield | **At most 40 words** presenting a source-grounded point or relationship especially valuable for understanding or recall. Do not invent examination likelihood. |
 | Common mistake | **At most 35 words** correcting a concrete source-based misreading or confusion. This is not a container for independent criticism of the author. |
-| Memory | **At most 30 words** for a real retrieval aid; permitted methods and boundaries appear below. |
+| Memory | **At most 30 words** for a retrieval cue or compact source-grounded explanatory anchor supporting understanding and recall; methods and boundaries appear below. |
 | EL10 / ELI10 / compiler-added analogy | A **dedicated analogy**, **20–30 words**, with a hard maximum of 30. No per-dossier quota. |
 | Source analogy / simple explanation | An analogy or explanatory comparison supplied by the author, including one the author cites; explicit ownership and the relevant source inference. No new word cap has been selected for this role. |
 | Source quotation | Accurate quotation with necessary context and attribution. No new word cap has been selected. |
@@ -250,7 +250,7 @@ A definition gives the meaning of a term or concept. A historical comparison, de
 
 **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-Memory aids may use **mnemonics, acronyms, memorable phrases, visual associations, memory palaces, conceptual anchors, comparison tricks, pattern recognition or “remember this because” connections**, including a suitable short source quotation. Use a discernible cue-to-content relationship that helps the learner retrieve what the source teaches. Do not force a mnemonic, invent a source claim to make an acronym fit, or present a recap as a memory technique merely because it is short. A label and its actual cues must agree.
+Memory aids may use **mnemonics, acronyms, memorable phrases, visual associations, memory palaces, conceptual anchors, comparison tricks, pattern recognition or “remember this because” connections**, including a suitable short source quotation. The expanded role also includes compact source-grounded explanatory support: a conceptual anchor or a clearly explained distinction may itself help the reader understand and recover the taught idea. No acronym, rhyme or artificial chain is required. Keep the actual explanatory/recall purpose identifiable, rather than treating brevity alone as a memory function. Do not invent a source claim to make a device fit. The complete explanation and cue share the 30-word cap, and the heading must accurately identify their purpose.
 
 A compiler-created retrieval arrangement must remain recognizable as an aid, not as the author's own phrase or evidence. Quoted source wording remains verbatim and attributed; placing it in a memory box does not remove the **30-word whole-body maximum**. A comparison trick may aid recall, but a compiler-created analogy used to explain a difficult concept belongs to the dedicated EL10 role. It cannot be hidden in a memory, high-yield or other box to avoid the EL10 boundary.
 

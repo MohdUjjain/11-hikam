@@ -34,6 +34,28 @@ TITLE_STAMP_AUDIT = r'''root => {
     Math.min(r.right,s.right)-Math.max(r.left,s.left)>1 &&
     Math.min(r.bottom,s.bottom)-Math.max(r.top,s.top)>1) : []};
 }'''
+RELATION_ORDER_AUDIT = r'''root => [...root.querySelectorAll('.concept-rel .rel-row')].map(row => {
+  const nodes=[...row.children].filter(e=>e.matches('.rel-node, .rel-badge'));
+  const rects=nodes.map(e=>{
+    const r=e.getBoundingClientRect();
+    return {text:e.textContent.trim(),left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height};
+  });
+  const failures=[];
+  if(nodes.length!==3 || !nodes[0]?.matches('.rel-node') || !nodes[1]?.matches('.rel-badge') || !nodes[2]?.matches('.rel-node'))
+    failures.push('Expected cause, relationship, effect in logical DOM order');
+  if(rects.some(r=>r.width<=0 || r.height<=0)) failures.push('A relationship item is not rendered');
+  for(let i=1;i<rects.length;i++) {
+    const a=rects[i-1], b=rects[i];
+    const verticalOverlap=Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top);
+    const sameLine=verticalOverlap>Math.min(a.height,b.height)/2;
+    if(sameLine) {
+      if(b.right>a.left+1) failures.push(`Item ${i+1} must follow item ${i} toward the left on an RTL line`);
+    } else if(b.top<a.bottom-1) {
+      failures.push(`Wrapped item ${i+1} must continue below item ${i}`);
+    }
+  }
+  return {rects,failures};
+})'''
 
 
 def screen(browser, url):
@@ -77,7 +99,7 @@ def screen(browser, url):
             wrap = tables.nth(i)
             table = wrap.locator('table.comparison')
             cols = table.locator('thead th[scope="col"]').count()
-            assert 3 <= cols <= 4
+            assert 2 <= cols <= 4
             assert table.locator('tbody tr').count() == table.locator('tbody th[scope="row"]').count()
             assert wrap.evaluate('(e)=>getComputedStyle(e).overflowX') == 'auto'
             assert table.evaluate('(e)=>getComputedStyle(e).direction') == 'rtl'
@@ -85,6 +107,9 @@ def screen(browser, url):
         timeline_clearances = chapter.locator(':scope > .chapter-body .historical-timeline-event').evaluate_all('''events => events.map(e =>
           e.getBoundingClientRect().right-e.querySelector('.historical-timeline-date').getBoundingClientRect().right)''')
         assert timeline_clearances and all(gap >= 12 for gap in timeline_clearances), ('RTL timeline dates must clear their markers', width, timeline_clearances)
+        relation_order = chapter.evaluate(RELATION_ORDER_AUDIT)
+        assert relation_order and all(not row['failures'] for row in relation_order), ('The map must preserve cause → relation → effect in Arabic visual reading order, including natural wrapping', width, relation_order)
+        (ARTIFACTS / f'azmi-325-map-{width}-order.json').write_text(json.dumps(relation_order, ensure_ascii=False, indent=2), encoding='utf-8')
         details = chapter.locator(':scope > .chapter-body details.hikam-source-depth-inline')
         assert details.count() > 0
         assert all(details.nth(i).get_attribute('open') is None for i in range(details.count()))
@@ -108,6 +133,10 @@ def screen(browser, url):
         page.keyboard.press('Escape')
         assert popup.is_hidden() and cue.get_attribute('aria-expanded') == 'false'
         assert cue.evaluate('(e)=>document.activeElement===e')
+        maps = chapter.locator(':scope > .chapter-body .concept-rel:visible')
+        for i in range(maps.count()):
+            maps.nth(i).scroll_into_view_if_needed()
+            maps.nth(i).screenshot(path=str(ARTIFACTS / f'azmi-325-map-{i+1}-{width}-rtl.png'))
         if width == 390:
             for i in range(tables.count()):
                 tables.nth(i).scroll_into_view_if_needed()
@@ -196,6 +225,7 @@ def print_a4(browser, url):
     revision_headings = page.locator('#'+ID+' > .end-block .endh').all_text_contents()
     page.evaluate('''() => {
       const titleStampAudit = ''' + TITLE_STAMP_AUDIT + ''';
+      const relationOrderAudit = ''' + RELATION_ORDER_AUDIT + ''';
       // The application removes generated pages on afterprint. Capture each
       // completed beforeprint layout after its registered paginator, including
       // Chromium's actual PDF event, instead of inspecting removed nodes later.
@@ -208,6 +238,7 @@ def print_a4(browser, url):
           revisionHeadings:pages.reduce((n,p)=>n+p.querySelectorAll('.endh').length,0),
           timelineDateClearances:pages.flatMap(p=>[...p.querySelectorAll('.historical-timeline-event')].map(e=>
             e.getBoundingClientRect().right-e.querySelector('.historical-timeline-date').getBoundingClientRect().right)),
+          relationOrder:pages.flatMap(p=>relationOrderAudit(p)),
           geometry:pages.map(e=>{
             const content=e.querySelector('.js-page-content');
             const footer=e.querySelector('.js-page-footer').getBoundingClientRect();
@@ -234,6 +265,7 @@ def print_a4(browser, url):
     assert audit['depthAndCues'] == 0
     assert audit['revisionHeadings'] == 6
     assert audit['timelineDateClearances'] and all(gap >= 12 for gap in audit['timelineDateClearances']), ('Printed RTL timeline dates must clear their markers', audit['timelineDateClearances'])
+    assert audit['relationOrder'] and all(not row['failures'] for row in audit['relationOrder']), ('Actual print clones must retain the Arabic cause → relation → effect reading order', audit['relationOrder'])
     reader = PdfReader(BytesIO(pdf))
     assert len(reader.pages) == count+1, ('A4 must contain the frontmatter and every generated page', len(reader.pages), count)
     assert all(abs(float(p.mediabox.width)-595.28) < 2 and abs(float(p.mediabox.height)-841.89) < 2 for p in reader.pages)

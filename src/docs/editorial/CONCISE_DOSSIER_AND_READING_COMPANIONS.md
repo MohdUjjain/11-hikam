@@ -6,11 +6,11 @@
 
 **Scope:** Every existing and future Arabic/English dossier; apply changes only within the user-authorized implementation scope.
 
-**Status:** Standing editorial instructions. This documentation consolidation does not implement the deferred chapter, reader, typography, palette or prose-format changes.
+**Status:** Standing editorial instructions. Apply chapter changes within the latest user-authorized scope; colour, exact Arabic typography and ordinary-prose bullet/highlighting work remain deferred.
 
 > **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 >
-> The original source controls the thesis, reasoning, evidence, distinctions, qualifications, objections, replies, conclusions and degree of certainty. Clarification, concise presentation, priority labels and component reassignment do not authorize a new philosophical position, invented objection, unsolicited qualification or artificial balance.
+> The original source controls the thesis, reasoning, evidence, distinctions, qualifications, objections, replies, conclusions and degree of certainty. Clarification, concise presentation, priority decisions and component reassignment do not authorize a new philosophical position, invented objection, unsolicited qualification or artificial balance.
 
 ## 1. Authority, current policy and the purpose of concision
 
@@ -59,7 +59,7 @@ Frontmatter, the original title/author, chapter roadmap and section objectives h
 
 Keep **role**, **learning priority** and **provenance** as separate editorial decisions. Essential material is required to follow the source accurately and must remain in the principal reading path and ordinary print. Useful material improves understanding, navigation or recall. Supplementary material adds source detail that can be deferred safely. A definition, quotation, table or author-supplied analogy can be essential; ordinary prose is not automatically essential, and a colored box is not automatically merely useful.
 
-Apply the user's test: **If the reader skips this material, can they still understand the author’s argument accurately, including its necessary boundaries and qualifications?** These priorities do not classify a claim as true or false, endorse it, rank authors, or predict examination frequency. The visual encoding of priority remains a separate design decision; do not invent a second color system during editorial work.
+Apply the user's test: **If the reader skips this material, can they still understand the author’s argument accurately, including its necessary boundaries and qualifications?** These priorities do not classify a claim as true or false, endorse it, rank authors, or predict examination frequency. Essential/useful/supplementary is the framework for preparing and placing the notes; the user expressly requires no additional visual encoding, badges, colours or priority labels.
 
 ## 4. Programme density and separate word pools
 
@@ -93,7 +93,7 @@ For each overlong or misclassified component, identify its source units before e
 
 Main-body **examination tips and checkpoints are retired** under the latest user decision. This applies to disguised testing exercises under high-yield or other labels as well as to `.box.tip` and `.checkpoint`. Preserve their useful source teaching in the appropriate visible location; place valid retrieval/examination work in the independent revision system where appropriate. Do not retain a retired main-body function by renaming its heading.
 
-Exactly one opening central-concept box is the current role rule. Reassign additional concept boxes by their actual operation. Keep definition entries as definitions, memory aids as retrieval devices, and maps as concepts joined by meaningful relations. The proposed general explanatory callout has **not** been approved: its name, scope, limit and visual treatment remain pending. It is not a catch-all destination for material displaced from other boxes.
+Exactly one opening central-concept box is the current role rule. Reassign additional concept boxes by their actual operation. Keep definition entries as definitions and maps as concepts joined by meaningful relations. The user's 28 November follow-up places concise source-grounded explanatory support within the expanded memory-aid family, retaining its 30-word whole-body maximum; no separate general-purpose callout is introduced. A clear conceptual anchor or explanation of a distinction may support understanding and recall without an artificial mnemonic. This is not a catch-all destination for long exposition or material whose actual role is better served elsewhere.
 
 Restoring the programme's study-aid richness means finding missing learning operations in the source: a comparison that clarifies a distinction, a hierarchy that exposes genuine levels, a definition the argument needs, or a memory cue that supports retrieval. It does not mean restoring every historical container or inventing content to reach 850 words. Equal editorial care for retained functions does not require equal quantities or preserve superseded functions.
 
@@ -127,9 +127,9 @@ Source Depth is in the interactive HTML for local access but remains outside the
 
 Apply the language protocol and supplied Arabic profile to every layer: main text, aids, labels, captions, Companions, Source Depth and revision. Preserve source terminology while making referents, transitions and logical connections clear. Do not replace the source's categorical position with tentative verbs merely because the Arabic language samples use them elsewhere; do not make a tentative source claim categorical for a cleaner aid.
 
-A readable page needs visible thought boundaries and navigation as well as clear sentences. Use purposeful headings, complete short points where authorized, and selective bold anchors for the terms, conditions and distinctions that carry the argument. Do not bold whole paragraphs, hide qualifications outside the emphasis, or treat the deferred prose-to-bullets proposal as already implemented.
+A readable page needs visible thought boundaries and navigation as well as clear sentences. Use purposeful headings and complete short points where authorized. In the affected aids and roadmap previews, selective bold anchors may identify their terms, conditions and distinctions without hiding qualifications. The separate ordinary-prose pass for complete-sentence bullets and improved highlighting remains deferred; do not broaden a study-aid pass into that work.
 
-Arabic review must distinguish ordinary prose from table cells, hierarchy values, relationship nodes, timeline descriptions and opened optional panels. Nominal parent font sizes do not establish actual child typography; line-height does not establish adequate paragraph or block separation. The measured crowding, emphasis and RTL findings are recorded in the migration plan. They call for localized visual evaluation, not a speculative global CSS increase or a new font/palette system during this documentation pass.
+Arabic review must distinguish ordinary prose from table cells, hierarchy values, relationship nodes, timeline descriptions and opened optional panels. Nominal parent font sizes do not establish actual child typography; line-height does not establish adequate paragraph or block separation. The measured crowding, emphasis and RTL findings are recorded in the migration plan. The exact Arabic typography decision remains deferred, with the smallest meaningful change as the user's stated aim. The evidence supports later localized evaluation, not a speculative global CSS increase or a new font/palette system.
 
 Use comparisons for real shared axes, hierarchy levels for real parent–child relations, sequential numbering for successive steps, and timelines for genuine chronology. Preserve source uncertainty and do not invent a causal arrow, ranking, date or classification because a visual component has space for it. All current role and unit limits remain governed by the canonical specification.
 
@@ -186,7 +186,7 @@ Maintain both physical-page mechanisms documented in the [Pagination System](../
 
 The standing user instruction is **not to run the full suite for every chapter**. During a later authorized implementation, select source, anchor, structure and runtime checks that address the actual changed surfaces. Use relevant A4/RTL/keyboard/no-JavaScript/offline checks when those surfaces are affected, and broaden verification only for a concrete risk or explicit gate. A documentation-only pass does not trigger a content build, reader suite, fork dispatch or deployment.
 
-For an authorized release, use the current [fork and release procedure](../hosting/SECONDARY_FORK_CI_AND_RELEASE.md) under the latest user scope and verification override. Distinguish local checks, fork evidence, transferred Git blobs, upstream checks and actual Pages publication. Do not claim that one proves the others, manually trigger or await a whole-book suite as a routine substitute for targeted verification, or bypass an access-control/approval rejection. Report any automatic workflow or infrastructure limitation plainly. The present documentation authorization does not itself authorize reader implementation or publication.
+For an authorized release, use the current [fork and release procedure](../hosting/SECONDARY_FORK_CI_AND_RELEASE.md) under the latest user scope and verification override. Distinguish local checks, fork evidence, transferred Git blobs, upstream checks and actual Pages publication. Do not claim that one proves the others, manually trigger or await a whole-book suite as a routine substitute for targeted verification, or bypass an access-control/approval rejection. Report any automatic workflow or infrastructure limitation plainly. Documentation adoption alone does not authorize reader implementation or publication; follow the latest explicit task and established release authorization.
 
 ## 12. Historical evidence and continuity
 

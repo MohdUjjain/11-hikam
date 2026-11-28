@@ -2,6 +2,8 @@
 
 **Recorded:** 28 November 2026
 
+**Decision follow-up, 28 November 2026:** explanatory support is incorporated into the expanded memory-aid role (maximum 30 words); no separate general-purpose callout is introduced. Essential/useful/supplementary is a preparation framework without additional visual markers. Colour/icon design, exact Arabic typography and the ordinary-prose bullet/highlighting pass remain deferred. The user has authorized a focused 3.2.5 implementation pass. The measurements below remain the frozen baseline, not measurements of that later revision.
+
 **Policy:** [Study Aid Roles and Reading Design Protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md).
 
 **Evidence baseline:** repository commit [`7798593e40ceafb9ff9590e1c1fea149347e5fdd`](https://github.com/MohdUjjain/11-hikam/tree/7798593e40ceafb9ff9590e1c1fea149347e5fdd). Measurements describe that edition, not a completed migration to the new rules. The source-page survey covers the broader programme; the detailed main-aid census covers 29 dossiers through 3.2.5. The accompanying [baseline data](data/study_aid_baseline_2026_11_28.json) preserves compact measurements and the 62 source allocations without uploading the original reading files.
@@ -77,7 +79,7 @@ The high-yield family also needs functional review: a 30-word retrieval chain in
 
 The 21 formal memory aids contain 686 body words, ranging from 23–50, with an average of 32.7 and median 35. Thirteen exceed the now-adopted 30-word maximum. The earlier alternatives of 35 or 40 words are no longer active options merely because they occur in a sensitivity table.
 
-The current operations are six ordered chains, five keyword groups, seven paired mappings, two numerical anchors and one hybrid. No existing acronym or rhyme was found in that inventory. This describes the implementation and does not restrict the expanded repertoire in the canonical protocol.
+The current operations are six ordered chains, five keyword groups, seven paired mappings, two numerical anchors and one hybrid. No existing acronym or rhyme was found in that inventory. This describes the frozen implementation and does not restrict the expanded repertoire in the canonical protocol. The later user decision also admits compact source-grounded explanatory anchors within the memory family; it does not add a new component class or alter the 30-word maximum.
 
 | Dossier or entry | Words | Existing operation |
 | --- | ---: | --- |
@@ -209,7 +211,7 @@ Representative live screen measurements were:
 
 The expanded 3.2.5 Source Depth panel confirmed that its actual paragraph uses 14px despite the Arabic parent setting of 18px; the more specific child rule controls it. See the [Source Depth rules](https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/philosophy_notes.css#L2871). Ordinary paragraphs have a 15px bottom margin. The inspected two-paragraph high-yield aids do have a 15px paragraph gap; do not report zero separation.
 
-These values are measurements, not new typography settings. Inspect actual child styles, line spacing, thought-unit separation, selective emphasis and RTL geometry together. Short labels do not automatically require the leading of long prose. Full prose-to-sentence-bullets conversion remains deferred.
+These values are measurements, not new typography settings. Inspect actual child styles, line spacing, thought-unit separation, selective emphasis and RTL geometry together when that work is authorized. The user has deferred the exact Arabic typography decision and specified the smallest meaningful change as the aim. Short labels do not automatically require the leading of long prose. The ordinary-prose pass, including sentence bullets and improved highlighting, remains deferred.
 
 ## 10 Source lengths and the provisional drafting calibration
 
@@ -244,6 +246,8 @@ The historical raw 1–172 and planned 2–74 min–max allocations were experim
 `illustrative target = round(40 + 35 × clamp((P − 8.1) / (37.7 − 8.1), 0, 1))`
 
 This gives approximately 40 words at eight pages or fewer, 47 at 14 pages, 55 at 21, 65 at 29 and 75 at 38 pages or more. **The formula remains provisional.** The user accepted soft targets within the permitted 40–75 range, not a new hard limit for each chapter. Source complexity and accurate expression govern the final wording. Do not require every long reading to fill 75 words or every short reading to stop at its estimate.
+
+For the requested 3.2.5 pass, the frozen allocation is **29 assigned source pages**, giving approximately **65 words** under this illustration. That is a reminder of the proposal, not an adopted 65-word requirement. The user's follow-up asks what was discussed and leaves the formula provisional; the binding central-concept rule remains one opening box within **40–75 words**.
 
 ## 11 Overall density and the limits of the earlier projection
 
@@ -281,6 +285,8 @@ The documentation review distinguishes intellectual fidelity, learning function,
 | Exactly 75 words for central concept | One opening concept, 40–75 words, with only soft source-length targets |
 | Definition box at most 30 words | Each definition at most 20 words/two sentences; at most two per box and 40 total |
 | Memory cap undecided | Maximum 30 words for each complete memory aid |
+| Separate general-purpose explanatory callout left open | Compact source-grounded explanation belongs within the expanded memory role; no new family |
+| Priority framework requires another visual treatment | Essential/useful/supplementary guides preparation and placement; no extra visual marker |
 | EL10 inside memory or any suitable component | Dedicated compiler-added analogy role only, 20–30 words |
 | Every source-derived explanation is an analogy | Establish provenance and actual function separately |
 | Keep every established aid type | Retain approved functions; retire main-body tips/checkpoints and preserve unique source substance |
@@ -299,13 +305,13 @@ The documentation review distinguishes intellectual fidelity, learning function,
 
 The source-prohibition sentence appears prominently throughout the active instruction documents by explicit user request. It must not be weakened into a general request for neutrality or balance. Permitted mnemonics and EL10 devices can organize or clarify source-established content; they cannot carry independent judgments.
 
-The proposed general-purpose callout is not yet an approved destination for mixed material. The final palette, priority marking, icon convention, replacement Arabic typography and specific page-target formula also remain open. Recording a choice as open is necessary to avoid inventing a decision on the user's behalf; it does not block documentation of the settled rules.
+The later user decision resolves the general-purpose-callout question through the expanded memory family and resolves priority presentation by requiring no additional visual system. Colour/icon treatment, exact Arabic typography and the ordinary-prose bullet/highlighting pass remain deferred. The specific page-target formula remains provisional. Preserve these distinct decision states rather than leaving settled questions open or treating deferred choices as adopted.
 
 ## 14 Implementation sequence and completion evidence
 
 > **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-The current change is documentation. When implementation is authorized, use the following sequence within the agreed scope:
+The original consolidation was documentation only. The later 28 November user request authorizes a focused pass on 3.2.5. Use the following sequence within each agreed implementation scope; do not treat that one-dossier authorization as a whole-corpus migration:
 
 1. Confirm the current source and repository revision, the requested dossiers and the source materials. Prefer editable originals where supplied. Preserve any required pre-edit archive before replacing an unrevised dossier.
 2. Establish source-unit coverage, actual aid functions and provenance. Identify the definitions within mixed boxes and the analogies whose origin remains unresolved.
@@ -326,7 +332,7 @@ The separate future prose task may split long paragraphs at their actual sentenc
 
 > **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-For this documentation update, check that all active entrypoints reach the canonical policy, local links and anchors resolve, the latest decisions agree across the language/concise/context/design guidance, superseded instructions are removed from active directions, and the changed-file set contains no reader implementation. The baseline data should reproduce the stated totals and distribution without containing full original reading texts or private language samples.
+For the documentation portion of an update, check that all active entrypoints reach the canonical policy, local links and anchors resolve, the latest decisions agree across the language/concise/context/design guidance, and superseded instructions are removed from active directions. A documentation-only change contains no reader implementation; a separately authorized chapter migration must have its own scope and verification evidence. The baseline data should reproduce the stated totals and distribution without containing full original reading texts or private language samples.
 
 The GitHub workflows remain separate technical configuration. Selecting targeted documentation checks does not silently change their triggers, bypass branch protections or turn a skipped job into a passed job. The [release guide](../hosting/SECONDARY_FORK_CI_AND_RELEASE.md) distinguishes documentation publication from a built reader release and preserves the fork's verification role where applicable.
 

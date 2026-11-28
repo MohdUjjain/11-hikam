@@ -261,3 +261,17 @@ This archived edition is read-only, not a reader build input and must never be a
 - The earlier `dossier-3.2.5.html` (`2b03c83ef8fa35078655c1dee6bec9708c1a37f3`) and the separate `pre-prepared-source-2026-11-26/dossier-3.2.5.html` (`35fc0954d8e44f2bc37ea7eea73bae1864853e38`) remain independently unchanged.
 - Source: هشام عزمي، «الإلحاد الجديد»، from *الإلحاد للمبتدئين: دليلك المختصر في الحوار بين الإيمان والإلحاد*, pp. 14–35, then from «المرجحات الخارجية» on p. 91 through p. 97. Private editable original, paired scan and three Total Recalls remain outside the public repository.
 - This is read-only historical HTML, never a reader build input.
+
+
+## Dossier 3.2.5 — before the corpus study-aid refinement
+
+**Preserved before this chapter's study-aid changes:** 28 November 2026 (India time), from authoritative `main` at `90368ebb508796d1ef81903cae16f647c19c9d3c`.
+
+- **Complete immutable predecessor:** [dossier-3.2.5-before-2026-11-28-study-aid-refinement.html](dossier-3.2.5-before-2026-11-28-study-aid-refinement.html).
+- **Canonical source:** `src/chapters/subtopic-3-2.html`, the complete `ch3-2-5` section, including frontmatter, main teaching, Source Depth, navigation and all six revision functions.
+- **Exact size:** 55,582 UTF-8 bytes, without a trailing newline.
+- **Pinned Git blob SHA-1:** `ff92b2c1474d95a293baaea2f7bd61024a0377bf`.
+- **SHA-256:** `dda9307b500f3535c4d1a8db3da2fb4935f7b3ad3633a1e74d18330ffe0e481b`.
+- **Purpose:** preserve the previously published source-led edition before applying the newly adopted component roles and word limits. Earlier archived editions remain independently immutable.
+
+This archive is excluded from reader build inputs. The scoped 3.2.5 source/aid check protects its exact bytes. It is historical evidence, not the current chapter or an authority overriding the supplied original.
