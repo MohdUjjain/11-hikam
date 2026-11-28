@@ -19,18 +19,18 @@ def screen(browser, url):
         assert chapter.evaluate("(e) => getComputedStyle(e).direction") == "rtl"
         assert "--hue:348" in (chapter.get_attribute("style") or "")
         tables = chapter.locator(":scope > .chapter-body .tbl-wrap")
-        assert tables.count() == 2, (width, tables.count())
-        for i in range(2):
+        assert tables.count() == 4, (width, tables.count())
+        for i, expected_rows in enumerate((4, 3, 3, 2)):
             wrap = tables.nth(i)
             table = wrap.locator("table.comparison")
             assert table.locator('thead th[scope="col"]').count() == 3
-            assert table.locator('tbody th[scope="row"]').count() == 3
+            assert table.locator('tbody th[scope="row"]').count() == expected_rows
             assert wrap.evaluate("(e) => getComputedStyle(e).overflowX") == "auto"
             assert table.evaluate("(e) => getComputedStyle(e).direction") == "rtl"
         for selector, count in (
             (".hierarchy",4), (".box.definition",1), (".box.mistake",1),
-            (".box.memory",1), (".box.tip",1), (".concept-rel",2),
-            (".analogy",1), (".checkpoint",2),
+            (".box.memory",1), (".box.tip",0), (".concept-rel",1),
+            (".analogy",1), (".checkpoint",0), (".box.concept",1),
         ):
             found = chapter.locator(":scope > .chapter-body " + selector).count()
             assert found == count, (selector, width, found)
@@ -45,7 +45,9 @@ def screen(browser, url):
             "Arabic horizontal overflow", width)
         if width == 390:
             tables.first.scroll_into_view_if_needed()
-            tables.first.screenshot(path=str(ARTIFACTS / "amiri-322-moral-objectivity-rtl-mobile.png"))
+            tables.first.screenshot(path=str(ARTIFACTS / "amiri-322-worldview-rtl-mobile.png"))
+            tables.nth(1).scroll_into_view_if_needed()
+            tables.nth(1).screenshot(path=str(ARTIFACTS / "amiri-322-moral-objectivity-rtl-mobile.png"))
         no_errors(page, f"Amiri 3.2.2 RTL at {width}px")
         ctx.close()
     print("PASS 3.2.2 authentic Arabic comparisons, semantic aids, grouped no-JS Source Depth and RTL/mobile", flush=True)
