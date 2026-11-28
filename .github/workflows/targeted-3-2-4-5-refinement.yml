@@ -28,6 +28,13 @@ jobs:
           python src/tests/verify_reading_companions.py
           python src/tests/verify_publication.py
           python src/tests/validate_structure.py
+      - name: Install Arabic font families for actual PDF rendering
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri fonts-noto-core
+          fc-cache -f
+          fc-match Amiri
+          fc-match 'Noto Sans Arabic'
       - name: Browser and PDF dependencies
         run: |
           python -m pip install playwright==1.57.0 pypdf==5.9.0
