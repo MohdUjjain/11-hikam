@@ -54,7 +54,7 @@ for n, (hue, author, pages, pinned, anchors) in SPEC.items():
     body = chap.split('<div class="chapter-body">', 1)[1].split('<nav class="chapter-endnav"', 1)[0]
     visible = DEPTH.sub("", body)
     assert all(anchor in visible for anchor in anchors)
-    if n in (4, 5):
+    if n in (3, 4, 5):
         # Corpus rules applied to 3.2.4 and 3.2.5: purposeful components
         # replace legacy tips and checkpoints without dropping source units.
         assert visible.count('class="box concept"') == 1, 'One opening thesis'
