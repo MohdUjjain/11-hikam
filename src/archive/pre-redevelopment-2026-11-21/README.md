@@ -252,3 +252,12 @@ This archived edition is read-only, not a reader build input and must never be a
 - [Complete immediately preceding edition](dossier-3.2.4-before-2026-11-28-pedagogical-rework.html), extracted unchanged from authoritative `main` at `beae14901b4dbc9bcdd6f214f2a5cea981463b18` before editing.
 - Exact Git blob: `0e83f0c55c87e47b6436cf030f17127c4c125dd4` (33,892 bytes, no added trailing newline). Includes frontmatter, full body and every aid, navigation, all six revision sections and five examination categories.
 - The older `dossier-3.2.4.html` (`d278e05012c13fe7d59a40896af1ba431fe77646`) and the separate `pre-prepared-source-2026-11-26` edition remain independent and unchanged. This is an archive, not a build input.
+
+
+### 3.2.5 — complete predecessor before the 28 November pedagogical second pass
+
+- [Complete immediately preceding edition](dossier-3.2.5-before-2026-11-28-pedagogical-rework.html), preserved before editing from authoritative `main` at `f2d277d154f1a616f5b2d8a9bbe84df5b9556575`.
+- Exact immutable Git blob: `44b81a54e4b158a159e368a80154756daa195559` (35,628 bytes, no added trailing newline). Preserves the full Arabic frontmatter, prose, every study aid and optional disclosure, navigation, all six revision sections and five examination categories.
+- The earlier `dossier-3.2.5.html` (`2b03c83ef8fa35078655c1dee6bec9708c1a37f3`) and the separate `pre-prepared-source-2026-11-26/dossier-3.2.5.html` (`35fc0954d8e44f2bc37ea7eea73bae1864853e38`) remain independently unchanged.
+- Source: هشام عزمي، «الإلحاد الجديد»، from *الإلحاد للمبتدئين: دليلك المختصر في الحوار بين الإيمان والإلحاد*, pp. 14–35, then from «المرجحات الخارجية» on p. 91 through p. 97. Private editable original, paired scan and three Total Recalls remain outside the public repository.
+- This is read-only historical HTML, never a reader build input.
