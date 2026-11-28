@@ -301,6 +301,12 @@ Maintain the source-proportionate aid emphasis of the programme. Do not simply r
 
 Paragraph presentation is not itself a defect: a short paragraph can contain a meaningful chain, paired distinction, formula or inline sequence. Judge the complete aid's role, source fidelity and length. Ordinary prose converted to complete-sentence bullets remains a separately deferred task; this study-aid migration does not authorize a wholesale rewrite of body presentation.
 
+### Adjacent-prose and study-aid nonduplication rule (28 November refinement)
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Before placing a table, hierarchy, map or other aid next to explanatory prose, compare the information units carried by each. If the prose merely narrates the aid's rows, nodes or sequence, replace that redundant recital with a brief orientation or remove it. Preserve every non-repeated claim, qualification, source attribution, inference, example or conceptual boundary in ordinary prose or the appropriate component. A prose passage may introduce the problem or explain why the comparison matters while the table carries the classification. A table may help retrieve a previously explained argument only if it performs a genuinely different learning operation. Do not retain duplication to meet word budgets, and do not delete unique source meaning in order to reduce word count. Recovered space may be used for previously under-taught, source-grounded material when needed; do not add padding, independent conclusions, objections or invented hedging. Intentional recap in the separate revision system has a distinct retrieval role, so it is not judged by the same adjacent-main-reading test.
+
 ## 20 Reading Companions and Source Depth
 
 > **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**

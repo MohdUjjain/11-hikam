@@ -132,8 +132,31 @@ exam = next(n for n in revision.walk() if n.has('examq')).elements()
 for category in categories:
     following = exam[exam.index(category)+1]
     assert following.tag == 'ol' and any(n.tag == 'li' and n.text().strip() for n in following.elements())
-for name in ('concept', 'definition', 'highyield', 'tip', 'hierarchy', 'analogy', 'concept-rel', 'checkpoint'):
+for name in ('concept', 'definition', 'highyield', 'mistake', 'memory', 'hierarchy', 'analogy', 'concept-rel'):
     assert any(n.has(name) for n in body.walk()), ('Lost established aid type', name)
+
+# Current corpus rules supplement legacy source-coverage checks.
+assert len([n for n in body.walk() if n.has('concept')]) == 1, 'One opening thesis per dossier'
+assert not any(n.has('tip') or n.has('checkpoint') for n in body.walk()), 'Retired main-reading aids remain'
+frontmap = next(n for n in front.walk() if n.has('in-this-chapter'))
+for point in [n for n in frontmap.walk() if n.tag == 'li']:
+    assert any(n.tag == 'b' for n in point.elements()), 'Roadmap bold lead-in missing'
+    assert 7 <= len(point.text().split()) <= 15, ('Roadmap preview length', point.text())
+for family, limit in (('memory', 30), ('highyield', 40), ('mistake', 35)):
+    for entry in [n for n in body.walk() if n.has(family)]:
+        paras = [n for n in entry.walk() if n.tag == 'p']
+        count = sum(len(p.text().split()) for p in paras)
+        assert count <= limit, ('Aid over current whole-box cap', family, count)
+for definition in [n for n in body.walk() if n.has('definition')]:
+    paras = [n for n in definition.elements() if n.tag == 'p']
+    assert 1 <= len(paras) <= 2
+    assert all(len(p.text().split()) <= 20 and len(re.findall(r'[.؟!]', p.text())) <= 2 for p in paras)
+    assert sum(len(p.text().split()) for p in paras) <= 40
+for tbl in [n for n in body.walk() if n.tag == 'table']:
+    for cell in [n for n in tbl.walk() if n.tag in ('td', 'th')]:
+        assert len(cell.text().split()) <= 20, ('Table cell exceeds hard limit', cell.text())
+assert '١.٤ · كلاهما معدوم' in body.text(), 'Ibn Hazm nested subcases lost'
+assert 'ممتنع' in body.text() and 'واجب' in body.text() and 'ممكن' in body.text()
 
 tables = [n for n in body.walk() if n.tag == 'table' and n.has('comparison')]
 assert len(tables) >= 2, 'The source needs genuine same-axis comparisons'
