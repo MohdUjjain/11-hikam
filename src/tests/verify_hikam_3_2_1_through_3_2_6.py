@@ -54,11 +54,10 @@ for n, (hue, author, pages, pinned, anchors) in SPEC.items():
     body = chap.split('<div class="chapter-body">', 1)[1].split('<nav class="chapter-endnav"', 1)[0]
     visible = DEPTH.sub("", body)
     assert all(anchor in visible for anchor in anchors)
-    if n == 5:
-        # The authorized corpus-rule pass retires tips/checkpoints and assigns
-        # the other containers by function. Its dedicated test checks the
-        # source coverage, current per-unit limits and replacement structures.
-        assert visible.count('class="box concept"') == 1, '3.2.5 has one opening thesis'
+    if n in (4, 5):
+        # Corpus rules applied to 3.2.4 and 3.2.5: purposeful components
+        # replace legacy tips and checkpoints without dropping source units.
+        assert visible.count('class="box concept"') == 1, 'One opening thesis'
         assert not re.search(r'class="(?:box tip|checkpoint)(?:\s|")', visible), 'Retired main-reading roles must not return'
     else:
         for c in re.findall(r'class="((?:box |hierarchy|analogy|golden-quote|concept-rel|checkpoint)[^"]*)"', old.decode().split('<nav class="chapter-endnav"')[0]):

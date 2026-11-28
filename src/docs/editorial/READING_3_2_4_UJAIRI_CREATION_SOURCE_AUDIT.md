@@ -128,3 +128,21 @@ The corrected desktop title and printed cover were visually inspected. All remai
 Earlier bounded attempts exposed test assumptions about shared interface font roles, print-event restoration and Arabic PDF extraction, plus the two local layout collisions documented above. The fork-only runner installs the reader's intended Arabic fonts locally while remote font requests remain blocked. Its pinned pypdf 5.9.0 plain extractor recovers complete Amiri headings; its layout mode introduces internal gaps, so the test does not reconstruct words by deleting spaces. Both 5.9.0 and local 6.21.4 passed the final exact-heading helper and rejected altered headings and wrong order. These corrections changed no argument or shared reader implementation.
 
 The full whole-book suite was not initiated or rerun. This completion note changes documentation only; no further rendering cycle is needed for it. Exact transfer, upstream merge and Pages deployment are recorded separately in the release pull request.
+
+
+## 28 November 2026 — subsequent corpus-rule and non-repetition refinement
+
+This section supersedes the **pedagogical aid counts and retired-aid descriptions** in the original 3.2.4 editorial pass above; the historical source-to-layer and transcription registers remain retained as evidence. The previous edition is archived separately, unchanged. All primary-source arguments, reported positions, qualifications, source-owned illustrations and printed-page boundaries continue to govern.
+
+The follow-up was based on the editable original in Drive (`3.2.4 Source - الدلالة العقلية الأولى على وجود الله`, 169 nonempty paragraphs in the previously verified DOCX export), all three 3.2.4 Total Recall Guides and the corpus-wide protocol. The printed scan correction of **متعاليًا** remains in effect. The core tests distinguish the independent **حدوث / إمكان** arguments, the two Qur'anic alternatives and later incapacity question, Ibn Kathir's reported explanation and qualified preference, the dependent-cause regress versus succession of originated individuals, Ibn Hazm's three alternatives and four nested self-creation cases, and the author's heat-death inference.
+
+Implemented editorial operations:
+- The 3.2.4 chapter roadmap now has five bold-led previews of 7–15 words; the opening central-concept box is unique and retained at the source-appropriate existing length.
+- **الحادث / الممكن** have one two-entry definition box, each entry under 20 words. The former box titled **قسمة الحادث قبل وجوده** was not a definition; it is now an equal-level three-case logical structure.
+- The source-grounded Ibn Hazm alternatives receive a real decimal nesting (1.1–1.4 under alternative 1, then return to 2 and 3), with the adjacent prose giving the boundary and purpose rather than reciting every branch.
+- The first two comparison tables are retained as source-grounded matrices. Where prose had already listed their main entries, it now retains explanatory context, the original qualifiers and lexical distinctions not conveyed by the matrices.
+- The author-supplied train example remains attributed to the source, not relabelled as compiler EL10. The memory, mistake and high-yield boxes are kept to their respective complete-box caps; the main-body examination tip and checkpoint are retired without loss of intellectual content.
+- The thermal explanation names the law, entropy and source's inferential transition; its hierarchy carries the ordered hypothetical, necessary consequence, observed state and conclusion. Avoid presenting the same steps twice in adjacent prose.
+- The separate 3.2.5 correction only removes its introductory enumeration of four labels immediately repeated in a table; the unique **اللادينية لا تساوي نفي الخالق** distinction moves to the explanatory prose after the table. All of 3.2.5's other sections remain unchanged.
+
+Unchanged in policy and implementation: the shared CSS and JS, Arabic typography and colour palette, companion purpose and depth scope, print-layer boundaries, and six independent revision sections. Exact Companion `passage` strings were updated only where an authorized rewording changed the visible anchor paragraph. Targeted tests, visual review and deployment results must be recorded in the PR; this audit by itself does not establish their completion.
