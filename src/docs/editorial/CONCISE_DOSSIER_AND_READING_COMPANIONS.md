@@ -1,173 +1,199 @@
 # Concise Dossiers and Source-Grounded Reading Companions
 
-**Project:** 11AM — Takhassus Hikam Dossier  
-**Adopted:** 18 November 2026  
-**Status:** Binding editorial direction; context-first Companions and paragraph-adjacent Source Depth are published for **both** Moran 1.1.1 and Stout 1.1.2. The next source-comparison phase begins with Papineau 1.1.3.  
-**Primary authority:** [Standing Language and Source-Fidelity Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)
+**Project:** 11AM — Takhassus Hikam Dossier
 
-> **Editorial decision:** The dossier should be an exceptionally clear, compact way to learn the author's essential argument, not a second article. Use a source-dependent **650–850 words of main explanation + 850–1,150 words of instructional study aids per reading**, averaged across the programme and excluding chapter frontmatter and the existing end-of-chapter revision block. Preserve all important source material by assigning it a clearly justified place across the main notes, the existing study aids, and carefully source-grounded **Reading Companions** available at the exact point of need. **Neither Arabic nor English language-fidelity rules change at all.**
+**Adopted:** 18 November 2026 · **Consolidated:** 28 November 2026
 
-## Later 18 November amendment — contextual clarity over new popup facts
+**Scope:** Every existing and future Arabic/English dossier; apply changes only within the user-authorized implementation scope.
 
-**This amendment supersedes every earlier statement in this document that a Reading Companion must add a new source fact, named debate or historical qualification in order to avoid duplication.** The student's immediate need is to understand the current idea and why it matters *here*. A short, source-faithful explanation may legitimately restate or connect already visible concepts in simpler words. It must not launch a new historical or technical subplot while the student is trying to follow the main argument.
+**Status:** Standing editorial instructions. This documentation consolidation does not implement the deferred chapter, reader, typography, palette or prose-format changes.
 
-**Source Depth** is the separately chosen, optional home for further source-specific details that are useful but would increase cognitive burden inside a contextual popup. Such details remain traceable to the original article and are never the sole home of an indispensable premise. Native closed paragraph-adjacent disclosures in both revised chapters are the completed controlled pilot. Its material is excluded from the immediately visible 1,500–2,000-word target and is not exported by the standard chapter-body print compositor. The complete essential argument must stand without it.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+>
+> The original source controls the thesis, reasoning, evidence, distinctions, qualifications, objections, replies, conclusions and degree of certainty. Clarification, concise presentation, priority labels and component reassignment do not authorize a new philosophical position, invented objection, unsolicited qualification or artificial balance.
 
-**The original language, source-fidelity, study-aid and six-part revision requirements remain unchanged.** The additional goal is *conceptual continuity*: the reader needs a simple picture connecting the author's question, the many names, the different methods, historical changes and the conclusion. Use existing concept maps and actual timelines whenever they represent those relationships better than repeated descriptive prose.
+## 1. Authority, current policy and the purpose of concision
 
-See [Context-First Reading Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) for the binding pilot rules, source-detail register, UI semantics and acceptance checks. Both Moran and Stout now use the approved method; do not mechanically transfer their exact annotations, text or count to unrelated chapters.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-## 19 November 2026 — accessibility and local Source Depth placement
+The governing objective is that every page improve **comprehension, navigation and retention** while preserving the supplied scholarly content. Concision means removing redundant exposition and organizing necessary material so that it is easier to learn. It does not mean producing a shorter replacement for the author's argument or making a difficult conclusion more acceptable to the compiler.
 
-**Latest rule:** apply context-first Companions to both revised dossiers 1.1.1 and 1.1.2. Retain the 34 more detailed source explanations separately as intentionally closed, **paragraph-adjacent** `details.hikam-source-depth-inline` callouts, grouped where several relate to one paragraph. The reader reaches the optional details where they matter; there is no detached appendix and no additional topic forced into a popup. Their source citations remain intact; the indispensable argument stays visible.
+Read these documents together:
 
-Borrow Literature's chapter-pigment visual behavior: dotted underline in the ordinary state, a solid underline on hover/open, visible keyboard focus, expanded-state semantics, touch scrolling and Escape/close focus recovery. Native Source Depth must function with scripts disabled and must be excluded both by print CSS **and by removal from private print-pagination clones**. It is HTML-only optional source expansion, not a new or preferred study-aid type. The original 1,500–2,000-word visible allocation and Arabic/English language-fidelity protocols are unchanged.
+- [Language and Source-Fidelity Refinement Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md): intellectual authority, Arabic/English voice, source preparation, attribution and preservation.
+- [Study-Aid Roles and Reading Design Protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md): the **canonical current specification** for aid roles, quantities, word limits, counting units, learning priority, provenance and deferred design choices.
+- [Context-First Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md): local clarification, optional source detail, anchors, accessibility and print boundaries.
+- [Study-Aid Refinement Audit and Migration Plan](STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md): measured evidence, known problems, unresolved decisions and the future implementation sequence.
 
-This amendment supersedes earlier descriptions of a single end-of-chapter Source Depth appendix or plain-text Stout popups. See [the binding context-first protocol](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) and the source-coverage register.
+This file owns the programme-level density and source-to-layer distribution guidance. It deliberately does not maintain a competing table of per-aid numerical limits. Use the canonical role protocol for those values. The latest explicit user decisions supersede the older definition limit, an undecided memory limit, unrestricted embedding of compiler-added EL10 in other families, preservation of main-body examination tips/checkpoints, and previous routine full-suite instructions.
 
-## Binding 19 November clarification for all subsequent readings
+The current instructions replace the accumulated 18–19 November pilot amendments in this file. Historical counts, pilot word totals, test runs and publication dates are evidence about those editions, not current scope restrictions or authoring quotas. An audit through 3.2.5 is not evidence that later dossiers already comply with the new specification.
 
-**Use the completed 1.1.1/1.1.2 standard, not the superseded earlier pilot language elsewhere in this historical document.** Contextual Companions prioritize the present sentence's meaning and argumentative purpose; simpler restatement is acceptable. Source Depth stays closed, directly after the appropriate paragraph, with source-page references, grouped records as needed, no auto-opening, no print/PDF output, no hidden search hits, and native accessibility even without JavaScript. The main argument and all six revision sections must stand without either optional layer.
+## 2. Establish source completeness before allocating words
 
-Literature-style reading-specific **chapter-pigment dotted underlines** change to **solid on hover/open**, plus separate keyboard focus indication and semantic keyboard/touch/RTL support; test Escape and explicit close restoring focus without triggering an immediate reopening. Select richer source-evidence/formula/diagram content only where it serves a concrete learner question; preserve provenance, readable text equivalents and Hikam's existing component/tokens. A timeline replaces a table only for a genuine sequence, not for a comparison. All established study aids remain equally valued; EL10 is only an occasional technique.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-For every future chapter, the release gate includes the permanent **`src/tests/browser_design_tokens.py`** regression (360° cycle across 39 chapters, original fonts and semantic colors, readable foreground/background), complete source attribution and coverage, Companion anchor integrity, search, no-JavaScript Source Depth, responsive/RTL/keyboard, real A4 PDF and PWA offline checks. Dispatch the second-account fork's reusable **`hikam-fork-verify.yml`** with an explicit editorial branch, inspect the results and generated Git blobs, and only then transfer through the primary review/merge workflow. The fork never publishes the original repository automatically. See [the complete binding accessibility and Source Depth section](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth).
+Read the complete **assigned original**, including supplied footnotes, tables, illustrations, quotations and explicit source boundaries. Prefer the supplied DOCX or native editable original where available. Use its paired PDF to recover printed locators, inspect source images or omitted footnotes, and resolve transcription questions; do not silently replace editable-source wording or expand an intentionally selected excerpt with unassigned intervening pages. Record any substantive difference between versions rather than guessing a correction.
 
-**Latest application (19 November 2026):** The Gary Gutting reading 1.1.4 now follows the same approved source-dependent teaching distribution: **824 prose + 1,017 existing study-aid words**, 12 local context-first Companions, nine optional paragraph-adjacent, source-cited disclosures and all six revision sections. Its [original-source coverage register](READING_1_1_4_GUTTING_SOURCE_COVERAGE.md) records the necessary distinctions and a fully passed [fork verification](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44562601029). The implementation does **not** change this protocol's original Arabic/English, completeness or design restrictions. The early pilot descriptions further below are historical records, not current limits.
+The three Total Recalls or other supplied teaching syntheses are secondary comparison aids. Read them where supplied and use them to identify possible gaps or useful organization, but verify their claims against the original. A synthesis, earlier dossier, filename, general knowledge or generated teaching explanation cannot override the author's actual position. Verify the source title, authorship and edition from the source itself; distinguish the author from quoted witnesses and from the dossier compiler.
 
-## Adopted source-proportionate range — updated November 18, 2026
+Before shortening or moving material, map the original's substantial units: its question, thesis, definitions, premises, inferences, classifications, evidence, examples, qualifications, objections/replies and conclusions. Preserve the distinction between the source author's assertion, another person's quotation, a reported study, a hypothesis and a historical report. Source confidence must remain unchanged in every layer.
 
-**This is the latest instruction and supersedes the former single ~1,500-word planning average wherever it conflicts.** The immediately visible dossier body should ordinarily contain **approximately 1,500–2,000 words**, in a source-dependent ratio: **650–850 words of main prose** and **850–1,150 words of instructional study aids**. For a shorter or less intricate primary reading, plan near **650 + 850 = 1,500**. For a longer, denser or more argumentatively complex reading, plan progressively up to **850 + 1,150 = 2,000**. Select the position within this range by the **actual article's length and intellectual complexity**, not by a desire to fill pages. This is a **normal operating range**, not permission to delete indispensable source content to satisfy a ceiling.
+The principal reading path must contain everything needed to understand the author's essential argument accurately. A necessary qualification is as essential as the claim it qualifies. No indispensable unit may be available only in a Companion, Source Depth disclosure or revision block. A hypothetical future print appendix is **not** an exception to this rule.
 
-Exclude chapter frontmatter, all six revision sections and optional Reading Companion text from both visible-word categories; record their lengths separately. Do not count Companions as part of the aid allowance. **The author's complete essential argument stays understandable without opening a Companion.** The additional source-grounded examples, qualifications, evidence, distinctions and local technical explanations may be delivered contextually through companions where doing so improves comprehension without duplicating the visible text.
+An identifiable transcription problem, incomplete passage or uncertain attribution belongs in a specific editorial record when necessary. It does not license an independent judgment against the author's intellectual position, an invented completion, or a general disclaimer added to the dossier.
 
-**The previous language instructions are unchanged in every layer**, including every main-body sentence, aid, companion title and explanation, Arabic source text, revision element, caption and source label. This amendment is a distribution/length policy, not a language-policy change.
+## 3. Give each layer a distinct job and assess priority separately
 
-## 1. What was examined and what each reference repository teaches
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-The following **actual source files** were examined on `main`, 18 November 2026. The two reference repositories are private; their conceptual patterns are recorded here, not copied into a public repository as proprietary code or unpublished content.
+| Layer | Primary responsibility | Required boundary |
+| --- | --- | --- |
+| Main explanatory text | Teach the source's essential reasoning in connected, accessible scholarly language | Remains intelligible with optional material closed or unavailable |
+| Main study aids | Perform a specific operation: define, distinguish, organize, relate, illustrate, orient or support recall | Role and current limits come from the canonical role protocol; a colored paragraph is not sufficient justification |
+| Reading Companions | Resolve a real immediate question about the visible passage and its argumentative role | Helpful simpler restatement is allowed; no unrelated branch or hidden essential premise |
+| Source Depth | Retain further source detail that the reader can defer without losing the essential account | Local, initially closed, source-cited, unlimited by an artificial word/count quota, and excluded from ordinary print |
+| Independent revision system | Reconstruct and retrieve material already taught | All six functions remain; revision is not the first teaching location of an essential idea |
 
-### World History Dossier — `MohdUjjain/11-history`
+Frontmatter, the original title/author, chapter roadmap and section objectives help the learner navigate these layers. They do not replace the teaching of the argument. The single opening central-concept box belongs to the main study-aid pool; it is not an uncounted frontmatter substitute for the author's reasoning.
 
-- `src/chapters/ch01.html`, `src/chapters/ch03.html`: technical terms appear within the existing reading as `button.glossary-term` with an inline `data-definition`. For example, `imperial power`, `formal independence`, `dyarchy` and `internationalism` are clarified **on first meaningful use**, not through a new explanatory section. The sample chapters already carry many contextual definitions within coherent historical arguments.
-- `src/docs/authoring/NEW_NOTES_WORKFLOW.md`: **one conceptual owner per layer**. The hero gives orientation; main prose owns the historical causal explanation; an inline term supplies its local definition; a study aid must perform a distinct comparison, memory, mistake or examination operation; revision supports independent recall. Do not put the same definition in both the popup and a nearby definition card.
-- `src/docs/editorial/CH01_SOURCE_GROUNDED_EDITION.md` and `src/docs/editorial/CHAPTER_BY_CHAPTER_LANGUAGE_PASS.md`: preserve each author's thesis, evidence, causal mechanisms, exceptions and conclusions while removing **semantic repetition**, not distinct scholarly content. Keep each chapter's original title and author visible; clarify jargon without deleting technical terms. Source fidelity and coherence are assessed against actual textbook chapters.
-- Useful interaction **inspiration**: quiet dotted terms, keyboard/touch/hover explanations, non-interference with the reader and deliberate retention of a revision glossary for printable study. History's popups are principally **short definitions**; importing them alone would not solve Hikam's more extensive coverage requirements.
+Keep **role**, **learning priority** and **provenance** as separate editorial decisions. Essential material is required to follow the source accurately and must remain in the principal reading path and ordinary print. Useful material improves understanding, navigation or recall. Supplementary material adds source detail that can be deferred safely. A definition, quotation, table or author-supplied analogy can be essential; ordinary prose is not automatically essential, and a colored box is not automatically merely useful.
 
-### Literature Dossier — `MohdUjjain/11-literature`
+Apply the user's test: **If the reader skips this material, can they still understand the author’s argument accurately, including its necessary boundaries and qualifications?** These priorities do not classify a claim as true or false, endorse it, rank authors, or predict examination frequency. The visual encoding of priority remains a separate design decision; do not invent a second color system during editorial work.
 
-- `docs/reading-companions-methodology.md`: a Reading Companion is a **short, complete, optional, non-redundant explanation** attached to an exact existing phrase; it answers the local question the reader cannot resolve from prose and callouts. There is **no required number or hard word quota**. The six acceptance gates are: **(1)** immediate-prose nonduplication; **(2)** study-aid/revision nonduplication; **(3)** genuine intellectual added value; **(4)** support from the assigned source; **(5)** local sufficiency; **(6)** unchanged text and safe exact anchor. An initial eight-entry pilot was reduced after duplication review.
-- `source/reading-companions.json`: the actual manifest currently records **219 explanatory companions** (separately from poetry and visual evidence). Each entry records a stable ID, exact passage anchor, quoted existing trigger text, category, informative title, self-contained explanation, source PDF pages and `added_value` justification. `sources_by_reading` identifies editions. Candidate explanations are reviewed reading by reading, not manufactured to reach a numerical quota.
-- `reader-companions.js`: uses a unique exact match within a specified passage, creates a quiet inline cue **at runtime**, keeps the original text content unchanged, positions the explanation in the viewport, and supports mouse, touch, keyboard Enter/Space/Escape, dismissal and reading-position continuity. An absent or ambiguous anchor is rejected rather than guessed.
-- `tests/phase3_companions_browser.mjs`: checks all expected cues, ambiguous anchors, mobile and desktop placement, wrapped multiword underlines, keyboard activation, Escape and original reading behavior. The native inline-box wrapping issue led to a text-wrapping `span[role=button]` implementation rather than non-wrapping native buttons for multiword phrases.
-- `docs/reading-companions-reading-18-audit.md`: Gandhi's *Hind Swaraj* example shows how **five** companion explanations were accepted because they clarified specific source distinctions missing from adjacent prose and callouts; other candidates were rejected for duplicating already-taught material. The source's dialogic assertions were not converted into independent factual claims.
-- `docs/reading-18-main-notes-editorial-pilot-2026-11-16.md`: source-proportionate pilot reduces a reading's main prose to **528 words** while keeping the intellectual sequence; its existing study aids and revision material remain separately accounted for. This provides an example of **compact argument structure**, not a universal 528-word rule.
-- `docs/reading-companions-evidence-standard.md`: distinguishes **explanatory** companions from original-source evidence (original verse, historical document, article map, source table, faithfully reconstructed chart). Evidence exhibits require provenance, source notation and stated limitations; reconstructions must be explicitly labelled. Not every reading needs such an exhibit.
-- Literature's screen-only explanatory Companions are deliberately **not the sole source of an essential academic assertion**. Hikam's adoption must preserve that safeguard while distributing fuller source detail into optional layers.
+## 4. Programme density and separate word pools
 
-**Conclusion from these repositories:** Reuse **History's contextual simplicity** and **Literature's scholarly selection/traceability and technically careful point-of-reading interaction**. Do **not** copy their complete design, their chapter structures, their prose, their extra visual features or their software blindly into Hikam.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-## 2. The fixed word-density decision
+The retained guidance is approximately **650–850 words of main explanatory prose plus 850–1,150 words of purposeful study aids**, or **1,500–2,000 immediately visible main-body words**. These are source-proportionate programme planning bands, not a demand that every reading meet an identical total. Intellectual complexity and source completeness govern a justified variance. Never delete an indispensable distinction to meet a ceiling, add filler to meet a floor, or manufacture several boxes to replace a word deficit.
 
-These figures are **programme-level editorial averages**; they are **not** a demand for every individual reading to contain exactly this number of words, and are not grounds to remove an indispensable source distinction.
+| Word pool | What belongs in it | What stays separate |
+| --- | --- | --- |
+| Main explanation | Ordinary chapter-body prose, ordinary lists and headings outside aid components | Aid content, frontmatter, all revision and optional contents |
+| Visible study aids | Current retained main-body aid families, the opening central concept, source quotations and section objectives | Main prose, roadmap/frontmatter, Companions, Source Depth and revision |
+| Total visible body | The two preceding pools together | All separately reported layers below |
+| Frontmatter and roadmap | Original title, author/source credit and chapter preview | Not charged to the prose or aid planning band |
+| Reading Companions | Only the content actually rendered in each popup | Alternative fallback fields and duplicated anchors are not additional displayed prose |
+| Source Depth | Expanded record contents, with records/groups distinguished | Closed DOM text is not counted as immediately visible body text |
+| Revision | All six revision functions and five examination-question categories | Not charged to the prose or main-aid planning band |
 
-| Visible reading layer | Planning average per dossier | Included | Excluded |
-| --- | ---: | --- | --- |
-| **Main explanatory prose** | **~650–850 words** | Ordinary chapter-body narrative, paragraph text and main-body headings outside aid components | Main-body callouts/tables, frontmatter, revision block, optional Companion contents |
-| **Existing instructional aids** | **~850–1,150 words** | Existing `.box.*`, quotations, section objectives, analogies, concept maps, hierarchies, comparisons/tables, checkpoints, tips and other semantic teaching components | Main explanatory prose, frontmatter, revision block, optional Companion contents |
-| **Total immediately visible main-body study** | **~1,500–2,000 words** | Sum of the two categories | Frontmatter, revision block and optional Companion contents |
-| **Reading Companions** | **No word quota** | Only source-justified local explanations and evidence with verified triggers | They are audited separately and never used to pad the 850-word aid average |
-| **Established revision block** | **Preserve independently** | All six existing components and examination categories | It is **not** charged to either 650 or 850 |
-| **Chapter title/frontmatter/roadmap** | **Preserve independently** | Original title and author, roadmap, accurate central thesis | It is **not** charged to either 650 or 850 |
+For an individual bounded aid, count its **whole body** across paragraphs, lists, formula explanations and inline terms. Category labels, display titles and decorative icons are excluded from an aid-body cap; meaningful terms within the content remain included. Definition entries, definition boxes, table cells and roadmap points have their own explicitly defined counting units in the canonical role protocol. Do not turn one unit into several allowances by inserting paragraph breaks.
 
-The prior 39-dossier HTML audit found average plain explanatory prose and aid text near **665 / 857** words, while the 37 dossiers other than the overexpanded 1.1.1 and 1.1.2 averaged approximately **495 / 776**. The two newly expanded dossiers were far above the intended model. These new targets restore the book's intended **study-note density** rather than demand new length throughout.
+For chapter-level reporting, distinguish aid-body words from the full visible aid text including its meaningful displayed labels and headings. State which convention is being compared with previous programme measurements. Use the same whitespace-token convention in both languages, preserve attached Arabic particles, and separate words at HTML block/cell boundaries without joining adjacent cells or double-counting wrappers. Report pools separately rather than hiding a short main body behind optional or revision totals.
 
-**Measure against the actual canonical HTML**, excluding `.end-block` and `.chapter-frontmatter`. Report each reading's prose, study-aid, Companion and revision counts **separately**. Readability and source fidelity are decisive; an unusually dense reading may require a justified variance. Never expand a short chapter just to hit a number or silently delete a source premise to get under a count.
+Source-page counts are a rough input to drafting judgment, not a measurement of conceptual difficulty or finished dossier pages. Paired PDF scan leaves provide stable length measurements without counting the DOCX/native version again. The audited source-length distribution and proposed soft central-concept calibration belong in the migration plan. A proposed calibration must not be described as an adopted additional per-dossier limit.
 
-## 3. Four complementary intellectual functions
+## 5. Preserve substance when roles and limits require reassignment
 
-1. **Main explanation — the author's intellectual spine.** In simple, precise Arabic or English, show the problem, principal thesis, necessary premises, decisive distinctions, principal evidence, key objection/reply where supplied, and conclusion **in the author's own progression**. Favor connected, straightforward sentences and complete one-line points over developed mini-essays. The main notes must remain intelligible when Companions are disabled.
-2. **Study aids — distinctive learning operations.** Assign factual comparisons to tables, sequences to timelines or hierarchies, essential meanings to definitions, real ambiguities to mistake cards, simple bridges to analogies/EL10 where appropriate, and retrieval to checkpoints. Do not re-narrate the same material in every component. All established types retain equal standing.
-3. **Reading Companions — exact local difficulty or fuller source detail.** A quiet cue on an **already present phrase** can explain a precise technical qualification, the reason for an inference, an omitted illustrative source case, an author's handling of evidence, a distinction between similar concepts, or a short connection that would otherwise expand the running prose. They are **not** a shadow chapter, long explanatory essays, a generic glossary quota, or a hiding place for independent research.
-4. **Revision block — independent recall, not a substitute for teaching.** Keep Chapter Summary, One-Page Revision Sheet, Key Definitions, Key Table, Memory Aids Collected and Possible Examination Questions, with Short Answer, Long Answer, Comparison, Conceptual and Application items. Revision counts remain outside the planning word averages.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-**Coverage rule:** every important unit of the primary reading must be traced and assigned a meaningful home. An indispensable premise, thesis or objection must be clear from the **main reading and study aids** even if the Companion does not open. The **more detailed source qualification, illustrative evidence, case, derivation or technical clarification** can live in a Companion at its relevant phrase. If a source-critical assertion truly exists **only** in a Companion, the proposed edition must provide a tested, non-interactive **print/offline recovery route** before approval; never allow essential substance to disappear from printable or no-JavaScript study. The precise print treatment is an implementation decision, not an excuse to change the existing print engine before testing.
+Apply the [canonical role specification](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md) to what an aid **does**, not only to its class name. A historical discussion is not a definition; a retrieval chain is not made high-yield by its wrapper; a list of evidence is not automatically a second central concept. A source-authored explanation does not receive an unlimited analogy allowance unless it actually performs the source-analogy role.
 
-**Important:** a shorter note can still be faithful if its wording selects and connects the author's real claims, while nonredundant detail remains accessible. A short chapter is *not* faithful if key claims, author qualifications, objections, evidentiary cases or conclusions are simply deleted.
+For each overlong or misclassified component, identify its source units before editing. Preserve the genuine definition, distinction, comparison, inference or memory operation in its appropriate bounded form. Keep any necessary extended reasoning in the visible explanation or another suitable existing structure. Move material to Source Depth only after the skip test establishes that it is supplementary. Do not cut endings, strip qualifications, split one operation into decorative fragments, or change attribution to satisfy a number.
 
-## 4. Language rules do not change in any layer
+Main-body **examination tips and checkpoints are retired** under the latest user decision. This applies to disguised testing exercises under high-yield or other labels as well as to `.box.tip` and `.checkpoint`. Preserve their useful source teaching in the appropriate visible location; place valid retrieval/examination work in the independent revision system where appropriate. Do not retain a retired main-body function by renaming its heading.
 
-- The full standing protocol and the user's **`skill - language profiling.md`** and Arabic writing samples still govern **Arabic prose, English prose, all study aids, all Reading Companion titles and explanations, source labels, captions and revision text**.
-- Use natural, very easy-to-follow **scholarly** language, with source terminology defined at first meaningful use. Short sentences and one-line points must remain grammatically complete and logically connected, never terse jargon fragments.
-- For Arabic, preserve the source author's confidence and the user's accessible Arabic voice, with correct RTL, `lang="ar"`, Amiri, directionality and `<bdi>` as applicable. Do not mechanically translate English text or write thesis-level syntactic density just because the language model samples are dissertations.
-- Source fidelity overrides all stylistic choices: preserve the author's position, sequence, certainty, source attribution, objections, replies and conclusions. Do not insert independent philosophical adjudication, artificial balance, unsolicited hedges or general-knowledge corrections.
-- EL10 is **only** a local technique for helping an intrinsically difficult concept become intuitive; it is neither a phase, a quota, nor more important than any other aid. A Companion is likewise a delivery mechanism, **not** a waiver of language rules.
+Exactly one opening central-concept box is the current role rule. Reassign additional concept boxes by their actual operation. Keep definition entries as definitions, memory aids as retrieval devices, and maps as concepts joined by meaningful relations. The proposed general explanatory callout has **not** been approved: its name, scope, limit and visual treatment remain pending. It is not a catch-all destination for material displaced from other boxes.
 
-## 5. Acceptance gates for each proposed Companion
+Restoring the programme's study-aid richness means finding missing learning operations in the source: a comparison that clarifies a distinction, a hierarchy that exposes genuine levels, a definition the argument needs, or a memory cue that supports retrieval. It does not mean restoring every historical container or inventing content to reach 850 words. Equal editorial care for retained functions does not require equal quantities or preserve superseded functions.
 
-For **each candidate**, answer the questions below **before inclusion**:
+## 6. Context-first Companions and the boundary with EL10
 
-1. **Real question:** what exactly will the learner fail to understand from the nearby notes?
-2. **Not already taught:** do the immediate sentence, surrounding paragraphs, tables, memory aids, other callouts, roadmap or revision block already give the answer? If yes, omit or change the Companion's function.
-3. **Source-grounded:** where is the passage in the complete original file (page/section)? Whose statement is it and how certain is it?
-4. **Distinct intellectual value:** does it clarify a definition, mechanism, comparison, inference, objection, reported testimony, example, terminology, method or source evidence **not sufficiently covered already**?
-5. **Local completeness:** can it answer this one reader question directly in the **shortest accurate language**, without “read more,” jumping to another box or another popup?
-6. **Exact safe anchor:** can the cue attach to a **unique existing phrase** in an identified chapter/passage **without rewriting that phrase**, moving content, or swallowing adjacent text? If ambiguous, flag and withhold.
-7. **Fallback:** does the dossier retain its indispensable argument when annotations are off or missing? If the Companion contains otherwise unique critical material, is the corresponding print/no-JS recovery tested?
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-**No count or length quota:** zero Companions can be correct; a dense scholarly reading may need more. A 12-word answer may work; a technical point may require 45 or more. Select only the shortest **complete** source-faithful explanation. Never use popups to hide arbitrary numbers of long paragraphs.
+A Companion helps the learner understand the phrase being read and return immediately to the same argument. It can explain a term, unpack a relationship, resolve a referent or show why a claim appears here. The explanation may restate a source-grounded idea more simply; added understanding does not require a previously absent fact. Conversely, copying a nearby sentence without resolving a real difficulty is not useful merely because it appears in a popup.
 
-### Per-candidate source-coverage register
+Use the available meaning / why-here / optional remember functions only to the extent needed. Do not force three repetitive blocks, a fixed count of cues, or a new scholar, genealogy, debate or technical subplot. A shorter complete explanation is preferable to a detour. See the [context-first protocol](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) for exact anchor, source and interaction requirements.
 
-Keep a compact evidence record (internal during authoring; publish only editorial metadata where appropriate):
+The latest **compiler-added analogy / EL10 / ELI10** permission belongs only to its dedicated aid under the canonical role protocol. It may not be hidden inside a Companion, memory aid or another family to avoid that role's restrictions. Ordinary source-faithful restatement is not automatically an EL10 analogy. An author's own analogy remains source material, with its ownership and any inference preserved; if it is indispensable, teach it visibly. Provenance must be established before applying the compiler-added-analogy treatment.
 
-| Field | Required |
+A Companion cannot add the compiler's own premises, empirical assertions, objections, preferred interpretations or unsolicited hedges. Any source-based clarification must serve the immediate question rather than start a new intellectual branch. Its availability is no reason to weaken or remove the corresponding visible source argument. No count or word quota is imposed on Companions, but local sufficiency and the reader's immediate question bound their purpose.
+
+## 7. Source Depth preserves further detail without becoming required reading
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Retain further source examples, historical particulars, elaborations, quoted witnesses or explanations in Source Depth when they add value and can be deferred without distorting the principal account. Source Depth has **no artificial numerical limit** on words, records or groups. That freedom permits faithful preservation of useful source detail; it does not justify indiscriminate repetition, a hidden essential argument, unsupported research or a quota of disclosures.
+
+Place one native, initially closed `details.hikam-source-depth-inline` immediately after the relevant ordinary prose paragraph. Group several related source records under the same disclosure, retaining separate informative titles and source locators. Do not create a detached chapter-end appendix, auto-open the details, or force every Companion to have a Source Depth partner.
+
+Preserve author/speaker boundaries, distinguish paraphrase from quotation, and cite verified printed pages where available. Use an explicitly identified scan-leaf or source-paragraph locator where printed numbering cannot be established; never invent a page number. Complete evidence and scope notes belong in the coverage register.
+
+Source Depth is in the interactive HTML for local access but remains outside the immediately visible word pools and ordinary print/PDF. Hide it in print CSS and remove it from private pagination clones **before measurement**. It must work without JavaScript and must not create search results that pretend hidden text is ordinary visible prose. These technical boundaries do not waive source completeness: the visible argument and revision must stand without it.
+
+## 8. Readability and presentation serve the source in both languages
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Apply the language protocol and supplied Arabic profile to every layer: main text, aids, labels, captions, Companions, Source Depth and revision. Preserve source terminology while making referents, transitions and logical connections clear. Do not replace the source's categorical position with tentative verbs merely because the Arabic language samples use them elsewhere; do not make a tentative source claim categorical for a cleaner aid.
+
+A readable page needs visible thought boundaries and navigation as well as clear sentences. Use purposeful headings, complete short points where authorized, and selective bold anchors for the terms, conditions and distinctions that carry the argument. Do not bold whole paragraphs, hide qualifications outside the emphasis, or treat the deferred prose-to-bullets proposal as already implemented.
+
+Arabic review must distinguish ordinary prose from table cells, hierarchy values, relationship nodes, timeline descriptions and opened optional panels. Nominal parent font sizes do not establish actual child typography; line-height does not establish adequate paragraph or block separation. The measured crowding, emphasis and RTL findings are recorded in the migration plan. They call for localized visual evaluation, not a speculative global CSS increase or a new font/palette system during this documentation pass.
+
+Use comparisons for real shared axes, hierarchy levels for real parent–child relations, sequential numbering for successive steps, and timelines for genuine chronology. Preserve source uncertainty and do not invent a causal arrow, ranking, date or classification because a visual component has space for it. All current role and unit limits remain governed by the canonical specification.
+
+## 9. Source-to-layer register and per-reading authoring procedure
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+For a later authorized chapter pass:
+
+1. Reopen the current protocols, actual assigned original, supplied secondary syntheses, relevant Arabic profile/samples, canonical chapter and complete revision material. Verify title, authorship, edition and excerpt boundaries.
+2. Preserve the exact current full chapter section in the appropriate dated, integrity-checked pre-edit snapshot before replacement. Keep previous archives immutable and outside the active book spine, search, print and offline package.
+3. Build a source-unit map before drafting to a budget. Identify essential content, further source detail, unresolved transcription issues and any earlier synthesis errors.
+4. Draft the connected visible argument and select aids by the canonical functional rules. Preserve necessary source reasoning and qualifications while applying the bounded units accurately.
+5. Review one opening central concept, every actual definition entry, every memory aid, every cell and every roadmap point. Audit source-analogy provenance before relabeling; remove retired main-body functions without losing their source substance.
+6. Choose local Companions independently from optional Source Depth. Confirm exact anchors and source pages, then apply the skip test to every optional record.
+7. Recheck all six revision functions against the original and revised visible teaching. Review language, speaker boundaries, certainty and quotations across all layers.
+8. Count and report the distinct word pools. Assess any variance against source complexity and learning purpose, not a mechanical need to fill the band.
+9. Perform the bounded verification appropriate to the actual authorized changes and report unresolved limitations accurately. A documentation update alone is not a completed chapter migration.
+
+| Coverage-record field | Required evidence |
 | --- | --- |
-| Dossier and primary reading | Original title, author, edition and file/page scope when available |
-| Source unit / scholarly role | Thesis, premise, evidence, distinction, objection/reply, qualification, example, conclusion |
-| Visible home | Exact main-body sentence/aid or section that establishes the essential idea |
-| Companion role (if any) | The specific still-unanswered question and source-backed detail it adds |
-| Unique anchor | Chapter ID, stable passage identifier where needed and exact existing words |
-| Source citation | Original page(s), section and whose claim it represents |
-| Redundancy check | What was compared in prose, aids and revision; why popup does *different* work |
-| Decision | Include, rewrite, merge, omit as duplicate, or flag as unverifiable |
-| Test result | Anchor uniqueness, full source continuity, keyboard/touch, RTL, print, offline/search |
+| Reading identity | Verified title, author, edition, file/version and assigned scope |
+| Source unit | The actual claim, distinction, premise, evidence, qualification or conclusion and its locator |
+| Priority and provenance | Essential/useful/supplementary, with author/quoted witness/compiler ownership kept separate |
+| Visible home | Exact paragraph, aid or section that teaches any indispensable content |
+| Aid operation | The specific learning job, applicable counting unit and any reassignment |
+| Companion, if justified | Immediate question, unique existing prose anchor and source-backed clarification |
+| Source Depth, if justified | Record/group location, further source value, citation and successful skip test |
+| Revision home | Where already-taught material is retrieved without becoming first-time essential teaching |
+| Resolution | Covered, partial, absent, misstated or unverifiable; required action and remaining uncertainty |
+| Verification | Checks actually performed and observed results, kept distinct from planned checks |
 
-The coverage register must show **no important source unit lost**. An unverified assertion does not become acceptable merely because it is moved from prose into a popup.
+The register supports close reading; it does not replace reading the original in full. Public editorial metadata must not reproduce private full source texts, the three recalls or personal Arabic writing samples without authorization.
 
-## 6. What a Hikam implementation must preserve
+## 10. Preserve the independent revision system
 
-**Current repository constraints:** `src/main.html` provides the TOC/cover; `src/chapters/subtopic-*.html` owns academic content; `src/philosophy_notes.css` and `src/philosophy_notes.js` own the existing design/reader and JS print pagination; `src/build.py` generates `src/philosophy_study_notes.html`, published `index.html` and content-hashed `service-worker.js`. Arabic chapters have RTL/Amiri conventions. The single-page reader includes navigation, chapter progress, search, reading resume, hidden revision, print selection and offline functionality.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-**Recommended design to validate in a small pilot before touching all 39 dossiers:**
+Retain all six revision functions in order: **Chapter Summary; One-Page Revision Sheet; Key Definitions; Key Table; Memory Aids Collected; Possible Examination Questions.** Keep the five question classes: **Short Answer; Long Answer; Comparison; Conceptual; Application.** Retiring main-body examination tips and checkpoints does not retire this system.
 
-1. An **independently authored Companion manifest**, with stable ID, chapter ID, stable paragraph/section anchor, exact trigger text, short category and title, explanation, original source page and an `added_value` editorial field. Keep private or restricted primary source contents outside the public repository; a public Companion record must not reproduce restricted long passages.
-2. The reader attaches a subtle, chapter-accent **dotted underline** to an exact **single** text occurrence in the *main explanatory region*, never inside revision, quoted source strings, tables or other callouts by accident. No fuzzy substring fallbacks. The original scholarly text and copy/search text must remain intact.
-3. **Screen only:** on hover where supported, click/tap or keyboard activation, show a small readable, source-grounded, **self-contained** popup. Escape, outside click, focus departure or location change closes it. Mobile viewport positioning, multiword wrapping, keyboard focus, ARIA semantics, reduced motion, and **Arabic RTL typography** must be tested.
-4. No automatic navigation, “open full explanation,” scroll jump, stacked mini-lessons, change of hash, saved reading position, active section, sidebar semantics, study-aid palette or revision visibility.
-5. Hikam's currently generated **single-file HTML** and content-hashed PWA differ from Literature's external JSON reader. The selected manifest delivery must work offline and remain in the **atomic edition**. Prefer inlining the small validated metadata at build time or otherwise formally caching/versioning it; do not silently rely on an online JSON fetch.
-6. **Print and source preservation:** unwrapping any screen-only cues from **private print clones** is a tested necessity for today's JS pagination. The print/PDF must remain coherent, correctly paginated and free of broken buttons. If unique indispensable source detail would otherwise be invisible, determine and test a proper optional print/evidence appendix or equivalent before making the popup its only home; never dump hidden popups into print pages unreviewed.
-7. Confirm no loss of chapter/TOC IDs, author and exact title credits, original quotations, six-part revision zones, search results, progress, resume behavior or offline cache. No unrelated redesign or wholesale CSS/JS refactor.
+Revision must reconstruct the author's argument and retrieve content already taught. Recheck definitions, comparisons, attributions, source qualifications and question premises after every relevant content change. Do not preserve stale mistakes merely because the revision block is structurally complete, or introduce an essential premise for the first time in a revision answer.
 
-**Scope boundary (pilot):** Hikam now has a small, internally authored Reading Companion controller and manifest for 1.1.1 and 1.1.2, documented in [the pilot audit](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md). This does **not** mean all dossiers are annotated, an original-evidence viewer has been built, or the expanded chapters have been shortened. Browser/print/PWA verification and a source-to-layer coverage map remain required before expanding the pilot or compressing chapter content.
+The canonical protocol controls any bounded entries or cells used inside revision; it does not impose a main-aid cap on an entire revision section. Collected memory devices must correspond to devices actually introduced, not a new unsourced mnemonic anthology. A section heading alone does not demonstrate its learning function. Do not claim that a One-Page Revision Sheet occupies one physical page until the applicable print output has been inspected.
 
-## 7. Per-reading editorial procedure under the new word decision
+Keep `.end-block` independent from `.chapter-body` and preserve the reader's separate on-screen revision visibility and print-inclusion choices. The main teaching and all selected revision pages must remain coherent without Companions or Source Depth.
 
-1. Reopen the standing protocol, this file, the actual original source, the currently published dossier and its study/revision aids; confirm title/author.
-2. Make a complete **source-unit traceability map** before trying to shorten anything.
-3. Write a very clear **~650–850-word intellectual spine**, scaled to the actual reading, keeping the author's reasoning, not extended lectures. Put compact comparisons, definitions, diagrams, quotes, checkpoints and exam aids into **~850–1,150 words of purposeful study aids**, preserving established types where useful.
-4. Identify remaining source-specific detail and difficult points. Apply the updated context-first gates: write source-backed, simple, locally complete popups when they genuinely clarify an immediate idea, even by restating it more simply. Assign further source-specific details to optional paragraph-adjacent Source Depth where justified; never use a popup to launch an unrelated subject. Distinguish author examples from newly devised educational illustrations.
-5. Review **semantic repetition** across body, hero, all aid types, companion candidates and revisions. Remove redundant *exposition*, not separate premises, counterarguments, cases or qualifications.
-6. Re-check every important unit of the original against its assigned location; confirm authorship, quotations, cited pages, strength of claims and any unresolved source gaps.
-7. Audit four word pools **separately**: explanatory prose, existing teaching aids, optional companions and end-block revision. Report why a particular reading differs materially from the programme average.
-8. Rebuild canonically, verify integrity and actual reading interaction, print/RTL and offline packaging; report precisely what was tested. **Never claim a chapter has been condensed or companions installed when only the instructions have changed.**
+## 11. Technical boundaries and proportionate verification
 
-### Immediate programme implication
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-The **1.1.1 (Moran)** and **1.1.2 (Stout)** source-faithful concise editions and their context-first, paragraph-adjacent Companion/Source Depth teaching method are already published. The next reading, **1.1.3 (David Papineau, _Philosophy of Science_, _The Blackwell Companion to Philosophy_, 2nd ed.)**, has now completed its full primary-source comparison and controlled edition under the same standard. Its [completed source-coverage register](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md#v-completed-source-coverage-resolution--final-113-edition-19-november) records 821 visible prose words, 1,137 equally important study-aid words, 12 contextual Companions and nine optional Source Depth records; the complete fork CI passed before public release.
+The source architecture remains authoritative: `src/main.html` owns the spine; `src/chapters/subtopic-*.html` owns chapter content; the shared CSS/JS owns reader and print behavior; `src/reading_companions.json` owns authored Companion records; `src/build.py` generates the published HTML and content-hashed offline edition. Do not hand-edit generated files or refactor working architecture under an editorial pretext. Preserve chapter IDs, original titles/authors, navigation, exact quotation text, chapter hues, semantic tokens and the six revision functions.
 
-**Final editorial standard:** **~650–850 words of immediately readable scholarly prose + ~850–1,150 words of genuinely useful study aids (together ~1,500–2,000, source-proportionate) + optional, exact, context-clarifying, source-grounded Reading Companions + separately optional paragraph-adjacent Source Depth + independently preserved revision material.** Helpful restatement can add understanding without new factual content. All source-relevant information remains traceable; all original Arabic/English language and established design rules remain binding.
+Maintain both physical-page mechanisms documented in the [Pagination System](../pagination/PAGINATION_SYSTEM.md): fixed frontmatter and the existing JS-composed body/revision pages. Screen-only cues must unwrap to ordinary text in private print clones; optional Source Depth must be removed before measurement. Preserve A4 geometry, RTL/font context, footer clearance, page restoration and independently printed revision. Do not add clipping, hidden overflow or a new print appendix to mask loss of content.
 
-## Archived original editions — 21 November 2026
+The standing user instruction is **not to run the full suite for every chapter**. During a later authorized implementation, select source, anchor, structure and runtime checks that address the actual changed surfaces. Use relevant A4/RTL/keyboard/no-JavaScript/offline checks when those surfaces are affected, and broaden verification only for a concrete risk or explicit gate. A documentation-only pass does not trigger a content build, reader suite, fork dispatch or deployment.
 
-To make the before/after redevelopment traceable, the exact, full pre-revamp HTML chapter sections for **1.1.1–1.1.5 and 2.1.1–2.1.5** are held in the [preserved original-dossier archive](../../archive/pre-revamp-2026-11-05/README.md), recovered from pre-editorial Git commit `aa601b2441f81ab1469b37e64514b5c2f117b273`. These originals retain the historical prose, all study aids and all six revision components. They are not the latest source-verified edition, are never assembled into the live reader, and are guarded by pinned Git blob checks. For subsequent unrevised chapters, retain the exact pre-edit section before any further replacement.
+For an authorized release, use the current [fork and release procedure](../hosting/SECONDARY_FORK_CI_AND_RELEASE.md) under the latest user scope and verification override. Distinguish local checks, fork evidence, transferred Git blobs, upstream checks and actual Pages publication. Do not claim that one proves the others, manually trigger or await a whole-book suite as a routine substitute for targeted verification, or bypass an access-control/approval rejection. Report any automatic workflow or infrastructure limitation plainly. The present documentation authorization does not itself authorize reader implementation or publication.
+
+## 12. Historical evidence and continuity
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The November 2026 Moran/Stout work established the distinction between context-first clarification and separately optional source detail. Its records remain available in the [historical Companion pilot audit](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md), [source-coverage pilot register](SOURCE_COVERAGE_CONCISE_PILOT_1_1_1_1_1_2.md), [Papineau register](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md) and [Gutting register](READING_1_1_4_GUTTING_SOURCE_COVERAGE.md). Their chapter/cue counts, example budgets and full-suite runs describe those dated editions; they are not current policy limits or a claim that only those chapters have Companions.
+
+Earlier research into the private History and Literature repositories supplied conceptual precedents for contextual simplicity, source traceability and careful point-of-reading interaction. It does not authorize copying their code, private prose, design systems or historical quotas into this public repository. The actual current Hikam implementation and latest user decisions govern.
+
+The [preserved original-dossier archive](../../archive/pre-revamp-2026-11-05/README.md) and later dated snapshots retain exact predecessor editions for comparison and recovery. They are historical evidence, not the primary intellectual source and not active build inputs. Preserve them unchanged; do not automatically restore old pedagogical or fidelity mistakes during migration.

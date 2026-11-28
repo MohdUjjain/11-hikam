@@ -1,0 +1,1234 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-28",
+  "repository_revision": "7798593e40ceafb9ff9590e1c1fea149347e5fdd",
+  "status": "Frozen audit evidence, not current implementation compliance or an executable policy specification.",
+  "policy_document": "../STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md",
+  "provenance": "Existing source-page and study-aid audit records reconciled with the five user-supplied pasted discussion files. Source bodies and private language samples are not included.",
+  "detailed_scope": {
+    "dossiers": 29,
+    "last_dossier": "3.2.5",
+    "english": 16,
+    "arabic": 13,
+    "through_3_1_1": 20,
+    "after_3_1_1_through_3_2_5": 9
+  },
+  "legacy_inventory": {
+    "main_families": {
+      "central_concept": 34,
+      "definition": 45,
+      "high_yield": 46,
+      "common_mistake": 36,
+      "examination_tip_legacy": 25,
+      "memory": 21,
+      "source_quotation": 36,
+      "analogy_legacy_mixed": 25,
+      "checkpoint_legacy": 50,
+      "table": 102,
+      "hierarchy": 40,
+      "concept_relationship_map": 36,
+      "historical_timeline": 4
+    },
+    "main_aids": 500,
+    "objectives": 162,
+    "roadmaps": 29,
+    "visible_components": 691,
+    "paragraph_form_aids": 277,
+    "paragraphs_within_those_aids": 283,
+    "paragraph_aid_body_words": 11437,
+    "full_visible_aid_and_objective_words": 28487,
+    "aid_and_objective_body_words": 25894
+  },
+  "table_cells": {
+    "main_tables": 102,
+    "main_cells": 1333,
+    "header_cells": 288,
+    "body_cells": 1045,
+    "body_at_or_below_10": 912,
+    "body_11_to_20": 119,
+    "body_above_20": 14,
+    "body_at_or_below_13": 993,
+    "body_above_13": 52,
+    "body_p95": 13,
+    "maximum": 34,
+    "revision_tables": 19,
+    "revision_cells": 265,
+    "revision_maximum": 17
+  },
+  "memory_baseline": {
+    "count": 21,
+    "body_words": 686,
+    "above_30": 13,
+    "records": [
+      {
+        "id": "2.1.1/memory/01",
+        "chapter": "2.1.1",
+        "label": "Memory Chain",
+        "body_words": 35,
+        "role_category": "ordered_chain",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L116"
+      },
+      {
+        "id": "2.1.2/memory/01",
+        "chapter": "2.1.2",
+        "label": "Memory Chain — Recognise, Cooperate, Evaluate",
+        "body_words": 50,
+        "role_category": "ordered_chain",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L280"
+      },
+      {
+        "id": "2.1.3/memory/01",
+        "chapter": "2.1.3",
+        "label": "Memory Sequence — Bird's Actual Order",
+        "body_words": 36,
+        "role_category": "ordered_chain",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L487"
+      },
+      {
+        "id": "2.1.4/memory/01",
+        "chapter": "2.1.4",
+        "label": "Five Questions to Ask of a Proposed Democracy",
+        "body_words": 28,
+        "role_category": "grouped_keywords",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L664"
+      },
+      {
+        "id": "2.1.5/memory/01",
+        "chapter": "2.1.5",
+        "label": "Five Distinctions to Carry into Revision",
+        "body_words": 37,
+        "role_category": "paired_mapping",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L1006"
+      },
+      {
+        "id": "2.1.7/memory/01",
+        "chapter": "2.1.7",
+        "label": "قاعدة للاستذكار — ثلاثة عناصر لا أربعة",
+        "body_words": 27,
+        "role_category": "ordered_chain",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L1469"
+      },
+      {
+        "id": "2.2.1/memory/01",
+        "chapter": "2.2.1",
+        "label": "وسيلة للتذكر — الترتيب ليس التعريف",
+        "body_words": 24,
+        "role_category": "paired_mapping",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-2.html#L69"
+      },
+      {
+        "id": "2.2.2/memory/01",
+        "chapter": "2.2.2",
+        "label": "أداة للتذكر — أربعة موضوعات لا أربعة أجوبة",
+        "body_words": 24,
+        "role_category": "grouped_keywords",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-2.html#L299"
+      },
+      {
+        "id": "2.2.3/memory/01",
+        "chapter": "2.2.3",
+        "label": "سلم التذكر — من المعلول إلى العلة الأولى",
+        "body_words": 27,
+        "role_category": "ordered_chain",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-2.html#L544"
+      },
+      {
+        "id": "2.2.4/memory/01",
+        "chapter": "2.2.4",
+        "label": "مفاتيح الاستذكار",
+        "body_words": 35,
+        "role_category": "hybrid",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-2.html#L854"
+      },
+      {
+        "id": "2.2.5/memory/01",
+        "chapter": "2.2.5",
+        "label": "Memory handle — two families, four outsiders",
+        "body_words": 37,
+        "role_category": "grouped_keywords",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-2.html#L1047"
+      },
+      {
+        "id": "3.1.3/memory/01",
+        "chapter": "3.1.3",
+        "label": "Memory Aid — Three Questions, Three Tests",
+        "body_words": 42,
+        "role_category": "paired_mapping",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-1.html#L503"
+      },
+      {
+        "id": "3.1.4/memory/01",
+        "chapter": "3.1.4",
+        "label": "احفظ مخاوف رسل الثلاثة",
+        "body_words": 36,
+        "role_category": "grouped_keywords",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-1.html#L603"
+      },
+      {
+        "id": "3.1.4/memory/02",
+        "chapter": "3.1.4",
+        "label": "مفتاح الاستذكار — استعمال، عزاء، منشأ",
+        "body_words": 23,
+        "role_category": "paired_mapping",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-1.html#L629"
+      },
+      {
+        "id": "3.1.5/memory/01",
+        "chapter": "3.1.5",
+        "label": "مفتاح التذكّر",
+        "body_words": 23,
+        "role_category": "paired_mapping",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-1.html#L690"
+      },
+      {
+        "id": "3.2.1/memory/01",
+        "chapter": "3.2.1",
+        "label": "مفتاح استرجاع ترتيب البرهان",
+        "body_words": 25,
+        "role_category": "ordered_chain",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L53"
+      },
+      {
+        "id": "3.2.2/memory/01",
+        "chapter": "3.2.2",
+        "label": "الصيغتان بعبارة واحدة",
+        "body_words": 32,
+        "role_category": "paired_mapping",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L118"
+      },
+      {
+        "id": "3.2.3/memory/01",
+        "chapter": "3.2.3",
+        "label": "سُلّم الاحتمال في أمثلة المصدر",
+        "body_words": 43,
+        "role_category": "numeric_anchors",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L197"
+      },
+      {
+        "id": "3.2.3/memory/02",
+        "chapter": "3.2.3",
+        "label": "استرجاع أرقام ريس الستة",
+        "body_words": 36,
+        "role_category": "grouped_keywords",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L213"
+      },
+      {
+        "id": "3.2.4/memory/01",
+        "chapter": "3.2.4",
+        "label": "من الخلق إلى الصفات",
+        "body_words": 35,
+        "role_category": "paired_mapping",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L260"
+      },
+      {
+        "id": "3.2.4/memory/02",
+        "chapter": "3.2.4",
+        "label": "اربط الرقم بشاهده",
+        "body_words": 31,
+        "role_category": "numeric_anchors",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L299"
+      }
+    ]
+  },
+  "extra_central_concepts": [
+    {
+      "id": "1.1.3/concept/02",
+      "chapter": "1.1.3",
+      "label": "Two Proposed Asymmetries",
+      "body_words": 52,
+      "role_category": "two_position_comparison",
+      "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L762"
+    },
+    {
+      "id": "2.2.1/concept/02",
+      "chapter": "2.2.1",
+      "label": "المحصلة — تاريخ الميتافيزيقا ومجالها",
+      "body_words": 74,
+      "role_category": "concluding_synthesis",
+      "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-2.html#L148"
+    },
+    {
+      "id": "3.1.2/concept/02",
+      "chapter": "3.1.2",
+      "label": "What counts as evidence for or against monotheism?",
+      "body_words": 68,
+      "role_category": "evidence_inventory",
+      "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-1.html#L320"
+    },
+    {
+      "id": "3.1.3/concept/02",
+      "chapter": "3.1.3",
+      "label": "What can warrant assent?",
+      "body_words": 86,
+      "role_category": "position_and_questions",
+      "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-1.html#L475"
+    },
+    {
+      "id": "3.2.5/concept/02",
+      "chapter": "3.2.5",
+      "label": "أربع قواعد لترتيب الشواهد",
+      "body_words": 50,
+      "role_category": "four_rule_list",
+      "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L370"
+    }
+  ],
+  "analogy_baseline": {
+    "containers": 25,
+    "source_traceable": 17,
+    "compiler_added_confirmed": 1,
+    "unresolved": 7,
+    "records": [
+      {
+        "id": "1.1.1/analogy/01",
+        "chapter": "1.1.1",
+        "label": "EL10 — One question, different tools.",
+        "body_words": 42,
+        "verified_provenance": "cannot_verify",
+        "operation": "cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L117"
+      },
+      {
+        "id": "1.1.2/analogy/01",
+        "chapter": "1.1.2",
+        "label": "EL10 — A test is not a definition.",
+        "body_words": 36,
+        "verified_provenance": "supplied_source",
+        "operation": "source_illustration",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L378"
+      },
+      {
+        "id": "1.1.3/analogy/01",
+        "chapter": "1.1.3",
+        "label": "Easy Contrast — Same Sodium, Two Kinds of Reasoning",
+        "body_words": 44,
+        "verified_provenance": "supplied_source",
+        "operation": "worked_reasoning_contrast",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L665"
+      },
+      {
+        "id": "1.1.3/analogy/02",
+        "chapter": "1.1.3",
+        "label": "Memory Aid — A Dutch Book",
+        "body_words": 44,
+        "verified_provenance": "cannot_verify",
+        "operation": "numeric_worked_example",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L685"
+      },
+      {
+        "id": "1.1.3/analogy/03",
+        "chapter": "1.1.3",
+        "label": "Source Example — Müller–Lyer Illusion",
+        "body_words": 44,
+        "verified_provenance": "supplied_source",
+        "operation": "source_figure_explanation",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L712"
+      },
+      {
+        "id": "1.1.3/analogy/04",
+        "chapter": "1.1.3",
+        "label": "Easy Explanation — Screening Off",
+        "body_words": 39,
+        "verified_provenance": "supplied_source",
+        "operation": "source_causal_example",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L768"
+      },
+      {
+        "id": "1.1.4/analogy/01",
+        "chapter": "1.1.4",
+        "label": "Source Example — The Café without Pierre",
+        "body_words": 44,
+        "verified_provenance": "supplied_source",
+        "operation": "source_scenario",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L936"
+      },
+      {
+        "id": "1.1.4/analogy/02",
+        "chapter": "1.1.4",
+        "label": "Source-Grounded Illustration — The Distinction Moves",
+        "body_words": 41,
+        "verified_provenance": "supplied_source",
+        "operation": "source_textual_example",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L1023"
+      },
+      {
+        "id": "1.1.5/analogy/01",
+        "chapter": "1.1.5",
+        "label": "Memory Aid — The Car Manual (Teaching Analogy)",
+        "body_words": 43,
+        "verified_provenance": "compiler_added",
+        "operation": "cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-1-1.html#L1214"
+      },
+      {
+        "id": "2.1.1/analogy/01",
+        "chapter": "2.1.1",
+        "label": "Memory Aid — Bird's Strawberry-Ice-Cream Example",
+        "body_words": 53,
+        "verified_provenance": "supplied_source",
+        "operation": "source_case_contrast",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L73"
+      },
+      {
+        "id": "2.1.2/analogy/01",
+        "chapter": "2.1.2",
+        "label": "Source Analogy — The Patient and the Political Community",
+        "body_words": 57,
+        "verified_provenance": "supplied_source",
+        "operation": "source_cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L277"
+      },
+      {
+        "id": "2.1.3/analogy/01",
+        "chapter": "2.1.3",
+        "label": "Source Thought Experiment — The Sleepwalker",
+        "body_words": 52,
+        "verified_provenance": "supplied_source",
+        "operation": "source_thought_experiment",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L467"
+      },
+      {
+        "id": "2.1.4/analogy/01",
+        "chapter": "2.1.4",
+        "label": "Simple Bridge — Building a Table",
+        "body_words": 30,
+        "verified_provenance": "supplied_source",
+        "operation": "source_cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L746"
+      },
+      {
+        "id": "2.1.5/analogy/01",
+        "chapter": "2.1.5",
+        "label": "Simple Bridge — “Go to Sleep at the Post”",
+        "body_words": 55,
+        "verified_provenance": "supplied_source",
+        "operation": "source_metaphor",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L957"
+      },
+      {
+        "id": "2.1.6/analogy/01",
+        "chapter": "2.1.6",
+        "label": "Conceptual Anchor",
+        "body_words": 37,
+        "verified_provenance": "supplied_source",
+        "operation": "direct_conceptual_explanation",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L1174"
+      },
+      {
+        "id": "2.1.6/analogy/02",
+        "chapter": "2.1.6",
+        "label": "Memory Trick — ELI10",
+        "body_words": 52,
+        "verified_provenance": "supplied_source",
+        "operation": "source_cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L1207"
+      },
+      {
+        "id": "2.1.7/analogy/01",
+        "chapter": "2.1.7",
+        "label": "تقريب المعنى — لا يقوم المثال مقام التعريف",
+        "body_words": 37,
+        "verified_provenance": "cannot_verify",
+        "operation": "same_case_multiple_lenses",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-1.html#L1404"
+      },
+      {
+        "id": "2.2.2/analogy/01",
+        "chapter": "2.2.2",
+        "label": "تقريب تعليمي — لا شاهد مستقل من المصدر",
+        "body_words": 33,
+        "verified_provenance": "cannot_verify",
+        "operation": "direct_question_contrast",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-2.html#L318"
+      },
+      {
+        "id": "2.2.3/analogy/01",
+        "chapter": "2.2.3",
+        "label": "التقريب الوارد عند الفارابي — شدة النور",
+        "body_words": 37,
+        "verified_provenance": "supplied_source",
+        "operation": "source_cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-2-2.html#L560"
+      },
+      {
+        "id": "3.1.2/analogy/01",
+        "chapter": "3.1.2",
+        "label": "ELI10 — What is being fixed?",
+        "body_words": 21,
+        "verified_provenance": "cannot_verify",
+        "operation": "cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-1.html#L307"
+      },
+      {
+        "id": "3.2.1/analogy/01",
+        "chapter": "3.2.1",
+        "label": "التمييز بين الحضور والصورة",
+        "body_words": 55,
+        "verified_provenance": "cannot_verify",
+        "operation": "experiential_example",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L76"
+      },
+      {
+        "id": "3.2.2/analogy/01",
+        "chapter": "3.2.2",
+        "label": "مثال يقرّب الذوق والواجب",
+        "body_words": 51,
+        "verified_provenance": "cannot_verify",
+        "operation": "contrastive_example",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L147"
+      },
+      {
+        "id": "3.2.3/analogy/01",
+        "chapter": "3.2.3",
+        "label": "حبة الرمل: تقريب البعد لا قياس الكون كله",
+        "body_words": 41,
+        "verified_provenance": "supplied_source",
+        "operation": "source_probability_example",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L220"
+      },
+      {
+        "id": "3.2.4/analogy/01",
+        "chapter": "3.2.4",
+        "label": "عربات القطار: مثال المؤلف على الافتقار",
+        "body_words": 55,
+        "verified_provenance": "supplied_source",
+        "operation": "source_cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L279"
+      },
+      {
+        "id": "3.2.5/analogy/01",
+        "chapter": "3.2.5",
+        "label": "الساعة الزنبركية: مثال المصدر",
+        "body_words": 36,
+        "verified_provenance": "supplied_source",
+        "operation": "source_cross_domain_analogy",
+        "source_url": "https://github.com/MohdUjjain/11-hikam/blob/7798593e40ceafb9ff9590e1c1fea149347e5fdd/src/chapters/subtopic-3-2.html#L339"
+      }
+    ]
+  },
+  "roadmaps": {
+    "points": 147,
+    "earlier_points": 101,
+    "earlier_points_with_bold_leadin": 101,
+    "later_points": 46,
+    "later_points_with_bold_leadin": 0,
+    "later_arabic_points_equal_to_headings": 36
+  },
+  "arabic_main_prose_emphasis": {
+    "scope": "Direct main-prose paragraphs, excluding aids, optional layers and revision",
+    "earlier_dossiers": 6,
+    "earlier_paragraphs": 68,
+    "earlier_with_bold": 55,
+    "earlier_mean_words": 65.65,
+    "later_dossiers": 7,
+    "later_paragraphs": 78,
+    "later_with_bold": 0,
+    "later_mean_words": 66.47
+  },
+  "source_page_scope": {
+    "unit": "Assigned original PDF scan leaves, not rendered dossier pages or reflowed Word pagination",
+    "existing_dossiers": 62,
+    "assigned_original_excerpts": 64,
+    "excluded_supplementary_pdf_files": 11,
+    "excluded_supplementary_pages": 754,
+    "excluded_books_index_pages": 18,
+    "excluded_forthcoming_readings": [
+      {
+        "reading": "3.4.1",
+        "pages": 4
+      },
+      {
+        "reading": "3.8.1",
+        "pages": 2
+      }
+    ],
+    "paired_docx_or_native_documents_counted_again": false,
+    "content_authority": "Prefer corresponding DOCX/native original for reading; use scan to verify doubtful extraction and stable source pagination."
+  },
+  "source_page_statistics": {
+    "total": 1466,
+    "min": 6,
+    "max": 74,
+    "mean": 23.64516129032258,
+    "median": 21.0,
+    "q1": 14.0,
+    "q3": 28.75,
+    "p10": 8.100000000000001,
+    "p90": 37.699999999999996,
+    "quantile_method": "linear interpolation at (n-1)*p",
+    "bands": [
+      {
+        "from": 1,
+        "to": 10,
+        "dossiers": 10
+      },
+      {
+        "from": 11,
+        "to": 20,
+        "dossiers": 18
+      },
+      {
+        "from": 21,
+        "to": 30,
+        "dossiers": 21
+      },
+      {
+        "from": 31,
+        "to": 40,
+        "dossiers": 7
+      },
+      {
+        "from": 41,
+        "to": 50,
+        "dossiers": 2
+      },
+      {
+        "from": 51,
+        "to": 60,
+        "dossiers": 2
+      },
+      {
+        "from": 61,
+        "to": 70,
+        "dossiers": 1
+      },
+      {
+        "from": 71,
+        "to": 80,
+        "dossiers": 1
+      }
+    ]
+  },
+  "provisional_target_calibration": {
+    "status": "Proposal only; not an adopted per-dossier requirement",
+    "formula": "round(40 + 35 * clamp((source_pages - 8.1) / (37.7 - 8.1), 0, 1))",
+    "permitted_range": [
+      40,
+      75
+    ],
+    "interpretation": "A source-accurate thesis may depart from the illustrative target within the permitted range."
+  },
+  "source_page_allocations": [
+    {
+      "chapter": "1.1.1",
+      "title": "Towards an Assessment of Twentieth-Century Philosophy",
+      "source_pages": 34,
+      "source_keys": [
+        "1.1.1"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "1.1.2",
+      "title": "Twentieth-Century Moral Philosophy",
+      "source_pages": 28,
+      "source_keys": [
+        "1.1.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "1.1.3",
+      "title": "Philosophy of Science",
+      "source_pages": 30,
+      "source_keys": [
+        "1.1.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "1.1.4",
+      "title": "Sartre, Foucault and Derrida",
+      "source_pages": 12,
+      "source_keys": [
+        "1.1.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "1.1.5",
+      "title": "The Gap Between Knowledge and Wisdom",
+      "source_pages": 8,
+      "source_keys": [
+        "1.1.5"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.1.1",
+      "title": "Introduction",
+      "source_pages": 11,
+      "source_keys": [
+        "2.1.1"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.1.2",
+      "title": "The Common Good",
+      "source_pages": 10,
+      "source_keys": [
+        "2.1.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.1.3",
+      "title": "War",
+      "source_pages": 30,
+      "source_keys": [
+        "2.1.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.1.4",
+      "title": "Introduction & Who Should Rule?",
+      "source_pages": 21,
+      "source_keys": [
+        "2.1.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.1.5",
+      "title": "The Place of Liberty",
+      "source_pages": 14,
+      "source_keys": [
+        "2.1.5"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.1.6",
+      "title": "Individualism, Justice, Feminism",
+      "source_pages": 6,
+      "source_keys": [
+        "2.1.6"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.1.7",
+      "title": "تطور علم السياسة",
+      "source_pages": 19,
+      "source_keys": [
+        "2.1.7"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.1.8",
+      "title": "أفلاطون: المدينة الفاضلة",
+      "source_pages": 14,
+      "source_keys": [
+        "2.1.8"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.2.1",
+      "title": "ما الميتافيزيقا...؟",
+      "source_pages": 15,
+      "source_keys": [
+        "2.2.1"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.2.2",
+      "title": "التقسيم التقليدي للميتافيزيقا",
+      "source_pages": 7,
+      "source_keys": [
+        "2.2.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.2.3",
+      "title": "الميتافيزيقا عند فلاسفة الإسلام والمسيحية",
+      "source_pages": 7,
+      "source_keys": [
+        "2.2.3",
+        "2.2.3-2"
+      ],
+      "source_count": 2,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.2.4",
+      "title": "مقدمة: أرسطوطاليس والميتافيزيقا",
+      "source_pages": 7,
+      "source_keys": [
+        "2.2.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.2.5",
+      "title": "The Structure of Aristotle’s Metaphysics",
+      "source_pages": 21,
+      "source_keys": [
+        "2.2.5"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "2.2.6",
+      "title": "Substance, Change and Intelligibility: An Introduction to Aristotle’s Metaphysics",
+      "source_pages": 42,
+      "source_keys": [
+        "2.2.6"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.1.1",
+      "title": "Introduction: Philosophy and Religion",
+      "source_pages": 6,
+      "source_keys": [
+        "3.1.1"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.1.2",
+      "title": "What is philosophy? What is religion? What is philosophy of religion?",
+      "source_pages": 23,
+      "source_keys": [
+        "3.1.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.1.3",
+      "title": "God",
+      "source_pages": 26,
+      "source_keys": [
+        "3.1.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.1.4",
+      "title": "نظريات حول نشوء الدين: دراسة تحليلية نقدية",
+      "source_pages": 28,
+      "source_keys": [
+        "3.1.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.1.5",
+      "title": "الاعتراضات الإجمالية التي اعترض بها الناقدون على الأديان",
+      "source_pages": 32,
+      "source_keys": [
+        "3.1.5"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.2.1",
+      "title": "تمهيد — برهان النزوع الفطري",
+      "source_pages": 21,
+      "source_keys": [
+        "3.2.1"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.2.2",
+      "title": "البرهان الأخلاقي",
+      "source_pages": 42,
+      "source_keys": [
+        "3.2.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.2.3",
+      "title": "برهان الضبط الدقيق",
+      "source_pages": 20,
+      "source_keys": [
+        "3.2.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.2.4",
+      "title": "الدلالة العقلية الأولى على وجود الله: دلالة الخلق والإيجاد",
+      "source_pages": 26,
+      "source_keys": [
+        "3.2.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.2.5",
+      "title": "الإلحاد الجديد",
+      "source_pages": 29,
+      "source_keys": [
+        "3.2.5"
+      ],
+      "source_count": 1,
+      "in_current_pass": true
+    },
+    {
+      "chapter": "3.2.6",
+      "title": "أفي الله شك؟",
+      "source_pages": 65,
+      "source_keys": [
+        "3.2.6"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.2.7",
+      "title": "شبهات حول أدلّة وجود الله تعالى",
+      "source_pages": 7,
+      "source_keys": [
+        "3.2.7"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.2.8",
+      "title": "Introduction",
+      "source_pages": 10,
+      "source_keys": [
+        "3.2.8"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.3.2",
+      "title": "اختراق عقل: دلائل الإيمان في مواجهة شبهات الملحدين والمتشككين",
+      "source_pages": 27,
+      "source_keys": [
+        "3.3.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.3.3",
+      "title": "جدلية الإلحاد والدين",
+      "source_pages": 35,
+      "source_keys": [
+        "3.3.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.3.4",
+      "title": "فمن خلق الله؟",
+      "source_pages": 35,
+      "source_keys": [
+        "3.3.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.3.5",
+      "title": "نهاية حلم «وهم الإله»",
+      "source_pages": 33,
+      "source_keys": [
+        "3.3.5"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.3.6",
+      "title": "Introduction",
+      "source_pages": 9,
+      "source_keys": [
+        "3.3.6"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.3.7",
+      "title": "Is Religion Evil?",
+      "source_pages": 25,
+      "source_keys": [
+        "3.3.7"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.3.8",
+      "title": "The Monkey Machine",
+      "source_pages": 15,
+      "source_keys": [
+        "3.3.8"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.4.2",
+      "title": "برهان النظم في عالم الأحياء — هل يتحدى التطور وجود الله؟",
+      "source_pages": 74,
+      "source_keys": [
+        "3.4.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.4.3",
+      "title": "نظرية داروين (جدلية الإلحاد والدين)",
+      "source_pages": 16,
+      "source_keys": [
+        "3.4.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.4.4",
+      "title": "Introduction + Part One — A Black Box under the Microscope",
+      "source_pages": 21,
+      "source_keys": [
+        "3.4.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.4.5",
+      "title": "Liliputian Biology",
+      "source_pages": 23,
+      "source_keys": [
+        "3.4.5"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.4.6",
+      "title": "Questions about Design",
+      "source_pages": 23,
+      "source_keys": [
+        "3.4.6"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.4.7",
+      "title": "Ten Years Later",
+      "source_pages": 17,
+      "source_keys": [
+        "3.4.7"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.4.8",
+      "title": "The Nature and Scope of Evolution",
+      "source_pages": 22,
+      "source_keys": [
+        "3.4.8"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.4.9",
+      "title": "The Origin of Life",
+      "source_pages": 13,
+      "source_keys": [
+        "3.4.9"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.5.1",
+      "title": "مشكلة الشر ووجود الله",
+      "source_pages": 58,
+      "source_keys": [
+        "3.5.1"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.5.2",
+      "title": "اختراق عقل: دلائل الإيمان في مواجهة شبهات الملحدين والمتشككين",
+      "source_pages": 14,
+      "source_keys": [
+        "3.5.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.5.3",
+      "title": "شبهات وجود الشرور والنقص في العالم الدنيوي (١–٢)",
+      "source_pages": 19,
+      "source_keys": [
+        "3.5.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.5.4",
+      "title": "إجابة ابن سينا عن مفارقة العناية الإلهية والشر في العالم",
+      "source_pages": 18,
+      "source_keys": [
+        "3.5.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.6.1",
+      "title": "براهين النبوة",
+      "source_pages": 26,
+      "source_keys": [
+        "3.6.1"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.6.2",
+      "title": "عالم دون أنبياء!",
+      "source_pages": 58,
+      "source_keys": [
+        "3.6.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.6.3",
+      "title": "ما هي الحاجة إلى الدين؟",
+      "source_pages": 13,
+      "source_keys": [
+        "3.6.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.6.4",
+      "title": "شبهات حول ضرورة ابتعاث الأنبياء وسبل إثبات النبوة",
+      "source_pages": 26,
+      "source_keys": [
+        "3.6.4"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.6.5",
+      "title": "ظاهرة نقد الدين",
+      "source_pages": 33,
+      "source_keys": [
+        "3.6.5"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.6.6",
+      "title": "أهمّيّة الدين وشبهات النبوّة وأصل الدين",
+      "source_pages": 26,
+      "source_keys": [
+        "3.6.6"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.7.1",
+      "title": "الادعاء بأن الأديان تفسد الأخلاق الإنسانية",
+      "source_pages": 24,
+      "source_keys": [
+        "3.7.1"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.7.2",
+      "title": "الدين والأخلاق",
+      "source_pages": 17,
+      "source_keys": [
+        "3.7.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.7.3",
+      "title": "منشأ الأخلاق والكتاب الصالح",
+      "source_pages": 20,
+      "source_keys": [
+        "3.7.3"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.8.2",
+      "title": "النظريّات في نسبة العلم والدين",
+      "source_pages": 38,
+      "source_keys": [
+        "3.8.2"
+      ],
+      "source_count": 1,
+      "in_current_pass": false
+    },
+    {
+      "chapter": "3.8.3",
+      "title": "الخدمات المتبادلة بين العلم والدين والردّ على دعوى التعارض",
+      "source_pages": 17,
+      "source_keys": [
+        "3.8.3",
+        "3.8.4"
+      ],
+      "source_count": 2,
+      "in_current_pass": false
+    }
+  ]
+}

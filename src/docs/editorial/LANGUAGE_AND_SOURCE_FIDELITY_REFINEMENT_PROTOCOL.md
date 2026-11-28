@@ -1,75 +1,86 @@
 # Long-Run Editorial Refinement Protocol — Language, Source Fidelity, and Study Aids
 
-**Project:** 11AM — Takhassus Hikam Dossier  
-**Adopted:** 18 November 2026  
-**Status:** Standing instructions for the reading-by-reading editorial refinement programme  
-**Scope:** Existing and future bilingual Arabic/English dossiers in `MohdUjjain/11-hikam`  
-**Governing rule:** **Make the source easier to understand, not smaller, different, or less complete. Preserve the book's established teaching and presentation system.**
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-> This protocol governs the present **editorial revision programme**, not a redesign, new-chapter template, philosophical critique, or authorization to modify the entire repository. It supplements — and does not supersede — the repository's [Design System](../design/DESIGN_SYSTEM.md), [Pagination System](../pagination/PAGINATION_SYSTEM.md), [source authoring instructions](../../README.md), and root [README](../../../README.md). Always inspect the current repository before editing; paths, counts, and conventions may change.
+**Project:** 11AM — Takhassus Hikam Dossier
 
-## 19 November — approved two-dossier method and design/accessibility regression
+**Adopted:** 18 November 2026; reconciled with the accepted decisions of 28 November 2026
 
-**Latest binding decision for reading 1.1.3 onward:** the context-first reading method is now published for **both** 1.1.1 (Moran) and 1.1.2 (Stout). A Reading Companion resolves the local reader question through *In simple words*, *Why this appears here*, and optionally *Remember*; a simple repeat/connection of visible content is justified if it makes the argument clearer. It does **not** have to introduce a new fact. Further original-source details live in separately chosen, normally closed, paragraph-adjacent **Source Depth** callouts with exact source page references, grouped as needed. They are not forced into a popup or printed/reported as visible prose. Timelines are for genuine source-grounded sequences; comparison tables remain for distinctions.
+**Status:** Standing source and language instructions; the present authorization is documentation only
 
-Both content layers obey the **full existing language standards and the exact primary author's intellectual stance**. The necessary thesis, arguments, objections and conclusion remain understandable without either optional control and still appear within visible prose and existing study aids. Equal standing of every aid and the complete independent six-part revision system is unchanged.
+**Scope:** Existing and future bilingual Arabic/English dossiers in `MohdUjjain/11-hikam`
 
-Maintain the published Literature-style **chapter-hue dotted-to-solid Companion trigger**, keyboard focus treatment, accessible expanded-state/name, Enter/Space/Escape/Close with non-reopening focus restoration, touch overflow, Arabic/RTL, no-script Source Depth, coherent screen reader output, search/pagination exclusion, and offline single-file build. Richer evidence, formulas, annotated figures or comparisons may be used only when justified by an immediate teaching need, with accurate source attribution and accessible text equivalents: **no gratuitous new container or lengthy popup**.
+**Governing rule:** **Make the source easier to understand, not smaller, different, or less complete. The source controls the intellectual content; the user controls the authorized work.**
 
-The existing **360° chapter-hue rotation, six stable semantic colors, typography, spacing, print and contrast tokens** are part of the immutable design-system contract. The automated `src/tests/browser_design_tokens.py` regression is a required gate, alongside source coverage/attribution, Companion anchoring, all six revisions, real desktop/mobile/RTL/keyboard/no-JS/print-PDF tests and offline PWA verification. Use the reusable manually-triggered `hikam-fork-verify.yml` on the second-account fork for each candidate branch; its success never commits or deploys to the authoritative repository without a separately verified transfer. See [the complete Companion/Source Depth standard](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth).
+This protocol governs source-faithful academic study notes. It does not authorize independent philosophical critique, unrelated chapter rewrites, a replacement design system, or implementation merely because a new rule has been documented. The current documentation pass changes no reader content, CSS, JavaScript, component markup, colours, icons or deployment.
 
-**First successor completed:** Papineau 1.1.3 was compared in full against its supplied Blackwell primary source and documented in the [resolved source-coverage register](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md#v-completed-source-coverage-resolution--final-113-edition-19-november). The three additional user-provided teaching syntheses remained comparison aids, **not authority for claims absent from Papineau**. The same source-first and fixed-design rules govern every subsequent reading.
+Read the [Study Aid Roles and Reading Design Protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md) for the current role definitions and accepted limits, and the [Audit and Migration Plan](STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md) for measured evidence and deferred work. These accepted decisions supersede conflicting older component, word-limit, EL10 and verification instructions. The [Design System](../design/DESIGN_SYSTEM.md), [Pagination System](../pagination/PAGINATION_SYSTEM.md), [source authoring instructions](../../README.md) and root [README](../../../README.md) continue to govern their respective architecture. Inspect the live repository before implementation; dated counts and verification reports are historical evidence, not current inventories.
 
-## 19 November — local source details and inclusive reading controls
+## 28 November 2026 — Current authority, source prominence and authorization
 
-The latest implementation preserves source completeness while protecting the reader's concentration: Reading Companions explain **what the immediate phrase means and why it matters**; additional original-source discussions are accessible in short, closed, paragraph-adjacent Source Depth callouts. This applies to the 1.1.1 and 1.1.2 pilots, not automatically to unrelated dossiers. All 34 records retain their printed-page references. Such disclosures are screen-only and omitted before print page measurement. They must not house any indispensable premise.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-Accessibility is mandatory: chapter-colored dotted underline becomes solid when opened, screen-reader semantics describe the expanded state, focus is visible and restored after keyboard dismissal, touch/mobile content remains scrollable, and native disclosure remains usable without JS. Conceptual continuity, technical accuracy, source point of view, Arabic/English language standards and all established study aids—including six revision sections—remain authoritative.
+All permissions to simplify, prioritize, condense, reorganize, label, illustrate or improve readability operate **inside the supplied source's intellectual position**. Critical evaluation of the notes means checking their fidelity, clarity, organization and teaching function against that position. It is not permission to decide that the source's conclusion is insufficiently proved, generalized, unacceptable or in need of an opposing view.
 
-See the current [Context-First Companion and Source Depth rules](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md).
+The later accepted rules are binding: one opening central concept; definitions restricted to definitions; the selected 30-word memory maximum; dedicated compiler-added EL10 analogies; a distinct source-analogy role; removal of main-body examination tips and checkpoints; cell limits for all tables; and meaningful roadmap previews. Section 5 records the limits together. Existing instances require a later authorized, source-guided migration; documenting the rules does not certify that the corpus already satisfies them.
 
-## Context-first comprehension amendment — adopted later on 18 November 2026
+The proposed general-purpose explanatory callout remains **unapproved**. Do not invent its name, icon, colour, cap or approved status, or use it as an escape from another role's limit. Conversion of all ordinary prose into bullets remains deferred. Final colour and icon assignments remain pending; use the established tokens when later authorized work requires them.
 
-The concise word ranges, strict source fidelity, both languages' writing standards, all existing study aids and six-part revision blocks continue unchanged. **Simplifying individual sentences is not enough:** the reader must be able to trace one intellectual question through many names, changing methods, disagreements and historical circumstances.
+## Reading layers, source coverage and operating budgets
 
-Inline **Reading Companions** now primarily clarify the *immediate sentence or idea and why it appears in the author's argument*, not deliver surprising additional historical or scholarly information. Restating an existing source-backed idea in simpler words is permitted when that genuinely resolves confusion. Optional **Source Depth** preserves additional original-source particulars separately so that source completeness does not obstruct first-pass comprehension. No indispensable claim may be moved out of the visible teaching layer. Use an existing concept map to orient complex argumentative progressions and a genuine timeline for successive events, not a comparison table simply because dates are convenient.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-This later amendment controls conflicting earlier nonduplication/Companion wording. Refer to [Context-First Companions and Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md). The only implemented editorial pilot is Moran 1.1.1; other dossiers are unchanged pending separate source-guided passes.
+The visible main path must independently teach the thesis, necessary premises, reasoning, objections and replies, material qualifications and conclusion. These essentials must remain available in **ordinary print** as well as on screen. A closed Companion, optional Source Depth record, revision section or promised future print appendix cannot be their only home.
 
-## Adopted November 18 amendment — concision and Reading Companions
+Reading Companions resolve a local difficulty through *In simple words*, *Why this appears here*, and optionally *Remember*. A brief restatement or connection is permitted when it makes the immediate argument intelligible; novelty is not required. Optional Source Depth preserves additional original-source particulars in normally closed native disclosures immediately after the associated visible paragraph, with exact source references. Both layers preserve the source's stance, ownership and certainty. They do not become hidden second articles or alternative accounts of the argument.
 
-**This amendment controls the length and information-distribution decisions in the current editorial programme. It does not change any Arabic or English language instructions, fidelity rules, original-author/title requirements, pedagogical component meanings, or revision-block obligations.**
+The planning range remains approximately **650–850 words of main explanatory prose** plus **850–1,150 words of visible main study aids, including section objectives**, or approximately **1,500–2,000 words** together. Exclude chapter frontmatter, roadmaps, optional Companions, optional Source Depth and all six revision sections from these two pools. This is source-proportionate planning guidance, not permission to add filler, delete essential material or evade a component's accepted limit. Record source-critical exceptions and resolve placement by intellectual function.
 
-The user has adopted a **source-proportionate operating range** at approximately **650–850 words of main chapter-body explanatory prose** and **850–1,150 words of existing study aids/callouts**, or **1,500–2,000 words of immediately visible main-body material per dossier**, chosen according to each primary article’s length and intellectual complexity. Exclude chapter title/frontmatter, all six end-of-chapter revision sections, and optional Reading Companion contents from these two counts. They are **operating targets, not a mechanical requirement to remove source-critical material**; the original source still governs every essential proposition, qualification, example, argument, objection and conclusion. Never insert filler to reach a target or silently delete essential content to hit a number.
+**Essential / useful / supplementary are reading priorities**, not judgments of source truth, acceptability, endorsement or examination probability. They describe what a learner needs for the current reading route. No component is inherently assigned one priority, and supplementary status does not make source details expendable.
 
-The new method favors **brief, natural, connected statements and straightforward one-line points**, with technical terms and the author's reasoning still understandable. Study aids retain their independent functions. The additional, source-specific detail is delivered through **concise, optional, nonduplicative Reading Companions at the exact point of reading**, wherever source-grounded and genuinely helpful. Do **not** repeat surrounding prose/callouts in a popup or create a hidden second article. The main notes and aids must establish the indispensable intellectual spine even when popups are closed; each source-significant detail must be accounted for in a per-reading coverage record, and important details must not disappear from print/offline study.
+## Historical adoption record — 18–19 November 2026
 
-The **complete requirements, research into `11-history` and `11-literature`, traceability method, Companion acceptance gates, language safeguards, interaction/RTL/print/PWA constraints and proposed pilot** are in **[Concise Dossiers and Source-Grounded Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md)**. Read that document together with this standing protocol **before undertaking another reading's language or coverage pass**. Where older sentences in this protocol seemed to require a lengthy explanation for each source point or forbid concise presentation, read them under this amendment: **do not shrink the scholarship; compress and reorganize its presentation across the approved layers**.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-**Status boundary:** a documentation decision is not a functioning Companion implementation. Do not assert that the 39 chapters, or 1.1.1 and 1.1.2, have already been shortened or equipped with the new interaction. The original reading, source coverage and a tested pilot control subsequent content edits.
+These dated decisions explain the existing architecture. Their older counts, pilot statuses and superseded permissions are retained as history, not revived as instructions.
+
+- **18 November, concision amendment:** introduced the prose/aid planning ranges and optional Reading Companions. Its original requirement that Companions always add nonduplicative information was superseded by the later context-first amendment. The [concision record](CONCISE_DOSSIER_AND_READING_COMPANIONS.md) preserves the original investigation of `11-history` and `11-literature` and its traceability rationale.
+- **Later 18 November, context-first amendment:** made immediate comprehension and argumentative continuity the primary Companion function. Moran 1.1.1 was the pilot at that time. That dated status is not a claim about the present corpus.
+- **19 November, two-dossier method:** extended the published method to Moran 1.1.1 and Stout 1.1.2, with 34 Source Depth records at that stage. Paragraph-adjacent native disclosures superseded the detached pilot. Timelines represented genuine source-grounded sequences; comparisons remained comparisons.
+- **19 November, Papineau successor:** 1.1.3 was compared in full with its supplied Blackwell primary text. The three teaching syntheses remained comparison aids, never authorities for claims absent from Papineau. See its [resolved source-coverage register](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md#v-completed-source-coverage-resolution--final-113-edition-19-november).
+- **19 November, accessibility and design verification:** established the chapter-hue dotted-to-solid Companion cue, visible keyboard focus, accessible state/name, Enter/Space/Escape/Close behavior with non-reopening focus restoration, touch scrolling, Arabic/RTL, no-script Source Depth, coherent screen-reader output, print/search exclusion and offline compatibility. These requirements remain relevant when affected. The historical full-suite/fork workflow is not a requirement to run the full suite on every subsequent candidate or documentation change; use the scoped verification rules in section 8.
+
+The [Context-First Companion and Source Depth standard](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) supplies the interaction details. Richer evidence, formulas, annotated figures or comparisons require a concrete teaching need, accurate attribution and accessible text equivalents; this does not authorize a gratuitous container or lengthy popup. A successful fork workflow does not itself commit, transfer, deploy or verify the authoritative repository.
 
 ## 1. Purpose and scope
 
-The established dossiers are substantial academic study notes, already supported by quotations, explanations, diagrams, tables, analogies, prompts, memory devices, checkpoints, and complete revision systems. The aim is **not to rebuild them**, replace their framework, change their visual language, or produce shortened summaries.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The dossiers are substantial academic study notes and summaries, supported by quotations, explanations, diagrams, tables, analogies, memory devices and complete revision systems. Their presentation should make the supplied reading learnable without losing its intellectual substance. Current main-body examination tips and checkpoints are legacy components scheduled for source-preserving migration when implementation is authorized; their presence is not permission to add more.
 
 Three separate difficulties motivate this longer programme:
 
-1. **Language and readability:** Arabic and English prose can be unnecessarily hard to follow. **This is the immediate editorial priority.**
+1. **Language and readability:** Arabic and English prose can be unnecessarily hard to follow. **This is the first editorial phase when a reading pass is authorized.**
 2. **Coverage and fidelity to the actual reading:** a dossier may omit, compress, or misstate significant parts of its primary text. This requires a **separate, explicit source-comparison pass**.
 3. **Intrinsic technical difficulty:** some source concepts are difficult even when the language is clear. A deeper concept-by-concept teaching/technical pass is a **distinct possible later phase**, not automatic permission to reframe the material.
 
-Proceed **one reading/article at a time, in dossier order from the beginning**, using the primary material supplied for that reading. Each reading receives its own examination and revision; do not infer its contents from earlier chapters, a title, a generic treatment of the subject, or internet summaries.
+During an authorized content pass, proceed **one reading/article at a time, in the user-approved dossier order**, using the primary material supplied for that reading. Each reading receives its own examination and revision; do not infer its contents from earlier chapters, a title, a generic treatment of the subject, or internet summaries.
 
 ### Priority and authority
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 - **Primary intellectual authority:** the actual main reading supplied for the dossier. It controls the author's ideas, thesis, terminology, distinctions, order of reasoning, evidence, quotations, examples, qualifications, objections/replies, level of certainty, and conclusions.
 - **Arabic prose model:** the user's Arabic samples and `skill - language profiling.md`, when supplied or accessible. These control the requested *voice and linguistic habits* as far as compatible with readability, never the reading's intellectual conclusions.
-- **Implementation authority:** the live repository and its real design, chapter, navigation, revision, print, and build conventions.
+- **Supplementary teaching material:** recalls, NotebookLM outputs and earlier AI drafts are coverage and comprehension aids. They never outrank the primary reading, establish an absent claim or settle its certainty.
+- **Implementation authority:** the live repository and its real design, chapter, navigation, revision, print, and build conventions, subject to the user’s accepted updates and present authorization.
 - **Editorial authorization:** the user's requested scope for the current reading and phase. Do not rewrite adjacent chapters or start a separate technical/design programme.
 
 **Style is not substance.** The Arabic author's wording patterns do not license importing that writer's particular theological or philosophical claims into other authors' readings.
 
 ## Source identification, author credit, and original titles (mandatory)
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 **Every dossier must visibly identify its original reading and its actual author.** Attribution is a core scholarly requirement, not a decorative choice. This rule applies to the **table of contents/index**, the **individual chapter frontmatter/title page**, and any other chapter title reused in navigation or print.
 
@@ -84,6 +95,8 @@ Proceed **one reading/article at a time, in dossier order from the beginning**, 
 This is a continuing **project-wide metadata correction requirement**, separate from changing the intellectual content of unrelated dossiers. For the actively edited reading, resolve its source identification before the language and coverage passes. For other readings without accessible primary files, the audit may remain explicitly unresolved rather than creating invented scholarly credit.
 
 ## 2. Non-negotiable source fidelity
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Treat the dossier as an accurate teaching presentation of **what the source author says**, not a place for ChatGPT's independent philosophical opinions.
 
@@ -101,17 +114,25 @@ Treat the dossier as an accurate teaching presentation of **what the source auth
 
 ## 3. Phase separation: the standing workflow
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The following is the workflow for a separately authorized reading pass. The current documentation-only pass does not start any of these content edits. Preserve the original intellectual method; a second pass repairs execution and coverage rather than inventing a new methodology.
+
 ### Phase 0 — Preparation and source anchoring (per reading)
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 1. Confirm the exact chapter/subtopic in the live TOC and its authored `src/chapters/subtopic-*.html` section.
-2. Read the original supplied reading **in full**, including appendices, quoted extracts, footnotes, tables, and references where provided. Never pretend to have read unavailable pages or attachments.
+2. Read the original supplied reading **in full**, including appendices, quoted extracts, footnotes, tables, and references within its assigned scope. Prefer its supplied DOCX/native editable original where available; use the paired PDF to verify printed pagination, scanned passages and material absent from the editable representation. Do not silently extend a deliberately selected extract. Never pretend to have read unavailable pages or attachments.
 3. Read the current dossier **in full**, including frontmatter, main body, all study aids, and the six-part revision block.
 4. Read the applicable design and pagination documentation and at least two comparable completed chapters when preparing chapter edits.
 5. Consult the user's Arabic samples and the **full** language-profile skill if the reading is Arabic; if those materials are not available in the working context, request/reopen them rather than approximate the author's personal voice.
 6. Establish an internal correspondence between the reading and existing dossier sections, identifying ambiguous passages and source-language terminology. Preserve source identifiers and references where available.
 7. Establish a per-reading baseline. Do not silently make whole-book style changes.
 
-### Phase 1 — Language and readability (**current primary pass**)
+### Phase 1 — Language and readability (when authorized)
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Edit the existing explanation **in place** for immediately understandable Arabic or English. The goal is first-careful-reading comprehension without loss of argument or intellectual seriousness.
 
@@ -121,13 +142,15 @@ Edit the existing explanation **in place** for immediately understandable Arabic
 - Repair unclear pronoun antecedents, referents, transitions, unexplained jumps, and poorly signposted distinctions.
 - Keep the source's logical progression intact; help the reader see *why* one step leads to the next. Reorganization is limited to making that progression clearer, not constructing a different argument.
 - Use helpful paragraphs, short explanatory sentences, examples already present, and the existing study aids **where their function genuinely helps**. Do not inflate passages with repetitive paraphrases or mechanical step-by-step scaffolding.
-- Polish headings, callouts, captions, table cells, prompts, checkpoint wording, and revision sections just as carefully as continuous prose.
+- Review headings, callouts, captions, table cells, prompts and revision sections as carefully as continuous prose. For retired tips/checkpoints, identify source content and its appropriate retained home before a later migration; do not polish them as continuing main-body roles.
 - Avoid making scholarly prose childish, casual, patronizing, or oversimplified. Easy language is compatible with rigorous scholarship.
 - The **source-alignment check** operates throughout this phase: ensure every edit leaves the reading's substantive meaning and certainty intact. This is not a substitute for the later exhaustive coverage audit.
 
 **Editing principle:** Rewrite difficult *language*, not difficult *thought*. Explain complex reasoning with enough space; do not omit it for brevity.
 
 ### Phase 2 — Full source-coverage and accuracy audit (**separate second pass**)
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Compare the polished dossier against the complete original reading, in the source's own order. Track, for each substantial unit, whether its treatment is **accurately covered / partially covered / absent / misstated / not verifiable**.
 
@@ -146,70 +169,112 @@ For gaps, restore and teach the missing **source-derived** material inside the c
 
 ### Later technical-concept pass (only if separately authorized)
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 A more intensive conceptual teaching pass may be commissioned for intrinsically difficult readings. Keep it distinct from language and coverage, and preserve the same source boundaries and repository architecture. Do not preemptively launch this pass or redesign the notes as a result of difficult subject matter.
 
 ## 4. Arabic and English language standards
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 ### Arabic — authorial voice with accessible expression
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Use the user's provided Arabic texts (including dissertation passages on رسائل إخوان الصفاء، ابن سينا، كتاب الشفاء، علم المنطق، and منهج البحث) as evidence of their preferred voice. Consult `skill - language profiling.md` in full, especially **Part IV (lexicon)**, **Part VII (AI failure modes)**, and **Part VIII (permanent writing instructions)**, rather than reconstructing these instructions from memory. **The profiling file and writing samples are user-supplied working materials, not assumed to be present in the GitHub repository.**
 
 The voice's useful governing traits are documentary primacy, evidence-led development, precise distinctions between testimony and inference, carefully calibrated inference vocabulary (where *the source* warrants inference), purposeful connectives, coherent paragraph progression, and unforced scholarly restraint.
 
-- Retain the signature scholarly diction and connective choices where they work naturally and improve precision; do **not** imitate the samples' densest dissertation syntax if it makes a study explanation hard to understand.
+- Preserve the profile’s exact lexical forms when using its signature vocabulary; do not manufacture synonyms that change its force or let the lexicon displace a source’s necessary terminology. Retain the scholarly diction and connective choices where they work naturally and improve precision; do **not** imitate the samples' densest dissertation syntax if it makes a study explanation hard to understand.
 - Keep the prose fluent, readable, orderly, and suitable for teaching; an idāfah-heavy or nominal construction is not required when a simpler accurate construction communicates better.
 - The **source's epistemic degree prevails** over any stylistic preference for tentative language. Do not turn the source's categorical claims into `يظهر`/`يمكن أن` merely because such verbs occur in the Arabic profile.
 - Do not use the profile's source-specific worldview, evidentiary hierarchy, or religious premises to rewrite unrelated authors' positions.
 - Distinguish original technical terms from everyday explanatory words; use accessible Arabic without converting the text into a literal translation from English.
 - Preserve correct Arabic quotations, honorifics, references, names, and the existing `lang="ar"`, RTL, typography, and `<bdi>` conventions.
 
+### Arabic readability and selective emphasis
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Readable Arabic includes visual access as well as sentence quality. Inspect the actual rendered text, including nested paragraphs and labels, rather than assuming an Arabic parent class fixes every descendant. The [Design System's Arabic acceptance requirements](../design/DESIGN_SYSTEM.md#arabic-readability-and-presentation-acceptance) record the measured font, spacing, emphasis, RTL and table-cascade issues without selecting new typography values.
+
+The audited ordinary main prose through 3.2.5 had inline bold in **55 of 68 earlier Arabic paragraphs** and **0 of 78 later paragraphs**. Their similar average lengths do not establish that the later text should be shortened. This is evidence of lost selective emphasis, not a quota requiring bold in every paragraph. When later authorized, emphasize a meaningful term, distinction, condition or argumentative pivot; keep its negation, qualification and attribution intact. Do not bold whole paragraphs or convert the entire prose into bullet points as part of this documentation decision.
+
+Check comfortable multiline reading, Arabic font coverage and joining, appropriate line height, space between distinct paragraphs, clear label/body separation, correctly isolated mixed-direction references, logical RTL indents and intact card outlines. Source Depth deserves the same reading care as the main text even though it is optional; its child typography must be inspected directly. Definitions, table cells and roadmap previews must satisfy their accepted functions and limits without losing their source meaning.
+
 ### English — plain, precise academic explanation
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Prefer direct, readable scholarly English. Replace avoidable syntactic density with clear relationships between claims; define difficult vocabulary without diluting it; preserve the source's actual distinctions and degrees of certainty. Avoid inflated academic jargon, formulaic hedging, conversational oversimplification, and unsupported interpretations. Neither language is a word-for-word translation template for the other.
 
 ### Shared readability test
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 After revision, ask: **Can a conscientious learner explain the idea in ordinary language, then return to the dossier and recover the source's full technical meaning and argument without a contradiction or missing step?**
 
-## 5. Every existing study aid retains equal editorial standing
+## 5. Study-aid roles, accepted limits and equal editorial care
 
-**All established aids matter equally as parts of the dossier's teaching architecture.** Their functions differ; do not give one privileged status, demand identical numbers of each, or add an aid merely for decorative consistency. Preserve, polish, and source-check **every type actually present in the reading**.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-Use the real component semantics from [DESIGN_SYSTEM.md](../design/DESIGN_SYSTEM.md). The relevant system includes:
+Every retained aid receives the same source and language care. Equal care does not mean equal frequency, identical visual treatment or identical reading priority. Choose the function from the content and the learner's task; the CSS class, colour, paragraph form or presence of bold does not establish the function. A well-formed paragraph may be an appropriate aid. Additional central-concept boxes, explanation-heavy definitions and source-derived non-analogies require functional review rather than automatic relabelling.
 
-| Main-body aid | Existing component | Editorial responsibility |
-| --- | --- | --- |
-| Chapter roadmap | `.in-this-chapter` | Accurate orientation to the actual chapter |
-| Central concept | `.box.concept` | State the reading's governing idea without overstatement |
-| Definitions | `.box.definition` | Keep technical distinctions accurate and learnable |
-| Examination tips | `.box.tip` | Clarify examination use without inventing source claims |
-| Common misunderstandings | `.box.mistake` | Correct real interpretive confusions fairly |
-| Memory supports | `.box.memory` | Preserve useful recall and simplification |
-| High-yield material | `.box.highyield` | Make especially important points clear |
-| Important source quotations | `.golden-quote` | Protect exact quotation and attribution |
-| Section objectives | `.section-objective` | Express the genuine question each section answers |
-| Hierarchies / logical structures | `.hierarchy` | Represent actual ranked or nested relations |
-| Intermediate checkpoints | `.checkpoint` | Test understanding of material already taught |
-| Concept relationships | `.concept-rel` | Express genuine source-grounded links |
-| Analogies / accessible illustrations | `.analogy` | Explain without changing the concept |
-| Tables and comparisons | `.tbl-wrap`, `.comparison` | Preserve all relevant distinctions; make cells readable |
+The [current role protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md) controls detailed decisions. These accepted limits apply to the complete substantive body unless a per-entry or per-cell rule is explicitly specified. Exclude the component's external category label/icon from body counts; preserve meaningful inline text and real block/cell boundaries. Do not split one operation artificially into multiple boxes to evade a cap. If a concise version would lose necessary source content, relocate that content to its proper visible form during the authorized migration.
 
-Keep any existing timelines, lists, examples, quotation treatments, and other legitimate chapter-specific teaching structures as well. Do not assume this descriptive table is permission to replace the actual repository's component glossary.
+| Role | Current requirement |
+| --- | --- |
+| Chapter roadmap | Each point contains **7–15 words**, including its **bold topic lead-in** and a source-faithful preview. A copied heading alone is not a preview. No fixed point count is prescribed. |
+| Central concept / thesis | **Exactly one**, at the start of the dossier's main study content; **40–75 words** explaining its governing idea. Reclassify additional concept boxes by actual function. |
+| Definition | Definitions only: **at most 20 words and two sentences per definition**, **at most two definitions per box**, **at most 40 words for the whole box**. Unused words in one entry cannot increase another entry's allowance. |
+| High-yield | **At most 40 words** presenting a source-grounded point or relationship especially valuable for understanding or recall. Do not invent examination likelihood. |
+| Common mistake | **At most 35 words** correcting a concrete source-based misreading or confusion. This is not a container for independent criticism of the author. |
+| Memory | **At most 30 words** for a real retrieval aid; permitted methods and boundaries appear below. |
+| EL10 / ELI10 / compiler-added analogy | A **dedicated analogy**, **20–30 words**, with a hard maximum of 30. No per-dossier quota. |
+| Source analogy / simple explanation | An analogy or explanatory comparison supplied by the author, including one the author cites; explicit ownership and the relevant source inference. No new word cap has been selected for this role. |
+| Source quotation | Accurate quotation with necessary context and attribution. No new word cap has been selected. |
+| Section objective | State the genuine question the section answers. It counts in the visible aid budget. No new universal objective limit is introduced here. |
+| Hierarchy / sequence | Encode genuine parent–child relations with decimal hierarchy, actual steps with ordinary sequence, and peers at the same level. Resolve mixed roles before numbering. |
+| Concept map | Short concepts and concise explicit relationships. Necessary explanation belongs in an appropriate visible teaching form, not as unexamined paragraphs attached to a map. |
+| Table / comparison | **All cells**, including top headers, semantic row headers and revision tables: normally **10 words or fewer**; **11–20 only when accuracy requires it**; **20 is the hard maximum**. Count all content in each cell. |
+| Timeline | Use for an actual source-grounded chronological sequence; do not turn a thematic comparison into a timeline. |
+| Examination tip / checkpoint | **Retired main-body components.** Review and preserve any necessary source content before future removal or reassignment. Their retirement does not remove the six-part revision system. |
 
-### EL10 / ELI10 has a specific, limited role
+### Definition integrity and later migration
 
-**Explain Like I'm 10 is a clarifying technique for intrinsically difficult concepts — not a separate phase, not a general language standard, not a universal requirement, and not more important than other aids.**
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-- Use it decisively when a concept remains hard despite lucid scholarly prose.
-- Supply a concise, plain-language bridge (and, where genuinely apt, an everyday analogy) through existing `.analogy`, `.box.memory`, or other already appropriate structures.
-- Explicitly reconnect the simple explanation to the source's real technical term and argument.
-- Keep explanatory illustrations distinguishable from examples or evidence **provided by the source**.
-- Never let an analogy replace the full explanation, distort the concept, introduce an unsupported premise, or patronize the learner.
-- Do not insert EL10 everywhere or turn the whole language pass into an EL10 rewrite.
+A definition gives the meaning of a term or concept. A historical comparison, developed argument, governing thesis or extended explanation does not become a definition through a blue box or a heading. The later semantic audit must identify the actual entries and count each one, its sentences and the whole box. Existing whole-box measurements cannot certify compliance with the new per-definition rule. Keep essential qualifications: the cap does not license a false or misleading definition.
 
-**All aids — tables, timelines, quotes, checkpoints, tips, roadmaps, revision elements, and EL10 where applicable — receive the same editorial care.**
+### Memory methods and the EL10 boundary
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Memory aids may use **mnemonics, acronyms, memorable phrases, visual associations, memory palaces, conceptual anchors, comparison tricks, pattern recognition or “remember this because” connections**, including a suitable short source quotation. Use a discernible cue-to-content relationship that helps the learner retrieve what the source teaches. Do not force a mnemonic, invent a source claim to make an acronym fit, or present a recap as a memory technique merely because it is short. A label and its actual cues must agree.
+
+A compiler-created retrieval arrangement must remain recognizable as an aid, not as the author's own phrase or evidence. Quoted source wording remains verbatim and attributed; placing it in a memory box does not remove the **30-word whole-body maximum**. A comparison trick may aid recall, but a compiler-created analogy used to explain a difficult concept belongs to the dedicated EL10 role. It cannot be hidden in a memory, high-yield or other box to avoid the EL10 boundary.
+
+### EL10 / ELI10 is the dedicated compiler-added analogy role
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The user's current usage treats **EL10, ELI10 and compiler-added analogy as the same role**. This supersedes the earlier permission to embed EL10 in memory boxes or arbitrary existing containers, and the earlier distinction between EL10 and analogy. Use a dedicated, source-faithful simplified analogy only where it genuinely clarifies a difficult concept, with **20–30 words in its complete body**.
+
+Connect the comparison to the real technical relationship. It must not introduce a new premise, substitute for the source's argument, pretend to be evidence, distort the author's conclusion or patronize the learner. Keep the adequate technical explanation in the visible main path. No generic simplified explanation automatically qualifies as EL10, and no analogy is required in every dossier.
+
+### Source analogies, quotations and provenance
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+An author's own analogy, or an analogy quoted or cited by that author, remains **source content** and receives the source-analogy / simple-explanation treatment with its actual ownership. It is excluded from the compiler-added EL10 cap. Preserve the relevant correspondence, inference and qualifications rather than imposing that cap retroactively.
+
+This distinction is not an unlimited general explanation category. A direct restatement, classification, chronology or summary found inside an existing `.analogy` element requires reclassification by function; its source origin alone does not make it an analogy. Verify provenance in the supplied original. Absence of quotation marks, a familiar image or a previous AI label cannot establish compiler authorship. Record unresolved provenance explicitly until the source can be checked.
+
+Source quotations preserve exact words, sufficient context, speaker and source location. A quotation inside a bounded memory device or table cell still has to fit that unit’s limit; preserve a necessary longer quotation intact outside the bounded unit instead of altering its words or treating quotation status as an exemption. A quotation is not the compiler's own conclusion. If the author quotes an opponent, reports an anecdote or supplies an example, retain that relationship instead of attributing every statement to the author as a personally endorsed claim.
 
 ## 6. Revision-block preservation
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Maintain the established `.end-block` and its **complete sequence**, for every revised chapter:
 
@@ -222,13 +287,15 @@ Maintain the established `.end-block` and its **complete sequence**, for every r
 
 Preserve the five examination-question classes in order: **Short Answer, Long Answer, Comparison, Conceptual, Application**.
 
-Revision material must be rechecked against the improved main body and the original source. It must not retain confusing old phrasing, omit restored source material, or introduce unsupported facts. Do not shorten, delete, or redesign the revision system during a language pass.
+Revision material must be rechecked against the improved main body and the original source. The accepted limits still govern individual definitions, memory devices and table cells when reused in revision or optional layers. They do not impose a 20-, 30- or 40-word cap on an entire revision collection; a definition callout still contains at most two entries. Retiring main-body tips/checkpoints does not retire examination questions, retrieval practice or any of the six revision functions. It must not retain confusing old phrasing, omit restored source material, or introduce unsupported facts. Do not shorten, delete, or redesign the revision system during a language pass.
 
 ## 7. Technical and presentation boundaries
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 This programme is **editorial, not architectural**.
 
-- Retain the existing chapter frontmatter, sections, headings, navigation, banners, labels, quotation treatments, semantic box colors, tables, diagrams, timelines, aids, and dark concluding revision blocks.
+- Retain the existing chapter frontmatter, sections, headings, navigation, banners, labels, quotation treatments, tables, diagrams, timelines and dark concluding revision blocks. Apply accepted component changes only during the authorized migration, with source content preserved. Final colour/icon assignments remain pending; this documentation pass does not implement them.
 - Keep all corresponding authored HTML structure and meaning. Amend text in canonical `src/chapters/subtopic-*.html` fragments; do not edit generated `index.html`, `service-worker.js`, or `src/philosophy_study_notes.html` by hand.
 - Preserve Arabic `class="chapter rtl"`, `lang="ar"`, existing Amiri/RTL conventions, and print-specific behavior.
 - Do not opportunistically refactor the stylesheet, JS reader, navigation, printing, PWA, or other chapters.
@@ -236,6 +303,8 @@ This programme is **editorial, not architectural**.
 - Do not upload unpublished, restricted, or user-supplied full reading texts/style samples to GitHub unless explicitly authorized; their use as editorial references does **not** authorize publication.
 
 ## 8. Repeatable quality checklist and handoff
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 For **each reading**, maintain a compact record (in the task report, and in repository editorial notes when requested) with the following:
 
@@ -247,45 +316,49 @@ For **each reading**, maintain a compact record (in the task report, and in repo
 | Language | Sentences, terms, transitions, and all aid text made clearer without trivialization |
 | Source fidelity | Thesis, reasoning, conclusions, certainty, quotation and attribution unchanged in substance |
 | Coverage | Original-to-dossier comparison performed in Phase 2; omissions and misstatements addressed or explicitly flagged |
-| Study aids | Every preexisting aid type and chapter-specific structure reviewed; EL10 used only where useful |
+| Study aids | Every existing instance reviewed by function, source ownership and the accepted limits; retired roles accounted for; dedicated EL10 used only where useful |
 | Revision | All six end-block components and five question categories retained and aligned |
 | Scope | No unrelated chapter, design-system, or reader change |
-| Implementation | Changes made to canonical files, generated outputs rebuilt, links/RTL/print inspected as applicable |
+| Implementation | Only authorized canonical files changed; applicable generated outputs and affected reader behavior checked when implementation requires it |
 | Verification | Exact commands/tests performed and their results reported; unresolved issues listed |
 
 For source-to-dossier coverage, a brief traceability matrix may use: **source unit / dossier location / status (covered, partial, absent, inaccurate, unverifiable) / required editorial action / resolved?** Do not substitute the matrix for actual close reading.
 
-When making **chapter content changes**, follow the repository's current canonical build and verification procedure (from repository root), as available:
+### Verification is scoped to the change
 
-```bash
-python src/build.py
-python src/build.py --check
-python src/tests/verify_publication.py
-python src/tests/validate_structure.py
-python src/tests/verify_sidebar.py
-python src/tests/verify_reading_progress.py
-node src/tests/test_offline_cache.mjs
-```
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-Also inspect relevant browser reading, Arabic typography/RTL, and print output when applicable. **Documentation-only changes to this protocol do not themselves imply a content rebuild or a deployment.** Do not claim tests, builds, commits, or publication checks passed unless actually observed.
+**Do not run the full suite every time.** Select the smallest meaningful checks that address the actual change and any applicable required gate. Keep an exact record of commands, inspected surfaces and results; broaden verification only for a concrete unresolved risk. Historical all-chapter counts and full-release reports are not permanent per-edit gates.
+
+- **Documentation-only work:** review changed guidance for internal consistency, precedence, links, source prohibitions and scope. A reader rebuild, browser run, full suite, fork workflow or deployment is not implied.
+- **An authorized dossier content change:** check source coverage and attribution, accepted component roles/limits, local markup and all six revisions. Use the canonical builder and its consistency check when generated publication output must change; run the relevant structural or publication check for the touched artifact.
+- **Affected UI, CSS, Arabic, Companion or print behavior:** inspect the specific desktop/narrow, keyboard/touch, RTL, no-JavaScript or actual selected-print PDF behavior that the change can affect. A shared cascade change warrants checking affected components across relevant chapters. Use `browser_design_tokens.py` for a real hue/contrast/token regression, not automatically for prose or documentation.
+- **Offline/build/navigation/archive changes:** use the corresponding cache, sidebar, progress, archive or build checks when their behavior or an applicable gate is affected. Do not treat this list as an instruction to run all of them together.
+- **Release or repository gates:** honor an applicable verified gate, while keeping release verification distinct from repeated drafting checks. Use the actual targeted fork workflow selected for the change; its result alone does not transfer or publish the authoritative branch. Confirm the workflow and branch exist before invoking them.
+
+Do not claim a test, build, commit, source check or deployment succeeded without observing it. Report unperformed checks and material limitations plainly rather than implying that a prior session's results verify new changes.
 
 ## 9. Operating instruction for every subsequent session
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Before undertaking a reading's language or fidelity pass:
 
 1. Reopen **this protocol** from the current repository.
-2. Reopen the latest [Design System](../design/DESIGN_SYSTEM.md), [Pagination System](../pagination/PAGINATION_SYSTEM.md), the relevant canonical chapter, and comparable chapters.
+2. Reopen the [current study-aid role protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md), the latest [Design System](../design/DESIGN_SYSTEM.md), [Pagination System](../pagination/PAGINATION_SYSTEM.md), the relevant canonical chapter, and comparable chapters.
 3. Read the full user-supplied main reading; for Arabic, also reopen the actual language-profile file and available Arabic samples. Ask for missing reading materials only if genuinely necessary; do not invent their content.
 4. Confirm the requested phase and proceed only within its scope, using the source as intellectual authority and the repository as implementation authority.
-5. Preserve all study aids without ranking them; use EL10 **only** where it serves concept comprehension.
+5. Apply the accepted roles and limits with equal editorial care; preserve necessary source content when retiring or reclassifying an aid. Keep reading priority distinct from source truth. Use dedicated EL10 only where it serves concept comprehension.
 6. Report the actual files changed, source coverage reviewed, tests performed, and remaining limitations.
 
-**Final standard:** **Source fidelity + full intellectual coverage + accessible scholarly language + equal care for every established study aid + unchanged dossier architecture.** The result should be much easier to read but no poorer in content.
+**Final standard:** **Source fidelity + full intellectual coverage + accessible scholarly language + equal care for the approved study-aid roles + faithful dossier architecture.** The result should be much easier to read but no poorer in content.
 
 ## 21 November 2026 — Preserve the original dossier before rewriting it
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 A [dated read-only historical archive](../../archive/pre-revamp-2026-11-05/README.md) now preserves the **complete pre-revamp chapter sections** for dossiers **1.1.1–1.1.5 and 2.1.1–2.1.5**, exactly as committed on 5 November 2026 (`aa601b2441f81ab1469b37e64514b5c2f117b273`). Frontmatter, body, pedagogical aids, all six revision sections and examination-question classes are preserved without rewriting. The [manifest](../../archive/pre-revamp-2026-11-05/MANIFEST.json) records exact Git blob hashes and source-module provenance.
 
 **Mandatory continuing safeguard:** before editing any as-yet-unrevised dossier for the first time, preserve its existing full chapter `<section>` in a **new, dated and integrity-checked pre-edit snapshot**. Do not overwrite historical archives or automatically restore earlier editorial errors to the current publication. The original reading remains the intellectual authority; `src/chapters/` remains the active canonical source. Archived fragments must never be inserted into the reader's book spine, search index, print output or offline package.
 
-Run `python src/tests/verify_dossier_archive.py` to confirm the ten preserved originals match their **independently pinned** Git objects; the publication CI also runs this verification. The archive is read-only by **policy and automated integrity gate**, not by GitHub file-level permissions. Maintain an additional offline or mirrored backup for protection against destructive history rewrites or repository deletion.
+When archive integrity is affected or its gate applies, run `python src/tests/verify_dossier_archive.py` to confirm the ten preserved originals match their **independently pinned** Git objects; the publication CI also runs this verification. A documentation-only edit does not require an otherwise unrelated archive or full-suite run. The archive is read-only by **policy and automated integrity gate**, not by GitHub file-level permissions. Maintain an additional offline or mirrored backup for protection against destructive history rewrites or repository deletion.
