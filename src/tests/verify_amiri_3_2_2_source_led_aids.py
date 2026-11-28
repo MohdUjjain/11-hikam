@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from hashlib import sha1
 from html.parser import HTMLParser
+from html import unescape
 import json
 import re
 from pathlib import Path
@@ -57,18 +58,19 @@ assert 650 <= p <= 850, words.count
 assert 850 <= a <= 1150, words.count
 assert 1500 <= p + a <= 2000, words.count
 
-assert visible.count('class="comparison"') == 2
-assert ch.count('class="comparison"') == 3  # includes independent revision key table
-assert visible.count('scope="col"') == 6
-assert visible.count('scope="row"') == 6
+assert visible.count('class="comparison"') == 4
+assert ch.count('class="comparison"') == 5  # four main + independent revision key table
+assert visible.count('scope="col"') == 12
+assert visible.count('scope="row"') == 12
 assert visible.count('class="hierarchy"') == 4
 assert visible.count('class="box definition"') == 1
+assert visible.count('class="box concept"') == 1
 assert visible.count('class="box mistake"') == 1
 assert visible.count('class="box memory"') == 1
-assert visible.count('class="box tip"') == 1
+assert visible.count('class="box tip"') == 0
 assert visible.count('class="analogy"') == 1
-assert visible.count('class="concept-rel"') == 2
-assert visible.count('class="checkpoint"') == 2
+assert visible.count('class="concept-rel"') == 1
+assert visible.count('class="checkpoint"') == 0
 
 # Seven distinct intellectual nodes of this specific reading, not artificial checklist fillers.
 for required in (
@@ -78,7 +80,7 @@ for required in (
     'روزنبرغ', 'ماكي', 'داوكنز', 'سي. إس. لويس',
     'شون كارول', 'العواقبية', 'أخلاق الواجب',
     'مايكل روس', 'الاعتراض البيولوجي', 'ص 262',
-    'الافتراضات الثلاثة', 'الوحي', 'الترغيب', 'التحذير',
+    'ثلاثة افتراضات', 'الوحي', 'الترغيب', 'التحذير',
 ):
     assert required in visible, (required, words.count)
 assert 'لا يكون «صالحًا» داخل منظومة مادية' in visible
@@ -90,7 +92,14 @@ cues = [x for x in json.loads((SRC / "reading_companions.json").read_text(encodi
 assert len(cues) == 5
 recs = re.findall(depth_regex, body)
 for cue in cues:
-    assert body.count(cue["passage"]) == 1, cue["id"]
+    # Bold markup may divide the HTML text without changing its exact passage.
+    def plain(fragment):
+        return ' '.join(unescape(re.sub(r'<[^>]+>', '', fragment)).split())
+    paragraphs = re.findall(r'<p>([\s\S]*?)</p>', visible)
+    matches = [p for p in paragraphs if plain(p) == plain(cue["passage"])]
+    assert len(matches) == 1, (cue["id"], len(matches))
+    pieces = re.split(r'<[^>]+>', matches[0])
+    assert sum(cue["text"] in piece for piece in pieces) == 1, cue["id"]
     assert cue["text"] in cue["passage"], cue["id"]
     assert all(cue.get(k) for k in ("simple","why_here","remember","sourceDepthId"))
     assert cue["source"]["author"] == "سامي عامري"
@@ -109,4 +118,4 @@ assert 'data-depth-count="2"' in grouped.split('>',1)[0]
 assert grouped.count('class="hikam-source-depth-item"') == 2
 assert 'ص 259–261' in grouped and 'ص 262' in grouped
 assert 'source-depth-h322-biology-opening' in grouped
-print(f"PASS 3.2.2: {p} prose + {a} aids = {p+a} visible; two real comparisons, four hierarchies, five exact Companions, source Depth grouped by page, original archived and six revision sections", flush=True)
+print(f"PASS 3.2.2: {p} prose + {a} aids = {p+a} visible; four true comparisons, four argument/witness structures, five exact Companions, source Depth grouped by page, original archived and six revision sections", flush=True)

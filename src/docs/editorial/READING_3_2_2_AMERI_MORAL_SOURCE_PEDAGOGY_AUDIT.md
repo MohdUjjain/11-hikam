@@ -42,3 +42,31 @@ Earlier concept, three-stage argument overview, important author quote, analogy,
 - Required release checks: pinned archive, five unique Companion anchors, six revision components, all five exam categories, hue 348°, semantic visual palette, word pools and source distinctions; independent browser A4/mobile RTL and table headings; full search/keyboard/print/offline PWA regression suites; fork-first Git blob match, independent upstream checks, clean PR merge and Pages verification.
 
 **Intellectual authority:** This is a faithful presentation of the assigned author's position, not an independent philosophical critique. Statements reported from other writers and the author's evaluations are consistently separated.
+
+## 29 November 2026 — Current corpus study-aid migration and Arabic main-prose emphasis
+
+**Authority:** Re-opened the assigned original `3.2.2 Source - البرهان الأخلاقي.docx` (Sami Ameri, *براهين وجود الله في النفس والعقل والعلم*) and three chapter-specific Total Recall Google Docs. The original remains the intellectual authority; the Recalls are secondary learning references. The previous 28 November audit records the added **p. 262** boundary from the paired scan; this pass does not claim a fresh visual transcription of that scan. The Word excerpt ends during the fourth reply, while the scan contributes the end of Michael Ruse's termite example and the **opening only** of the fifth biological objection.
+
+**Immutable predecessor of this release:** `src/archive/pre-redevelopment-2026-11-21/dossier-3.2.2-before-2026-11-29-corpus-role-and-prose-emphasis.html`, Git blob `d35f9150e6728b2ba4f85d051fe3579c98bb6fff`. Earlier historic and 28 November archival chapters remain unchanged.
+
+**Functional classification and disposition:**
+
+| Former aid/function | Current teaching decision | Source-led rationale |
+| --- | --- | --- |
+| Three-wording/three-step opening proof and later five-step sequence | Retain both as **different source-authored formulations**, label their stages at equal level instead of invented parent-child inheritance | Original pp. 221–225 provide both versions; the separate Kantian justice route is not the modern argument |
+| Opening central concept | Retain exactly one, **48 body words** | States objective value, grounding and the recurring epistemic/ontological boundary |
+| File/Word/PDF process described as a high-yield note | Retire the non-pedagogical wrapper; retain assigned p. 262 boundary explicitly in the main §5 explanation and source audit | A file-scope announcement is not a source-grounded high-yield intellectual point |
+| Two-formulation memory | **29 complete body words** | A true retrieval relation, not a disguised synopsis or examination drill |
+| Subjective/objective/absolute warning | **27 body words** | Corrects a concrete conceptual misreading while retaining Sorley's distinct claim |
+| Ontology/epistemology card | **Two distinct definitions, 11 and 12 words** | The previous card contained a longer explanation and procedural example in a definition wrapper; these remain sufficiently taught in §4 prose |
+| Comparison tables | **Four distinct main tables:** source framing of the two worldview expectations; objective vs absolute values; three objections and the places they confuse; consequentialism vs duty ethics in the welfare discussion | Same axes for each table; count all header and body cells, normally ≤10 and hard maximum 20; prose teaches context/attribution rather than duplicating the table row-by-row |
+| Three other logical structures | Retain five-part proof, four differentiated reported-witness roles and four welfare-test questions, all with their truthful **parallel/sequential**, not falsely subordinate, relations | The author supplied stages and source-specific evidence ownership |
+| Generic analogy at the end of the chapter | Relocate to §2 as a **25-word, expressly compiler-authored teaching analogy** distinguishing taste and a contradictory moral verdict | This is an explanatory comparison drawn from the source distinction, not additional evidence or a source quotation |
+| Misclassified main-body examination tip, both checkpoints, and long exercise/high-yield | Retire the examination and guided-reconstruction functions. Retain the only unique source-boundary substance **visibly**: p. 262's three opening assumptions about matter, causal determination and experimental knowledge | Practice is the role of the five preserved end-of-chapter examination families. No later biological rebuttal is fabricated |
+| Overlapping second concept map | Remove duplicate conceptual mapping; retain one map of descriptive evidence vs normative force and the source-limited biology opening | Maintains a distinct visual relationship without rehearsing the same words in multiple adjacent aids |
+| Five roadmap entries | Full faithful **7–15-word previews with bold lead-ins** | Orientation is explanatory rather than a bare list of section headings |
+| Ordinary Arabic prose | **Ten complete source-faithful paragraphs with restrained inline bold**, including all five paragraph-adjacent Companion anchors | Highlights terms, inferential pivots, negations, author's inferences and attribution without bolding entire paragraphs |
+
+The five **exact text and text-node** Reading Companion passages remain fully unchanged in `src/reading_companions.json`; the tests recognize selective inline markup without relaxing passage exactness. All five native normally closed Source Depth groups (six separately cited records, including two in the final group), six revision sections and five question families remain. Source claims, confidence, ownership and historical witnesses are retained as Ameri reports them.
+
+**Implementation boundary:** only `section#ch3-2-2`, its complete predecessor archive, scoped checks, this source audit and derived build files. No unrelated dossier, design token, global Arabic typography, CSS/JS, a4/h22 structure or reader infrastructure is rewritten. The role, word and browser/A4 tests establish whether implementation passes; this record alone does not.
