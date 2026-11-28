@@ -1,16 +1,20 @@
 # Design System — Philosophy Revision Dossier
 
-> **Repository paths (November 2026):** The authoritative stylesheet is `src/philosophy_notes.css`, the book spine is `src/main.html`, the chapter fragments are in `src/chapters/`, and the builder is `src/build.py`. Historic changelog references below retain the filenames used at the time.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
+> **Repository paths (November 2026):** The authoritative stylesheet is `src/philosophy_notes.css`, the book spine is `src/main.html`, chapter fragments are in `src/chapters/`, and the builder is `src/build.py`. Historical records below retain the filenames and inventories used at the time.
 
-Reference doc for `philosophy_notes.css` and the visual/content conventions of
-the book. Read this before making styling changes or writing a new chapter.
-For how the book actually gets *paginated and printed*, see `PAGINATION_SYSTEM.md`
-instead — this file is about what things look like, not how printing works.
+This document describes the existing visual system and the acceptance requirements for later authorized work. For pagination and printing architecture, read [PAGINATION_SYSTEM.md](../pagination/PAGINATION_SYSTEM.md). For current component functions, word limits, source ownership and reading priorities, read the [Study Aid Roles and Reading Design Protocol](../editorial/STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md), together with the [Language and Source Fidelity Protocol](../editorial/LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md). The [Audit and Migration Plan](../editorial/STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md) separates observed evidence from pending work.
 
-> **Current 19 November binding guidance:** The verified 1.1.1–1.1.3 reader uses [context-first Companions, local Source Depth and approved accessibility semantics](../editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth). The later historical changelog paragraphs on a detached end-of-chapter Source Depth component document an **obsolete pilot**, not instructions for new chapters. The current native `details.hikam-source-depth-inline` belongs **after the associated visible paragraph**, in HTML only. Underlined cues follow each chapter's existing rotating hue: **dotted at rest, solid on hover/open, plus visible focus**. Preserve all six fixed semantic colors and existing typography. `src/tests/browser_design_tokens.py` and the existing Companion, print, RTL, search and PWA suites are mandatory release tests; **no new color palette** is authorized.
+**28 November 2026 — documentation-only authorization:** the latest accepted role rules supersede conflicting older component descriptions. They do not authorize reader/CSS/content implementation, new colours, final icon assignments, a new explanatory callout family, or full-prose bullet conversion. Keep the existing tokens and architecture. Measured typography below is a baseline, not a selected replacement specification. Dated changelog entries preserve implementation evidence; they are not current permissions to add retired tips/checkpoints or embed EL10 in other roles.
+
+The source controls the author's intellectual position, certainty, evidence, qualifications, quotations and conclusions. Design, simplification and reading-priority decisions must preserve them. Essential reasoning remains in the visible main path and ordinary print; optional controls or a proposed future appendix cannot be its only home.
+
+The existing [context-first Companions and paragraph-adjacent Source Depth](../editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) remain the interaction model. Native `details.hikam-source-depth-inline` belongs immediately after its associated ordinary paragraph, in HTML. Companion cues use the chapter's rotating hue, dotted at rest and solid on hover/open, with visible focus and accessible state. Verification is scoped to affected components and applicable gates; the historical full-suite and exact-39-chapter reports are not requirements for every edit.
 
 ## Philosophy
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Parchment / navy ink / gold academic dossier. Distinctive on purpose — not a
 generic template. Two rules that protect that:
@@ -19,12 +23,15 @@ generic template. Two rules that protect that:
   exists to carry information, not to look nice. If you're adding a visual
   element that doesn't map to a real content distinction, don't.
 - **Chapters get their own accent hue; the semantic system never does.**
-  The six box types (below) are colour-coded and that coding is fixed across
-  the whole book. A `.box.definition` is the same blue in chapter 1.1.1 and
+  Existing semantic tokens (below) are colour-coded consistently across
+  the book. Retiring a role does not silently repurpose its token; final
+  refinements to colours and icons remain pending. A `.box.definition` is the same blue in chapter 1.1.1 and
   in chapter 3.1.3. Only *structural chrome* (banner, tab, table headers,
   quote rule, hierarchy dots) uses the chapter's rotating `--hue`.
 
 ## Palette
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 | Token | Value | Use |
 |---|---|---|
@@ -36,22 +43,28 @@ generic template. Two rules that protect that:
 | `--paper-line` / `--paper-line-soft` | `#D9CAA2` / `#E6DAB9` | hairline dividers |
 | body background | `#DCD3BC` | the darker backdrop pages/chapters now float against (see Elevation, below) |
 
-**Six fixed semantic colours** (never reassigned per-chapter):
+### Existing semantic tokens and their role boundaries
 
-| Box type | Icon | Colour | Meaning |
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+These are the **existing** colours and observed icons, not a newly approved final colour/icon assignment. Preserve the tokens while documenting the accepted functional changes. A class or colour does not by itself establish that its content satisfies the role.
+
+| Existing class | Observed icon | Existing colour | Current role boundary |
 |---|---|---|---|
-| `.box.definition` | D (🟦) | `#1F4173` blue | formal term meaning — learn verbatim |
-| `.box.concept` | C (🟩) | `#256B45` green | idea central enough the chapter needs it |
-| `.box.tip` | ! (🟨) | `#96540E` amber | how examiners phrase/reward this |
-| `.box.mistake` | ✕ (🟥) | `#8C2E2E` red | a confusion students routinely make |
-| `.box.memory` | ♥ (🟪) | `#5A3A78` purple | mnemonic / analogy / ELI10 |
-| `.box.highyield` | ★ (gold) | `#7E5C0C` | disproportionately exam-likely |
+| `.box.definition` | D (🟦) | `#1F4173` blue | Definition of a term; not historical comparison or extended explanation. |
+| `.box.concept` | C (🟩) | `#256B45` green | The dossier's single opening central concept/thesis. |
+| `.box.tip` | ! (🟨) | `#96540E` amber | **Legacy examination-tip role, retired from the main body.** Token retained as implementation history; no automatic reassignment. |
+| `.box.mistake` | ✕ (🟥) | `#8C2E2E` red | A concrete source-based misunderstanding and its correction. |
+| `.box.memory` | ♥ (🟪) | `#5A3A78` purple | A retrieval operation, not an alternative container for an explanatory EL10 analogy. |
+| `.box.highyield` | ★ (gold) | `#7E5C0C` | A source-grounded point or relationship especially useful to grasp or remember; not a prediction about examiners. |
 
-Each has a `-bg` (tint) and `-bd` (border) variant, e.g. `--c-def-bg`, `--c-def-bd`.
+Each has a `-bg` tint and `-bd` border variant, such as `--c-def-bg` and `--c-def-bd`. Shared uses of a token elsewhere do not revive a retired component. The 29-dossier audit found 13 icon omissions among 207 boxes, concentrated in 3.2.1–3.2.5; later correction must follow the eventual agreed icon treatment. This documentation pass selects no replacement icon set or palette.
 
-## Cross-component contrast and 360° hue contract — verified November 19, 2026
+## Cross-component contrast and hue allocation
 
-**This is the existing design, not a new palette.** All **39 chapters** follow their assigned 20° step through the full HSL circle, beginning at `--hue:208` for 1.1.1:
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+**This is the existing design, not a new palette.** The **19 November 2026 verification baseline contained 39 chapters**, allocated at 20° intervals through the full HSL circle beginning at `--hue:208` for 1.1.1:
 
 ```
 chapter hue = (208 + 20 × (chapter position - 1)) modulo 360
@@ -59,17 +72,21 @@ chapter hue = (208 + 20 × (chapter position - 1)) modulo 360
 
 The sequence reaches 348° at 2.1.3, wraps to 8° at 2.1.4, and repeats after 18 chapters. A second wrap occurs between 3.2.2 (348°) and 3.2.3 (8°). No hue is reset at a topic boundary. The 18 chapter accent colors should continue to be applied through the existing `hsl(var(--hue) ...)` rules for **structural chrome** (banner, stamp, table header, timeline, revision heading and other structural markers). The six fixed **semantic** callout colors never rotate.
 
-**Foreground must follow its surface**, even across parent/child component boundaries. A dark chapter banner or dark `.end-block` uses the existing light ink/cream foreground; a light `table.comparison` always uses the existing `--white-card` surface and `--ink` foreground, even when the table is nested inside `.end-block`. The chapter source's bold author name must **inherit the source line's light foreground**, not the global prose `strong` rule. Similarly, emphasis in dark revision prose should inherit its local readable color. Table paragraphs and cells must not inherit revision cream on light paper. These rules belong in the shared stylesheet and apply across all 39 chapters; never patch isolated cells, authors or chapters using arbitrary colors.
+**Foreground must follow its surface**, even across parent/child component boundaries. A dark chapter banner or dark `.end-block` uses the existing light ink/cream foreground; a light `table.comparison` always uses the existing `--white-card` surface and `--ink` foreground, even when the table is nested inside `.end-block`. The chapter source's bold author name must **inherit the source line's light foreground**, not the global prose `strong` rule. Similarly, emphasis in dark revision prose should inherit its local readable color. Table paragraphs and cells must not inherit revision cream on light paper. These rules belong in the shared stylesheet and apply wherever the component pairing occurs; never patch isolated cells, authors or chapters using arbitrary colors. A shared style change still requires separate implementation authorization.
 
-The regression `src/tests/browser_design_tokens.py` checks actual Chromium computed styles at 390px and 1366px: exact 39-chapter hue order and 18-stop wrap, six consistent semantic-box surfaces, existing Fraunces/Source Serif 4/IBM Plex Sans font stacks, author-credit visibility and WCAG AA 4.5:1 foreground contrast in every revision comparison-table cell. Fix a failed **component pairing** at its source rather than adding compensating late CSS overrides.
+At that baseline, `src/tests/browser_design_tokens.py` checked actual Chromium computed styles at 390px and 1366px: the then-current 39-chapter hue allocation and 18-stop wrap, six semantic token surfaces, the existing Fraunces/Source Serif 4/IBM Plex Sans stacks, author-credit visibility and WCAG AA 4.5:1 foreground contrast in revision comparison-table cells. The dated count is not a permanent current-corpus gate. When later authorized work affects these properties, inspect the applicable test and current allocation before running a scoped regression. Fix a failed **component pairing** at its cause rather than adding compensating late overrides.
 
 **First verification:** [Secondary-account GitHub Actions run 44524655246](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44524655246) passed the complete canonical build, source/structure tests, Chromium computed-style audit at 390px and 1366px, Reader/RTL, real PDF pagination and offline/PWA regressions. The computed-style audit confirmed **39 chapters**, **18 unique rotational hues**, **two existing revision comparison tables** (Moran and Stout), **two authored source-credit emphasis instances**, and the six fixed semantic backgrounds. The missing table/author contrast was caused by CSS foreground inheritance, not by a missing or reset hue sequence. No source text or semantic callout type was revised.
 
 ### Stable hue allocation for catalog insertions
 
-The 39 existing chapter hues are unchanged when the first two 3.3 dossiers are inserted in numerical reading order. New 3.3.2 and 3.3.3 use the next two slots of the same 20° wheel (268°, 288°), while 3.4.3 retains 128°. Dossiers 3.3.4–3.3.6 use the next slots at 308°, 328°, and 348°. Dossiers 3.3.7 and 3.3.8 continue at 8° and 28°. Dossier 3.4.2 then takes 48°; the existing 3.4 hues remain in place. Dossiers 3.5.1–3.5.4 continue with 68°, 88°, 108°, and 128°. Dossiers 3.6.1–3.6.6 adopt 148°, 168°, 188°, 208°, 228°, and 248° in order. Dossiers 3.7.1–3.7.3 continue at 268°, 288°, and 308°. Dossier 3.8.2 and combined 3.8.3–3.8.4 continue at 328° and 348°. Check the full hue cycle in allocation order; screen and print retain chapter-number order. This does not change the palette, semantic callout colors, or page geometry.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The 39 chapter hues in that historical baseline were retained when the first two 3.3 dossiers were inserted in numerical reading order. New 3.3.2 and 3.3.3 use the next two slots of the same 20° wheel (268°, 288°), while 3.4.3 retains 128°. Dossiers 3.3.4–3.3.6 use the next slots at 308°, 328°, and 348°. Dossiers 3.3.7 and 3.3.8 continue at 8° and 28°. Dossier 3.4.2 then takes 48°; the existing 3.4 hues remain in place. Dossiers 3.5.1–3.5.4 continue with 68°, 88°, 108°, and 128°. Dossiers 3.6.1–3.6.6 adopt 148°, 168°, 188°, 208°, 228°, and 248° in order. Dossiers 3.7.1–3.7.3 continue at 268°, 288°, and 308°. Dossier 3.8.2 and combined 3.8.3–3.8.4 continue at 328° and 348°. Check the full hue cycle in allocation order; screen and print retain chapter-number order. This does not change the palette, semantic callout colors, or page geometry.
 
 ## Typography
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 | Token | Stack | Use |
 |---|---|---|
@@ -77,15 +94,14 @@ The 39 existing chapter hues are unchanged when the first two 3.3 dossiers are i
 | `--font-body` | Source Serif 4 | running prose, golden-quotes |
 | `--font-sans` | IBM Plex Sans | UI chrome: kickers, labels, buttons, sidebar |
 | `--font-mono` | IBM Plex Mono | page numbers, dossier numbers, sidebar `#N` |
-| `--font-arabic` | Amiri | Arabic display text (titles, headings) |
-| `--font-arabic-sans` | Noto Sans Arabic | (available, currently unused — Amiri covers both display and inline Arabic throughout for consistency) |
+| `--font-arabic` | Amiri | Arabic prose and display text, with explicit component exceptions below |
+| `--font-arabic-sans` | Noto Sans Arabic | Actively used by the explicit RTL exception list for labels, table headers, citations and other selected components |
 
-Any element with `class="ar"` or `lang="ar"` automatically gets
-`font-family:var(--font-arabic); direction:rtl; unicode-bidi:isolate;` from one
-global rule — you never need to hand-set Arabic font/direction elsewhere,
-just apply the class/attribute.
+The global `.ar` / `[lang="ar"]` rule supplies the Arabic font, RTL direction and bidi isolation. Preserve that semantic markup. It does **not** guarantee correct typography for every descendant: an explicit component `font` or `font-family` rule can override an inherited Arabic value. The existing RTL exception list actively uses Noto Sans Arabic; inspect actual computed descendants before diagnosing font, size or joining problems. This documentation pass chooses no new typography values or replacement font policy.
 
 ## Elevation system (added in the "SaaS" pass)
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Radius and shadow are tokens, applied consistently rather than per-element
 guesses:
@@ -111,31 +127,50 @@ corners before.
 **Circles stay circles** — seals, dots, the FAB, box icons all use
 `border-radius:50%` and are untouched by any of this.
 
-⚠️ **This entire elevation system is screen-only.** Every radius/shadow/hover
-transform gets forced back to flat under `@media print` (see the "SaaS-elevation
-reset" block near the top of the print media query). Do not remove that reset —
-the paged-media system was tuned for edge-to-edge "bleed" pages with zero
-visual embellishment, and a shadow around a full-bleed page contradicts that
-design. If you add a *new* shadowed/rounded element, add it to that reset list
-too, or it may show an unwanted edge in the exported PDF.
+**Current print behavior:** the v3 print reset makes physical page-boundary elements (`.page`, `.chapter`, `.chapter-banner`, `.end-block`, `.js-print-page`) square. Content islands inside the page, including boxes and tables, retain their rounded corners. Listed shadows and hover transforms are removed for print. Preserve this distinction: the earlier all-flat reset is a historical iteration, not the present rule. Inspect the actual print selectors and pagination behavior when later authorized work affects an element; do not add a blanket radius reset or an overflow rule that clips generated pages.
 
-## Structural component glossary
+## Structural component glossary and accepted limits
 
-| Component | Class | Use |
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Role is established by intellectual function and source ownership, not by HTML class or appearance. Paragraph-form aids can perform valid teaching functions. Preserve source material when a later authorized migration removes, shortens or reclassifies an instance. Complete-body counts exclude external category labels/icons but retain substantive inline content; preserve block and cell boundaries when extracting text.
+
+| Component | Existing structure | Accepted role / requirement |
 |---|---|---|
-| Chapter roadmap | `.in-this-chapter` | "In This Chapter" numbered preview, before any `§` |
-| Central idea | `.box.concept` (labelled "Central Thesis") | always the first box in a chapter body |
-| Notable quote | `.golden-quote` | verbatim quote with `<cite>`, used sparingly, spread through the chapter not clustered |
-| Section framing | `.section-objective` | "This section answers: …" — one per `§`, right after the heading |
-| Nested/ranked ideas | `.hierarchy` with `.h-node.l1`–`.l5` | use `l1` flat for *parallel* concepts (e.g. four causes), increasing levels for genuine *depth* |
-| Recall pause-point | `.checkpoint` | roughly 60–70% through a chapter, recaps what's covered so far |
-| Cross-section links | `.concept-rel` | badges: `leads` / `contra` / `support` / `example` — explicit connections between claims in different `§`s |
-| Quick analogy | `.analogy` | ELI10-style, one emoji icon, used only where a natural analogy exists — never forced |
-| End-of-chapter | `.end-block` | always exactly: Chapter Summary → One-Page Revision Sheet → Key Definitions → Key Table → Memory Aids Collected → Possible Examination Questions |
-| Exam questions | `.examq` | always exactly 5 categories, same order: Short Answer, Long Answer, Comparison, Conceptual, Application |
-| Table title | `<caption>` inside `.tbl-wrap` | centered, hue-tinted background matching that chapter's `th` row, bottom border — a card header, not a floating label. Same in English and Arabic (`text-align:center` is direction-agnostic, no RTL override needed) |
+| Chapter roadmap | `.in-this-chapter` | Before any `§`; **7–15 words per point**, including a **bold topic lead-in** and source-faithful preview. No fixed point count. |
+| Central concept / thesis | `.box.concept` | **Exactly one**, at the beginning of the dossier's main study content, **40–75 words**. Additional concept boxes require functional reclassification. |
+| Definition | `.box.definition` | Definitions only: **≤20 words and ≤2 sentences per definition; ≤2 definitions per box; ≤40 words for the whole box**. No transfer of unused words between entries. |
+| High-yield | `.box.highyield` | Source-grounded importance or a valuable relationship; **≤40 words** for the complete body. |
+| Common mistake | `.box.mistake` | Correct a source-based confusion; **≤35 words** for the complete body; no independent adjudication of the author. |
+| Memory | `.box.memory` | A meaningful retrieval cue or operation; **≤30 words** for the complete body. |
+| Source quotation | `.golden-quote` with `<cite>` | Verbatim quotation with context, actual ownership and reference; no new word cap. |
+| Section objective | `.section-objective` | The genuine question answered by the section, after its heading; included in the visible aid budget. No new universal word cap. |
+| Hierarchy / sequence | `.hierarchy` and its nodes | Decimal levels for parent–child relations; ordinary numbering for actual steps; peers share a level. Do not infer intellectual rank from CSS indentation. |
+| Concept relationship map | `.concept-rel` | Concise concepts and explicit short source-grounded relations; no substantial attached paragraph masquerading as a node. |
+| EL10 / ELI10 / compiler-added analogy | Dedicated analogy container, using the approved existing architecture | The three names denote the same role: a compiler-added explanatory analogy, **20–30 words**, hard maximum 30; no quota and no embedding in memory/other roles. |
+| Source analogy / simple explanation | Existing source-content presentation with explicit attribution | An analogy or explanatory comparison supplied or cited by the author, preserving its inference; outside the EL10 cap. Source-derived non-analogies require reclassification, not unlimited generic callouts. |
+| Tables / comparisons | `.tbl-wrap`, `table.comparison` | Every physical cell, including column headers, row headers and revision tables: normally **≤10 words**; **11–20 only for accuracy**; hard maximum **20**. |
+| Timeline | `.historical-timeline` | Source-grounded chronological sequence; a thematic comparison stays a comparison. |
+| Examination tip / checkpoint | `.box.tip`, `.checkpoint` | **Legacy main-body components, retired.** Necessary source content must be accounted for during later migration. No midpoint checkpoint quota remains. |
+| End-of-chapter revision | `.end-block` | Exactly: Chapter Summary → One-Page Revision Sheet → Key Definitions → Key Table → Memory Aids Collected → Possible Examination Questions. |
+| Exam questions | `.examq` | Five classes in order: Short Answer, Long Answer, Comparison, Conceptual, Application. Retirement of main-body tips/checkpoints does not remove these. |
+| Table title | `<caption>` in the table | Existing centered, chapter-hue treatment; preserve the distinction between a caption, top headers and semantic row headers. |
+
+Individual definitions, memory devices and table cells retain their limits in revision or optional layers. Entire revision collections do not acquire a 20-, 30- or 40-word aggregate cap; a definition callout still has at most two definitions. A necessary long source quotation belongs intact outside a bounded cell or memory unit, rather than bypassing its limit.
+
+### Memory, analogy provenance and pending categories
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Memory can use mnemonics, acronyms, memorable phrases, visual associations, memory palaces, conceptual anchors, comparison tricks, pattern recognition and “remember this because” connections. A suitable short source quotation is allowed with its attribution and the same 30-word memory-body cap. Its retrieval operation must be identifiable, its cues must agree with its label, and its content must remain source faithful. Compiler-created cues do not become source quotations or evidence.
+
+A compiler-created **explanatory analogy** belongs in the dedicated EL10 role even when memorable. A source author's own or cited analogy belongs to source content with its actual ownership. Check the supplied original before assigning provenance; an old class, missing quotation marks or a familiar image proves neither origin. Keep unresolved cases explicit. A direct explanation, classification or summary does not acquire an unlimited allowance by being source-derived or labelled “simple explanation.”
+
+The general-purpose explanatory callout remains a **proposal**, not an approved family. Final colour/icon assignments and the full-prose bullet conversion remain deferred. The optional page-based central-concept formula is only a planning proposal within 40–75 words; no source-page number or calibration silently becomes a required length. Reading priorities describe the learner's route, not whether an author's claims are true or acceptable.
 
 ## Numbering & content conventions
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 `Topic` (1 digit) → `Sub-topic` (N.N) → `Chapter`/"Dossier" (N.N.N). One
 `.part-divider` page per Topic *and* per Sub-topic (except Topic 1, whose
@@ -143,8 +178,8 @@ single sub-topic 1.1 is folded into the Topic-level divider rather than
 getting its own — a historical quirk, not a pattern to copy for future
 topics with more than one sub-topic).
 
-Current inventory (see the sidebar in the live document for the
-authoritative, always-current version — this list rots):
+Recorded catalog snapshot (use the live canonical spine and sidebar for the
+current inventory; historical counts elsewhere in this document are dated):
 
 - **Topic 1** — Sub-topic 1.1, chapters 1.1.1–1.1.5 (English)
 - **Topic 2** — Sub-topic 2.1 (2.1.1–2.1.8, English + 2 Arabic), Sub-topic 2.2
@@ -153,24 +188,41 @@ authoritative, always-current version — this list rots):
   Sub-topic 3.2 complete (3.2.1–3.2.8, six Arabic + two English),
   Sub-topic 3.3 has seven dossiers (3.3.2–3.3.8), and Sub-topic 3.4 has eight (3.4.2–3.4.9), and Sub-topic 3.5 has four (3.5.1–3.5.4), Sub-topic 3.6 has six (3.6.1–3.6.6), Sub-topic 3.7 has three (3.7.1–3.7.3), and Sub-topic 3.8 has two dossiers
 
-**Chapter hue**: `--hue` steps +20° globally in [allocation order](#stable-hue-allocation-for-catalog-insertions), wrapping at 360°. An insertion uses the next slot; it does not recolor existing chapters. The same hue recurs every 18 allocations.
+### Chapter hue
 
-**RTL / Arabic chapters**: add `class="chapter rtl"` and `lang="ar"` to the
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+`--hue` steps +20° globally in [allocation order](#stable-hue-allocation-for-catalog-insertions), wrapping at 360°. An insertion uses the next slot; it does not recolor existing chapters. The same hue recurs every 18 allocations.
+
+### Arabic chapter markup and language
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Add `class="chapter rtl"` and `lang="ar"` to the
 `<section>`. Keep the `.chapter-stamp` tagline in English (cross-book
 scannability) but everything else — title, body, boxes, end-block — in
-Arabic. Inline Arabic inside an otherwise-English element (e.g. a kicker like
-"2.2 · <span class="ar" lang="ar">الميتافيزيقا</span> · Metaphysics") just
-needs the `.ar`/`lang="ar"` span; font and direction follow automatically.
+Arabic. Inline Arabic inside an otherwise-English element (for example,
+`<span class="ar" lang="ar">الميتافيزيقا</span>` in a kicker) uses the
+`.ar`/`lang="ar"` span. Check explicit descendant font rules as well as the
+inherited direction; the markup alone is not a typography acceptance test.
 
-**Inline `§` section references inside Arabic prose need `<bdi>` around
-them** — e.g. `(<bdi>§I</bdi>)`, or `<bdi>§I–§IV</bdi>` for a range. Without
+### Mixed-direction section references
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Inline `§` section references inside Arabic prose need `<bdi>` around
+them — e.g. `(<bdi>§I</bdi>)`, or `<bdi>§I–§IV</bdi>` for a range. Without
 it, the Unicode bidi algorithm can visually reorder the reference's own
 characters (renders as "I§" instead of "§I") wherever it sits inside
 surrounding RTL text. This applies to inline references embedded mid-sentence
 in prose, `.cr-title`, and `.rel-node` text.
 
-**The `.secnum` badge (the `§I` chip at the start of every `h2.sec`
-heading) has the identical bug and is fixed in the CSS, not per-instance.**
+### Section-number badges
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The `.secnum` badge (the `§I` chip at the start of every `h2.sec`
+heading) has the identical bug and is fixed in the CSS, not per-instance.
 This was wrongly believed to be exempt for a while — it isn't; it was just
 easy to misread at small badge size. It affects *every* `h2.sec` in *every*
 Arabic chapter in the book, old and new alike, not just newly-written ones.
@@ -187,16 +239,20 @@ character-by-character bounding-box check in headless Chromium, not just a
 screenshot — see `PAGINATION_SYSTEM.md` for how to run that check again if
 a similar bug is suspected elsewhere.
 
-**Font-family is the bug to check first, before ordering/alignment** — a
+### Explicit font rules and the Arabic cascade
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Font-family is a cause to check before assuming an ordering or alignment bug — a
 user report of Arabic text "looking broken" turned out to mean this, not
 the bidi-ordering issue above, and it was the more serious of the two. The
 book's font cascade is: `.rtl{font-family:var(--font-arabic)}` (Amiri) sets
 the default for a whole chapter by inheritance, then one shared exceptions
 list (search the CSS for `.rtl .chapter-kicker, .rtl .box-label...`)
 re-targets specific UI-chrome components (badges, table headers, labels) to
-`var(--font-arabic-sans)` (Noto Sans Arabic) instead, because a small
-uppercase letter-spaced label reads better in a sans face than Amiri's more
-calligraphic serif. **Any component with its own explicit `font-family`
+`var(--font-arabic-sans)` (Noto Sans Arabic) instead, under the established component distinction. That existing distinction
+does not justify Latin uppercase tracking on Arabic text; check joining and
+actual readability separately. **Any component with its own explicit `font-family`
 declaration outside that exceptions list silently falls back to whatever
 non-Arabic font it names** (usually `var(--font-sans)`, IBM Plex Sans, which
 has no real Arabic glyph support) — because a rule that *directly* targets
@@ -212,11 +268,15 @@ place a concept-relationship map appeared in any Arabic chapter) plus the
 table `<caption>` after it was redesigned and lost its inherited font along
 the way. All four+one are now in the shared exceptions list.
 
-**How to check this for real, not by eye**: a targeted selector-by-selector
+### Scoped verification of Arabic font coverage
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+A targeted selector-by-selector
 check is not enough — it only catches what you thought to test, and this bug
-was found on the *second* pass, not the first. Run this in headless
-Chromium after any CSS change that touches an Arabic-chapter component: walk
-every element under `.rtl`, keep the ones whose own direct text node
+was found on the *second* pass, not the first. When an authorized shared CSS change affects Arabic font selection, use a
+scoped Chromium check across the affected Arabic surfaces: walk
+each affected element under `.rtl`, keep the ones whose own direct text node
 contains an Arabic Unicode codepoint (`\u0600`–`\u06FF` etc.), and flag any
 where `getComputedStyle(el).fontFamily` doesn't contain "Amiri" or
 "Arabic". Zero hits is the bar — not "the ones I checked passed."
@@ -224,31 +284,108 @@ where `getComputedStyle(el).fontFamily` doesn't contain "Amiri" or
 Before writing a new Arabic chapter, check an existing working one's markup
 for these patterns rather than re-deriving them.
 
-**`.chapter-stamp` taglines run 3–6 words across the whole book** (checked
-against all 24: shortest 2, longest was a one-off 7 that got trimmed back).
+### Chapter-stamp taglines
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The established stamp guidance is 3–6 words. Its original measurement was
+a historical 24-chapter sample (shortest 2; a one-off 7 was trimmed). That
+record is not a current all-corpus count.
 The circular badge is sized for that range — a longer one wraps to 4 lines
 and looks visibly cramped next to every other chapter's clean 2–3 line
 badge. Keep new ones inside that range rather than rediscovering the ceiling
 by screenshot.
 
-**Adding a new chapter**: copy an existing `<section class="chapter">` whole,
+### Adding a chapter when authorized
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Copy an existing `<section class="chapter">` whole,
 update id/hue/tabnum/stamp/title/source, add its TOC row. See
 `PAGINATION_SYSTEM.md` for the *print*-side steps (page-name templates) —
 those are easy to forget and fail silently (blank running header) if skipped.
 
-## Known debt / things worth revisiting
+## Arabic readability and presentation acceptance
 
-- `--radius-lg` (24px) and `--shadow-inset` are defined but unused — either a
-  future component uses them or they can be dropped.
-- `--font-arabic-sans` is defined but everything currently routes through
-  `--font-arabic` (Amiri) instead, including small UI text in the sidebar.
-  Worth a look if Amiri ever reads as too calligraphic at small sizes.
-- The `@page revN` print-template count has run one ahead of the actual
-  chapter count for a while (23 templates vs 22 chapters as of Topic 3) —
-  there's a small orphaned template somewhere in the legacy print system.
-  Harmless, but worth tracking down during a future cleanup pass.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-## Changelog
+These are acceptance requirements for **later authorized implementation**, not CSS changes enacted by this documentation pass. Their source is the recorded audit through **3.2.5: 29 dossiers, including 13 Arabic dossiers**, plus examination of the current stylesheet. Do not generalize these measurements into a completed audit of the later corpus. The [Audit and Migration Plan](../editorial/STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md) retains the evidence and scope.
+
+### Selective emphasis and prose rhythm
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Among ordinary Arabic main-body paragraphs, excluding aids, optional layers and revision, **55 of 68 paragraphs in the earlier six Arabic dossiers** contained inline bold; **0 of 78 in the later seven, 3.1.4–3.2.5**, did. Average paragraph lengths were similar. This identifies a loss of selective visual emphasis, not a rule that every paragraph needs bold or that later prose must be cut.
+
+Use restrained emphasis for a meaningful technical term, contrast, condition or argumentative pivot. Include any negation or qualification needed to avoid changing the highlighted claim. Keep attribution legible. Avoid entire bold paragraphs, dense repeated labels or mechanically bolding a fixed number of words. Preserve comfortable separation between genuinely distinct paragraphs. Review multi-paragraph aid spacing as actually rendered; do not remove useful paragraph breaks to imitate a compact box. Wholesale conversion of ordinary prose into bullet points is deferred.
+
+### Measured typography and descendant overrides
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The following recorded screen values are **baselines, not replacement targets**. Component roles differ, so equal pixel sizes or one universal line-height are not acceptance criteria.
+
+| Sampled Arabic content | Computed font size | Computed line height |
+|---|---|---|
+| Ordinary prose and sampled concept paragraphs | 17.5px | 33.25px (1.9) |
+| Table body cells | 16px | 25.92px (1.62) |
+| Hierarchy values | 17px | 27.54px (1.62) |
+| Relationship-map nodes and section objectives | 14.5px | 23.49px (1.62) |
+| Timeline descriptions | 14.5px | 22.475px (1.55) |
+| Source Depth item paragraphs | 14px | 23.1px (1.65) |
+
+Inspect the font, size, line height, wrapping and spacing on the text-bearing child itself. In current CSS, the Arabic Source Depth content parent declares **18px**, while the more specific item paragraph declares **14px/1.65**. Its item heading also has a direct **14px sans font shorthand**. A correct parent declaration cannot certify readable or correctly selected Arabic descendants. These are concrete cascade issues to resolve and verify later; no replacement sizes are approved here.
+
+Check all content-bearing text and labels affected by a future change, including timeline titles, citations, captions and relationship labels. The audit recorded an Arabic timeline title using the Latin sans stack, as well as retained letter spacing on some Arabic captions, citations and relation badges. Preserve Arabic font coverage and joining. Do not assume that a Latin label's tracking or small-cap treatment transfers appropriately to Arabic.
+
+### RTL borders, indents and mixed-direction text
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Maintain correct `lang`, RTL direction and isolated Latin/math/date/section references. Check logical reading order as well as right alignment. Existing `border-left:none` RTL resets can erase the thin opposite outline when moving an accent border to the right. Acceptance requires the intended card outline and logical accent to remain coherent; do not solve one edge by removing another indiscriminately.
+
+Roadmap lists currently expose double-sided indentation from physical padding combined with RTL behavior. Later correction should produce one coherent leading indent, not a cramped reading column. Inspect actual narrow and desktop wrapping. Preserve the source's sequence and hierarchy when changing alignment; direction does not change intellectual order.
+
+### Roadmap previews and heading continuity
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Each roadmap point must contain **7–15 words in total**, including a **bold topic lead-in** followed by a short source-faithful preview of what the reader will learn. Bold selects the topic; it does not consume the entire point. Preview the actual section without inventing an additional thesis or merely duplicating its heading.
+
+The recorded audit found 101 earlier points with bold topic lead-ins and 46 later points with no bold; all 36 later Arabic points were exact section-heading copies. Their shared wrappers did not explain the change. Correct content and emphasis together during the later migration rather than inventing a different roadmap design. No fixed number of roadmap points is selected.
+
+### Semantic tables and the row-header cascade
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The observed table-style difference has a specific cause: some first-column entries use `<td><strong>…</strong></td>`, while others correctly use `<th scope="row">`. The shared `table.comparison th` rule styles **all** header cells as top headers, so semantic row headers inherit that font, background and border treatment. Do not remove row-header semantics to make them look like body cells. Preserve accessible headers and, when authorized, distinguish the column-header and row-header selectors using the established tokens.
+
+Captions are an established table feature, not a new colour/header design. Preserve their semantic title role and language-appropriate alignment. Keep body text readable inside both ordinary and dark revision contexts; a light table nested in a dark block retains a compatible foreground. Count the full content of every physical cell, including all paragraphs and inline terms: normally ≤10 words, 11–20 only where accuracy requires, hard maximum 20 for all cells. A row-header tag, caption-like label inside a cell, or revision location grants no exemption.
+
+Long exposition cannot be made compliant merely by changing the table font or splitting a sentence into arbitrary cells. A table must encode a useful comparison or mapping. Preserve necessary source explanations in their appropriate visible teaching form when a later source-guided migration restructures it. The 29-dossier audit does not establish how often long two-column exposition occurs in all later dossiers.
+
+### Focused acceptance and preservation of source meaning
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+For a later affected-component change, inspect the relevant Arabic prose, aid, table, optional layer and revision contexts at desktop and narrow widths. Verify actual computed descendants where the cascade is at issue; use screenshots for wrapping, rhythm, borders and spacing. Check keyboard/assistive semantics when changed, and actual selected-print PDF output when print can be affected. Shared changes warrant coverage of affected components across relevant chapters, not a routine full suite after every draft.
+
+The source's distinctions, uncertainty or certainty, attribution, sequence and essential reasoning must survive typography, emphasis, abbreviation and layout changes. An easier visual presentation is insufficient if it changes what the author claims. Essential content remains visible and in ordinary print. Use the exact scoped verification record; do not imply that old screenshots or tests verify a new implementation.
+
+## Known debt and historical measurements
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+- `--radius-lg` and `--shadow-inset` were recorded as unused tokens. Do not remove or repurpose them in this documentation pass; verify actual use before a separately authorized change.
+- The older claim that Noto Sans Arabic was unused was incorrect for the current CSS. The explicit RTL exception list uses it; remaining font-cascade and tracking issues are identified above.
+- A historical print inventory recorded 23 templates for 22 chapters. It is not a current orphan-template finding; inspect the live print architecture before any cleanup.
+- Semantic table headers, RTL outlines/indents, selective Arabic emphasis, descendant typography, roadmap previews and missing icons are documented migration concerns. Final colours/icons and typography choices remain pending; documentation is not implementation.
+
+## Changelog — historical implementation record
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The entries below preserve dated implementation evidence, including old inventories, retired component vocabulary and earlier source descriptions. They do not establish current source coverage or authorize a new intellectual claim. Apply the current role/fidelity rules above when doing new work. In particular, references to six active box types, examination tips, midpoint checkpoints or embedded EL10 describe legacy implementations; source-preserving migration remains deferred.
 
 - **CSS split off into `philosophy_notes.css`**, linked via `<link>` instead
   of an inline `<style>` block, to cut editing-session token cost.
@@ -435,6 +572,10 @@ those are easy to forget and fail silently (blank running header) if skipped.
 
 ## 2026-11-04 — Sub-topic 3.4 partial integration (dossiers 3.4.3–3.4.4)
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+**Historical integration record.** Its counts, forthcoming labels and source summaries describe that stage, not the present corpus.
+
 - Added `subtopic-3-4.html` with its own divider and **two completed dossiers**;
   3.4.1–3.4.2 and 3.4.5–3.4.9 remain explicitly forthcoming.
 - Dossier **3.4.3** is Arabic RTL (`lang="ar"`, `.rtl`) and follows the supplied
@@ -461,6 +602,10 @@ those are easy to forget and fail silently (blank running header) if skipped.
 
 ## 2026-11-04 — Pedagogical reconstruction of dossiers 3.4.3 and 3.4.4
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+**Historical reconstruction record.** Embedded analogies and formative checkpoints below describe the legacy implementation; the current dedicated EL10 and retired-checkpoint rules supersede them.
+
 - Benchmarked the original 32 dossiers, especially the explanatory → analogy → relationship → retrieval cycle.
 - Revised only the content fragment `subtopic-3-4.html`; the 32 established chapter fragments and existing CSS/JS behavior remain untouched.
 - Added explicit definitions, conceptual warning/high-yield boxes, embedded analogies, hierarchy maps, formative checkpoints, and a restored chronological/source data pathway.
@@ -470,6 +615,10 @@ those are easy to forget and fail silently (blank running header) if skipped.
 - Preserve all established colors, print layout tokens, chapter IDs and subtopic numbering.
 
 ## 2026-11-04 — Editorial voice: write the notes as the explanation
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+**Continuing language principle, within source fidelity:** direct exposition does not turn an attributed, disputed, quoted or tentative source statement into the compiler’s independent fact. Preserve necessary ownership and the source’s exact degree of certainty without repetitive distancing. The examples and implementation count below are historical.
 
 In the main body of a dossier, use **direct explanatory prose**, not a
 third-person running commentary on the supplied extract. The reader already
@@ -492,6 +641,8 @@ teaching tools, lists, quotations, headings and revision sections were left
 unchanged; CSS and JS were not edited.
 
 ## 2026-11-05 — Accessible contents and print sidebar
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 The screen-only contents drawer retains the book's gold/navy sidebar styling.
 `#tocBackdrop` is a dismissible backdrop. `#tocSidebar` is a labelled modal
@@ -516,11 +667,14 @@ choices when cleared. Search supports chapter numbers, titles, section titles,
 and Arabic diacritic-insensitive matching. Expand/Collapse All are explicit.
 
 `src/tests/verify_sidebar.py` checks source markup, UI semantics, print hooks
-and the generated reader as part of the GitHub Actions workflow. Browser testing
-should additionally exercise keyboard navigation, narrow viewports, Arabic,
-section links, search, print selection and afterprint restoration.
+and the generated reader as part of the GitHub Actions workflow. When later
+authorized navigation changes affect these behaviors, select the relevant
+keyboard, narrow-viewport, Arabic, link, search, print-selection and restoration
+checks. This is not a requirement to run the navigation suite for every edit.
 
 ## 2026-11-05 — Screen-only reading orientation and local continuity
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 A 3px gold rail in `#readingProgressHeader` denotes physical progress through
 the **entire** assembled book; the separate 34px circular gauge denotes the
@@ -539,6 +693,10 @@ and never auto-navigates. Technical rules, privacy, and QA are documented in
 
 ## 2026-11-18 — Complete house-style reconstruction of 3.4.5–3.4.9
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+**Historical reconstruction and verification record.** The 39-chapter count and tip/checkpoint requirements below describe that implementation. Its structural sibling rule and complete revision functions remain relevant; retired component quotas must not override the current role policy in a later authorized migration. The named regression is not automatically required for unrelated documentation edits.
+
 - Replaced five brief, structurally incomplete entries with full source-aligned English dossiers; preserved the existing 3.4.3 and 3.4.4 texts, TOC numbers, hue sequence (168° / 188° / 208° / 228° / 248°), and 39-chapter book structure.
 - **Structural regression found in the earlier implementation:** `.chapter-endnav` and `.end-block` were nested inside `.chapter-body` rather than being direct siblings. Because the JS print engine selects these independently, that markup is **not equivalent** and must never be used for new dossiers.
 - The six-section end-block is mandatory, not optional. Each new revision again includes the one-page rev-grid, pagination-safe definition groups, key-table recall, body-linked memory aids, and all five examination-question categories.
@@ -548,18 +706,26 @@ and never auto-navigates. Technical rules, privacy, and QA are documented in
 
 ### Browser-verified PDF and revision integrity
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 The reconstructed dossiers were checked in actual Chromium at 390px and 1366px, including the independent dark end-block, and through the JavaScript A4 paginator. All five used the established hue and component treatments with no horizontal overflow. The targeted print test detected a separate existing selected-print issue: the print CSS hid the paginator's off-screen measurement probe during `beforeprint`, causing drastic PDF truncation. The probe is now exempt from the selected-body visibility rule while it exists. See `PAGINATION_SYSTEM.md` for the verified root cause and measurements. The new browser regression also requires the actual exported PDF to contain all six dark revision sections, not just their presence in the on-screen DOM.
 
 
 ## 19 November 2026 — Companion a11y state and paragraph-level Source Depth
 
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 **Supersedes the former detached Source Depth placement**, not the design system itself. Author compact native `<details class="hikam-source-depth-inline">` immediately after relevant ordinary main-body `<p>` elements, grouping multiple source references that attach to the same paragraph. Closed summary shows a subtle chapter-tinted SOURCE DEPTH label and descriptive title; expanding reveals the original source-specific discussion with page citation. The material lives in HTML `.chapter-body` but is excluded from visible word counts, CSS print and `philosophy_notes.js`'s private paginator clone **before measurement**. It is not a `.box`, hierarchy or replacement for any existing component.
 
 The `.hikam-companion-trigger` uses the chapter `--hue` in its underline, **dotted at rest and solid on hover/open** (following the observed Literature cue). Open state must be reflected with `aria-expanded`/`aria-controls`; popup contents have a named region, a keyboard/touch dismiss control, scrollable content when pinned, a visible `:focus-visible` outline and Escape restoring focus. The inline text itself is unchanged, and generated print clones must unwrap it to plain text. Arabic/RTL inherits existing font and direction rules.
 
-Source Depth is intentionally optional and no-JavaScript accessible. Do not index its contents as though they were ordinary visible paragraphs, or let popup anchors attach inside it. Do not introduce new visual-semantic colours or force this pattern into chapters without a source-specific reason.
+Source Depth is intentionally optional and no-JavaScript accessible. Every essential premise, qualification, reply and conclusion must remain in the visible main path and ordinary print; a possible later appendix cannot justify hiding it here. Do not index its contents as though they were ordinary visible paragraphs, or let popup anchors attach inside it. Do not introduce new visual-semantic colours or force this pattern into chapters without a source-specific reason.
 
 ## Context-first Companion, optional Source Depth and historical timeline — 18 November 2026
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+**Obsolete detached-placement pilot, retained for historical architecture evidence.** Its detached Source Depth location and pilot-only status were superseded on 19 November by paragraph-adjacent disclosures. Its references to six active box classes do not override the later role decisions. Do not copy the obsolete placement into new work.
 
 This small addition follows the [context-first editorial pilot](../editorial/CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md). It does **not** repurpose any of the established six semantic box classes or remove comparison tables, hierarchy diagrams, concept maps, quotations, memory aids or revision elements.
 

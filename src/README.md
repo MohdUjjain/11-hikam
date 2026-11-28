@@ -1,16 +1,30 @@
 # Hikam — source code and editorial workspace
 
-`src/main.html` and `src/chapters/subtopic-*.html` are the canonical book source. Build the website with `python src/build.py` **from the repository root**. No build framework or package installation is required.
+`src/main.html` and `src/chapters/subtopic-*.html` are the canonical book source. For reader-source changes, build the website with `python src/build.py` **from the repository root**. No build framework or package installation is required.
 
-**Arabic 2.1.7:** The current source-aligned edition uses the [16-page Arabic source and language-fidelity register](docs/editorial/READING_2_1_7_ARABIC_SOURCE_COVERAGE.md); its original full HTML section was [archived before replacement](archive/pre-redevelopment-2026-11-21/README.md). The three teaching syntheses, original DOCX and personal Arabic voice samples remain outside GitHub. Verify with `python src/tests/verify_arabic_politics_source_fidelity.py` in addition to all established checks.
+## Editorial authority and current scope
 
-**Arabic 2.1.8:** The source-complete Plato chapter uses the [12-page Arabic source-to-dossier register](docs/editorial/READING_2_1_8_ARABIC_PLATO_SOURCE_COVERAGE.md) and the [pinned full historical section](archive/pre-redevelopment-2026-11-21/README.md). The original DOCX, three Arabic syntheses and personal language samples stay outside the repository. Run `python src/tests/verify_arabic_plato_source_fidelity.py` along with the established Arabic/print/reader tests.
+Read the **[Study-Aid Roles and Reading Design Protocol](docs/editorial/STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md)** first, then the supporting source-fidelity, concise-dossier and context-first protocols in the **[editorial reading order](docs/editorial/README.md)**. The latest component roles and limits govern all **62 published dossiers**. Earlier blanket instructions to retain every aid type do not reinstate retired main-text exam tips or checkpoints. The six revision sections remain required; source information must be preserved in an appropriate teaching layer.
 
-**Arabic 2.2.1:** The complete original [16-page Arabic source](docs/editorial/READING_2_2_1_ARABIC_METAPHYSICS_SOURCE_COVERAGE.md) governs the reworked metaphysics chapter; [its prior full 2.2.1 edition is immutable](archive/pre-redevelopment-2026-11-21/README.md). Source DOCX, three syntheses, language profile and personal writing samples are private editorial references, not published. Run `python src/tests/verify_arabic_metaphysics_source_fidelity.py` alongside all existing reader/RTL/PDF/offline checks.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-**Arabic 2.2.2:** The original eight-page Arabic reading controls the revised traditional-division dossier. The [full original source-to-section coverage record](docs/editorial/READING_2_2_2_ARABIC_METAPHYSICS_DIVISION_SOURCE_COVERAGE.md) preserves the source's distinct introductory and exposition orderings and all author-attributed positions. The [complete former dossier](archive/pre-redevelopment-2026-11-21/README.md) is stored with a protected Git hash. Source DOCX, Arabic syntheses, writing samples and profile remain private. Verify via `python src/tests/verify_arabic_metaphysics_division_source_fidelity.py` and all existing reader, print and offline gates.
+The **[audit and migration plan](docs/editorial/STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md)** records the narrower frozen audit of **29 dossiers through 3.2.5** at `7798593e40ceafb9ff9590e1c1fea149347e5fdd`. The user's reported table problem beginning at **3.2.6** belongs to the remaining review scope. The whole-corpus policy is not evidence that the other 33 dossiers were included in that audit or that all 62 have already been migrated. This pass updates instructions; chapter, reader, CSS, JavaScript and generated-output implementation remains deferred.
 
-**Arabic 2.2.3:** Read the [full source-to-dossier coverage and two textual-boundary notes](docs/editorial/READING_2_2_3_ARABIC_ISLAM_CHRISTIAN_METAPHYSICS_SOURCE_COVERAGE.md). The original eight-page Arabic DOCX's author metadata is blank, its final Augustine sentence is incomplete, and it contains the unverified «حرثات الأجرام السماوية» reading. Neither missing text nor an unverified correction is invented. The [complete predecessor](archive/pre-redevelopment-2026-11-21/README.md) was archived and pinned on `main` first. Run `python src/tests/verify_arabic_metaphysics_islam_christian_source_fidelity.py` and all required RTL, print, offline and browser regressions.
+## Existing chapter records and targeted checks
+
+These records describe earlier editions and their source boundaries. Their historical aid inventory does not override the current roles protocol. Use the named source test when changing the corresponding dossier, with other checks selected for the affected behavior under the [release guide](docs/hosting/SECONDARY_FORK_CI_AND_RELEASE.md).
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+**Arabic 2.1.7:** The source-aligned edition uses the [16-page Arabic source and language-fidelity register](docs/editorial/READING_2_1_7_ARABIC_SOURCE_COVERAGE.md); its original full HTML section was [archived before replacement](archive/pre-redevelopment-2026-11-21/README.md). The three teaching syntheses, original DOCX and personal Arabic voice samples remain outside GitHub. Targeted source check: `python src/tests/verify_arabic_politics_source_fidelity.py`.
+
+**Arabic 2.1.8:** The Plato chapter uses the [12-page Arabic source-to-dossier register](docs/editorial/READING_2_1_8_ARABIC_PLATO_SOURCE_COVERAGE.md) and the [pinned full historical section](archive/pre-redevelopment-2026-11-21/README.md). The original DOCX, three Arabic syntheses and personal language samples stay outside the repository. Targeted source check: `python src/tests/verify_arabic_plato_source_fidelity.py`.
+
+**Arabic 2.2.1:** The complete original [16-page Arabic source](docs/editorial/READING_2_2_1_ARABIC_METAPHYSICS_SOURCE_COVERAGE.md) governs the reworked metaphysics chapter; [its prior full 2.2.1 edition is immutable](archive/pre-redevelopment-2026-11-21/README.md). Source DOCX, three syntheses, language profile and personal writing samples remain private editorial references. Targeted source check: `python src/tests/verify_arabic_metaphysics_source_fidelity.py`.
+
+**Arabic 2.2.2:** The original eight-page Arabic reading controls the revised traditional-division dossier. The [full original source-to-section coverage record](docs/editorial/READING_2_2_2_ARABIC_METAPHYSICS_DIVISION_SOURCE_COVERAGE.md) preserves the source's distinct introductory and exposition orderings and all author-attributed positions. The [complete former dossier](archive/pre-redevelopment-2026-11-21/README.md) is stored with a protected Git hash. Source DOCX, Arabic syntheses, writing samples and profile remain private. Targeted source check: `python src/tests/verify_arabic_metaphysics_division_source_fidelity.py`.
+
+**Arabic 2.2.3:** The [full source-to-dossier coverage and two textual-boundary notes](docs/editorial/READING_2_2_3_ARABIC_ISLAM_CHRISTIAN_METAPHYSICS_SOURCE_COVERAGE.md) record the original eight-page Arabic DOCX's blank author metadata, incomplete final Augustine sentence and unverified «حرثات الأجرام السماوية» reading. Neither missing text nor an unverified correction is invented. The [complete predecessor](archive/pre-redevelopment-2026-11-21/README.md) was archived and pinned on `main` first. Targeted source check: `python src/tests/verify_arabic_metaphysics_islam_christian_source_fidelity.py`.
 
 ## Subsequent dossier snapshots
 
@@ -22,11 +36,13 @@ The [dated original-dossier archive](archive/pre-revamp-2026-11-05/README.md) ho
 
 ## Authoring sequence
 
-1. Edit or add a `src/chapters/subtopic-*.html` fragment.
-2. Update `src/main.html`: TOC links/placeholders, sub-topic divider, Topic divider, cover description, and chapter count. Keep the user-established 3.2.5 vs. 3.3 distinction.
-3. Extend `src/philosophy_notes.css` only as needed for new print page templates; never break the existing six semantic box colors, RTL conventions, or print isolation.
-4. Update the relevant living documentation in `src/docs/design` or `src/docs/pagination` when architecture changes.
-5. Run `python src/build.py`, then all checks in root README. Commit the newly generated `index.html` and `service-worker.js` together with their source.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+1. Establish the authorized scope and read the current editorial instructions. For a documentation-only task, edit only the relevant instructions and references; check their links, policy consistency and exact diff. Do not rebuild the reader or run browser, print, offline or whole-book tests for that task.
+2. When a dossier implementation pass is authorized, read its original source and current complete chapter, preserve the required predecessor snapshot, and edit only the relevant `src/chapters/subtopic-*.html` fragment and its associated records. Apply current aid roles and limits while preserving the source's arguments, distinctions, qualifications, evidence and conclusions.
+3. Update `src/main.html` only if the actual chapter count, title, TOC or divider metadata changes. Preserve chapter IDs and the user-established 3.2.5 versus 3.3 distinction. Do not modify unrelated chapters or global CSS/JavaScript as an incidental editorial cleanup.
+4. Keep the existing shared design tokens, RTL behavior, print isolation and established A4 page geometry and pagination boundaries. A demonstrated design or pagination change requires its own appropriate scope and documentation; this sequence does not authorize speculative fixes or a replacement design system.
+5. For reader-source changes, run `python src/build.py` and `python src/build.py --check`, plus the targeted source/archive/Companion and rendered-behavior checks required by the change. Follow the [scoped release guide](docs/hosting/SECONDARY_FORK_CI_AND_RELEASE.md); a complete suite is not a routine chapter gate. Transfer `index.html`, `src/philosophy_study_notes.html` and `service-worker.js` with their exact matching canonical source as one verified edition.
 
 `src/philosophy_study_notes.html` is a generated non-inlined HTML export kept next to its CSS and JavaScript; `index.html` is the public, offline self-contained reader. Do not hand-edit either generated file.
 
@@ -34,7 +50,7 @@ The `src/source_materials/` extracts remain publicly visible to anyone browsing 
 
 ## Contents and printing
 
-The accessible Topic → Sub-topic → Chapter → Section sidebar supports live search, explicit branch control, a chapter-only ordered print selector, and optional revision pages. See [SIDEBAR_GUIDE.md](docs/hosting/SIDEBAR_GUIDE.md). Validate with `python src/tests/verify_sidebar.py`.
+The accessible Topic → Sub-topic → Chapter → Section sidebar supports live search, explicit branch control, a chapter-only ordered print selector, and optional revision pages. See [SIDEBAR_GUIDE.md](docs/hosting/SIDEBAR_GUIDE.md). When changing that behavior, validate with `python src/tests/verify_sidebar.py` and the relevant bounded browser checks.
 
 ## Screen-only reading location
 

@@ -1,25 +1,41 @@
 # Editorial documentation
 
-## Standing instruction set
+## Current authority, scope and reading order
 
-**[Long-Run Editorial Refinement Protocol — Language, Source Fidelity, and Study Aids](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)** governs the reading-by-reading language-polishing programme and the separately scoped primary-source coverage audit. It protects all established study aids equally, keeps EL10 limited to explaining genuinely difficult concepts, and requires the source to govern intellectual content.
+The **[Study-Aid Roles and Reading Design Protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md)** is the current policy entrypoint for **all 62 published dossiers**, in Arabic and English. Read it before editing. The user's latest instructions and this protocol supersede conflicting older directions about component preservation, aid roles, word limits, compulsory quantities or routine full-suite verification. The three supporting protocols retain their source-fidelity, language, coverage and accessibility requirements where compatible with the current policy.
 
-**[Concise Dossiers and Source-Grounded Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md)** records the adopted source-proportionate 650–850-word main prose / 850–1,150-word study-aid range, the research-based Reading Companion standard, source-coverage accounting, unchanged language rules and the requirements for a controlled pilot. Read it together with the standing protocol before editing chapters.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-**[Context-First Companions and Optional Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md)** is the latest governing amendment for inline explanation. The completed 1.1.1/1.1.2 pilot makes Companions clarify the immediate concept rather than deliver extra source facts, moves further source particulars into a separate optional disclosure, strengthens the conceptual thread and uses a true historical timeline. It supersedes earlier advice that every Companion must supply new factual information.
+Read the supporting documents in this order:
 
-**[Approved 19 November 2026 implementation standard](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md#8-binding-future-reading-protocol--accessibility-contextual-richness-and-source-depth)** applies for all future readings: source-first local explanations, optional paragraph-adjacent Source Depth, accessible rotating-hue dotted-to-solid cues, no-JS/search/print safety, and contextual rich evidence only when genuinely useful. The permanent design-token/360° hue regression and the manually invoked second-account fork verification are required release checks.
+1. **[Language and Source Fidelity Refinement Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md)** — original-source authority, authorial perspective, language standards, conceptual distinctions and coverage accounting.
+2. **[Concise Dossiers and Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md)** — the complete visible teaching path, source-proportionate concision, programme-level averages and distribution across layers.
+3. **[Context-First Companions and Source Depth](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md)** — clarify the immediate concept through a Companion; place useful optional source particulars in normally closed, paragraph-adjacent Source Depth. Essential premises, qualifications and conclusions must remain in visible teaching. Native disclosure, keyboard/no-JS access, source references and exclusion of optional depth from print remain established behavior.
+4. **[Refinement Audit and Migration Plan](STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md)** — inspect the frozen evidence and implementation status before planning changes; do not turn historical observations or unresolved proposals into new rules.
+5. **[Design system](../design/DESIGN_SYSTEM.md)**, **[pagination system](../pagination/PAGINATION_SYSTEM.md)** and **[scoped verification/release guide](../hosting/SECONDARY_FORK_CI_AND_RELEASE.md)** — use the established repository architecture and checks appropriate to the actual authorized change.
 
-**[Reading 1.1.4 — Gary Gutting: completed source-coverage and comprehension audit](READING_1_1_4_GUTTING_SOURCE_COVERAGE.md)** tracks the 18 source units of Sartre, Foucault and Derrida, original attribution, qualified claims, preserved study aids, full six-part revision, actual 824/1,017 visible words and all 12 contextual cues plus nine optional depth records. The complete secondary-account QA passed before upstream release.
+The present pass implements documentation only. Chapter content, reader behavior, CSS, JavaScript and generated outputs have not been migrated by publishing these instructions. The whole-corpus scope of the policy must not be described as completed whole-corpus implementation.
 
-**[Reading 1.1.3 — Papineau: completed source-coverage resolution](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md#v-completed-source-coverage-resolution--final-113-edition-19-november)** preserves the original baseline diagnosis and documents its 16 resolved source units, verified 821/1,137 word allocation, 12 immediate Companions, nine optional Source Depth records, six-part revision and full fork QA.
+## Preservation and revision boundaries
 
-The first [Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md) records source-grounded additions to 1.1.1 and 1.1.2, the unchanged main text, and the offline/print/browser preservation checks.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-Read both editorial standards alongside [the design system](../design/DESIGN_SYSTEM.md) and [the pagination system](../pagination/PAGINATION_SYSTEM.md).
+Preserve the supplied source's educational substance, intellectual position and degree of certainty while assigning each unit a suitable teaching role. Shorter aids do not authorize silent deletion, unsupported additions or concealment of essential reasoning in optional layers. Main-text exam tips and checkpoints are retired under the current policy; their former presence in a source audit or legacy test is historical evidence, not a requirement to restore those components. Apply the current role and limit rules in the canonical protocol rather than copying old caps from a release record.
 
-**Latest clarification:** The [19 November accessibility and inline Source Depth amendment](CONTEXT_FIRST_COMPANIONS_AND_SOURCE_DEPTH.md) applies to **both** Moran 1.1.1 and Stout 1.1.2. It keeps source expansions closed immediately after relevant paragraphs, never in the concept-explanation popup; preserves source pages and all established study aids; and makes the chapter-hued dotted-to-solid cues and keyboard/no-JS behavior testable.
+The **six revision sections remain**: Chapter Summary, One-Page Revision Sheet, Key Definitions, Key Table, Memory Aids Collected and Possible Examination Questions. Their role is independent recall of already taught material. The five question categories remain Short Answer, Long Answer, Comparison, Conceptual and Application. Retirement of a main-text tip or checkpoint is not permission to remove this revision system. Main-aid box limits are not limits for whole revision sections.
 
-## Existing revision history
+## Audit scope and historical evidence
 
-The other files in this folder preserve previous chapter-level editorial, reconstruction, and source-fidelity work, including 3.4-series dossiers. They remain historical records rather than replacements for the standing protocol.
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The detailed study-aid census is frozen at commit **`7798593e40ceafb9ff9590e1c1fea149347e5fdd`** and covers **29 dossiers from 1.1.1 through 3.2.5**. Its count, extraction method and earlier scenarios belong to that evidence set. The current policy applies to all **62** published dossiers; the other **33** are outside that completed content audit. The user's reported paragraph-style table problem beginning at **3.2.6** is recorded as a concern for the later review, without claiming those later dossiers were included in the census.
+
+The [migration plan](STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md) separates settled decisions, frozen measurements and deferred work. A superseded scenario must not be presented as a newly measured result under the latest definition, memory, table or roadmap limits.
+
+The other files in this folder preserve dated chapter-level editorial, reconstruction and source-fidelity evidence. Retain their historical measurements and actual test results; read any old prospective instructions under the current policy and release guide. In particular:
+
+- **[Gutting 1.1.4](READING_1_1_4_GUTTING_SOURCE_COVERAGE.md)** records the original 18-unit comparison, attribution, source qualifications and verification of that edition.
+- **[Papineau 1.1.3](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md#v-completed-source-coverage-resolution--final-113-edition-19-november)** preserves the original diagnosis and its resolved source units.
+- **[The first Reading Companion pilot](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md)** records the original Moran/Stout implementation and its checks. The subsequent context-first amendment governs local explanation; neither pilot record overrides the newer aid-role policy.
+
+Archived chapter snapshots remain immutable historical material outside the live reader. Their inclusion of retired components does not authorize editing the archive or reinstating those components in the current policy.

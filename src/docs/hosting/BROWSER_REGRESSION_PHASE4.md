@@ -1,5 +1,9 @@
 # Phase 4 — browser-driven regression protection
 
+**Status:** technical implementation reference. Apply the current [scoped verification and release guide](SECONDARY_FORK_CI_AND_RELEASE.md) when selecting checks: the commands below cover the affected browser features, not a mandatory whole-book gate for every edit. Documentation-only changes require documentation integrity and policy review, without a reader build or browser/print/offline run. The [current editorial protocol](../editorial/STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md) governs aid roles; this phase record does not override it or authorize reader changes.
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 The **Verify Hikam website publication** workflow now has two independently
 reported jobs: the established deterministic source/publication checks, and
 **Playwright reading, print and PWA regressions** (dependent on the former).
@@ -42,7 +46,9 @@ study content; test editions are created only in a temporary directory.
 
 ## Running locally
 
-From the repository root:
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+When these browser or PWA behaviors are affected, select the relevant commands from the following existing tools, run from the repository root:
 
 ```sh
 python -m pip install playwright==1.57.0 pypdf==5.9.0
@@ -56,9 +62,13 @@ Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE=/path/to/chromium` only when intentionally
 using an installed system browser. Test scripts start their own localhost HTTP
 server; they do **not** depend on the live GitHub Pages deployment or network
 access. If a machine's browser policy blocks localhost navigation or printing,
-run the full suite on GitHub Actions instead of bypassing the policy.
+run the affected checks in the authorized testing-fork environment and report
+the local limitation. Do not bypass the policy or expand automatically to a
+whole-book suite.
 
 ## Diagnostics and long-term discipline
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
 Screenshots of responsive layouts, a search navigation capture, and two selected
 chapter PDFs are saved under `test-artifacts/` (ignored by Git). GitHub Actions
@@ -67,12 +77,16 @@ before changing CSS or the pagination engine.
 
 Feature checks use stable DOM IDs, semantic markers and **representative
 known source phrases**, not brittle snapshots of every authored paragraph.
-When expanding the book, keep the 34-dossier assertion in sync with the actual
+When expanding the book, keep the dossier-count assertion in sync with the actual
 published chapter count and update the representative queries only if those
 specific authored passages legitimately change. Never weaken checks simply to
-make CI green. Maintain the existing source/build/offline unit checks in parallel.
+make CI green. Run the relevant source/build/offline checks when those contracts
+are affected; their existence does not require every check on every edit.
 
 Google Fonts are optional in these tests: the book should remain usable without
 external font downloads. Real physical-device storage eviction, iOS installation,
 font rasterization and PDF printing from native mobile browsers still require
 manual acceptance checks; Chromium cannot simulate every platform behavior.
+Fallback usability and intended-font typography are distinct checks: actual
+Arabic glyph, layout or PDF-font acceptance must use the intended fonts and
+record that evidence, as described in the scoped release guide.

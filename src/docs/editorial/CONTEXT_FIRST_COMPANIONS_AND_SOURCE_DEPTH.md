@@ -1,141 +1,201 @@
 # Context-First Reading Companions and Optional Source Depth
 
-**Project:** Takhassus Hikam · **Decision:** 18 November 2026  
-**Pilot:** Dossiers 1.1.1 (Dermot Moran) and 1.1.2 (Rowland Stout); no unrelated chapter.  
-**Status:** Both 1.1.1 and 1.1.2 are implemented and published on authoritative `main`; final [fork verification 44375169683](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44375169683), [upstream verification 44376223971](https://github.com/MohdUjjain/11-hikam/actions/runs/44376223971), and [Pages deployment 44376223150](https://github.com/MohdUjjain/11-hikam/actions/runs/44376223150) succeeded. Subsequent shared contrast corrections were verified and published at `dafd2f38`.  
-**Also read:** [Language and Source-Fidelity Refinement Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md), [Concise Dossiers and Reading Companions](CONCISE_DOSSIER_AND_READING_COMPANIONS.md), and [Design System](../design/DESIGN_SYSTEM.md).
+**Project:** Takhassus Hikam · **Adopted:** 18 November 2026 · **Consolidated:** 28 November 2026
 
-**1.1.4 completed source-first pilot:** Gary Gutting's *Sartre, Foucault and Derrida* applies these methods to three related but distinct philosophical programmes without adding a new UI layer or changing global design. The [18-unit original-source register](READING_1_1_4_GUTTING_SOURCE_COVERAGE.md) records 12 locally justified Companion cues, nine independent paragraph-adjacent Source Depth records, the actual historic madness timeline and unchanged six-part revision. [Second-account full fork QA](https://github.com/Mohd-Ujjain/11-hikam/actions/runs/44562601029) passed with source, 39-chapter hue, desktop/mobile, native no-JS accessibility, A4 pagination and offline verification; original Pages publication remains a separate check. No extra Companion quota or semantic component is created.
+**Scope:** Every existing and future Arabic/English dossier, within the user-authorized task.
 
-## 1. The problem this decision corrects
+**Status:** Current editorial and interaction requirements. This documentation pass does not change any chapter, Companion manifest, controller, stylesheet, print engine or published reader.
 
-Short sentences do not automatically form a comprehensible intellectual picture. A reading that rapidly introduces different philosophers, methods and historical turns may still feel like disconnected facts. A student opens a Companion to understand **the sentence being read**, but a Companion that immediately introduces new historians, disputes or names increases the student's cognitive burden. This was observed in the first live Moran pilot. The former Companion criterion of **always providing new information** was too narrowly applied.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+>
+> Every visible and optional layer must preserve the original source's meaning, argument, attribution, qualifications and degree of certainty. Neither a simpler explanation nor an optional container authorizes an independent objection, invented hedge, new premise or preferred philosophical conclusion.
 
-**Latest governing rule:** A Reading Companion clarifies **the immediate concept, sentence, connection or argumentative role already present in the visible reading**. It must not introduce an unrelated new intellectual branch merely to earn a nonduplication justification. A careful simpler rephrasing is legitimate added *understanding*, even when it repeats the existing proposition without adding a new fact. The full original article still determines what the note means.
+Read this with the [Language and Source-Fidelity Protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md), [Concise Dossier Protocol](CONCISE_DOSSIER_AND_READING_COMPANIONS.md), [canonical Study-Aid Roles and Reading Design Protocol](STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md), [Audit and Migration Plan](STUDY_AID_REFINEMENT_AUDIT_AND_MIGRATION_PLAN.md), [Design System](../design/DESIGN_SYSTEM.md) and [Pagination System](../pagination/PAGINATION_SYSTEM.md). The canonical role protocol owns all current aid quantities, word limits, priority/provenance distinctions and deferred design decisions; this file owns contextual delivery and optional-source safeguards.
 
-## 2. Intellectual ownership across five layers
+## 1. The Companion serves the immediate act of reading
 
-| Layer | Intellectual job | Safeguard |
-| --- | --- | --- |
-| Main prose | The source author's problem, complete essential reasoning and conclusion in connected, natural sentences | Must work independently of popups and optional disclosures |
-| Existing study aids | Comparison, structure, dates, definitions, analogy, recall, quotation and assessment using their established meanings | No decorative replacement or privileging EL10 |
-| **Context-First Reading Companion** | A direct, small clarification of **what this phrase means and why it appears at this point in the argument** | No unrelated names, source excursions or new thesis; the wording may simplify an already-taught idea |
-| **Source Depth** | Optional further source examples, historical particulars, qualifications, named debates or detail that would interrupt normal reading | Accessible separately, never essential to comprehend the visible argument; specific source pages preserved |
-| Six-part revision system | Independent end-of-reading recall and examination preparation | Remains intact, not a replacement for teaching |
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-The unchanged target for the immediately visible chapter body is about **650–850 words of prose plus 850–1,150 words of existing study aids (1,500–2,000 total)**, scaled to article length and complexity. Companions, Source Depth, frontmatter and revision blocks are counted separately. This is not permission to omit indispensable source claims.
+Short sentences alone do not establish a coherent intellectual picture. A reader may understand each term yet lose the connection among a question, a claim, an example and the author's conclusion. A Companion addresses that local difficulty so that the reader can return immediately to the same passage with clearer understanding.
 
-## 3. Three-step Companion writing test
+A Companion may explain what a term means here, resolve a referent, distinguish nearby concepts, unpack a source-supplied connection or explain why this sentence appears at this stage. It need not introduce a fact absent from the visible notes. **Helpful source-faithful restatement is permitted.** Reject duplicated teaching work that adds no understanding, not accurate simpler wording merely because it restates the same proposition.
 
-When a contextual cue is genuinely useful, write only the amount necessary:
+Do not open a new historical genealogy, named debate, philosophical dispute or technical subplot merely to prove that the popup adds information. An optional cue is not a hidden second chapter, a generic glossary quota, an evidence warehouse or a place for independent commentary. Additional source detail has a separate home when appropriate.
 
-1. **In simple words:** explain the term, claim or relationship right in front of the reader. Do not start with a new scholarly detour.
-2. **Why this appears here:** connect the phrase to the same paragraph/section and the source author's larger question, using the concepts the reader has already met.
-3. **Remember:** an optional one-line recall handle; it must say the same thing accurately, not add a second argument.
+## 2. Keep the complete essential argument in the principal reading path
 
-These three labels are not a mandatory textual quota. One direct explanation may suffice in other chapters. **Editorial sufficiency, not format uniformity, governs.** Avoid empty repetitions, childish tone, ungrounded analogies and introductory labels that are more complex than the concept. English and Arabic must continue to follow the full language-profiling and fidelity rules.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-**Acceptance gates:**
-- Can a student read the adjacent paragraph, open the Companion and *return immediately* with better understanding of the same argument?
-- Does the Companion answer a real local question rather than simply reproduce a definition?
-- Does it avoid new thinkers, examples and distinctions not needed for this local point?
-- Is the authorial claim and degree of certainty still faithful to the primary reading?
-- Is the unique original phrase anchored in the correct main prose paragraph?
-- Does the paragraph still stand alone without opening it?
+Main prose and appropriate visible aids must teach the source author's necessary thesis, premises, distinctions, evidence, qualifications, supplied objections/replies and conclusion. The learner must be able to follow that essential account without opening a Companion or Source Depth, with JavaScript unavailable, and in the ordinary printed dossier. The revision system retrieves this teaching; it is not its only home.
 
-**Example — Russell:** the old trigger explained Russell's intellectual genealogy through Bradley, McTaggart and Hylton. The new trigger says what Russell's analysis means and why Moran introduces it as an early analytic method. The genealogy is retained in optional Source Depth, not deleted.
+Use the skip test for each proposed optional passage: **If the reader skips this material, can they still understand the author’s argument accurately, including its necessary boundaries and qualifications?** If not, establish the necessary material visibly before deciding whether an additional optional explanation is useful. Do not claim compliance because an essential statement could be recovered from an archive, an external source link or a future print appendix.
 
-## 4. Source Depth: adjacent, collapsed and printable only by explicit future design
+Keep three decisions separate: the component's **role**, the material's **essential/useful/supplementary priority**, and its **provenance**. A quotation or source-authored analogy may be indispensable; a definition does not become merely optional because a popup could hold it. Priority is about the reader's route through the supplied argument, not truth, endorsement or examination likelihood.
 
-**Updated 19 November 2026 — governing location rule:** Source Depth is not a distant second article at the end of the chapter. Place the **native collapsed callout immediately after the relevant ordinary prose paragraph** so the reader may consult the original reading's additional example, named debate, historical qualification or source evidence *at the point where it becomes relevant*. It is never part of the inline Companion popup.
+The retained programme guidance is approximately **650–850 prose words plus 850–1,150 visible study-aid words**, source-proportionate and excluding frontmatter, Companions, Source Depth and revision. These bands do not permit hiding necessary content. Apply the current individual-unit rules from the canonical role protocol without creating new quotas for either optional layer.
 
-- Use `<details class="hikam-source-depth-inline">` with a native `<summary>` identifying **SOURCE DEPTH**, a brief grounded title and a signal that the material is optional.
-- Show no expanded information until the student chooses to open that summary. All callouts start closed. They work with keyboard, touch, screen readers and **without JavaScript**. Multiple details attached to the same paragraph belong inside one callout with separately titled internal source records, rather than repeated consecutive disclosure controls.
-- Each record has the exact originating author and **printed source-page number(s)**; distinguish paraphrase from quotation, preserve the source's level of certainty, and never manufacture references.
-- The ten original additional Moran explanations and the twenty-four original additional Stout explanations are **preserved as source records**. Their **34 inline Companions** instead answer *What does this mean?* and *Why is it here?*, with a short recall line. The two modes must never duplicate each other's instructional job.
-- The supplemental detail is inside the **HTML `.chapter-body`** solely to keep it beside its source paragraph. It remains **outside the 1,500–2,000 immediately visible word count**. Do not confuse its closed textual DOM presence with visible study-aid prose.
-- Source Depth is **screen-only**: CSS hides it in regular printing, and the canonical JS page compositor explicitly removes `.hikam-source-depth-inline` from its private clones **before measuring**. Otherwise hidden callout text can accidentally affect pagination, source indexing or A4 output. Keep the on-screen original intact.
-- No essential premise, decisive objection, argument or conclusion may exist solely inside optional Source Depth. The visible prose and existing study aids must still explain the author fully, and the independent six-part revision system must remain sound.
-- Not every paragraph needs a callout, and not every future Companion needs a Source Depth counterpart. Select additions by genuine source value rather than quotas or visual decoration.
+## 3. Write a locally complete Companion
 
-**Accessibility and underline convention (studied against 11-literature):** the inline Companion cue inherits its chapter pigment, has a **dotted underline while closed**, and becomes a **solid underline on hover or while expanded**. Keyboard `focus-visible` must have an additional visible outline. The popup's controlled expanded state and labelled content must work with keyboard, Escape, touch scrolling, RTL and a close action that restores focus. A closed native Source Depth uses the browser's semantic `summary/details` controls and must not be a screen-reader-invisible hover-only element.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-## 5. Moran pilot source-to-layer traceability
+Use the following available functions only where they help:
 
-| Inline contextual cue | What the Companion now clarifies | Preserved optional source detail | Printed Moran pages |
-| --- | --- | --- | --- |
-| `h111-russell-idealism` | Analysis as an early method and its place in the story | Russell's idealist inheritance and competing historical classifications | 28–29 |
-| `h111-naturalism-critique` | Naturalism versus the question of objectivity | Husserl's source-specific criticism of naturalism | 5 |
-| `h111-freud-later` | Why diverse beginnings appear together around 1900 | Freud's delayed reception by academic philosophers | 9–10 |
-| `h111-husserl-development` | Phenomenological description and its argumentative role | Husserl's early descriptive and later transcendental phases | 10–11 |
-| `h111-quine-holism` | The analytic/synthetic distinction and Quine's challenge | Quine's more detailed critique of analyticity and isolated verification | 18–19 |
-| `h111-europe-concept` | Europe as intellectual identity, not only geography | Contrasting accounts by Husserl, Patočka, Derrida and Habermas | 26–27 |
-| `h111-frege-politics` | Why Frege's precise logic matters here | Scope of Frege's influence and Moran's political historical report | 12–13 |
-| `h111-tradition-labels` | Shared questions behind analytic/Continental labels | Problems with labels and historians' alternative names | 13–14 |
-| `h111-political-philosophy-return` | Why politics enters the philosophical history | Timing and different political thinkers discussed by Moran | 31 |
-| `h111-history-philosophy` | Why the history of ideas is part of philosophy | Hegelian historical self-reflection without a predetermined master narrative | 24–25 |
+1. **In simple words:** explain the current term, assertion or relationship using concepts the reader can place in this passage.
+2. **Why this appears here:** connect the phrase to the source author's present question or argumentative step.
+3. **Remember:** optionally supply a brief recall handle for the same accurately taught idea.
 
-The source-detail wording is transferred from the previous published manifest to the static optional appendix. The contextual rewrite does not replace Moran's substantive conclusions in the main notes.
+These are learning functions, not a requirement to produce three equally long or repetitive blocks. One direct explanation may suffice. There is no mandatory cue count or numerical word quota. Use the shortest explanation that answers the actual local question completely; do not replace clarity with jargon fragments or an instruction to open another popup.
 
-## 6. A whole-chapter thread and correct chronological visualization
+Review the neighboring paragraph, existing aids and revision before adding the cue. A Companion can complement a definition by explaining its present argumentative role; it should not simply repeat the definition without an additional comprehension need. Maintain an informative title and accurate source attribution without repetitive distancing language.
 
-Before the names multiply, the reader should meet a **single orienting thread**: changing methods and institutions → surviving older questions → different traditions answering partly shared problems → wars and migration reshaping philosophy → Moran's qualified assessment without a single inevitable-progress narrative.
+A recall line remains recall. It must not introduce a second argument, a new classification or a new cross-domain analogy. The latest **compiler-added analogy / EL10 / ELI10** permission is restricted to its dedicated aid under the canonical role protocol. Do not embed it in Companions or memory fields to evade its limits. Ordinary simpler restatement does not thereby become an EL10 analogy. Preserve author-supplied analogies as source material, with their actual ownership and inference; indispensable examples belong in the visible teaching.
 
-This is placed within the **existing concept-relationship** format and supplemented by a short bridge explaining why four foundational thinkers appear together. It is source-faithful organizational scaffolding, not an independent theory of the century.
+## 4. Exact anchors and manifest integrity
 
-An actual historical succession belongs in the new **`.historical-timeline`** structural component: dates run along a visible chronological line, with a small source-faithful event description. A timeline must not be used for conceptual ranking, and a table should remain a table where side-by-side comparison is the true pedagogical function. The four-period Moran table (1900s; 1914–1918; 1930s–1940s; after 1945) is the pilot. Timeline typography and chapter hue follow the existing design system.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-## 7. Implementation and release gates — both dossiers, 19 November
+Attach the cue to an exact, existing phrase in an identified ordinary main-prose paragraph. Use a unique match and stable chapter/passage identity. Do not use fuzzy replacement, attach to the wrong occurrence, alter the scholarly sentence to make a guessed anchor fit, or consume neighboring words. Ambiguous or absent anchors are unresolved editorial issues, not permission to improvise.
 
-**Scope:** `src/chapters/subtopic-1-1.html` (1.1.1 and 1.1.2 only); `src/reading_companions.json` (34 context-first records); existing controller, style and print compositor; affected source/browser/print tests; editorial and design documentation. No unrelated academic chapter or component role may be rewritten. Generate the publication only through `src/build.py`.
+Keep stable record identity, chapter identity, passage/trigger text, informative title, source locator and the explanation fields expected by the actual current renderer. Consult that renderer before changing schema or counting displayed words. Some records may use a contextual group of fields while others use a single explanation fallback; stored alternatives are not all necessarily displayed. This protocol does not authorize a schema rewrite or a fixed field-count migration.
 
-Acceptance checks:
+Anchors must not accidentally attach inside quotations, tables, aid containers, revision, Source Depth or other hidden content. A cue should not modify the original copy/search text, punctuation, attribution, hash, reading progress, stored reading position or active section. Preserve multiword wrapping and normal inline reading.
 
-1. All 34 contextual cues still attach uniquely to normal, visible prose. The source-depth text itself cannot become a Companion anchor.
-2. Exactly ten Moran source records and twenty-four Stout source records retain their original explanations and printed references, immediately below the corresponding paragraph and inside closed native disclosures (grouped when several refer to one paragraph).
-3. Each Companion shows **In simple words**, **Why this appears here**, and **Remember**, without adding a new intellectual branch. Different chapter pigments, dotted/rest versus solid/open behavior, focus outline, semantic expanded state, close/restore-focus behavior and touch-safe popup scrolling are tested.
-4. `Source Depth` works with JavaScript disabled, remains optional, and never appears in generated print pages or print measurements. Main prose, memory aids, existing study-aid types and six revision sections remain intelligible without it.
-5. All 39 chapters, navigational links, search, reading progress, RTL, mobile screen widths, browser accessibility and offline PWA continue to function. Check real Chromium print/PDF pagination and no accidental cutoffs.
-6. Rebuild and run the repository's complete canonical tests on the **second-account CI fork**, compare generated blob hashes with the authoritative review branch, and only then merge the verified edition into original `main`.
+For every changed paragraph, reassess all associated exact anchors and contextual explanations together. A valid literal match can still be intellectually misplaced after revision; source role and local usefulness require review as well as string identity. Do not manufacture a source citation from the supporting recall guide when the original lacks it.
 
-**Follow-on scope:** both 1.1.1 and 1.1.2 are now the controlled local-disclosure pilot. Do not mechanically extend it to the remaining 37 dossiers before reviewing accessibility and student comprehension. No artificial Companion quotas.
+## 5. Source Depth: local, optional and without an artificial length cap
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Source Depth holds **further source-specific material** that can be deferred safely: additional cases, elaborated examples, named witnesses, historical particulars, longer source explanations or further evidence. It is selected independently from Companions. A Companion resolves a local reading difficulty; Source Depth allows a deliberate deeper reading of related original material.
+
+There is **no artificial word, paragraph, record or group limit** on Source Depth. Preserve the amount of source detail its purpose requires, with useful internal organization and citations. Unlimited capacity is not a requirement to add material, an exemption from fidelity, an excuse for duplication, or permission to move essential reasoning out of the visible chapter. A source-derived paragraph does not become suitable for optional depth merely because a main-aid cap is inconvenient.
+
+Use a native, initially closed `<details class="hikam-source-depth-inline">` **immediately after the relevant ordinary prose paragraph**. The summary must identify Source Depth, give a meaningful grounded title and make its optional nature clear. When several source records concern the same paragraph, group them under one disclosure with separately titled records. Do not create a detached end-of-chapter appendix, consecutive controls for the same passage without reason, automatic opening or a requirement that every paragraph/cue have a disclosure.
+
+Retain verified author/speaker identity and source locators for every record. Distinguish the author's own claim from a quoted witness, reported research, historical narrative or an illustration. Paraphrases must preserve the source's certainty; quotations must be accurate. An image or screenshot embedded in the source must not be silently assigned to the speaker of adjacent prose.
+
+The native control must remain usable with keyboard, touch and screen readers when JavaScript is disabled. Source Depth stays in interactive HTML for local access but is excluded from visible-body word counts and from standard print/PDF. Its removal before print measurement is a required existing boundary, detailed in §8 below.
+
+## 6. Source preparation, locators and coverage evidence
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Prefer supplied DOCX or native editable originals for content. Read the complete assigned scope, including provided notes, tables, quotations and illustrations. Use paired scans for printed pagination, source images, omitted footnotes and uncertain transcription. Do not claim a scan is complete from its filename or force its printed numbering to match its PDF leaf count.
+
+Preserve the user's selected excerpt boundaries. A discontinuous assignment remains discontinuous; a fragment before an included heading is not permission to reconstruct the omitted discussion. Record materially different editable/scan versions or unresolved source wording separately. An uncertain term, unnamed author or missing final sentence must not be invented from a recall or general knowledge.
+
+Use verified **printed page numbers** when available. If no printed page number exists, identify the locator explicitly as a PDF leaf, heading, native paragraph or other reproducible source location. Preserve both the assigned-file extent and its actual source location where they differ. The original controls the substantive claim; a source-page reference does not independently verify the truth of an empirical assertion reported by the author.
+
+| Editorial record | Required information |
+| --- | --- |
+| Original reading | Title, author, edition/version and assigned boundaries, verified where available |
+| Source unit | Claim or explanation, its role in the source and exact locator |
+| Provenance | Author, quoted third party, reported study, source illustration or separately authorized compiler device |
+| Visible home | Where the indispensable idea and necessary qualification are already taught |
+| Companion candidate | Local confusion, exact anchor, answer and why that answer improves understanding |
+| Depth candidate | Additional source value, adjacent paragraph, record/group identity and optionality |
+| Comparison with nearby teaching | What is already taught and how this explanation performs distinct work |
+| Decision | Include, revise, combine, omit as redundant, move visibly, or flag unresolved |
+| Verification evidence | Anchor/source review and applicable interaction, no-JS, print and offline observations |
+
+The three supplied Recalls and earlier dossiers may identify candidate material but do not establish original authorship, quotations or missing reasoning. Use the full original-to-layer coverage map, not only successful popup rendering, to establish fidelity. Keep unpublished full originals, recalls and personal language samples outside the public repository unless explicitly authorized for publication.
+
+## 7. Conceptual continuity and richer presentation
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Before names and distinctions accumulate, make the source's organizing question and progression visible through the existing chapter structure and the single opening central concept. Use the roadmap for a genuine preview and section objectives for the question each section addresses. A Companion can reconnect a difficult passage to that thread; it cannot construct a new overarching theory for the author.
+
+Use richer presentation only when its structure answers a concrete learning need. A short source-faithful comparison, formula breakdown, annotated reconstruction or evidence excerpt may help, provided the underlying material is verified, its ownership is clear, an accessible text equivalent is available, and the existing reader can accommodate it. Do not turn every popup into a large card or introduce a new container, schema or controller without separate authorization.
+
+A chronology belongs in the existing timeline; parallel distinctions belong in a comparison; nested categories require genuine parent–child relations; an argument's sequential steps do not automatically form a decimal hierarchy. A relationship map needs concise concepts and explicit relations rather than a general paragraph placed between nodes. Apply the canonical cell, role and provenance rules wherever those structures are used.
+
+Source-based evidence and extended illustrations usually belong in visible teaching when essential, or in Source Depth when safely deferrable. Label reconstructions and authorized teaching devices accurately, rather than presenting them as original diagrams, quotations or empirical evidence. No visual device may invent a premise, causal relationship, ranking, date or conclusion. The proposed general explanatory callout remains pending and cannot be introduced through an optional-layer exception.
 
 ## 8. Binding future-reading protocol — accessibility, contextual richness, and Source Depth
 
-**Adopted 19 November 2026 for subsequent dossiers, beginning with the 1.1.3 preparation.** This consolidates the reader's approval of the two-chapter pilot. It does not authorize copying its exact number of cues or length to new chapters, nor does it replace the source-coverage audit.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-### The Companion teaches the current passage
+The following are ongoing interaction and preservation requirements, not a claim that this documentation pass has repaired or retested the reader. Apply them during the later authorized implementation with verification proportionate to the changed surfaces. Preserve the established design tokens and reader architecture; proposed palette, priority-marker and typography choices remain separate from editorial permission.
 
-- Begin with the **reader's local confusion**: define this claim/term in easy language, explain **why it appears here**, and optionally offer one precise **Remember** line. These three roles are available within the existing popup; do not require three repetitive blocks where one explanation suffices.
-- **Helpful explanatory restatement is allowed.** The old rule that every Companion must introduce a previously absent fact no longer applies. Reject redundant *teaching work*, not simpler wording that genuinely resolves a difficulty.
-- Avoid launching a named theory, source-specific exception, historical detour or unrelated philosophical dispute in the popup. Source-based further detail belongs in Source Depth. Neither container may alter the author's claim, add ChatGPT's independent qualifications or conceal a necessary argumentative premise.
+### 8.1 Companion cues and reading continuity
 
-### Source Depth is local, optional and accessible
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-- Attach one normally closed native `<details class="hikam-source-depth-inline">` **immediately after the relevant visible prose paragraph**; group several source records concerning the same paragraph within that single disclosure, with each record clearly titled and accurately cited to the original edition/page.
-- This is **not** a chapter-end appendix, automatically opened modal, new essential explanatory layer or a substitute for main notes. It is for substantial additional source context which would otherwise interrupt the reader's concentration. Preserve full citations and distinguish the primary author's claim from any sourced quotation or secondary interpretation.
-- A native disclosure must remain usable by keyboard, touch and screen reader with **JavaScript disabled**. Its summary must announce a meaningful title and the optional nature of the additional information, rather than a label with no context.
-- Source Depth is present in the interactive HTML but hidden in print and removed from print-compositor clones **before pagination measurement**. It must not create search hits that navigate into collapsed or invisible text. Verify that the main printed notes and full six-part revision system still teach the indispensable argument without it.
+- The existing phrase remains normal inline text with the chapter-hue **dotted underline at rest**, becoming **solid on hover/open**. Keep a separate visible keyboard-focus indication and readable foreground/background pairing.
+- Preserve accessible name and controlled expanded-state semantics. Check the applicable click/tap and Enter/Space opening behavior, Escape and explicit close, outside dismissal, touch scrolling and viewport positioning.
+- Closing must return focus appropriately without immediately reopening the popup. Do not create a hash change, navigation jump, stacked lesson flow, saved-position reset or accidental revision-visibility change.
+- Multiword cues must wrap normally. Preserve Arabic direction, local font context, source punctuation, quotations, original copying/search text and the exact anchor.
+- Richer content still needs understandable text and keyboard access. Color and icons alone must not carry ownership, learning priority or the aid's meaning.
 
-### Use Literature's cue behavior within Hikam's existing design tokens
+### 8.2 Native Source Depth and deliberate access
 
-- The exact inline phrase remains normal text with a subtle **chapter-hue dotted underline at rest**. On hover or while open, the underline becomes **solid**, using the same rotating `--hue`, not a new accent or a hardcoded identical color for every chapter.
-- A clear `:focus-visible` outline supplements the underline for keyboard users. Check click, Enter/Space activation, Escape, outside dismissal, accessible name and expanded-state semantics, focus return to the originating phrase **without reopening**, touch positioning, scrollable expanded content, and mobile/RTL Arabic typography.
-- The cue must wrap across lines without changing the text, quotation, reading position, anchor or print copy. Every trigger must match a uniquely identified existing prose occurrence; never let a generated hint attach to a quotation, a revision element or a hidden disclosure by accident.
-- Treat **color contrast and the 360° system as release gates**: use the established navy/parchment/gold foreground-surface pairings, Fraunces/Source Serif 4/IBM Plex Sans/Amiri type tokens and six immutable semantic box colors. The automated `src/tests/browser_design_tokens.py` checks all 39 chapters and should remain mandatory alongside source, accessibility, print/PDF and offline/PWA tests.
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-### Rich presentations, without a new information burden
+- Keep native `details/summary` semantics, initial closed state, informative title and visible optional status. Do not replace this with hover-only information or a JavaScript-dependent toggle.
+- Keep each disclosure immediately adjacent to its relevant ordinary paragraph and group related records without losing separate titles/citations. It must not become a Companion anchor region.
+- The learner must be able to open, read and close the material with keyboard/touch and without scripts. Long source records need readable text and usable access, not a new cap imposed to conceal a layout problem.
+- Preserve the distinction between DOM presence and visible teaching. Closed records must not create search hits that lead the reader to text still hidden or excluded from the advertised reading path.
 
-- Literature's richer original-language evidence, faithfully reconstructed figures and source tables are **conditional precedents**, not a request to turn every Companion into a large card. Hikam may use a purposeful existing structure (short comparison, formula breakdown, evidence excerpt, tiny annotated diagram) **only if it directly resolves the local difficulty**, is source-faithful, accessible by text/keyboard, and respects the existing design system.
-- Put extended original-source evidence and illustrations in optional **Source Depth** when they do not belong in the immediate clarification. Label reconstructions and new teaching analogies explicitly; never pass them off as quotations, diagrams or empirical evidence from the source. Record original edition/page and any limits.
-- Do not create a new box taxonomy or prioritize EL10 over other aids; real chronological succession uses the established `.historical-timeline`, while simultaneous distinctions remain tables or other existing comparative formats.
+### 8.3 Print, A4 pagination and offline delivery
 
-### Required editorial and deployment handoff
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-For each next reading: (1) reopen the primary source and author/title; (2) compare the complete source section by section against the canonical chapter and all six revision areas; (3) preserve the core author's argument visibly within the 650–850 prose / 850–1,150 study-aid planning bands when the source allows; (4) assign only justified local conceptual clarification to Companions and optional further source material to Source Depth; (5) register exact anchors/pages and verify no essential claims are hidden; (6) run source-integrity, design-token, keyboard/mobile/RTL, search, no-JavaScript, actual A4 print, and offline-PWA checks; (7) use the **manually dispatched `.github/workflows/hikam-fork-verify.yml` on the second-account fork** to validate an explicit branch and, where appropriate, commit its generated outputs **only to the fork**; (8) transfer verified identical Git blobs through an upstream review branch, then confirm publication on the primary repository. The fork workflow must never be represented as authorizing an automatic change to the original.
+- Source Depth remains **excluded from standard print/PDF**. CSS hiding is necessary but not sufficient: remove `.hikam-source-depth-inline` from the paginator's **private clones before measurement**. Leave the on-screen original intact.
+- Unwrap screen-only Companion cues to the unchanged source phrase in private print clones. Do not dump popup contents into ordinary pages or invent an evidence appendix to compensate for hidden essential material.
+- Preserve the existing frontmatter and JS body/revision print systems, independent `.end-block`, A4 geometry, correct language/font/direction during measurement, footers, page order and restoration after printing. Avoid clipping or hidden-overflow changes that can make content disappear.
+- When print-affecting implementation is authorized, inspect actual selected-chapter A4 output as well as generated page geometry. Confirm the essential argument and all selected revision functions remain present without optional layers. A screen DOM or successful build alone does not prove PDF completeness.
+- The offline self-contained edition must retain the correct Companion manifest/controller and native Source Depth with its own source edition. Do not introduce an unversioned online-only fetch or independently stale metadata. Preserve existing content-hashed cache and update behavior.
 
-**1.1.3 completed adoption:** Papineau's *Philosophy of Science* has its own [resolved 16-unit source-to-dossier register](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md#v-completed-source-coverage-resolution--final-113-edition-19-november), 12 contextual cues and nine independently chosen paragraph-adjacent Source Depth details. This demonstrates that the same standards work without copying Moran/Stout's text, exact cue count or paragraph positions.
+## 9. Arabic and English clarity in every optional field
 
-## Original-edition continuity and restoration safeguard — 21 November 2026
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-The ten dossier sections revised from **1.1.1 through 2.1.5** now have a [verbatim pre-revamp snapshot](../../archive/pre-revamp-2026-11-05/README.md) preserved outside the reader. The [manifest](../../archive/pre-revamp-2026-11-05/MANIFEST.json) pins the historical 5 November 2026 source commit and per-chapter Git blob hashes. This permits comparison of the context-first, Source Depth and condensed editions against their actual predecessors without mistaking Git history for a separate backup. Historical material is for audit and recovery, **not** a substitute for supplied original readings or the current canonical dossier. The [standing editorial protocol](LANGUAGE_AND_SOURCE_FIDELITY_REFINEMENT_PROTOCOL.md) requires equivalent dated pre-edit preservation when later dossiers are revised.
+Apply the standing language protocol and actual supplied Arabic profile/samples to titles, summaries, explanations, recall lines, citations and visible control wording as well as to ordinary prose. Write natural, accessible scholarly sentences with precise terms and clear references. A popup is not an exemption from language quality or source fidelity.
+
+Keep Arabic confidence calibrated to the source. Do not insert cautious verbs, generalization warnings, consensus claims or qualifications because they sound academically restrained. Preserve the boundaries among the source author's judgment, quotation, hypothesis and reported evidence. English and Arabic are not literal templates for each other.
+
+Assess readability at the actual child element, not only the parent style. The documented Arabic Source Depth size override, compact timeline typography, lost selective emphasis and RTL spacing discrepancies are existing audit findings, not chosen replacement settings. A later design pass must consider line-height, paragraph/block separation, wrapping, apparent font size, focus and mobile access together. Do not apply a global font or spacing change during this documentation pass.
+
+Short labels may remain visually compact where readable; opened source explanations must still be comfortable to study. Essential/useful/supplementary is a content-role distinction, not permission to make further reading illegible. Keep any source limitation attached clearly enough that a simplified explanation retains the same force as the original.
+
+## 10. Per-candidate acceptance and later chapter verification
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+Before accepting an optional record, establish:
+
+1. A specific source-backed local question or further-source purpose, rather than a quota or decorative slot.
+2. Correct original attribution, scope, terminology, quotation/paraphrase boundary and degree of certainty.
+3. A visible home for every indispensable proposition and necessary qualification; the skip test passes.
+4. A Companion's safe exact ordinary-prose anchor, or Source Depth's correct paragraph-adjacent location and grouped record identity.
+5. Local completeness without an unrelated branch, a second hidden argument, an unauthorized EL10 analogy or circular instructions to open another aid.
+6. Distinct value compared with nearby teaching, allowing simpler restatement where it resolves a real difficulty.
+7. Clear language, readable actual rendering and applicable keyboard/touch/RTL/no-JavaScript behavior.
+8. Preservation of standard print exclusion, source-text recovery, offline edition integrity and the six revision functions.
+
+For a later authorized chapter change, choose bounded checks for the changed text, anchors and affected presentation. Source/anchor review is not replaced by a passing browser test; a passing static check is not a claim of runtime or real-PDF verification. Report actual observations and limitations separately from planned work.
+
+**Do not launch, rerun or await the whole-book suite for every chapter.** The latest user verification instruction supersedes the old repeated mandatory full-suite gates in the pilot prose. Broaden checks only for a demonstrated remaining risk, an explicit required gate or a new authorized shared-system change. Preserve relevant existing tests; do not weaken them merely to obtain a pass. Documentation-only editing does not require rebuilding the reader or dispatching CI.
+
+## 11. Scope, release evidence and preservation
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The whole-corpus standard applies to current and future dossiers, while implementation proceeds only within the authorized scope. A documented correction is not an implemented correction. Do not claim that all old extra concept boxes, retired tips/checkpoints, definition entries, table cells, roadmaps, icons or Arabic styling already satisfy the latest rules.
+
+Before an authorized chapter replacement, preserve its exact full predecessor in a dated, integrity-checked archive, including frontmatter, main teaching, optional layers and revision. Keep earlier snapshots immutable and out of the active build, search, print and offline package. Original source texts remain the intellectual authority; an archive records prior publication, including any prior errors.
+
+Follow the current [secondary-fork and upstream release procedure](../hosting/SECONDARY_FORK_CI_AND_RELEASE.md) within the latest user authorization and targeted-verification instruction. Verify the actual candidate and generated-file identity, distinguish fork success from upstream transfer/merge, and verify Pages publication independently. Do not infer a successful deployment from a workflow dispatch or bypass an approval/access-control rejection. Report automatically triggered or infrastructure-blocked checks without presenting them as passed or using an obsolete full-suite gate to restart routine whole-book testing.
+
+No private full original, recall guide or personal writing sample is authorized for public upload merely because it was used to prepare an editorial record. No code, styles, tests, build outputs or reader content are changed by this documentation consolidation.
+
+## 12. Historical pilot evidence — not current policy or quotas
+
+> **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+The Moran/Stout pilot established the present distinction: context-first clarification stays with the immediate idea, while further original-source detail is retained separately beside the relevant paragraph. Its original ten Moran and twenty-four Stout records, exact source locators and contemporary verification are documented in the [historical pilot audit](READING_COMPANIONS_PILOT_1_1_1_1_1_2.md) and [source-coverage register](SOURCE_COVERAGE_CONCISE_PILOT_1_1_1_1_1_2.md). Papineau and Gutting have their own [source register](READING_1_1_3_SOURCE_COVERAGE_PREPARATION.md) and [source register](READING_1_1_4_GUTTING_SOURCE_COVERAGE.md).
+
+Those historical counts, original source examples and full-suite results do not require future chapters to reproduce the same number of cues, three fields, word totals or tests. The old detached Source Depth appendix was superseded by paragraph-adjacent native disclosures. The old requirement that every Companion add a new fact was superseded by context-first comprehension. Neither obsolete approach is an alternative active instruction.
+
+The History and Literature projects supplied conceptual precedents for contextual simplicity, traceability and careful interaction, not authorization to copy private content/code or import their design and quotas. The [original-dossier archive](../../archive/pre-revamp-2026-11-05/README.md) and later dated snapshots preserve predecessor editions for comparison and recovery. Their contents remain historical evidence rather than replacement source material or live authoring policy.

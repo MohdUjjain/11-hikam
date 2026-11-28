@@ -1,5 +1,9 @@
 # Reading location and local resume (screen-only)
 
+**Status:** existing technical behavior and its affected-feature checks. Follow the [current scoped verification guide](SECONDARY_FORK_CI_AND_RELEASE.md); this document does not require unrelated whole-book checks for a chapter edit or any reader build/browser run for documentation-only work. The [current editorial policy](../editorial/STUDY_AID_ROLES_AND_READING_DESIGN_PROTOCOL.md) governs content and aid roles; changing these instructions does not implement reader changes.
+
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
 This chapter book tracks **two different quantities** without assigning reading
 completeness or exam mastery:
 
@@ -59,8 +63,11 @@ new published reader code while preserving `localStorage` across updates.
 
 ## Regression testing
 
-Run `python src/build.py --check`, `python src/tests/verify_reading_progress.py`,
-all existing validation tests, and a Chromium smoke test covering:
+**This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
+
+When changing reading-position or resume behavior, run `python src/build.py --check`,
+`python src/tests/verify_reading_progress.py`, other checks for any affected shared
+contracts, and a bounded Chromium smoke test covering:
 Arabic and English progress labels; mobile width; a saved bookmark surviving a
 fresh load without being overwritten by cover paint; Resume, Start and Forget;
 a direct hash bypass; collapsed tree staying collapsed during section changes;
