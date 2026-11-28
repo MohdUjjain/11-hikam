@@ -45,7 +45,7 @@ for item in manifest['companions']:
     assert re.fullmatch(r'ch\d+-\d+-\d+', item['chapter']), ident
     assert item['source']['printedPages'], f'No primary page reference: {ident}'
     assert item['source']['author'] in ('Dermot Moran', 'Rowland Stout', 'David Papineau', 'Gary Gutting', 'Simon Critchley', 'Colin Bird', 'Jonathan Wolff', 'W. D. Ross', 'Hugh Lawson-Tancred', 'James Kellenberger', 'Keith E. Yandell', 'Anthony Kenny', 'سامر توفيق عجمي', 'سلطان بن عبد الرحمن العميري', 'سامي عامري', 'عبد الله بن صالح العجيري', 'هشام عزمي', 'محمد باقر السيستاني', 'مركز المعارف للمناهج والمتون التعليمية', 'Karen Armstrong', 'أحمد إبراهيم', 'علي آل محسن', 'سامي عامري', 'أيمن المصري', 'Alister E. McGrath and Joanna Collicutt McGrath', 'John C. Lennox', 'Michael J. Behe', 'مصطفى عزيزي', 'عبد الحسين خسروپناه', 'حسين أحمد الخشن', 'محمد محمد رضائي وحسين رهنمائي', 'المؤلف غير مذكور في النص المقرر'), ident
-    if item['chapter'] == 'ch3-2-4':
+    if item['chapter'] in ('ch3-2-4', 'ch3-2-5'):
         # Current context-first protocol permits a short complete clarification
         # without the pilot's minimum word quota; editorial review checks meaning.
         assert item['explanation'].strip(), f'Empty contextual explanation: {ident}'
@@ -81,7 +81,7 @@ stout = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-2']
 papineau = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-3']
 gutting = [x for x in manifest['companions'] if x['chapter'] == 'ch1-1-4']
 assert len(moran) == 10 and len(stout) == 24 and len(papineau) == 12 and len(gutting) == 12
-assert len(seen) == 514  # Includes two additional local clarifications in 3.2.4.
+assert len(seen) == 517  # Includes the independently selected 3.2.4 and 3.2.5 cues.
 assert 'class="historical-timeline"' in chapters
 assert 'The One Thread to Follow' in chapters
 assert 'The four thinkers below are not four unrelated stories.' in chapters
