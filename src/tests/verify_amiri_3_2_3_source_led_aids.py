@@ -58,30 +58,30 @@ class WordCount(HTMLParser):
         self.count[int(any(is_aid for _,is_aid in self.stack))] += len(text.split())
 
 # Rules adopted for this source-led corpus refinement.
-opening = re.findall(r'<div class="box concept">([\s\\S]*?)</p></div>', body)
+opening = re.findall(r'<div class="box concept">([\s\S]*?)</p></div>', body)
 assert len(opening) == 1
 central = re.sub(r'<[^>]+>', ' ', opening[0])
 assert 40 <= len(central.split()) <= 75, ('Central concept out of range', central)
 for aid,limit in (('memory',30),('highyield',40),('mistake',35)):
-    for m in re.finditer(r'<div class="box '+aid+r'">([\s\\S]*?)</p></div>',body):
-        par = re.search(r'<p>([\s\\S]*?)</p>',m.group(0))
+    for m in re.finditer(r'<div class="box '+aid+r'">([\s\S]*?)</p></div>',body):
+        par = re.search(r'<p>([\s\S]*?)</p>',m.group(0))
         assert par
         content=re.sub(r'<[^>]+>', '', par.group(1))
         assert len(content.split()) <= limit, (aid,len(content.split()))
-definitions=re.findall(r'<div class="box definition">([\s\\S]*?)</div>',body)
+definitions=re.findall(r'<div class="box definition">([\s\S]*?</p></div>)',body)
 assert len(definitions)==1
-entries=re.findall(r'<p>([\s\\S]*?)</p>',definitions[0])
+entries=re.findall(r'<p>([\s\S]*?)</p>',definitions[0])
 assert len(entries)==2 and all(0 < len(re.sub(r'<[^>]+>','',x).split()) <= 20 for x in entries)
 assert all('class="h-node l1"' in line for line in [line for line in visible.split('\n') if 'الصيغة الرباعية' in line or 'أدلة انتظام البداية' in line])
-roadmap=re.search(r'<div class="in-this-chapter">([\s\\S]*?)</ol></div>',front)
+roadmap=re.search(r'<div class="in-this-chapter">([\s\S]*?)</ol></div>',front)
 assert roadmap
-points=re.findall(r'<li>([\s\\S]*?)</li>',roadmap.group(1))
+points=re.findall(r'<li>([\s\S]*?)</li>',roadmap.group(1))
 assert len(points)==5
 for point in points:
     assert re.match(r'<b>[^<]{3,40}</b>',point), ('Roadmap lead-in not bold',point)
     assert 7 <= len(re.sub(r'<[^>]+>','',point).split()) <= 15, ('Roadmap length',point)
-for m in re.finditer(r'<table class="comparison">([\s\\S]*?)</table>',chapter):
-    for cell in re.findall(r'<(?:td|th)[^>]*>([\s\\S]*?)</(?:td|th)>',m.group(1)):
+for m in re.finditer(r'<table class="comparison">([\s\S]*?)</table>',chapter):
+    for cell in re.findall(r'<(?:td|th)[^>]*>([\s\S]*?)</(?:td|th)>',m.group(1)):
         assert len(re.sub(r'<[^>]+>','',cell).split()) <= 20, ('Table cell too long',cell)
 
 word_count=WordCount()
