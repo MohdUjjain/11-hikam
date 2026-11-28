@@ -22,7 +22,7 @@ This protocol consolidates the November study-aid decisions. It supersedes confl
 
 The operative changes include definition limits of 20 words per entry and 40 per two-entry box, one opening central concept, the 30-word memory limit, 10-word normal and 20-word maximum table cells, and 7–15-word roadmap points. Historical 30-word definition rules and statements that these limits are undecided have no current instructional force.
 
-This documentation update authorizes documentation work. It does not itself implement chapter rewrites, a new palette, new component types, typography changes or prose-to-bullet conversion. When implementation is authorized, apply the current rules to the agreed scope and preserve unrelated material. Do not infer permission to rewrite the entire corpus merely because the policy applies throughout it.
+Documenting the whole-corpus policy does not itself implement the corpus. Apply it within the latest user-authorized scope and preserve unrelated material. The user's follow-up of 28 November 2026 authorizes a focused pass on 3.2.5; it defers the colour pass, Arabic typography decisions and ordinary-prose conversion/highlighting pass. Do not infer permission to rewrite other dossiers or implement deferred design work merely because the policy applies throughout the corpus.
 
 ## 2 Intellectual fidelity and source preparation
 
@@ -54,7 +54,7 @@ Separate three questions: **role** identifies what the component does; **priorit
 
 Use the accepted test: **If the reader skips this material, can they still understand the author’s argument accurately, including its necessary boundaries and qualifications?** If not, the material cannot exist only in a closed disclosure or popup.
 
-Do not assign priority automatically from presentation. A table, definition, quotation or source analogy may be essential. Ordinary prose is not essential merely because it is prose, and a coloured box is not merely useful by definition. These categories do not rank truth, endorse a position or predict examination frequency. The final visual treatment of priority remains a separate design decision; the intellectual distinction applies now.
+Do not assign priority automatically from presentation. A table, definition, quotation or source analogy may be essential. Ordinary prose is not essential merely because it is prose, and a coloured box is not merely useful by definition. These categories do not rank truth, endorse a position or predict examination frequency. Essential/useful/supplementary is a framework for preparing and placing the notes. The user expressly requires no additional visual treatment: do not add priority badges, colours, icons or reader-facing labels, or keep such markers listed as an unresolved design requirement.
 
 ## 4 Preservation across the reading layers
 
@@ -128,7 +128,7 @@ Retain the source's technical meaning and indispensable differentiating conditio
 
 Historical comparisons, procedures, objections and replies, illustrations and argument summaries are not definitions merely because they concern unfamiliar ideas. During migration, identify the actual definition units before counting them. Record term, source meaning, entry words, sentences, group size, any mixed material and its proposed source-faithful destination. Existing whole-box counts cannot establish compliance with the new per-definition rule.
 
-The proposed general-purpose explanatory callout remains unresolved. Until its purpose, name and cap are agreed, use an existing suitable role or ordinary explanatory text. Source analogy is not a generic substitute label for all explanation.
+The proposal for a separate general-purpose explanatory callout is closed by the user's follow-up: concise source-grounded explanatory support belongs within the expanded memory-aid role, under its 30-word complete-body maximum. A conceptual anchor or clarifying distinction can perform this function without a forced mnemonic. Use another existing role when its specific operation fits better, and preserve extended necessary reasoning in the ordinary teaching. Source analogy is not a generic substitute label for all explanation.
 
 ## 8 High-yield notes
 
@@ -158,7 +158,9 @@ If the needed explanation is longer than 35 words, keep the concise misreading d
 
 > **This permission does not authorize an independent judgment that the author’s position is unproved, generalized or unacceptable.**
 
-**A memory aid provides a recognizable cue through which the reader can reconstruct source-grounded items, order, distinctions, relationships or numerical anchors.** The complete cue, key and explanation together have **at most 30 words**. There is no new minimum or per-dossier quota.
+**A memory aid provides a recognizable cue or compact source-grounded explanatory anchor through which the reader can understand and reconstruct items, order, distinctions, relationships or numerical anchors.** The complete cue, key and explanation together have **at most 30 words**. There is no new minimum or per-dossier quota.
+
+**28 November 2026 follow-up decision:** the user places the proposed general-purpose explanatory function within this expanded family instead of introducing a separate callout. A short explanation of a source distinction or relationship can itself be the conceptual anchor; it need not be converted into an acronym, rhyme or artificial chain. Its purpose is to make the taught idea easier to grasp and recover. This is not a licence to move arbitrary prose into coloured boxes, remove indispensable explanation, or add the compiler's own claims.
 
 | Method | Legitimate retrieval operation | Fidelity requirement |
 | --- | --- | --- |
@@ -167,6 +169,7 @@ If the needed explanation is longer than 35 words, keep the concise misreading d
 | Visual association | Attach a retrieval cue to a supplied concept | The cue is identifiable as a teaching device |
 | Memory palace | Organize items through imagined locations | The locations are not source facts or logical parentage |
 | Conceptual anchor | Reattach details to the source's organizing idea | Do not invent a replacement thesis |
+| Compact source-grounded explanation | Make a taught distinction or relationship easier to grasp and recover | Preserve source meaning; the complete explanation shares the 30-word cap |
 | Comparison trick | Recall the feature separating related concepts | Preserve the source's actual contrast |
 | Pattern recognition | Recover a recurring supplied structure | Do not impose a pattern absent from the material |
 | Remember this because | Recall why a distinction matters here | The reason must come from the source's discussion |
@@ -327,7 +330,7 @@ Preserve all six established revision functions and their sequence in every doss
 
 Keep the five question categories in order: **Short Answer, Long Answer, Comparison, Conceptual, Application**. Questions must be answerable from the taught material and preserve the author's framework; do not add an independent philosophical debate or external factual claim under an application label. The original prompt's examination purpose survives here despite retirement of main-body tips and checkpoints.
 
-Check revision after main-text changes so it does not retain old errors, omit restored distinctions or introduce material never taught. A source-critical idea cannot appear for the first time only in revision. Collect actual mnemonics rather than inventing a disconnected second set. Apply the definition-entry, memory-device and table-cell limits to those units without capping entire revision collections.
+Check revision after main-text changes so it does not retain old errors, omit restored distinctions or introduce material never taught. A source-critical idea cannot appear for the first time only in revision. Collect the actual memory devices and explanatory anchors introduced in the teaching, rather than inventing a disconnected second set. Apply the definition-entry, memory-device and table-cell limits to those units without capping entire revision collections.
 
 Key Table is an established heading, not a requirement for exactly one table in every case. Existing return-note sections need precise, useful directions and must serve the revision function; do not silently delete them because their physical format differs. Whether to replace all such return notes with reproduced tables is not a newly adopted rule.
 
@@ -341,13 +344,13 @@ Apply the full Arabic voice profile and supplied language samples for Arabic wor
 
 Use selective emphasis to make definitions, important names, dates, terms, classifications, arguments, processes, comparisons, formulas, scholarly opinions, quotations and conclusions easier to find. Emphasize the meaningful anchor, not every sentence. A condition or qualification must remain connected to the claim it controls. Do not make a scholarly opinion look like an established fact through bolding or a high-yield label.
 
-Use the established design tokens and component architecture. Standardize labels and icons within families, distinguish memory from compiler-added EL10, and make source ownership recognizable. The precise final colour assignments and priority markers remain open. The original colour examples do not restore the retired examination-tip component. A colour token may remain necessary for another function even after an aid retires.
+Use the established design tokens and component architecture. Standardize labels and icons within families, distinguish memory from compiler-added EL10, and make source ownership recognizable. The final colour and icon pass remains deferred. Essential/useful/supplementary guides preparation only and requires no additional visual marker. The original colour examples do not restore the retired examination-tip component. A colour token may remain necessary for another function even after an aid retires.
 
 Images and illustrations require an educational purpose tied to the reading. Preserve source provenance and identify reconstructions or teaching devices. Do not invent historical details, purported manuscripts, empirical observations or source diagrams. A visual must have a meaningful textual explanation or equivalent. Decorative portraits or repeated ornamental images are not required by the original prompt.
 
 Arabic readability requires inspecting the actual rendered text in each component: paragraph and line spacing, child font overrides, bold anchors, table row labels, roadmap indentation, captions, citations, timeline descriptions and mixed-direction notation. Do not prescribe a blanket global line-height increase from the impression of crowding. The measured 14px Arabic Source Depth paragraphs despite an 18px parent demonstrate why actual child styles must be checked.
 
-The design pass should restore meaningful emphasis in later Arabic prose, correct demonstrated RTL spacing and border issues, and verify representative desktop, mobile and print behavior. Existing observed pixel values are evidence, not adopted replacement values. Full prose-to-complete-sentence-bullets conversion remains deferred and must not be introduced under a typography correction.
+The later design pass should address demonstrated RTL spacing, border and readability issues and verify representative desktop, mobile and print behavior. The user wants the smallest meaningful Arabic typography change, with the exact decision deferred; existing observed pixel values are evidence, not adopted replacement values. The ordinary-prose pass, including complete-sentence bullets and improved highlighting, also remains deferred. Do not introduce it under a study-aid or typography correction; the adopted bold lead-ins in roadmaps and suitable emphasis inside revised aids remain part of their own functions.
 
 ## 23 Migration verification and publication
 
@@ -377,7 +380,9 @@ Follow the [secondary-fork and release guide](../hosting/SECONDARY_FORK_CI_AND_R
 
 The limits, one-opening-concept rule, dedicated EL10 role, source-analogy distinction, retirement of main-body tips/checkpoints, hierarchy treatment, roadmap function and source-fidelity prominence above are settled. The definition-entry audit and source-provenance corrections are implementation work under those decisions, not reasons to keep obsolete rules active.
 
-The following remain open: a new general-purpose explanatory callout and its cap; final colour assignments and priority indicators; the standardized icon/label design; replacement Arabic typography values; and adoption of a specific page-based central-concept allocation formula. The audit document preserves the provisional distribution-based example. Do not convert an assistant proposal or historical sensitivity calculation into a binding decision.
+The user's follow-up settles two former open items: explanatory support is accommodated within the expanded memory-aid family under its existing 30-word cap, and essential/useful/supplementary remains an authoring framework with no additional visual system. No separate general-purpose callout or priority marker is required.
+
+The final colour/icon treatment and exact Arabic typography values remain deferred; for Arabic, the stated aim is the smallest meaningful change after an explicit later decision. The ordinary-prose bullet/highlighting pass remains deferred. Adoption of a specific page-based central-concept allocation formula also remains open: the user requested a reminder of the discussion, which does not adopt the illustrative formula. The audit document preserves that provisional distribution-based example. Do not convert an assistant proposal or historical sensitivity calculation into a binding decision.
 
 The whole-corpus policy applies to both the already revised and remaining dossiers. The detailed study-aid census covers 29 dossiers through 3.2.5 at its frozen revision; it is not a compliance certificate for all 62 existing dossiers. The reported later two-column problem from 3.2.6 onward requires its own scoped examination when that material is reached.
 

@@ -1,5 +1,7 @@
 # 3.2.5 — Azmi, «الإلحاد الجديد»: source-led second pass
 
+**Subsequent component pass:** this document records the preceding source-led edition. The [study-aid refinement audit](READING_3_2_5_STUDY_AID_REFINEMENT_AUDIT.md) records the later application of the corpus component policy; its role changes do not replace this original-source coverage record.
+
 **Date:** 28 November 2026 (India time).
 **Author:** هشام عزمي.
 **Work:** *الإلحاد للمبتدئين: دليلك المختصر في الحوار بين الإيمان والإلحاد*.
