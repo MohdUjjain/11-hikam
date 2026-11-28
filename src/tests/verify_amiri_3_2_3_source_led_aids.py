@@ -3,6 +3,7 @@
 from __future__ import annotations
 from hashlib import sha1
 from html.parser import HTMLParser
+from html import unescape
 from pathlib import Path
 import json
 import re
@@ -56,21 +57,50 @@ class WordCount(HTMLParser):
     def handle_data(self, text):
         self.count[int(any(is_aid for _,is_aid in self.stack))] += len(text.split())
 
+# Rules adopted for this source-led corpus refinement.
+opening = re.findall(r'<div class="box concept">([\s\\S]*?)</p></div>', body)
+assert len(opening) == 1
+central = re.sub(r'<[^>]+>', ' ', opening[0])
+assert 40 <= len(central.split()) <= 75, ('Central concept out of range', central)
+for aid,limit in (('memory',30),('highyield',40),('mistake',35)):
+    for m in re.finditer(r'<div class="box '+aid+r'">([\s\\S]*?)</p></div>',body):
+        par = re.search(r'<p>([\s\\S]*?)</p>',m.group(0))
+        assert par
+        content=re.sub(r'<[^>]+>', '', par.group(1))
+        assert len(content.split()) <= limit, (aid,len(content.split()))
+definitions=re.findall(r'<div class="box definition">([\s\\S]*?)</div>',body)
+assert len(definitions)==1
+entries=re.findall(r'<p>([\s\\S]*?)</p>',definitions[0])
+assert len(entries)==2 and all(0 < len(re.sub(r'<[^>]+>','',x).split()) <= 20 for x in entries)
+assert all('class="h-node l1"' in line for line in [line for line in visible.split('\n') if 'الصيغة الرباعية' in line or 'أدلة انتظام البداية' in line])
+roadmap=re.search(r'<div class="in-this-chapter">([\s\\S]*?)</ol></div>',front)
+assert roadmap
+points=re.findall(r'<li>([\s\\S]*?)</li>',roadmap.group(1))
+assert len(points)==5
+for point in points:
+    assert re.match(r'<b>[^<]{3,40}</b>',point), ('Roadmap lead-in not bold',point)
+    assert 7 <= len(re.sub(r'<[^>]+>','',point).split()) <= 15, ('Roadmap length',point)
+for m in re.finditer(r'<table class="comparison">([\s\\S]*?)</table>',chapter):
+    for cell in re.findall(r'<(?:td|th)[^>]*>([\s\\S]*?)</(?:td|th)>',m.group(1)):
+        assert len(re.sub(r'<[^>]+>','',cell).split()) <= 20, ('Table cell too long',cell)
+
 word_count=WordCount()
 word_count.feed(visible)
 prose,aids=word_count.count
 assert 650<=prose<=850, word_count.count
 assert 850<=aids<=1150, word_count.count
 assert 1500<=prose+aids<=2000, word_count.count
-assert visible.count('class="comparison"') == 3
-assert chapter.count('class="comparison"') == 4   # revision key table is independent
-assert visible.count('scope="col"') == 9
-assert visible.count('scope="row"') == 10
+assert visible.count('class="comparison"') == 4
+assert chapter.count('class="comparison"') == 5   # independent revision key table
+assert visible.count('scope="col"') == 12
+assert visible.count('scope="row"') == 13
 assert visible.count('class="hierarchy"') == 3
 assert visible.count('class="box mistake"') == 1
 assert visible.count('class="box memory"') == 2
 assert visible.count('class="box definition"') == 1
-assert visible.count('class="box tip"') == 1
+assert visible.count('class="box tip"') == 0
+assert visible.count('class="checkpoint"') == 0
+assert visible.count('class="box concept"') == 1
 assert visible.count('class="concept-rel"') == 1
 assert visible.count('class="analogy"') == 1
 
@@ -96,7 +126,14 @@ assert len(cues)==5
 depths=re.findall(depth_regex,body)
 for cue in cues:
     passage=cue['passage']
-    assert body.count(passage) == 1, cue['id']
+    # Bold emphasis changes HTML text-node boundaries but not the exact
+    # source-grounded paragraph. Require unique equal visible text.
+    def plain(fragment):
+        return ' '.join(unescape(re.sub(r'<[^>]+>', '', fragment)).split())
+    paragraphs = re.findall(r'<p>([\s\S]*?)</p>', body)
+    exact = [paragraph for paragraph in paragraphs if plain(paragraph) == plain(passage)]
+    assert len(exact) == 1, (cue['id'], len(exact))
+    assert sum(cue['text'] in part for part in re.split(r'<[^>]+>', exact[0])) == 1, cue['id']
     assert cue['text'] in passage, cue['id']
     assert cue['source']['author'] == 'سامي عامري'
     assert all(p==441 or 443<=p<=461 for p in cue['source']['printedPages'])
@@ -109,4 +146,4 @@ for cue in cues:
     assert preceding.endswith('</p>'), cue['id']
     assert cue['text'] in preceding[preceding.rfind('<p>'):], cue['id']
 
-print(f'PASS 3.2.3: {prose} prose + {aids} aids = {prose+aids}; 3 true comparisons, 3 hierarchies, 5 exact cues/Depth, immutable predecessor, all six revision sections',flush=True)
+print(f'PASS 3.2.3: {prose} prose + {aids} aids = {prose+aids}; 4 true comparisons, 3 hierarchies, 5 exact cues/Depth, immutable predecessor, all six revision sections',flush=True)

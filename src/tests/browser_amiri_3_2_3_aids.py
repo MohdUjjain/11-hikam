@@ -18,8 +18,8 @@ def screen(browser, url):
         assert "--hue:8" in (chapter.get_attribute("style") or "")
         assert chapter.evaluate("(e)=>getComputedStyle(e).direction")=="rtl"
         tables=chapter.locator(":scope > .chapter-body .tbl-wrap")
-        assert tables.count()==3,(width,tables.count())
-        for i,expected_rows in enumerate((3,4,3)):
+        assert tables.count()==4,(width,tables.count())
+        for i,expected_rows in enumerate((3,3,4,3)):
             wrap=tables.nth(i)
             table=wrap.locator("table.comparison")
             assert table.locator('thead th[scope="col"]').count()==3
@@ -28,8 +28,8 @@ def screen(browser, url):
             assert table.evaluate("(e)=>getComputedStyle(e).direction")=="rtl"
         for selector,n in ((".hierarchy",3),(".box.mistake",1),
                            (".box.definition",1),(".box.memory",2),
-                           (".box.tip",1),(".analogy",1),
-                           (".concept-rel",1),(".checkpoint",1)):
+                           (".box.tip",0),(".analogy",1),
+                           (".concept-rel",1),(".checkpoint",0)):
             got=chapter.locator(":scope > .chapter-body "+selector).count()
             assert got==n,(selector,width,got)
         details=chapter.locator(":scope > .chapter-body details.hikam-source-depth-inline")
@@ -43,7 +43,7 @@ def screen(browser, url):
             tables.last.screenshot(path=str(ARTIFACTS/"amiri-323-water-carbon-mobile-rtl.png"))
         no_errors(page,f"3.2.3 fine-tuning RTL {width}")
         ctx.close()
-    print("PASS 3.2.3 scoped mobile/desktop RTL, 3 accessible comparisons and 5 optional Source Depth",flush=True)
+    print("PASS 3.2.3 scoped mobile/desktop RTL, 4 accessible comparisons and 5 optional Source Depth",flush=True)
 
 def print_a4(browser,url):
     ctx=context(browser,1024)

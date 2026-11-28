@@ -38,3 +38,20 @@
 - At release: verify canonical generated Git blobs match the tested fork, submit an isolated upstream PR, and confirm actual merge and deployment status. Do not claim public website independently fetched unless verified.
 
 **Do not publish restricted primary reading text or rewrite unrelated chapters.**
+
+
+## 28 November 2026 — corpus study-aid roles and selective Arabic emphasis pass
+
+The preceding entry records the completed **source coverage** and the former arrangement, not a claim that retired components should persist. This follow-up was prepared with the **editable original 3.2.3 source**, all three dedicated Total Recall guides, and the binding corpus study-aid, Arabic language, and optional reading-layer protocols. The primary source continues to govern the distinctions, precise attributions, author's inferences and confidence; Total Recalls are orientation aids and do not independently authorize claims. The precise Penrose exponent remains the originally flagged formatting uncertainty; the visible core does not invent a resolution of that ambiguous formula.
+
+The current teaching arrangement:
+- Preserves the chapter source and chapter order: design versus finality/providence, theistic versus non-theistic expectations, the four-step inference, probability, laws and constants, initial conditions, and water/carbon chemistry.
+- Gives each five-point roadmap entry a substantive **7–15-word preview** with a bold lead-in. Uses one **40–75-word opening central concept**.
+- Retires the old main-body **file-scope high-yield**, the examination-writing **tip**, the long tutorial/recall **high-yield** and the **checkpoint**. Their source-specific distinctions remain in ordinary prose, semantic tables, the separately bounded high-yield note, or the independent revision system; no quiz prompt is disguised as a new study aid.
+- Converts the mixed law/constant card into **two genuine definitions** of at most 20 words each, not a definition combined with a comparison essay.
+- Keeps the three original same-axis comparisons and adds **one source-owned comparison of rival expectations** in §2; the introductory paragraph now frames the source's question rather than repeating all the cells. The distinct four-step proof and four independent witnesses of early-universe conditions retain suitable equal-level logical numbering rather than false parent-child depth.
+- Tightens memory, mistake and high-yield aids to their 30-, 35- and 40-word complete-body limits. Moves the **author's sand-grain analogy** next to his discussion of probabilistic remoteness, with the reason for the illustration stated explicitly.
+- Keeps all five source-adjacent native Source Depth disclosures and exactly anchored Reading Companions, six separately printed revision sections and five question families. Only the text of two Companion `passage` fields changes where their visible prose has genuinely been rewritten.
+- Adds **selective short inline bold** in the ordinary Arabic prose of 3.2.3. In the same scoped release, gives the corresponding main prose of **3.2.4 and 3.2.5** bold key terms, argumentative turns, negations and source-owned qualifications **without changing any of their prose text**. No global CSS, typography, section identifiers, print architecture, a4/h22 layout boundaries, or unrelated chapters are touched.
+
+The full immediately preceding editions of all three chapters are preserved as distinct, additive archive files before this change. This documentation records decisions; actual targeted test, A4, merge, and Pages results are established only after the respective checks and publication.
